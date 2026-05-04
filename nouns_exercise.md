@@ -23,3 +23,16 @@
 | byen |  |  |  |
 | hunden |  |  | m |
 | katten |  |  |  |
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|
+| eplet |  |  |  |
+| vinen |  |  |  |
+| skoen |  |  |  |
+| jakken |  |  |  |
+| skolen |  |  |  |
+| jobben |  |  |  |
+| moren |  |  | f |
+| faren |  |  | m |
+| dagen |  |  |  |
+| natten |  |  | f |

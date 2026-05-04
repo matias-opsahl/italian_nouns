@@ -23,3 +23,16 @@
 | byen        | la città    | le città    | f      |
 | hunden      | il cane     | i cani      | m      |
 | katten      | il gatto    | i gatti     | m      |
+
+| ord (norsk) | ord (s.g)  | ord (p.l)  | gender |
+| ----------- | ---------- | ---------- | ------ |
+| eplet       | la mela    | le mele    | f      |
+| vinen       | il vino    | i vini     | m      |
+| skoen       | la scarpa  | le scarpe  | f      |
+| jakken      | la giacca  | le giacche | f      |
+| skolen      | la scuola  | le scuole  | f      |
+| jobben      | il lavoro  | i lavori   | m      |
+| moren       | la madre   | le madri   | f      |
+| faren       | il padre   | i padri    | m      |
+| dagen       | il giorno  | i giorni   | m      |
+| natten      | la notte   | le notti   | f      |
