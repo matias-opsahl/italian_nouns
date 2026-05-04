@@ -61,3 +61,19 @@
 | stranden     |           |           |        |
 | blomsten     |           |           | m      |
 | treet        |           |           |        |
+
+
+**2026-05-04**
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+| ----------- | --------- | --------- | ------ |
+| vennen      |           |           |        |
+| broren      |           |           |        |
+| søsteren    |           |           |        |
+| flyplassen  |           |           |        |
+| hotellet    |           |           |        |
+| mannen      |           |           |        |
+| kvinnen     |           |           |        |
+| rommet      |           |           |        |
+| luften      |           |           |        |
+| timen       |           |           |        |

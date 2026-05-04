@@ -49,3 +49,16 @@
 | stranden     | la spiaggia   | le spiagge   | f      |
 | blomsten     | il fiore      | i fiori      | m      |
 | treet        | l'albero      | gli alberi   | m      |
+
+| ord (norsk)  | ord (s.g)     | ord (p.l)      | gender |
+| ------------ | ------------- | -------------- | ------ |
+| vennen       | l'amico       | gli amici      | m      |
+| broren       | il fratello   | i fratelli     | m      |
+| søsteren     | la sorella    | le sorelle     | f      |
+| flyplassen   | l'aeroporto   | gli aeroporti  | m      |
+| hotellet     | l'albergo     | gli alberghi   | m      |
+| mannen       | l'uomo        | gli uomini     | m      |
+| kvinnen      | la donna      | le donne       | f      |
+| rommet       | la stanza     | le stanze      | f      |
+| luften       | l'aria        | le arie        | f      |
+| timen        | l'ora         | le ore         | f      |
