@@ -62,3 +62,16 @@
 | rommet       | la stanza     | le stanze      | f      |
 | luften       | l'aria        | le arie        | f      |
 | timen        | l'ora         | le ore         | f      |
+
+| ord (norsk) | ord (s.g)      | ord (p.l)      | gender |
+| ----------- | -------------- | -------------- | ------ |
+| uken        | la settimana   | le settimane   | f      |
+| måneden     | il mese        | i mesi         | m      |
+| året        | l'anno         | gli anni       | m      |
+| solen       | il sole        | i soli         | m      |
+| regnet      | la pioggia     | le piogge      | f      |
+| havet       | il mare        | i mari         | m      |
+| legen       | il medico      | i medici       | m      |
+| bussen      | l'autobus      | gli autobus    | m      |
+| sykehuset   | l'ospedale     | gli ospedali   | m      |
+| prisen      | il prezzo      | i prezzi       | m      |

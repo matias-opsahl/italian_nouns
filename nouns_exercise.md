@@ -63,7 +63,7 @@
 | treet        |           |           |        |
 
 
-**2026-05-04**
+**2026-05-05**
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 | ----------- | --------- | --------- | ------ |
@@ -77,3 +77,18 @@
 | rommet      |           |           |        |
 | luften      |           |           |        |
 | timen       |           |           |        |
+
+**2026-05-04**
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+| ----------- | --------- | --------- | ------ |
+| uken        |           |           |        |
+| måneden     |           |           | m      |
+| året        |           |           |        |
+| solen       |           |           | m      |
+| regnet      |           |           |        |
+| havet       |           |           | m      |
+| legen       |           |           |        |
+| bussen      |           |           |        |
+| sykehuset   |           |           | m      |
+| prisen      |           |           |        |
