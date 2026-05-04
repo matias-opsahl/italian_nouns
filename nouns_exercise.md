@@ -1,7 +1,10 @@
+
+**2026-05-01**
+
 | ord (norsk) | ord (s.g)   | ord (p.l)   | gender |
 | ----------- | ----------- | ----------- | ------ |
 | brødet      | il pane     | i pani      | m      |
-| vannet      | l'acqua     | le acque     | f      |
+| vannet      | l'acqua     | le acque    | f      |
 | huset       | la casa     | le case     | f      |
 | bilen       | la macchina | le macchine | f      |
 | boken       | il libro    | i libri     | m      |
@@ -10,6 +13,9 @@
 | bordet      | il tavolo   | i tavoli    | m      |
 | stolen      | la sedia    | le sedie    | f      |
 | nøkkelen    | la chiave   | le chiavi   | f      |
+
+
+**2026-05-02**
 
 | ord (norsk) | ord (s.g)   | ord (p.l)   | gender |
 | ----------- | ----------- | ----------- | ------ |
@@ -23,6 +29,9 @@
 | byen        | la città    | le città    | f      |
 | hunden      | il cane     | i cani      | m      |
 | katten      | il gatto    | i gatti     | m      |
+
+
+**2026-05-03**
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 | ----------- | --------- | --------- | ------ |
@@ -38,6 +47,7 @@
 | natten      | la notte  | le notti  | f      |
 
 **2026-05-04**
+
 
 | ord (norsk)  | ord (s.g) | ord (p.l) | gender |
 | ------------ | --------- | --------- | ------ |
