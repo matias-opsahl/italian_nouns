@@ -29,15 +29,15 @@
 | ord (norsk) | ord (italiensk) |
 | ----------- | --------------- |
 | å være      | essere          |
-| å ha        |            |
-| å gjøre     |                 |
-| å gå        |                 |
-| å komme     |                 |
-| å spise     |                 |
-| å drikke    |                 |
-| å snakke    |                 |
-| å forstå    |                 |
-| å jobbe     |                 |
+| å ha        | avere           |
+| å gjøre     | fare            |
+| å gå        | andare          |
+| å komme     | venire          |
+| å spise     | mangiare        |
+| å drikke    | bere            |
+| å snakke    | parlare         |
+| å forstå    | capire          |
+| å jobbe     | lavorare                |
 
 **2026-05-04**
 
@@ -79,3 +79,50 @@
 | å åpne      |                 |
 | å lukke     |                 |
 | å ta        |                 |
+
+**2026-05-05**
+
+### Substantiver
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+| ----------- | --------- | --------- | ------ |
+| stol        |           |           |        |
+| bord        |           |           |        |
+| mat         |           |           |        |
+| år          |           |           |        |
+| uke         |           |           |        |
+| måned       |           |           | m      |
+| hav         |           |           | m      |
+| land        |           |           | m      |
+| mann        |           |           |        |
+| kvinne      |           |           |        |
+
+### Adjektiver
+
+| ord (norsk) | ord (italiensk) |
+| ----------- | --------------- |
+| sulten      |                 |
+| tørst       |                 |
+| syk         |                 |
+| frisk       |                 |
+| rik         |                 |
+| fattig      |                 |
+| sterk       |                 |
+| svak        |                 |
+| ung         |                 |
+| morsom      |                 |
+
+### Verb
+
+| ord (norsk) | ord (italiensk) |
+| ----------- | --------------- |
+| å kjøre     |                 |
+| å løpe      |                 |
+| å svømme    |                 |
+| å lage mat  |                 |
+| å hjelpe    |                 |
+| å tenke     |                 |
+| å vente     |                 |
+| å betale    |                 |
+| å ringe     |                 |
+| å reise     |                 |

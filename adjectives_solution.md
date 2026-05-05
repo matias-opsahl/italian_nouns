@@ -23,3 +23,16 @@
 | sakte | lento |
 | trøtt | stanco |
 | glad | felice |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| sulten | affamato |
+| tørst | assetato |
+| syk | malato |
+| frisk | sano |
+| rik | ricco |
+| fattig | povero |
+| sterk | forte |
+| svak | debole |
+| ung | giovane |
+| morsom | divertente |

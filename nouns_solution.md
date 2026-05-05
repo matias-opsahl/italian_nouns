@@ -23,3 +23,16 @@
 | gate | la strada | le strade | f |
 | dag | il giorno | i giorni | m |
 | natt | la notte | le notti | f |
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|
+| stol | la sedia | le sedie | f |
+| bord | il tavolo | i tavoli | m |
+| mat | il cibo | i cibi | m |
+| år | l'anno | gli anni | m |
+| uke | la settimana | le settimane | f |
+| måned | il mese | i mesi | m |
+| hav | il mare | i mari | m |
+| land | il paese | i paesi | m |
+| mann | l'uomo | gli uomini | m |
+| kvinne | la donna | le donne | f |

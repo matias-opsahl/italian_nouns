@@ -23,3 +23,16 @@
 | å åpne | aprire |
 | å lukke | chiudere |
 | å ta | prendere |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å kjøre | guidare |
+| å løpe | correre |
+| å svømme | nuotare |
+| å lage mat | cucinare |
+| å hjelpe | aiutare |
+| å tenke | pensare |
+| å vente | aspettare |
+| å betale | pagare |
+| å ringe | chiamare |
+| å reise | viaggiare |
