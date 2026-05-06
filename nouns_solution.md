@@ -36,3 +36,16 @@
 | land | il paese | i paesi | m |
 | mann | l'uomo | gli uomini | m |
 | kvinne | la donna | le donne | f |
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|
+| nøkkel | la chiave | le chiavi | f |
+| katt | il gatto | i gatti | m |
+| hund | il cane | i cani | m |
+| fugl | l'uccello | gli uccelli | m |
+| musikk | la musica | le musiche | f |
+| kaffe | il caffè | i caffè | m |
+| blomst | il fiore | i fiori | m |
+| lege | il medico | i medici | m |
+| tog | il treno | i treni | m |
+| fly | l'aereo | gli aerei | m |

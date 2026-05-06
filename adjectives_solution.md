@@ -36,3 +36,16 @@
 | svak | debole |
 | ung | giovane |
 | morsom | divertente |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| billig | economico |
+| søt | dolce |
+| rolig | calmo |
+| travel | occupato |
+| åpen | aperto |
+| lukket | chiuso |
+| ren | pulito |
+| skitten | sporco |
+| viktig | importante |
+| interessant | interessante |

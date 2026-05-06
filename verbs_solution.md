@@ -36,3 +36,16 @@
 | å betale | pagare |
 | å ringe | chiamare |
 | å reise | viaggiare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å lære | imparare |
+| å huske | ricordare |
+| å glemme | dimenticare |
+| å finne | trovare |
+| å miste | perdere |
+| å prøve | provare |
+| å velge | scegliere |
+| å svare | rispondere |
+| å spørre | chiedere |
+| å smile | sorridere |

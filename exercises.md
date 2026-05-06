@@ -126,3 +126,50 @@
 | å betale    |                 |
 | å ringe     |                 |
 | å reise     |                 |
+
+**2026-05-06**
+
+### Substantiver
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+| ----------- | --------- | --------- | ------ |
+| nøkkel      |           |           |        |
+| katt        |           |           |        |
+| hund        |           |           |        |
+| fugl        |           |           |        |
+| musikk      |           |           |        |
+| kaffe       |           |           | m      |
+| blomst      |           |           |        |
+| lege        |           |           | m      |
+| tog         |           |           |        |
+| fly         |           |           |        |
+
+### Adjektiver
+
+| ord (norsk) | ord (italiensk) |
+| ----------- | --------------- |
+| billig      |                 |
+| søt         |                 |
+| rolig       |                 |
+| travel      |                 |
+| åpen        |                 |
+| lukket      |                 |
+| ren         |                 |
+| skitten     |                 |
+| viktig      |                 |
+| interessant |                 |
+
+### Verb
+
+| ord (norsk) | ord (italiensk) |
+| ----------- | --------------- |
+| å lære      |                 |
+| å huske     |                 |
+| å glemme    |                 |
+| å finne     |                 |
+| å miste     |                 |
+| å prøve     |                 |
+| å velge     |                 |
+| å svare     |                 |
+| å spørre    |                 |
+| å smile     |                 |
