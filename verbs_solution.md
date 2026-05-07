@@ -37,3 +37,16 @@
 | å snakke | parlare |
 | å høre | ascoltare |
 | å se | guardare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å kjøpe | comprare |
+| å selge | vendere |
+| å hjelpe | aiutare |
+| å finne | trovare |
+| å tenke | pensare |
+| å forstå | capire |
+| å betale | pagare |
+| å vente | aspettare |
+| å reise | viaggiare |
+| å åpne | aprire |

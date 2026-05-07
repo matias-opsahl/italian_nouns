@@ -37,3 +37,16 @@
 | frisk | sano |
 | syk | malato |
 | ung | giovane |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| gammel | vecchio |
+| ny | nuovo |
+| stor | grande |
+| liten | piccolo |
+| lang | lungo |
+| kort | corto |
+| rask | veloce |
+| sakte | lento |
+| varm | caldo |
+| kald | freddo |
