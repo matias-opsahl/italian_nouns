@@ -263,6 +263,10 @@
   }
   .form-callout.entall   { background: var(--soft-green); border-color: rgba(0,140,69,0.3);  color: var(--green-d); }
   .form-callout.flertall { background: var(--soft-red);   border-color: rgba(205,33,42,0.28); color: var(--red-d); }
+  .form-callout.adj-inflect {
+    background: #fff5e0; border-color: #e8c879; color: #8a6411;
+  }
+  .form-callout.adj-inflect::before { content: "↳"; background: none; width: auto; height: auto; font-size: 13px; line-height: 1; }
 
   .progress {
     height: 3px; background: var(--hairline);
@@ -323,6 +327,30 @@
     color: var(--muted);
     letter-spacing: 0.02em;
   }
+  .adj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 14px;
+    margin-top: 8px;
+  }
+  .adj-cell {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 10px;
+    padding: 4px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.08);
+  }
+  .adj-cell em {
+    font-style: normal;
+    font-family: "Geist Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .adj-cell b {
+    font-weight: 600;
+    color: var(--ink);
+  }
 
   /* ── End screen ─────────────────────────────────── */
   .end-title {
@@ -368,27 +396,74 @@
     font-family: "Geist Mono", monospace;
     font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
     color: var(--muted);
-    margin: 0 0 8px;
+    margin: 0;
   }
-  .missed { list-style: none; padding: 0; margin: 0 0 22px; }
-  .missed li {
+  .missed-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 12px; margin: 0 0 12px;
+  }
+  .missed-total {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px; letter-spacing: 0.04em;
+    color: var(--red-d);
+  }
+
+  .miss-chart { margin: 0 0 22px; }
+  .bar-row {
     display: grid;
-    grid-template-columns: 90px 1fr auto;
-    align-items: baseline;
-    gap: 12px;
+    grid-template-columns: minmax(110px, max-content) 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: 14px;
+    row-gap: 4px;
     padding: 10px 0;
     border-bottom: 1px solid var(--hairline);
+    align-items: center;
   }
-  .missed li:last-child { border-bottom: none; }
-  .missed .tag {
+  .bar-row:last-child { border-bottom: none; }
+  .bar-word {
+    grid-row: 1; grid-column: 1;
+    display: flex; align-items: baseline; gap: 8px;
+    font-weight: 500; color: var(--ink);
+    font-size: 15px;
+  }
+  .bar-word .bar-tag {
     font-family: "Geist Mono", monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--muted);
+    font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); font-weight: 400;
   }
-  .missed .word { font-weight: 500; color: var(--ink); }
-  .missed .ans  { color: var(--green-d); font-weight: 500; }
+  .bar-units {
+    grid-row: 1; grid-column: 2;
+    display: flex; gap: 3px; flex-wrap: wrap; align-items: center;
+    min-height: 18px;
+  }
+  .bar-count {
+    grid-row: 1; grid-column: 3;
+    font-family: "Geist Mono", monospace;
+    font-size: 13px; color: var(--red-d); font-weight: 600;
+    min-width: 22px; text-align: right;
+  }
+  .bar-answer {
+    grid-row: 2; grid-column: 1 / -1;
+    font-size: 12.5px; color: var(--muted);
+    font-style: italic;
+    padding-left: 2px;
+  }
+  .unit {
+    width: 11px; height: 18px;
+    background: var(--red);
+    opacity: 0.78;
+    border-radius: 2px;
+    flex: 0 0 auto;
+  }
+  .unit:nth-child(5n) { background: var(--red-d); opacity: 0.95; }
+
+  @media (max-width: 480px) {
+    .bar-row { grid-template-columns: 1fr auto; }
+    .bar-word { grid-column: 1; }
+    .bar-count { grid-column: 2; grid-row: 1; }
+    .bar-units { grid-row: 2; grid-column: 1 / -1; }
+    .bar-answer { grid-row: 3; }
+  }
 
   .hidden { display: none !important; }
 
@@ -561,16 +636,16 @@ const DAILY_QUIZZES = [
     { no: "å avslutte", it: "finire" }
   ],
   adjectives: [
-    { no: "tung",        it: "pesante" },
-    { no: "lett (vekt)", it: "leggero" },
-    { no: "mørk",        it: "scuro" },
-    { no: "lys",         it: "chiaro" },
-    { no: "tom",         it: "vuoto" },
-    { no: "full",        it: "pieno" },
-    { no: "myk",         it: "morbido" },
-    { no: "hard",        it: "duro" },
-    { no: "stille",      it: "silenzioso" },
-    { no: "bred",        it: "largo" }
+    { no: "tung",        ms: "pesante",     fs: "pesante",     mp: "pesanti",     fp: "pesanti" },
+    { no: "lett (vekt)", ms: "leggero",     fs: "leggera",     mp: "leggeri",     fp: "leggere" },
+    { no: "mørk",        ms: "scuro",       fs: "scura",       mp: "scuri",       fp: "scure" },
+    { no: "lys",         ms: "chiaro",      fs: "chiara",      mp: "chiari",      fp: "chiare" },
+    { no: "tom",         ms: "vuoto",       fs: "vuota",       mp: "vuoti",       fp: "vuote" },
+    { no: "full",        ms: "pieno",       fs: "piena",       mp: "pieni",       fp: "piene" },
+    { no: "myk",         ms: "morbido",     fs: "morbida",     mp: "morbidi",     fp: "morbide" },
+    { no: "hard",        ms: "duro",        fs: "dura",        mp: "duri",        fp: "dure" },
+    { no: "stille",      ms: "silenzioso",  fs: "silenziosa",  mp: "silenziosi",  fp: "silenziose" },
+    { no: "bred",        ms: "largo",       fs: "larga",       mp: "larghi",      fp: "larghe" }
   ]
 },
 {
@@ -600,16 +675,16 @@ const DAILY_QUIZZES = [
     { no: "å spille",    it: "giocare" }
   ],
   adjectives: [
-    { no: "ren",         it: "pulito" },
-    { no: "skitten",     it: "sporco" },
-    { no: "kjedelig",    it: "noioso" },
-    { no: "spennende",   it: "emozionante" },
-    { no: "enkel",       it: "semplice" },
-    { no: "komplisert",  it: "complicato" },
-    { no: "trygg",       it: "sicuro" },
-    { no: "farlig",      it: "pericoloso" },
-    { no: "ærlig",       it: "onesto" },
-    { no: "stolt",       it: "orgoglioso" }
+    { no: "ren",         ms: "pulito",       fs: "pulita",       mp: "puliti",       fp: "pulite" },
+    { no: "skitten",     ms: "sporco",       fs: "sporca",       mp: "sporchi",      fp: "sporche" },
+    { no: "kjedelig",    ms: "noioso",       fs: "noiosa",       mp: "noiosi",       fp: "noiose" },
+    { no: "spennende",   ms: "emozionante",  fs: "emozionante",  mp: "emozionanti",  fp: "emozionanti" },
+    { no: "enkel",       ms: "semplice",     fs: "semplice",     mp: "semplici",     fp: "semplici" },
+    { no: "komplisert",  ms: "complicato",   fs: "complicata",   mp: "complicati",   fp: "complicate" },
+    { no: "trygg",       ms: "sicuro",       fs: "sicura",       mp: "sicuri",       fp: "sicure" },
+    { no: "farlig",      ms: "pericoloso",   fs: "pericolosa",   mp: "pericolosi",   fp: "pericolose" },
+    { no: "ærlig",       ms: "onesto",       fs: "onesta",       mp: "onesti",       fp: "oneste" },
+    { no: "stolt",       ms: "orgoglioso",   fs: "orgogliosa",   mp: "orgogliosi",   fp: "orgogliose" }
   ]
 },
 {
@@ -639,16 +714,16 @@ const DAILY_QUIZZES = [
     { no: "å se",     it: "guardare" }
   ],
   adjectives: [
-    { no: "glad",   it: "felice" },
-    { no: "trist",  it: "triste" },
-    { no: "sint",   it: "arrabbiato" },
-    { no: "redd",   it: "spaventato" },
-    { no: "sulten", it: "affamato" },
-    { no: "tørst",  it: "assetato" },
-    { no: "trøtt",  it: "stanco" },
-    { no: "frisk",  it: "sano" },
-    { no: "syk",    it: "malato" },
-    { no: "ung",    it: "giovane" }
+    { no: "glad",   ms: "felice",     fs: "felice",     mp: "felici",     fp: "felici" },
+    { no: "trist",  ms: "triste",     fs: "triste",     mp: "tristi",     fp: "tristi" },
+    { no: "sint",   ms: "arrabbiato", fs: "arrabbiata", mp: "arrabbiati", fp: "arrabbiate" },
+    { no: "redd",   ms: "spaventato", fs: "spaventata", mp: "spaventati", fp: "spaventate" },
+    { no: "sulten", ms: "affamato",   fs: "affamata",   mp: "affamati",   fp: "affamate" },
+    { no: "tørst",  ms: "assetato",   fs: "assetata",   mp: "assetati",   fp: "assetate" },
+    { no: "trøtt",  ms: "stanco",     fs: "stanca",     mp: "stanchi",    fp: "stanche" },
+    { no: "frisk",  ms: "sano",       fs: "sana",       mp: "sani",       fp: "sane" },
+    { no: "syk",    ms: "malato",     fs: "malata",     mp: "malati",     fp: "malate" },
+    { no: "ung",    ms: "giovane",    fs: "giovane",    mp: "giovani",    fp: "giovani" }
   ]
 },
 {
@@ -678,16 +753,16 @@ const DAILY_QUIZZES = [
     { no: "å åpne",    it: "aprire" }
   ],
   adjectives: [
-    { no: "gammel", it: "vecchio" },
-    { no: "ny",     it: "nuovo" },
-    { no: "stor",   it: "grande" },
-    { no: "liten",  it: "piccolo" },
-    { no: "lang",   it: "lungo" },
-    { no: "kort",   it: "corto" },
-    { no: "rask",   it: "veloce" },
-    { no: "sakte",  it: "lento" },
-    { no: "varm",   it: "caldo" },
-    { no: "kald",   it: "freddo" }
+    { no: "gammel", ms: "vecchio", fs: "vecchia", mp: "vecchi",  fp: "vecchie" },
+    { no: "ny",     ms: "nuovo",   fs: "nuova",   mp: "nuovi",   fp: "nuove" },
+    { no: "stor",   ms: "grande",  fs: "grande",  mp: "grandi",  fp: "grandi" },
+    { no: "liten",  ms: "piccolo", fs: "piccola", mp: "piccoli", fp: "piccole" },
+    { no: "lang",   ms: "lungo",   fs: "lunga",   mp: "lunghi",  fp: "lunghe" },
+    { no: "kort",   ms: "corto",   fs: "corta",   mp: "corti",   fp: "corte" },
+    { no: "rask",   ms: "veloce",  fs: "veloce",  mp: "veloci",  fp: "veloci" },
+    { no: "sakte",  ms: "lento",   fs: "lenta",   mp: "lenti",   fp: "lente" },
+    { no: "varm",   ms: "caldo",   fs: "calda",   mp: "caldi",   fp: "calde" },
+    { no: "kald",   ms: "freddo",  fs: "fredda",  mp: "freddi",  fp: "fredde" }
   ]
 },
 /* === DAILY_QUIZZES_END === */
@@ -730,15 +805,27 @@ function buildQuestions(day, mode) {
     }
   }
   if (mode === "all" || mode === "adjectives") {
+    const adjForms = [
+      { key: "ms", label: "hankjønn entall" },
+      { key: "fs", label: "hunkjønn entall" },
+      { key: "mp", label: "hankjønn flertall" },
+      { key: "fp", label: "hunkjønn flertall" }
+    ];
     for (const a of day.adjectives) {
+      if (!a.ms || !a.fs || !a.mp || !a.fp) {
+        console.warn("Skipping adjective with missing forms:", a);
+        continue;
+      }
+      const pick = adjForms[Math.floor(Math.random() * adjForms.length)];
       qs.push({
         kind: "adj",
         type: "Adjektiv",
-        form: "hankjønn entall (-o)",
-        formClass: "",
+        form: pick.label,
+        formClass: "adj-inflect",
         tag: "adj.",
         prompt: a.no,
-        answer: a.it
+        answer: a[pick.key],
+        ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp
       });
     }
   }
@@ -876,7 +963,7 @@ function nextQuestion() {
   $("formTag").textContent = state.current.type;
   const callout = $("formCallout");
   callout.textContent = state.current.form;
-  callout.classList.remove("entall", "flertall");
+  callout.classList.remove("entall", "flertall", "adj-inflect");
   if (state.current.formClass) callout.classList.add(state.current.formClass);
 
   const repeats = Math.max(0, state.queue.length - (state.total - state.asked));
@@ -903,15 +990,27 @@ function submitAnswer() {
   $("advanceWrap").classList.remove("hidden");
   $("nextBtn").focus();
 
-  const fullAnswer = state.current.kind === "noun"
-    ? "<span class='answer'>" + state.current.sg + "</span>" +
+  let fullAnswer, missedAnswer;
+  if (state.current.kind === "noun") {
+    fullAnswer =
+      "<span class='answer'>" + state.current.sg + "</span>" +
       " <span style='color:var(--muted)'>·</span> " +
-      "<span class='answer'>" + state.current.pl + "</span>"
-    : "<span class='answer'>" + state.current.answer + "</span>";
-
-  const missedAnswer = state.current.kind === "noun"
-    ? state.current.sg + " · " + state.current.pl
-    : state.current.answer;
+      "<span class='answer'>" + state.current.pl + "</span>";
+    missedAnswer = state.current.sg + " · " + state.current.pl;
+  } else if (state.current.kind === "adj") {
+    fullAnswer =
+      "<span class='adj-grid'>" +
+        "<span class='adj-cell'><em>m. sg.</em><b>" + state.current.ms + "</b></span>" +
+        "<span class='adj-cell'><em>f. sg.</em><b>" + state.current.fs + "</b></span>" +
+        "<span class='adj-cell'><em>m. pl.</em><b>" + state.current.mp + "</b></span>" +
+        "<span class='adj-cell'><em>f. pl.</em><b>" + state.current.fp + "</b></span>" +
+      "</span>";
+    missedAnswer = state.current.ms + " / " + state.current.fs +
+                 " · " + state.current.mp + " / " + state.current.fp;
+  } else {
+    fullAnswer = "<span class='answer'>" + state.current.answer + "</span>";
+    missedAnswer = state.current.answer;
+  }
 
   if (given === correct) {
     if (state.currentFirstTry) state.firstTryRight++;
@@ -920,14 +1019,19 @@ function submitAnswer() {
       "<span class='nudge'>Trykk Enter for å fortsette</span>");
   } else {
     state.currentFirstTry = false;
-    if (!state.missed.find(m => m.prompt === state.current.prompt
-        && m.answer === missedAnswer)) {
-      state.missed.push({
+    const missKey = state.current.kind + "|" + state.current.prompt;
+    let entry = state.missed.find(m => m.key === missKey);
+    if (!entry) {
+      entry = {
+        key: missKey,
         prompt: state.current.prompt,
         answer: missedAnswer,
-        tag: state.current.tag
-      });
+        tag: state.current.tag,
+        count: 0
+      };
+      state.missed.push(entry);
     }
+    entry.count++;
     state.queue.push(state.current);
     showFeedback(false,
       "Feil — riktig svar er " + fullAnswer +
@@ -970,13 +1074,27 @@ function finish(interrupted) {
   } else if (state.missed.length === 0) {
     wrap.innerHTML = "";
   } else {
-    let html = "<p class='missed-title'>Ord du bommet på</p><ul class='missed'>";
-    for (const m of state.missed) {
-      html += "<li><span class='tag'>" + m.tag + "</span>" +
-        "<span class='word'>" + m.prompt + "</span>" +
-        "<span class='ans'>" + m.answer + "</span></li>";
+    const sorted = [...state.missed].sort((a,b) => b.count - a.count);
+    const totalMisses = sorted.reduce((s,m) => s + m.count, 0);
+    let html =
+      "<div class='missed-head'>" +
+        "<p class='missed-title'>Ord du bommet på</p>" +
+        "<span class='missed-total'>" + totalMisses + " bom totalt</span>" +
+      "</div>" +
+      "<div class='miss-chart'>";
+    for (const m of sorted) {
+      const units = Array(m.count).fill("<span class='unit'></span>").join("");
+      html +=
+        "<div class='bar-row'>" +
+          "<div class='bar-word'>" + m.prompt +
+            "<span class='bar-tag'>" + m.tag + "</span>" +
+          "</div>" +
+          "<div class='bar-units'>" + units + "</div>" +
+          "<div class='bar-count'>" + m.count + "</div>" +
+          "<div class='bar-answer'>" + m.answer + "</div>" +
+        "</div>";
     }
-    html += "</ul>";
+    html += "</div>";
     wrap.innerHTML = html;
   }
 }
