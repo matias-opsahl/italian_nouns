@@ -1,51 +1,39 @@
-| ord (norsk) | ord (italiensk) |
-|---|---|
-| stor | grande |
-| liten | piccolo |
-| vakker | bello |
-| stygg | brutto |
-| god | buono |
-| dårlig | cattivo |
-| ny | nuovo |
-| gammel | vecchio |
-| dyr | caro |
-| lett | facile |
 
 | ord (norsk) | ord (italiensk) |
 |---|---|
-| høy | alto |
-| lav | basso |
-| lang | lungo |
-| kort | corto |
-| varm | caldo |
-| kald | freddo |
-| rask | veloce |
-| sakte | lento |
-| trøtt | stanco |
-| glad | felice |
+| tung | pesante |
+| lett (vekt) | leggero |
+| mørk | scuro |
+| lys | chiaro |
+| tom | vuoto |
+| full | pieno |
+| myk | morbido |
+| hard | duro |
+| stille | silenzioso |
+| bred | largo |
 
 | ord (norsk) | ord (italiensk) |
 |---|---|
-| sulten | affamato |
-| tørst | assetato |
-| syk | malato |
-| frisk | sano |
-| rik | ricco |
-| fattig | povero |
-| sterk | forte |
-| svak | debole |
-| ung | giovane |
-| morsom | divertente |
-
-| ord (norsk) | ord (italiensk) |
-|---|---|
-| billig | economico |
-| søt | dolce |
-| rolig | calmo |
-| travel | occupato |
-| åpen | aperto |
-| lukket | chiuso |
 | ren | pulito |
 | skitten | sporco |
-| viktig | importante |
-| interessant | interessante |
+| kjedelig | noioso |
+| spennende | emozionante |
+| enkel | semplice |
+| komplisert | complicato |
+| trygg | sicuro |
+| farlig | pericoloso |
+| ærlig | onesto |
+| stolt | orgoglioso |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| glad | felice |
+| trist | triste |
+| sint | arrabbiato |
+| redd | spaventato |
+| sulten | affamato |
+| tørst | assetato |
+| trøtt | stanco |
+| frisk | sano |
+| syk | malato |
+| ung | giovane |

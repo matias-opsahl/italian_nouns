@@ -1,51 +1,39 @@
-| ord (norsk) | ord (s.g) | ord (p.l) | gender |
-|---|---|---|---|
-| hus | la casa | le case | f |
-| brød | il pane | i pani | m |
-| bil | la macchina | le macchine | f |
-| arbeid | il lavoro | i lavori | m |
-| skole | la scuola | le scuole | f |
-| tid | il tempo | i tempi | m |
-| familie | la famiglia | le famiglie | f |
-| barn | il bambino | i bambini | m |
-| by | la città | le città | f |
-| bok | il libro | i libri | m |
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 |---|---|---|---|
-| venn | l'amico | gli amici | m |
-| vann | l'acqua | le acque | f |
-| dør | la porta | le porte | f |
-| vindu | la finestra | le finestre | f |
-| telefon | il telefono | i telefoni | m |
-| butikk | il negozio | i negozi | m |
-| restaurant | il ristorante | i ristoranti | m |
-| gate | la strada | le strade | f |
-| dag | il giorno | i giorni | m |
-| natt | la notte | le notti | f |
+| sol | il sole | i soli | m |
+| måne | la luna | le lune | f |
+| himmel | il cielo | i cieli | m |
+| fjell | la montagna | le montagne | f |
+| elv | il fiume | i fiumi | m |
+| strand | la spiaggia | le spiagge | f |
+| kirke | la chiesa | le chiese | f |
+| seng | il letto | i letti | m |
+| kjøkken | la cucina | le cucine | f |
+| bad | il bagno | i bagni | m |
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 |---|---|---|---|
-| stol | la sedia | le sedie | f |
-| bord | il tavolo | i tavoli | m |
-| mat | il cibo | i cibi | m |
-| år | l'anno | gli anni | m |
-| uke | la settimana | le settimane | f |
-| måned | il mese | i mesi | m |
-| hav | il mare | i mari | m |
-| land | il paese | i paesi | m |
-| mann | l'uomo | gli uomini | m |
-| kvinne | la donna | le donne | f |
+| stue | il salotto | i salotti | m |
+| hage | il giardino | i giardini | m |
+| torg | la piazza | le piazze | f |
+| marked | il mercato | i mercati | m |
+| avis | il giornale | i giornali | m |
+| brev | la lettera | le lettere | f |
+| penn | la penna | le penne | f |
+| blyant | la matita | le matite | f |
+| veske | la borsa | le borse | f |
+| klokke | l'orologio | gli orologi | m |
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 |---|---|---|---|
-| nøkkel | la chiave | le chiavi | f |
-| katt | il gatto | i gatti | m |
-| hund | il cane | i cani | m |
-| fugl | l'uccello | gli uccelli | m |
-| musikk | la musica | le musiche | f |
-| kaffe | il caffè | i caffè | m |
-| blomst | il fiore | i fiori | m |
-| lege | il medico | i medici | m |
+| bil | l'auto | le auto | f |
 | tog | il treno | i treni | m |
 | fly | l'aereo | gli aerei | m |
+| vei | la strada | le strade | f |
+| bro | il ponte | i ponti | m |
+| dør | la porta | le porte | f |
+| vindu | la finestra | le finestre | f |
+| bok | il libro | i libri | m |
+| bord | il tavolo | i tavoli | m |
+| stol | la sedia | le sedie | f |

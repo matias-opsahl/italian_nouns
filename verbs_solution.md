@@ -1,51 +1,39 @@
-| ord (norsk) | ord (italiensk) |
-|---|---|
-| å være | essere |
-| å ha | avere |
-| å gjøre | fare |
-| å gå | andare |
-| å komme | venire |
-| å spise | mangiare |
-| å drikke | bere |
-| å snakke | parlare |
-| å forstå | capire |
-| å jobbe | lavorare |
 
 | ord (norsk) | ord (italiensk) |
 |---|---|
-| å sove | dormire |
-| å lese | leggere |
-| å skrive | scrivere |
-| å se | vedere |
-| å høre | sentire |
-| å kjøpe | comprare |
-| å selge | vendere |
-| å åpne | aprire |
-| å lukke | chiudere |
-| å ta | prendere |
+| å danse | ballare |
+| å synge | cantare |
+| å le | ridere |
+| å gråte | piangere |
+| å gi | dare |
+| å fortelle | raccontare |
+| å vinne | vincere |
+| å bo | abitare |
+| å begynne | cominciare |
+| å avslutte | finire |
 
 | ord (norsk) | ord (italiensk) |
 |---|---|
-| å kjøre | guidare |
-| å løpe | correre |
-| å svømme | nuotare |
-| å lage mat | cucinare |
-| å hjelpe | aiutare |
-| å tenke | pensare |
-| å vente | aspettare |
-| å betale | pagare |
-| å ringe | chiamare |
-| å reise | viaggiare |
-
-| ord (norsk) | ord (italiensk) |
-|---|---|
-| å lære | imparare |
+| å arbeide | lavorare |
+| å studere | studiare |
+| å vaske | lavare |
+| å forberede | preparare |
+| å sende | inviare |
+| å motta | ricevere |
 | å huske | ricordare |
 | å glemme | dimenticare |
-| å finne | trovare |
-| å miste | perdere |
-| å prøve | provare |
-| å velge | scegliere |
-| å svare | rispondere |
-| å spørre | chiedere |
-| å smile | sorridere |
+| å føle | sentire |
+| å spille | giocare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å spise | mangiare |
+| å drikke | bere |
+| å sove | dormire |
+| å gå | camminare |
+| å løpe | correre |
+| å lese | leggere |
+| å skrive | scrivere |
+| å snakke | parlare |
+| å høre | ascoltare |
+| å se | guardare |

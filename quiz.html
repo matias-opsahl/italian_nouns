@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Italiensk daglig quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green:    #008C45;
+    --green-d:  #00753a;
+    --red:      #CD212A;
+    --red-d:    #ad1a22;
+    --bg:       #fafaf7;
+    --card:     #ffffff;
+    --ink:      #0d1014;
+    --ink-2:    #3a4049;
+    --muted:    #8b919b;
+    --hairline: #ebe9e3;
+    --hairline-2: #d9d6cf;
+    --soft-green: #e6f4ec;
+    --soft-red:   #fbe9ea;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Geist", system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  /* ── Masthead ───────────────────────────────────── */
+  header.mast { margin-bottom: 32px; }
+  .flag {
+    display: flex; height: 4px; width: 64px; margin-bottom: 18px;
+    border-radius: 1px; overflow: hidden;
+  }
+  .flag span { flex: 1; }
+  .flag .g { background: var(--green); }
+  .flag .w { background: #fff; border-top: 1px solid var(--hairline-2); border-bottom: 1px solid var(--hairline-2); }
+  .flag .r { background: var(--red); }
+
+  h1.title {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 4px;
+    color: var(--ink);
+  }
+  .lede {
+    color: var(--muted); font-size: 14px; margin: 0;
+  }
+
+  /* ── Card ───────────────────────────────────────── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 1px 0 #fff inset, 0 8px 24px -16px rgba(13,16,20,0.08);
+  }
+
+  /* ── Inputs ─────────────────────────────────────── */
+  label.field-label {
+    display: block;
+    font-family: "Geist Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  select, input[type=text] {
+    width: 100%;
+    font-family: "Geist", sans-serif;
+    font-size: 16px;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid var(--hairline-2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  select {
+    appearance: none; cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%230d1014' stroke-width='1.5' stroke-linecap='round'/></svg>");
+    background-repeat: no-repeat; background-position: right 14px center;
+    padding-right: 38px;
+  }
+  input[type=text]:focus, select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 4px rgba(0,140,69,0.12);
+  }
+  input.answer-input {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 16px;
+  }
+
+  .meta {
+    margin-top: 10px;
+    font-family: "Geist Mono", monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── Buttons ────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-size: 14.5px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background .15s, border-color .15s, transform .08s;
+  }
+  .btn:active { transform: translateY(0.5px); }
+  .btn-primary {
+    background: var(--ink); color: #fff; border-color: var(--ink);
+  }
+  .btn-primary:hover { background: #1d2128; }
+  .btn-go {
+    background: var(--green); color: #fff; border-color: var(--green-d);
+  }
+  .btn-go:hover { background: var(--green-d); }
+  .btn-ghost {
+    background: var(--card); color: var(--ink); border-color: var(--hairline-2);
+  }
+  .btn-ghost:hover { background: var(--bg); border-color: var(--ink); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  kbd {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px; font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: inherit;
+    line-height: 1; white-space: nowrap;
+  }
+  .btn-ghost kbd {
+    background: var(--bg); border-color: var(--hairline-2); color: var(--ink-2);
+  }
+
+  .row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;
+  }
+  .stack > * + * { margin-top: 12px; }
+
+  /* ── Quiz screen ────────────────────────────────── */
+  .qhead {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 14px;
+    font-family: "Geist Mono", monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+  }
+  .qhead .form-tag {
+    color: var(--ink); font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.1em; font-size: 11px;
+  }
+  .qhead .form-tag .dot {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green); margin-right: 8px; vertical-align: middle;
+  }
+  .qhead.is-verb  .form-tag .dot { background: var(--red); }
+  .qhead.is-adj   .form-tag .dot { background: var(--ink); }
+
+  /* ── Mode chips (start screen) ──────────────────── */
+  .modes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .mode-chip {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px;
+    font-family: "Geist", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 14px;
+    background: var(--card);
+    border: 1px solid var(--hairline-2);
+    border-radius: 8px;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color .15s, background .15s, color .15s;
+    text-align: left;
+  }
+  .mode-chip:hover { border-color: var(--ink); }
+  .mode-chip .num {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin-left: 6px;
+  }
+  .mode-chip .key {
+    font-family: "Geist Mono", monospace;
+    font-size: 10.5px;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--hairline-2);
+    border-radius: 4px;
+    padding: 2px 6px;
+    line-height: 1;
+  }
+  .mode-chip.is-active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .mode-chip.is-active .num,
+  .mode-chip.is-active .key {
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(255,255,255,0.22);
+  }
+
+  /* ── Form callout (above prompt) ────────────────── */
+  .form-callout {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Geist", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+    background: var(--bg);
+    border: 1px solid var(--hairline-2);
+    color: var(--ink-2);
+    text-transform: uppercase;
+  }
+  .form-callout::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: currentColor;
+  }
+  .form-callout.entall   { background: var(--soft-green); border-color: rgba(0,140,69,0.3);  color: var(--green-d); }
+  .form-callout.flertall { background: var(--soft-red);   border-color: rgba(205,33,42,0.28); color: var(--red-d); }
+
+  .progress {
+    height: 3px; background: var(--hairline);
+    border-radius: 999px; overflow: hidden;
+    margin-bottom: 28px;
+  }
+  .progress > div {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green) 0%, var(--green) 33%,
+                                       #ffffff 33%, #ffffff 66%,
+                                       var(--red) 66%, var(--red) 100%);
+    background-size: 100% 100%;
+    transition: width .35s ease;
+  }
+
+  .prompt-block {
+    padding: 18px 0 28px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .prompt-word {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 7vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* ── Feedback ───────────────────────────────────── */
+  .feedback {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 14.5px;
+    border: 1px solid;
+  }
+  .feedback.good {
+    color: var(--green-d);
+    border-color: rgba(0,140,69,0.25);
+    background: var(--soft-green);
+  }
+  .feedback.bad {
+    color: var(--red-d);
+    border-color: rgba(205,33,42,0.22);
+    background: var(--soft-red);
+  }
+  .feedback .answer {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .feedback .nudge {
+    display: block; margin-top: 6px;
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+
+  /* ── End screen ─────────────────────────────────── */
+  .end-title {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    margin: 0 0 4px;
+  }
+  .end-sub {
+    color: var(--muted); margin: 0 0 22px; font-size: 14px;
+  }
+  .stats {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+    margin: 18px 0 24px;
+  }
+  .stat {
+    text-align: center;
+    padding: 16px 10px;
+    background: var(--bg);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+  }
+  .stat b {
+    display: block;
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+  .stat span {
+    font-family: "Geist Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .missed-title {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  .missed { list-style: none; padding: 0; margin: 0 0 22px; }
+  .missed li {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .missed li:last-child { border-bottom: none; }
+  .missed .tag {
+    font-family: "Geist Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .missed .word { font-weight: 500; color: var(--ink); }
+  .missed .ans  { color: var(--green-d); font-weight: 500; }
+
+  .hidden { display: none !important; }
+
+  .keyhelp {
+    margin-top: 18px;
+    text-align: center;
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  .keyhelp kbd {
+    background: var(--card); border-color: var(--hairline-2); color: var(--ink-2);
+    margin: 0 2px;
+  }
+
+  @media (max-width: 480px) {
+    .row { grid-template-columns: 1fr; }
+    .wrap { padding-top: 40px; }
+    .card { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="flag" aria-hidden="true">
+      <span class="g"></span><span class="w"></span><span class="r"></span>
+    </div>
+    <h1 class="title">Daglig quiz</h1>
+    <p class="lede">Velg en dag og test deg selv.</p>
+  </header>
+
+  <!-- ── START ──────────────────────────────────────── -->
+  <section id="screen-start" class="card">
+    <label class="field-label" for="dateSel">Dato</label>
+    <select id="dateSel"></select>
+    <div class="meta" id="meta"></div>
+
+    <label class="field-label" style="margin-top:20px">Hva vil du øve på?</label>
+    <div class="modes" id="modes" role="group">
+      <button type="button" class="mode-chip is-active" data-mode="all">
+        <span>Alt<span class="num" data-count="all">30</span></span>
+        <span class="key">1</span>
+      </button>
+      <button type="button" class="mode-chip" data-mode="nouns">
+        <span>Substantiv<span class="num" data-count="nouns">10</span></span>
+        <span class="key">2</span>
+      </button>
+      <button type="button" class="mode-chip" data-mode="verbs">
+        <span>Verb<span class="num" data-count="verbs">10</span></span>
+        <span class="key">3</span>
+      </button>
+      <button type="button" class="mode-chip" data-mode="adjectives">
+        <span>Adjektiv<span class="num" data-count="adjectives">10</span></span>
+        <span class="key">4</span>
+      </button>
+    </div>
+
+    <div class="stack" style="margin-top:18px">
+      <button class="btn btn-go" id="startBtn">
+        Start quiz <kbd>Enter</kbd>
+      </button>
+    </div>
+
+    <div class="keyhelp">
+      <kbd>↑</kbd><kbd>↓</kbd> bytt dato · <kbd>1</kbd>–<kbd>4</kbd> kategori · <kbd>Enter</kbd> start
+    </div>
+  </section>
+
+  <!-- ── QUIZ ───────────────────────────────────────── -->
+  <section id="screen-quiz" class="card hidden">
+    <div class="qhead" id="qhead">
+      <div class="form-tag"><span class="dot"></span><span id="formTag">—</span></div>
+      <div id="countTag">0 / 0</div>
+    </div>
+
+    <div class="progress"><div id="bar" style="width:0%"></div></div>
+
+    <div class="prompt-block">
+      <div class="form-callout" id="formCallout">—</div>
+      <p class="prompt-word" id="qText">—</p>
+    </div>
+
+    <form id="answerForm" autocomplete="off">
+      <input type="text" id="answerInput" class="answer-input"
+             autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="Skriv svaret ditt …">
+      <div class="row">
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          Sjekk <kbd>Enter</kbd>
+        </button>
+        <button type="button" class="btn btn-ghost" id="skipBtn">
+          Vet ikke
+        </button>
+      </div>
+    </form>
+
+    <div id="feedback"></div>
+
+    <div id="advanceWrap" class="stack hidden" style="margin-top:14px">
+      <button class="btn btn-go" id="nextBtn">
+        Neste <kbd>Enter</kbd>
+      </button>
+    </div>
+
+    <div class="keyhelp">
+      <kbd>Enter</kbd> sjekk svar / gå videre · <kbd>Esc</kbd> avslutt og se recap
+    </div>
+  </section>
+
+  <!-- ── END ────────────────────────────────────────── -->
+  <section id="screen-end" class="card hidden">
+    <h2 class="end-title" id="end-title-el">Ferdig</h2>
+    <p class="end-sub" id="end-sub-el">Her er hvordan det gikk.</p>
+
+    <div class="stats">
+      <div class="stat"><b id="sTotal">0</b><span>spørsmål</span></div>
+      <div class="stat"><b id="sFirst">0</b><span>1. forsøk</span></div>
+      <div class="stat"><b id="sAcc">0%</b><span>nøyaktighet</span></div>
+    </div>
+
+    <div id="missedWrap"></div>
+
+    <div class="row">
+      <button class="btn btn-go" id="againBtn">
+        Ta igjen <kbd>R</kbd>
+      </button>
+      <button class="btn btn-ghost" id="restartBtn">
+        Tilbake <kbd>Esc</kbd>
+      </button>
+    </div>
+  </section>
+</div>
+
+<script>
+/* ============================================================
+   DAILY QUIZZES
+   Hver dag legges et nytt objekt inn i listen under,
+   mellom START- og END-markørene. Eksisterende quizer
+   beholdes uendret.
+   ============================================================ */
+const DAILY_QUIZZES = [
+/* === DAILY_QUIZZES_START === */
+{
+  date: "2026-05-05",
+  nouns: [
+    { no: "sol",     sg: "il sole",        pl: "i soli" },
+    { no: "måne",    sg: "la luna",        pl: "le lune" },
+    { no: "himmel",  sg: "il cielo",       pl: "i cieli" },
+    { no: "fjell",   sg: "la montagna",    pl: "le montagne" },
+    { no: "elv",     sg: "il fiume",       pl: "i fiumi" },
+    { no: "strand",  sg: "la spiaggia",    pl: "le spiagge" },
+    { no: "kirke",   sg: "la chiesa",      pl: "le chiese" },
+    { no: "seng",    sg: "il letto",       pl: "i letti" },
+    { no: "kjøkken", sg: "la cucina",      pl: "le cucine" },
+    { no: "bad",     sg: "il bagno",       pl: "i bagni" }
+  ],
+  verbs: [
+    { no: "å danse",    it: "ballare" },
+    { no: "å synge",    it: "cantare" },
+    { no: "å le",       it: "ridere" },
+    { no: "å gråte",    it: "piangere" },
+    { no: "å gi",       it: "dare" },
+    { no: "å fortelle", it: "raccontare" },
+    { no: "å vinne",    it: "vincere" },
+    { no: "å bo",       it: "abitare" },
+    { no: "å begynne",  it: "cominciare" },
+    { no: "å avslutte", it: "finire" }
+  ],
+  adjectives: [
+    { no: "tung",        it: "pesante" },
+    { no: "lett (vekt)", it: "leggero" },
+    { no: "mørk",        it: "scuro" },
+    { no: "lys",         it: "chiaro" },
+    { no: "tom",         it: "vuoto" },
+    { no: "full",        it: "pieno" },
+    { no: "myk",         it: "morbido" },
+    { no: "hard",        it: "duro" },
+    { no: "stille",      it: "silenzioso" },
+    { no: "bred",        it: "largo" }
+  ]
+},
+{
+  date: "2026-05-06",
+  nouns: [
+    { no: "stue",    sg: "il salotto",    pl: "i salotti" },
+    { no: "hage",    sg: "il giardino",   pl: "i giardini" },
+    { no: "torg",    sg: "la piazza",     pl: "le piazze" },
+    { no: "marked",  sg: "il mercato",    pl: "i mercati" },
+    { no: "avis",    sg: "il giornale",   pl: "i giornali" },
+    { no: "brev",    sg: "la lettera",    pl: "le lettere" },
+    { no: "penn",    sg: "la penna",      pl: "le penne" },
+    { no: "blyant",  sg: "la matita",     pl: "le matite" },
+    { no: "veske",   sg: "la borsa",      pl: "le borse" },
+    { no: "klokke",  sg: "l'orologio",    pl: "gli orologi" }
+  ],
+  verbs: [
+    { no: "å arbeide",   it: "lavorare" },
+    { no: "å studere",   it: "studiare" },
+    { no: "å vaske",     it: "lavare" },
+    { no: "å forberede", it: "preparare" },
+    { no: "å sende",     it: "inviare" },
+    { no: "å motta",     it: "ricevere" },
+    { no: "å huske",     it: "ricordare" },
+    { no: "å glemme",    it: "dimenticare" },
+    { no: "å føle",      it: "sentire" },
+    { no: "å spille",    it: "giocare" }
+  ],
+  adjectives: [
+    { no: "ren",         it: "pulito" },
+    { no: "skitten",     it: "sporco" },
+    { no: "kjedelig",    it: "noioso" },
+    { no: "spennende",   it: "emozionante" },
+    { no: "enkel",       it: "semplice" },
+    { no: "komplisert",  it: "complicato" },
+    { no: "trygg",       it: "sicuro" },
+    { no: "farlig",      it: "pericoloso" },
+    { no: "ærlig",       it: "onesto" },
+    { no: "stolt",       it: "orgoglioso" }
+  ]
+},
+{
+  date: "2026-05-07",
+  nouns: [
+    { no: "bil",    sg: "l'auto",       pl: "le auto" },
+    { no: "tog",    sg: "il treno",     pl: "i treni" },
+    { no: "fly",    sg: "l'aereo",      pl: "gli aerei" },
+    { no: "vei",    sg: "la strada",    pl: "le strade" },
+    { no: "bro",    sg: "il ponte",     pl: "i ponti" },
+    { no: "dør",    sg: "la porta",     pl: "le porte" },
+    { no: "vindu",  sg: "la finestra",  pl: "le finestre" },
+    { no: "bok",    sg: "il libro",     pl: "i libri" },
+    { no: "bord",   sg: "il tavolo",    pl: "i tavoli" },
+    { no: "stol",   sg: "la sedia",     pl: "le sedie" }
+  ],
+  verbs: [
+    { no: "å spise",  it: "mangiare" },
+    { no: "å drikke", it: "bere" },
+    { no: "å sove",   it: "dormire" },
+    { no: "å gå",     it: "camminare" },
+    { no: "å løpe",   it: "correre" },
+    { no: "å lese",   it: "leggere" },
+    { no: "å skrive", it: "scrivere" },
+    { no: "å snakke", it: "parlare" },
+    { no: "å høre",   it: "ascoltare" },
+    { no: "å se",     it: "guardare" }
+  ],
+  adjectives: [
+    { no: "glad",   it: "felice" },
+    { no: "trist",  it: "triste" },
+    { no: "sint",   it: "arrabbiato" },
+    { no: "redd",   it: "spaventato" },
+    { no: "sulten", it: "affamato" },
+    { no: "tørst",  it: "assetato" },
+    { no: "trøtt",  it: "stanco" },
+    { no: "frisk",  it: "sano" },
+    { no: "syk",    it: "malato" },
+    { no: "ung",    it: "giovane" }
+  ]
+},
+/* === DAILY_QUIZZES_END === */
+];
+
+/* ============================================================
+   ENGINE
+   ============================================================ */
+const norm = s => s.trim().toLowerCase().replace(/\s+/g, " ");
+
+function buildQuestions(day, mode) {
+  const qs = [];
+  if (mode === "all" || mode === "nouns") {
+    for (const n of day.nouns) {
+      const usePl = Math.random() < 0.5;
+      qs.push({
+        kind: "noun",
+        type: "Substantiv",
+        form: usePl ? "flertall" : "entall",
+        formClass: usePl ? "flertall" : "entall",
+        tag: "subst.",
+        prompt: n.no,
+        answer: usePl ? n.pl : n.sg,
+        sg: n.sg,
+        pl: n.pl
+      });
+    }
+  }
+  if (mode === "all" || mode === "verbs") {
+    for (const v of day.verbs) {
+      qs.push({
+        kind: "verb",
+        type: "Verb",
+        form: "infinitiv",
+        formClass: "",
+        tag: "verb",
+        prompt: v.no,
+        answer: v.it
+      });
+    }
+  }
+  if (mode === "all" || mode === "adjectives") {
+    for (const a of day.adjectives) {
+      qs.push({
+        kind: "adj",
+        type: "Adjektiv",
+        form: "hankjønn entall (-o)",
+        formClass: "",
+        tag: "adj.",
+        prompt: a.no,
+        answer: a.it
+      });
+    }
+  }
+  for (let i = qs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [qs[i], qs[j]] = [qs[j], qs[i]];
+  }
+  return qs;
+}
+
+const state = {
+  queue: [], total: 0, asked: 0, uniqueAsked: 0, firstTryRight: 0,
+  askedKeys: null, missed: [], current: null, currentFirstTry: true,
+  awaitingAdvance: false, lastDay: null,
+  mode: "all", lastMode: "all"
+};
+
+const $ = id => document.getElementById(id);
+
+function init() {
+  const sel = $("dateSel");
+  const sorted = [...DAILY_QUIZZES].sort((a,b) => b.date.localeCompare(a.date));
+  for (const d of sorted) {
+    const opt = document.createElement("option");
+    opt.value = d.date;
+    const total = d.nouns.length + d.verbs.length + d.adjectives.length;
+    opt.textContent = formatDate(d.date) + "  ·  " + total + " ord";
+    sel.appendChild(opt);
+  }
+  updateMeta();
+  sel.addEventListener("change", updateMeta);
+
+  document.querySelectorAll(".mode-chip").forEach(chip => {
+    chip.addEventListener("click", () => setMode(chip.dataset.mode));
+  });
+
+  $("startBtn").addEventListener("click", startQuiz);
+  $("answerForm").addEventListener("submit", e => { e.preventDefault(); submitAnswer(); });
+  $("skipBtn").addEventListener("click", () => { $("answerInput").value = ""; submitAnswer(); });
+  $("nextBtn").addEventListener("click", advance);
+  $("restartBtn").addEventListener("click", goHome);
+  $("againBtn").addEventListener("click", () => {
+    if (state.lastDay) startQuizFor(state.lastDay, state.lastMode);
+  });
+
+  document.addEventListener("keydown", globalKeys);
+}
+
+function formatDate(iso) {
+  const [y,m,d] = iso.split("-");
+  return d + "." + m + "." + y;
+}
+
+function updateMeta() {
+  const date = $("dateSel").value;
+  const day = DAILY_QUIZZES.find(d => d.date === date);
+  if (!day) { $("meta").textContent = ""; return; }
+  $("meta").textContent =
+    day.nouns.length + " substantiv · " +
+    day.verbs.length + " verb · " +
+    day.adjectives.length + " adjektiv";
+  const counts = {
+    all: day.nouns.length + day.verbs.length + day.adjectives.length,
+    nouns: day.nouns.length,
+    verbs: day.verbs.length,
+    adjectives: day.adjectives.length
+  };
+  document.querySelectorAll(".mode-chip .num").forEach(el => {
+    const k = el.dataset.count;
+    if (counts[k] != null) el.textContent = " " + counts[k];
+  });
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  document.querySelectorAll(".mode-chip").forEach(c => {
+    c.classList.toggle("is-active", c.dataset.mode === mode);
+  });
+}
+
+function startQuiz() {
+  startQuizFor($("dateSel").value, state.mode);
+}
+function startQuizFor(date, mode) {
+  const day = DAILY_QUIZZES.find(d => d.date === date);
+  if (!day) return;
+  const useMode = mode || "all";
+  state.lastDay = date;
+  state.lastMode = useMode;
+  const qs = buildQuestions(day, useMode);
+  if (qs.length === 0) return;
+  state.queue = qs.slice();
+  state.total = qs.length;
+  state.asked = 0;
+  state.uniqueAsked = 0;
+  state.askedKeys = new Set();
+  state.firstTryRight = 0;
+  state.missed = [];
+  state.awaitingAdvance = false;
+  $("screen-start").classList.add("hidden");
+  $("screen-end").classList.add("hidden");
+  $("screen-quiz").classList.remove("hidden");
+  $("feedback").innerHTML = "";
+  $("advanceWrap").classList.add("hidden");
+  nextQuestion();
+}
+
+function nextQuestion() {
+  $("feedback").innerHTML = "";
+  $("answerInput").value = "";
+  $("answerInput").disabled = false;
+  $("submitBtn").disabled = false;
+  $("skipBtn").disabled = false;
+  $("advanceWrap").classList.add("hidden");
+  state.awaitingAdvance = false;
+
+  if (state.queue.length === 0) return finish();
+
+  state.current = state.queue.shift();
+  state.asked++;
+  const qKey = state.current.kind + "|" + state.current.prompt;
+  if (state.askedKeys.has(qKey)) {
+    state.currentFirstTry = false;
+  } else {
+    state.askedKeys.add(qKey);
+    state.uniqueAsked++;
+    state.currentFirstTry = true;
+  }
+
+  const head = $("qhead");
+  head.classList.remove("is-verb", "is-adj");
+  if (state.current.kind === "verb") head.classList.add("is-verb");
+  if (state.current.kind === "adj")  head.classList.add("is-adj");
+
+  $("formTag").textContent = state.current.type;
+  const callout = $("formCallout");
+  callout.textContent = state.current.form;
+  callout.classList.remove("entall", "flertall");
+  if (state.current.formClass) callout.classList.add(state.current.formClass);
+
+  const repeats = Math.max(0, state.queue.length - (state.total - state.asked));
+  $("countTag").textContent = state.asked + " / " + state.total +
+    (repeats > 0 ? "  +" + repeats : "");
+
+  const done = state.total - state.queue.length - 1;
+  const denom = state.total + state.missed.length;
+  $("bar").style.width = Math.min(100, Math.round(100 * Math.max(0,done) / Math.max(1,denom))) + "%";
+
+  $("qText").textContent = state.current.prompt;
+  $("answerInput").focus();
+}
+
+function submitAnswer() {
+  if (state.awaitingAdvance) return;
+  const given = norm($("answerInput").value);
+  const correct = norm(state.current.answer);
+
+  $("answerInput").disabled = true;
+  $("submitBtn").disabled = true;
+  $("skipBtn").disabled = true;
+  state.awaitingAdvance = true;
+  $("advanceWrap").classList.remove("hidden");
+  $("nextBtn").focus();
+
+  const fullAnswer = state.current.kind === "noun"
+    ? "<span class='answer'>" + state.current.sg + "</span>" +
+      " <span style='color:var(--muted)'>·</span> " +
+      "<span class='answer'>" + state.current.pl + "</span>"
+    : "<span class='answer'>" + state.current.answer + "</span>";
+
+  const missedAnswer = state.current.kind === "noun"
+    ? state.current.sg + " · " + state.current.pl
+    : state.current.answer;
+
+  if (given === correct) {
+    if (state.currentFirstTry) state.firstTryRight++;
+    showFeedback(true,
+      "Riktig &nbsp; " + fullAnswer +
+      "<span class='nudge'>Trykk Enter for å fortsette</span>");
+  } else {
+    state.currentFirstTry = false;
+    if (!state.missed.find(m => m.prompt === state.current.prompt
+        && m.answer === missedAnswer)) {
+      state.missed.push({
+        prompt: state.current.prompt,
+        answer: missedAnswer,
+        tag: state.current.tag
+      });
+    }
+    state.queue.push(state.current);
+    showFeedback(false,
+      "Feil — riktig svar er " + fullAnswer +
+      "<span class='nudge'>Spørsmålet kommer tilbake. Trykk Enter for å fortsette</span>");
+  }
+}
+
+function showFeedback(good, html) {
+  const el = $("feedback");
+  el.className = "feedback " + (good ? "good" : "bad");
+  el.innerHTML = html;
+}
+
+function advance() {
+  if (!state.awaitingAdvance) return;
+  nextQuestion();
+}
+
+function finish(interrupted) {
+  $("screen-quiz").classList.add("hidden");
+  $("screen-end").classList.remove("hidden");
+
+  const seen = state.uniqueAsked;
+  const partial = interrupted && seen < state.total;
+
+  $("end-title-el").textContent = partial ? "Avbrutt" : "Ferdig";
+  $("end-sub-el").textContent   = partial
+    ? "Du svarte på " + seen + " av " + state.total + " spørsmål."
+    : "Her er hvordan det gikk.";
+
+  $("sTotal").textContent = partial ? (seen + " / " + state.total) : state.total;
+  $("sFirst").textContent = state.firstTryRight;
+  const denom = partial ? seen : state.total;
+  const acc = denom ? Math.round(100 * state.firstTryRight / denom) : 0;
+  $("sAcc").textContent = acc + "%";
+
+  const wrap = $("missedWrap");
+  if (state.missed.length === 0 && seen > 0) {
+    wrap.innerHTML = "<p style='color:var(--green-d);font-weight:500;margin:6px 0 22px'>Ingen feil — perfekt.</p>";
+  } else if (state.missed.length === 0) {
+    wrap.innerHTML = "";
+  } else {
+    let html = "<p class='missed-title'>Ord du bommet på</p><ul class='missed'>";
+    for (const m of state.missed) {
+      html += "<li><span class='tag'>" + m.tag + "</span>" +
+        "<span class='word'>" + m.prompt + "</span>" +
+        "<span class='ans'>" + m.answer + "</span></li>";
+    }
+    html += "</ul>";
+    wrap.innerHTML = html;
+  }
+}
+
+function goHome() {
+  $("screen-quiz").classList.add("hidden");
+  $("screen-end").classList.add("hidden");
+  $("screen-start").classList.remove("hidden");
+  $("dateSel").focus();
+}
+
+/* ── Global keyboard ──────────────────────────────── */
+function globalKeys(e) {
+  const onStart = !$("screen-start").classList.contains("hidden");
+  const onQuiz  = !$("screen-quiz").classList.contains("hidden");
+  const onEnd   = !$("screen-end").classList.contains("hidden");
+
+  if (onStart) {
+    if (e.key === "Enter") { e.preventDefault(); startQuiz(); return; }
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      const sel = $("dateSel");
+      if (document.activeElement !== sel) {
+        e.preventDefault();
+        const i = sel.selectedIndex;
+        if (e.key === "ArrowDown" && i < sel.options.length - 1) sel.selectedIndex = i + 1;
+        if (e.key === "ArrowUp"   && i > 0)                       sel.selectedIndex = i - 1;
+        updateMeta();
+      }
+      return;
+    }
+    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"adjectives" };
+    if (map[e.key]) { e.preventDefault(); setMode(map[e.key]); }
+    return;
+  }
+
+  if (onQuiz) {
+    if (e.key === "Escape") { e.preventDefault(); finish(true); return; }
+    if (e.key === "Enter" && state.awaitingAdvance) {
+      e.preventDefault(); advance();
+    }
+    return;
+  }
+
+  if (onEnd) {
+    if (e.key === "r" || e.key === "R") { e.preventDefault(); $("againBtn").click(); }
+    if (e.key === "Escape") { e.preventDefault(); goHome(); }
+  }
+}
+
+init();
+</script>
+</body>
+</html>
