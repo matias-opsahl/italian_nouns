@@ -230,6 +230,31 @@
     gap: 8px;
     margin-top: 8px;
   }
+  .mode-chip.is-extra {
+    margin-top: 18px;
+    opacity: 0.78;
+  }
+  .mode-chip.is-extra:hover,
+  .mode-chip.is-extra.is-active { opacity: 1; }
+  .modes-divider {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Geist", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .modes-divider::before,
+  .modes-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line, #d6d3cc);
+  }
   .mode-chip {
     display: flex; align-items: center; justify-content: space-between;
     gap: 10px;
@@ -597,15 +622,16 @@
         <span>Verb<span class="num" data-count="verbs">10</span></span>
         <span class="key">3</span>
       </button>
-      <button type="button" class="mode-chip" data-mode="verbs-conj">
-        <span>Verb-bøyning<span class="num" data-count="verbs-conj">10</span></span>
-        <span class="key">4</span>
-      </button>
       <button type="button" class="mode-chip" data-mode="adjectives">
         <span>Adjektiv<span class="num" data-count="adjectives">10</span></span>
+        <span class="key">4</span>
+      </button>
+      <div class="modes-divider" aria-hidden="true"></div>
+      <button type="button" class="mode-chip is-extra" data-mode="verbs-conj">
+        <span>Verb-bøyning<span class="num" data-count="verbs-conj">10</span></span>
         <span class="key">5</span>
       </button>
-      <button type="button" class="mode-chip" data-mode="sentences">
+      <button type="button" class="mode-chip is-extra" data-mode="sentences">
         <span>Setninger<span class="num" data-count="sentences">8</span></span>
         <span class="key">6</span>
       </button>
@@ -1584,7 +1610,7 @@ function globalKeys(e) {
       }
       return;
     }
-    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"verbs-conj", "5":"adjectives", "6":"sentences" };
+    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"adjectives", "5":"verbs-conj", "6":"sentences" };
     if (map[e.key]) { e.preventDefault(); setMode(map[e.key]); }
     return;
   }
