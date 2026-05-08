@@ -167,6 +167,31 @@
   }
   .stack > * + * { margin-top: 12px; }
 
+  .qboxes {
+    display: flex; flex-wrap: wrap; gap: 5px;
+    justify-content: center;
+    margin: 14px 0 22px;
+  }
+  .qbox {
+    width: 14px; height: 14px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid var(--line, #d6d3cc);
+    transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+  }
+  .qbox.is-current {
+    border-color: #555;
+    transform: scale(1.18);
+  }
+  .qbox.is-right {
+    background: var(--green);
+    border-color: var(--green-d);
+  }
+  .qbox.is-wrong {
+    background: var(--red);
+    border-color: var(--red-d);
+  }
+
   /* ── Quiz screen ────────────────────────────────── */
   .qhead {
     display: flex; align-items: center; justify-content: space-between;
@@ -552,6 +577,8 @@
 
     <div class="progress"><div id="bar" style="width:0%"></div></div>
 
+    <div id="qBoxes" class="qboxes" aria-hidden="true"></div>
+
     <div class="prompt-block">
       <div class="form-callout" id="formCallout">—</div>
       <p class="prompt-word" id="qText">—</p>
@@ -885,6 +912,7 @@ function buildQuestions(day, mode) {
 
 const state = {
   queue: [], total: 0, asked: 0, uniqueAsked: 0, firstTryRight: 0,
+  attempts: 0, correctAttempts: 0,
   askedKeys: null, missed: [], current: null, currentFirstTry: true,
   awaitingAdvance: false, lastDay: null,
   mode: "all", lastMode: "all"
@@ -970,7 +998,11 @@ function startQuizFor(date, mode) {
   state.uniqueAsked = 0;
   state.askedKeys = new Set();
   state.firstTryRight = 0;
+  state.attempts = 0;
+  state.correctAttempts = 0;
+  state.boxIndex = new Map();
   state.missed = [];
+  renderQBoxes();
   state.awaitingAdvance = false;
   $("screen-start").classList.add("hidden");
   $("screen-end").classList.add("hidden");
@@ -978,6 +1010,31 @@ function startQuizFor(date, mode) {
   $("feedback").innerHTML = "";
   $("advanceWrap").classList.add("hidden");
   nextQuestion();
+}
+
+function renderQBoxes() {
+  const wrap = $("qBoxes");
+  wrap.innerHTML = "";
+  for (let i = 0; i < state.total; i++) {
+    const b = document.createElement("div");
+    b.className = "qbox";
+    b.dataset.idx = i;
+    wrap.appendChild(b);
+  }
+}
+
+function markBox(idx, cls) {
+  if (idx == null) return;
+  const b = $("qBoxes").children[idx];
+  if (!b) return;
+  b.classList.remove("is-right", "is-wrong");
+  b.classList.add(cls);
+}
+
+function highlightCurrentBox(idx) {
+  const boxes = $("qBoxes").children;
+  for (let i = 0; i < boxes.length; i++) boxes[i].classList.remove("is-current");
+  if (idx != null && boxes[idx]) boxes[idx].classList.add("is-current");
 }
 
 function nextQuestion() {
@@ -998,9 +1055,11 @@ function nextQuestion() {
     state.currentFirstTry = false;
   } else {
     state.askedKeys.add(qKey);
+    state.boxIndex.set(qKey, state.uniqueAsked);
     state.uniqueAsked++;
     state.currentFirstTry = true;
   }
+  highlightCurrentBox(state.boxIndex.get(qKey));
 
   const head = $("qhead");
   head.classList.remove("is-verb", "is-adj");
@@ -1059,12 +1118,17 @@ function submitAnswer() {
     missedAnswer = state.current.answer;
   }
 
+  state.attempts++;
+  const boxIdx = state.boxIndex.get(state.current.kind + "|" + state.current.prompt);
   if (given === correct) {
+    state.correctAttempts++;
     if (state.currentFirstTry) state.firstTryRight++;
+    markBox(boxIdx, "is-right");
     showFeedback(true,
       "Riktig &nbsp; " + fullAnswer +
       "<span class='nudge'>Trykk Enter for å fortsette</span>");
   } else {
+    if (state.currentFirstTry) markBox(boxIdx, "is-wrong");
     state.currentFirstTry = false;
     const missKey = state.current.kind + "|" + state.current.prompt;
     let entry = state.missed.find(m => m.key === missKey);
@@ -1111,8 +1175,7 @@ function finish(interrupted) {
 
   $("sTotal").textContent = partial ? (seen + " / " + state.total) : state.total;
   $("sFirst").textContent = state.firstTryRight;
-  const denom = partial ? seen : state.total;
-  const acc = denom ? Math.round(100 * state.firstTryRight / denom) : 0;
+  const acc = state.attempts ? Math.round(100 * state.correctAttempts / state.attempts) : 0;
   $("sAcc").textContent = acc + "%";
 
   const wrap = $("missedWrap");
