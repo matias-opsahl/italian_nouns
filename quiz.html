@@ -214,6 +214,8 @@
   .qhead .form-tag .dot { display: none; }
   .qhead.is-verb .form-tag { background: var(--red); }
   .qhead.is-adj  .form-tag { background: #b8842a; }
+  .qhead.is-verb-conj .form-tag { background: #2a6db8; }
+  .qhead.is-sentence  .form-tag { background: #6f42c1; }
   .qhead #countTag {
     font-family: "Geist Mono", monospace;
     font-size: 12.5px;
@@ -300,6 +302,7 @@
     background: #fff5e0; border-color: #e8c879; color: #8a6411;
   }
   .form-callout.adj-inflect::before { content: "↳"; background: none; width: auto; height: auto; font-size: 13px; line-height: 1; }
+  .form-callout.is-hidden { display: none; }
 
   .progress {
     height: 3px; background: var(--hairline);
@@ -451,6 +454,49 @@
     padding: 10px 0;
     border-bottom: 1px solid var(--hairline);
     align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: background .12s;
+  }
+  .bar-row:hover { background: rgba(13,16,20,0.02); }
+  .bar-row .bar-chev {
+    position: absolute;
+    right: 0; top: 16px;
+    width: 8px; height: 8px;
+    border-right: 1.5px solid var(--muted);
+    border-bottom: 1.5px solid var(--muted);
+    transform: rotate(45deg);
+    transition: transform .15s;
+  }
+  .bar-row .bar-count { padding-right: 16px; }
+  .bar-row.is-open .bar-chev { transform: rotate(225deg); }
+  .bar-attempts {
+    grid-row: 3; grid-column: 1 / -1;
+    display: none;
+    margin-top: 8px;
+    padding: 10px 12px;
+    background: var(--soft-red);
+    border: 1px solid rgba(205,33,42,0.18);
+    border-radius: 6px;
+  }
+  .bar-row.is-open .bar-attempts { display: block; }
+  .bar-attempts .attempts-title {
+    font-family: "Geist Mono", monospace;
+    font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--red-d); margin: 0 0 6px;
+  }
+  .bar-attempts ol {
+    margin: 0; padding-left: 22px;
+    font-size: 13.5px; color: var(--ink-2);
+  }
+  .bar-attempts li {
+    padding: 2px 0;
+    font-family: "Geist Mono", monospace;
+  }
+  .bar-attempts li.empty {
+    color: var(--muted); font-style: italic;
+    font-family: "Geist", sans-serif;
+    list-style: none; margin-left: -22px;
   }
   .bar-row:last-child { border-bottom: none; }
   .bar-word {
@@ -551,9 +597,17 @@
         <span>Verb<span class="num" data-count="verbs">10</span></span>
         <span class="key">3</span>
       </button>
+      <button type="button" class="mode-chip" data-mode="verbs-conj">
+        <span>Verb-bøyning<span class="num" data-count="verbs-conj">10</span></span>
+        <span class="key">4</span>
+      </button>
       <button type="button" class="mode-chip" data-mode="adjectives">
         <span>Adjektiv<span class="num" data-count="adjectives">10</span></span>
-        <span class="key">4</span>
+        <span class="key">5</span>
+      </button>
+      <button type="button" class="mode-chip" data-mode="sentences">
+        <span>Setninger<span class="num" data-count="sentences">8</span></span>
+        <span class="key">6</span>
       </button>
     </div>
 
@@ -564,7 +618,7 @@
     </div>
 
     <div class="keyhelp">
-      <kbd>↑</kbd><kbd>↓</kbd> bytt dato · <kbd>1</kbd>–<kbd>4</kbd> kategori · <kbd>Enter</kbd> start
+      <kbd>↑</kbd><kbd>↓</kbd> bytt dato · <kbd>1</kbd>–<kbd>6</kbd> kategori · <kbd>Enter</kbd> start
     </div>
   </section>
 
@@ -647,16 +701,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-05",
   nouns: [
-    { no: "sol",     sg: "il sole",        pl: "i soli" },
-    { no: "måne",    sg: "la luna",        pl: "le lune" },
-    { no: "himmel",  sg: "il cielo",       pl: "i cieli" },
-    { no: "fjell",   sg: "la montagna",    pl: "le montagne" },
-    { no: "elv",     sg: "il fiume",       pl: "i fiumi" },
-    { no: "strand",  sg: "la spiaggia",    pl: "le spiagge" },
-    { no: "kirke",   sg: "la chiesa",      pl: "le chiese" },
-    { no: "seng",    sg: "il letto",       pl: "i letti" },
-    { no: "kjøkken", sg: "la cucina",      pl: "le cucine" },
-    { no: "bad",     sg: "il bagno",       pl: "i bagni" }
+    { no: "sol",     noPl: "soler",     sg: "il sole",        pl: "i soli" },
+    { no: "måne",    noPl: "måner",     sg: "la luna",        pl: "le lune" },
+    { no: "himmel",  noPl: "himler",    sg: "il cielo",       pl: "i cieli" },
+    { no: "fjell",   noPl: "fjell",     sg: "la montagna",    pl: "le montagne" },
+    { no: "elv",     noPl: "elver",     sg: "il fiume",       pl: "i fiumi" },
+    { no: "strand",  noPl: "strender",  sg: "la spiaggia",    pl: "le spiagge" },
+    { no: "kirke",   noPl: "kirker",    sg: "la chiesa",      pl: "le chiese" },
+    { no: "seng",    noPl: "senger",    sg: "il letto",       pl: "i letti" },
+    { no: "kjøkken", noPl: "kjøkken",   sg: "la cucina",      pl: "le cucine" },
+    { no: "bad",     noPl: "bad",       sg: "il bagno",       pl: "i bagni" }
   ],
   verbs: [
     { no: "å danse",    it: "ballare" },
@@ -686,16 +740,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-06",
   nouns: [
-    { no: "stue",    sg: "il salotto",    pl: "i salotti" },
-    { no: "hage",    sg: "il giardino",   pl: "i giardini" },
-    { no: "torg",    sg: "la piazza",     pl: "le piazze" },
-    { no: "marked",  sg: "il mercato",    pl: "i mercati" },
-    { no: "avis",    sg: "il giornale",   pl: "i giornali" },
-    { no: "brev",    sg: "la lettera",    pl: "le lettere" },
-    { no: "penn",    sg: "la penna",      pl: "le penne" },
-    { no: "blyant",  sg: "la matita",     pl: "le matite" },
-    { no: "veske",   sg: "la borsa",      pl: "le borse" },
-    { no: "klokke",  sg: "l'orologio",    pl: "gli orologi" }
+    { no: "stue",    noPl: "stuer",     sg: "il salotto",    pl: "i salotti" },
+    { no: "hage",    noPl: "hager",     sg: "il giardino",   pl: "i giardini" },
+    { no: "torg",    noPl: "torg",      sg: "la piazza",     pl: "le piazze" },
+    { no: "marked",  noPl: "markeder",  sg: "il mercato",    pl: "i mercati" },
+    { no: "avis",    noPl: "aviser",    sg: "il giornale",   pl: "i giornali" },
+    { no: "brev",    noPl: "brev",      sg: "la lettera",    pl: "le lettere" },
+    { no: "penn",    noPl: "penner",    sg: "la penna",      pl: "le penne" },
+    { no: "blyant",  noPl: "blyanter",  sg: "la matita",     pl: "le matite" },
+    { no: "veske",   noPl: "vesker",    sg: "la borsa",      pl: "le borse" },
+    { no: "klokke",  noPl: "klokker",   sg: "l'orologio",    pl: "gli orologi" }
   ],
   verbs: [
     { no: "å arbeide",   it: "lavorare" },
@@ -725,16 +779,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-07",
   nouns: [
-    { no: "bil",    sg: "l'auto",       pl: "le auto" },
-    { no: "tog",    sg: "il treno",     pl: "i treni" },
-    { no: "fly",    sg: "l'aereo",      pl: "gli aerei" },
-    { no: "vei",    sg: "la strada",    pl: "le strade" },
-    { no: "bro",    sg: "il ponte",     pl: "i ponti" },
-    { no: "dør",    sg: "la porta",     pl: "le porte" },
-    { no: "vindu",  sg: "la finestra",  pl: "le finestre" },
-    { no: "bok",    sg: "il libro",     pl: "i libri" },
-    { no: "bord",   sg: "il tavolo",    pl: "i tavoli" },
-    { no: "stol",   sg: "la sedia",     pl: "le sedie" }
+    { no: "bil",    noPl: "biler",    sg: "l'auto",       pl: "le auto" },
+    { no: "tog",    noPl: "tog",      sg: "il treno",     pl: "i treni" },
+    { no: "fly",    noPl: "fly",      sg: "l'aereo",      pl: "gli aerei" },
+    { no: "vei",    noPl: "veier",    sg: "la strada",    pl: "le strade" },
+    { no: "bro",    noPl: "broer",    sg: "il ponte",     pl: "i ponti" },
+    { no: "dør",    noPl: "dører",    sg: "la porta",     pl: "le porte" },
+    { no: "vindu",  noPl: "vinduer",  sg: "la finestra",  pl: "le finestre" },
+    { no: "bok",    noPl: "bøker",    sg: "il libro",     pl: "i libri" },
+    { no: "bord",   noPl: "bord",     sg: "il tavolo",    pl: "i tavoli" },
+    { no: "stol",   noPl: "stoler",   sg: "la sedia",     pl: "le sedie" }
   ],
   verbs: [
     { no: "å spise",  it: "mangiare" },
@@ -764,16 +818,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-08",
   nouns: [
-    { no: "butikk", sg: "il negozio",  pl: "i negozi" },
-    { no: "hund",   sg: "il cane",     pl: "i cani" },
-    { no: "katt",   sg: "il gatto",    pl: "i gatti" },
-    { no: "blomst", sg: "il fiore",    pl: "i fiori" },
-    { no: "tre",    sg: "l'albero",    pl: "gli alberi" },
-    { no: "regn",   sg: "la pioggia",  pl: "le piogge" },
-    { no: "vind",   sg: "il vento",    pl: "i venti" },
-    { no: "hånd",   sg: "la mano",     pl: "le mani" },
-    { no: "øye",    sg: "l'occhio",    pl: "gli occhi" },
-    { no: "natt",   sg: "la notte",    pl: "le notti" }
+    { no: "butikk", noPl: "butikker", sg: "il negozio",  pl: "i negozi" },
+    { no: "hund",   noPl: "hunder",   sg: "il cane",     pl: "i cani" },
+    { no: "katt",   noPl: "katter",   sg: "il gatto",    pl: "i gatti" },
+    { no: "blomst", noPl: "blomster", sg: "il fiore",    pl: "i fiori" },
+    { no: "tre",    noPl: "trær",     sg: "l'albero",    pl: "gli alberi" },
+    { no: "regn",   noPl: "regn",     sg: "la pioggia",  pl: "le piogge" },
+    { no: "vind",   noPl: "vinder",   sg: "il vento",    pl: "i venti" },
+    { no: "hånd",   noPl: "hender",   sg: "la mano",     pl: "le mani" },
+    { no: "øye",    noPl: "øyne",     sg: "l'occhio",    pl: "gli occhi" },
+    { no: "natt",   noPl: "netter",   sg: "la notte",    pl: "le notti" }
   ],
   verbs: [
     { no: "å kjøpe",   it: "comprare" },
@@ -803,16 +857,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-08",
   nouns: [
-    { no: "kjøtt",   sg: "la carne",    pl: "le carni" },
-    { no: "fisk",    sg: "il pesce",    pl: "i pesci" },
-    { no: "brød",    sg: "il pane",     pl: "i pani" },
-    { no: "melk",    sg: "il latte",    pl: "i latti" },
-    { no: "vann",    sg: "l'acqua",     pl: "le acque" },
-    { no: "vin",     sg: "il vino",     pl: "i vini" },
-    { no: "kaffe",   sg: "il caffè",    pl: "i caffè" },
-    { no: "skole",   sg: "la scuola",   pl: "le scuole" },
-    { no: "hus",     sg: "la casa",     pl: "le case" },
-    { no: "familie", sg: "la famiglia", pl: "le famiglie" }
+    { no: "kjøtt",   noPl: "kjøtt",    sg: "la carne",    pl: "le carni" },
+    { no: "fisk",    noPl: "fisker",   sg: "il pesce",    pl: "i pesci" },
+    { no: "brød",    noPl: "brød",     sg: "il pane",     pl: "i pani" },
+    { no: "melk",    noPl: "melk",     sg: "il latte",    pl: "i latti" },
+    { no: "vann",    noPl: "vann",     sg: "l'acqua",     pl: "le acque" },
+    { no: "vin",     noPl: "viner",    sg: "il vino",     pl: "i vini" },
+    { no: "kaffe",   noPl: "kaffer",   sg: "il caffè",    pl: "i caffè" },
+    { no: "skole",   noPl: "skoler",   sg: "la scuola",   pl: "le scuole" },
+    { no: "hus",     noPl: "hus",      sg: "la casa",     pl: "le case" },
+    { no: "familie", noPl: "familier", sg: "la famiglia", pl: "le famiglie" }
   ],
   verbs: [
     { no: "å lukke",    it: "chiudere" },
@@ -845,23 +899,123 @@ const DAILY_QUIZZES = [
 /* ============================================================
    ENGINE
    ============================================================ */
-const norm = s => s.trim().toLowerCase().replace(/\s+/g, " ");
+const norm = s => s.trim().toLowerCase().replace(/\s+/g, " ").replace(/[.!?,;]+$/, "");
+
+/* ── Italian present-tense conjugation ───────────────── */
+const IRREG_CONJ = {
+  "essere":   ["sono","sei","è","siamo","siete","sono"],
+  "avere":    ["ho","hai","ha","abbiamo","avete","hanno"],
+  "andare":   ["vado","vai","va","andiamo","andate","vanno"],
+  "fare":     ["faccio","fai","fa","facciamo","fate","fanno"],
+  "stare":    ["sto","stai","sta","stiamo","state","stanno"],
+  "dare":     ["do","dai","dà","diamo","date","danno"],
+  "bere":     ["bevo","bevi","beve","beviamo","bevete","bevono"],
+  "venire":   ["vengo","vieni","viene","veniamo","venite","vengono"],
+  "dire":     ["dico","dici","dice","diciamo","dite","dicono"],
+  "uscire":   ["esco","esci","esce","usciamo","uscite","escono"],
+  "tenere":   ["tengo","tieni","tiene","teniamo","tenete","tengono"],
+  "potere":   ["posso","puoi","può","possiamo","potete","possono"],
+  "volere":   ["voglio","vuoi","vuole","vogliamo","volete","vogliono"],
+  "dovere":   ["devo","devi","deve","dobbiamo","dovete","devono"],
+  "sapere":   ["so","sai","sa","sappiamo","sapete","sanno"],
+  "salire":   ["salgo","sali","sale","saliamo","salite","salgono"],
+  "studiare": ["studio","studi","studia","studiamo","studiate","studiano"],
+  "inviare":  ["invio","invii","invia","inviamo","inviate","inviano"],
+  "piacere":  ["piaccio","piaci","piace","piacciamo","piacete","piacciono"],
+  "rimanere": ["rimango","rimani","rimane","rimaniamo","rimanete","rimangono"],
+  "scegliere":["scelgo","scegli","sceglie","scegliamo","scegliete","scelgono"],
+  "tradurre": ["traduco","traduci","traduce","traduciamo","traducete","traducono"],
+  "porre":    ["pongo","poni","pone","poniamo","ponete","pongono"],
+  "proporre": ["propongo","proponi","propone","proponiamo","proponete","propongono"],
+  "sedere":   ["siedo","siedi","siede","sediamo","sedete","siedono"],
+  "cogliere": ["colgo","cogli","coglie","cogliamo","cogliete","colgono"],
+  "togliere": ["tolgo","togli","toglie","togliamo","togliete","tolgono"],
+  "raccogliere":["raccolgo","raccogli","raccoglie","raccogliamo","raccogliete","raccolgono"],
+  "sciogliere":["sciolgo","sciogli","scioglie","sciogliamo","sciogliete","sciolgono"],
+  "morire":   ["muoio","muori","muore","moriamo","morite","muoiono"],
+  "valere":   ["valgo","vali","vale","valiamo","valete","valgono"],
+  "spegnere": ["spengo","spegni","spegne","spegniamo","spegnete","spengono"],
+  "riuscire": ["riesco","riesci","riesce","riusciamo","riuscite","riescono"],
+  "parere":   ["paio","pari","pare","paiamo","parete","paiono"],
+  "ottenere": ["ottengo","ottieni","ottiene","otteniamo","ottenete","ottengono"],
+  "mantenere":["mantengo","mantieni","mantiene","manteniamo","mantenete","mantengono"]
+};
+const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire"]);
+
+function conjugate(it) {
+  if (IRREG_CONJ[it]) return IRREG_CONJ[it].slice();
+  const ending = it.slice(-3);
+  let stem = it.slice(0, -3);
+  if (ending === "are") {
+    const last2 = stem.slice(-2);
+    const lastChar = stem.slice(-1);
+    let stemTu = stem, stemNoi = stem;
+    if (last2 === "ci" || last2 === "gi") {
+      stemTu = stem.slice(0, -1);
+      stemNoi = stem.slice(0, -1);
+    } else if (lastChar === "c" || lastChar === "g") {
+      stemTu = stem + "h";
+      stemNoi = stem + "h";
+    }
+    return [
+      stem + "o", stemTu + "i", stem + "a",
+      stemNoi + "iamo", stem + "ate", stem + "ano"
+    ];
+  }
+  if (ending === "ere") {
+    return [stem+"o", stem+"i", stem+"e", stem+"iamo", stem+"ete", stem+"ono"];
+  }
+  if (ending === "ire") {
+    if (ISC_VERBS.has(it)) {
+      return [stem+"isco", stem+"isci", stem+"isce", stem+"iamo", stem+"ite", stem+"iscono"];
+    }
+    return [stem+"o", stem+"i", stem+"e", stem+"iamo", stem+"ite", stem+"ono"];
+  }
+  return null;
+}
+
+/* ── Norwegian present from infinitive ───────────────── */
+const NO_PRESENT_IRREG = {
+  "å være": "er", "å ha": "har", "å gjøre": "gjør",
+  "å si": "sier", "å spørre": "spør",
+  "å lage mat": "lager mat"
+};
+function noPresent(noInf) {
+  if (NO_PRESENT_IRREG[noInf]) return NO_PRESENT_IRREG[noInf];
+  const v = noInf.replace(/^å /, "");
+  if (/[aeiouyæøå]$/.test(v)) return v + "r";
+  return v + "er";
+}
+
+const PERSONS = [
+  { idx: 0, no: "jeg" },
+  { idx: 1, no: "du" },
+  { idx: 2, no: "han/hun" },
+  { idx: 3, no: "vi" },
+  { idx: 4, no: "dere" },
+  { idx: 5, no: "de" }
+];
+const PERSON_LABELS = ["1. person entall","2. person entall","3. person entall",
+                       "1. person flertall","2. person flertall","3. person flertall"];
 
 function buildQuestions(day, mode) {
   const qs = [];
   if (mode === "all" || mode === "nouns") {
     for (const n of day.nouns) {
       const usePl = Math.random() < 0.5;
+      const noPl = n.noPl || n.no;
+      const norskPrompt = usePl ? noPl : n.no;
+      const ambiguous = (n.no === noPl);
       qs.push({
         kind: "noun",
         type: "Substantiv",
         form: usePl ? "flertall" : "entall",
-        formClass: usePl ? "flertall" : "entall",
+        formClass: ambiguous ? (usePl ? "flertall" : "entall") : "",
+        showCallout: ambiguous,
         tag: "subst.",
-        prompt: n.no,
+        prompt: norskPrompt,
         answer: usePl ? n.pl : n.sg,
-        sg: n.sg,
-        pl: n.pl
+        sg: n.sg, pl: n.pl
       });
     }
   }
@@ -870,11 +1024,33 @@ function buildQuestions(day, mode) {
       qs.push({
         kind: "verb",
         type: "Verb",
-        form: "infinitiv",
+        form: "",
         formClass: "",
+        showCallout: false,
         tag: "verb",
         prompt: v.no,
         answer: v.it
+      });
+    }
+  }
+  if (mode === "verbs-conj") {
+    for (const v of day.verbs) {
+      const conj = conjugate(v.it);
+      if (!conj) continue;
+      const p = PERSONS[Math.floor(Math.random() * PERSONS.length)];
+      const noPres = noPresent(v.no);
+      qs.push({
+        kind: "verb-conj",
+        type: "Verb (presens)",
+        form: PERSON_LABELS[p.idx],
+        formClass: "",
+        showCallout: false,
+        tag: "verb",
+        prompt: p.no + " " + noPres,
+        answer: conj[p.idx],
+        infinitive: v.it,
+        noInfinitive: v.no,
+        conjAll: conj
       });
     }
   }
@@ -886,16 +1062,14 @@ function buildQuestions(day, mode) {
       { key: "fp", label: "hunkjønn flertall" }
     ];
     for (const a of day.adjectives) {
-      if (!a.ms || !a.fs || !a.mp || !a.fp) {
-        console.warn("Skipping adjective with missing forms:", a);
-        continue;
-      }
+      if (!a.ms || !a.fs || !a.mp || !a.fp) continue;
       const pick = adjForms[Math.floor(Math.random() * adjForms.length)];
       qs.push({
         kind: "adj",
         type: "Adjektiv",
         form: pick.label,
         formClass: "adj-inflect",
+        showCallout: true,
         tag: "adj.",
         prompt: a.no,
         answer: a[pick.key],
@@ -903,11 +1077,132 @@ function buildQuestions(day, mode) {
       });
     }
   }
+  if (mode === "sentences") {
+    const ss = buildSentences(day, 8);
+    for (const s of ss) qs.push(s);
+  }
   for (let i = qs.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [qs[i], qs[j]] = [qs[j], qs[i]];
   }
   return qs;
+}
+
+/* ── Sentence generator (templates) ───────────────────── */
+const ESSERE = IRREG_CONJ["essere"];
+const NO_ADJ_PL_IRREG = {
+  "liten": "små", "gammel": "gamle",
+  "vakker": "vakre"
+};
+function noAdjPl(no) {
+  const main = no.replace(/\s*\(.*\)$/, "");
+  if (NO_ADJ_PL_IRREG[main]) return NO_ADJ_PL_IRREG[main];
+  if (main.endsWith("e")) return main;
+  if (main.endsWith("ig")) return main + "e";
+  if (main.endsWith("en")) return main.slice(0, -2) + "ne";
+  if (main.endsWith("el")) return main.slice(0, -2) + "le";
+  if (main.endsWith("er")) return main.slice(0, -2) + "re";
+  return main + "e";
+}
+const SENTENCE_VERB_BLACKLIST = new Set(["piacere"]);
+
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+function nounGender(n) {
+  const first = n.pl.trim().split(/\s+/)[0];
+  return first === "le" ? "f" : "m";
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildSentences(day, count) {
+  const out = [];
+  const verbs = day.verbs.filter(v => conjugate(v.it) && !SENTENCE_VERB_BLACKLIST.has(v.it));
+  const adjs = day.adjectives.filter(a => a.ms && a.fs && a.mp && a.fp);
+  // Only countable nouns (Norwegian sg ≠ pl) — avoids "Regn er store" awkwardness
+  const nouns = day.nouns.filter(n => (n.noPl || n.no) !== n.no);
+  if (nouns.length === 0 || verbs.length === 0 || adjs.length === 0) return out;
+
+  // T1: subject pronoun + essere + adjective (verb-conj × adj-agreement, sg/pl)
+  const t1 = [];
+  for (const a of adjs) {
+    for (let pi = 0; pi < 6; pi++) {
+      const p = PERSONS[pi];
+      const isPl = pi >= 3;
+      const adjIt = isPl ? a.mp : a.ms;
+      const adjNo = isPl ? noAdjPl(a.no) : a.no.replace(/\s*\(.*\)$/, "");
+      t1.push({
+        no: cap(p.no) + " er " + adjNo + ".",
+        it: cap(ESSERE[pi]) + " " + adjIt + "."
+      });
+    }
+  }
+
+  // T2: noun-pl + sono + adj-pl (noun gender drives adj form)
+  const t2 = [];
+  for (const n of nouns) {
+    const g = nounGender(n);
+    for (const a of adjs) {
+      const adjIt = g === "f" ? a.fp : a.mp;
+      const adjNo = noAdjPl(a.no);
+      t2.push({
+        no: cap(n.noPl) + " er " + adjNo + ".",
+        it: cap(n.pl) + " sono " + adjIt + "."
+      });
+    }
+  }
+
+  // T3: subject + verb-pres + adj-pl + noun-pl (verb conj + noun art + adj agreement)
+  const t3 = [];
+  for (const v of verbs) {
+    const conj = conjugate(v.it);
+    const noPres = noPresent(v.no);
+    for (const n of nouns) {
+      const g = nounGender(n);
+      for (const a of adjs) {
+        const adjIt = g === "f" ? a.fp : a.mp;
+        const adjNo = noAdjPl(a.no);
+        for (let pi = 0; pi < 6; pi++) {
+          const p = PERSONS[pi];
+          t3.push({
+            no: cap(p.no) + " " + noPres + " " + adjNo + " " + n.noPl + ".",
+            it: cap(conj[pi]) + " " + n.pl + " " + adjIt + "."
+          });
+        }
+      }
+    }
+  }
+
+  shuffle(t1); shuffle(t2); shuffle(t3);
+
+  // Quota: 2 from T1, 2 from T2, rest from T3 (default 8 → 2+2+4)
+  const picked = [];
+  const take = (list, n) => { for (let i = 0; i < n && i < list.length; i++) picked.push(list[i]); };
+  take(t1, 2);
+  take(t2, 2);
+  take(t3, count - picked.length);
+  shuffle(picked);
+
+  for (const t of picked) {
+    out.push({
+      kind: "sentence",
+      type: "Setning",
+      form: "",
+      formClass: "",
+      showCallout: false,
+      tag: "setning",
+      prompt: t.no,
+      answer: t.it,
+      itFull: t.it
+    });
+  }
+  return out;
 }
 
 const state = {
@@ -966,7 +1261,9 @@ function updateMeta() {
     all: day.nouns.length + day.verbs.length + day.adjectives.length,
     nouns: day.nouns.length,
     verbs: day.verbs.length,
-    adjectives: day.adjectives.length
+    "verbs-conj": day.verbs.length,
+    adjectives: day.adjectives.length,
+    sentences: 8
   };
   document.querySelectorAll(".mode-chip .num").forEach(el => {
     const k = el.dataset.count;
@@ -1062,15 +1359,18 @@ function nextQuestion() {
   highlightCurrentBox(state.boxIndex.get(qKey));
 
   const head = $("qhead");
-  head.classList.remove("is-verb", "is-adj");
-  if (state.current.kind === "verb") head.classList.add("is-verb");
-  if (state.current.kind === "adj")  head.classList.add("is-adj");
+  head.classList.remove("is-verb", "is-adj", "is-verb-conj", "is-sentence");
+  if (state.current.kind === "verb")      head.classList.add("is-verb");
+  if (state.current.kind === "adj")       head.classList.add("is-adj");
+  if (state.current.kind === "verb-conj") head.classList.add("is-verb-conj");
+  if (state.current.kind === "sentence")  head.classList.add("is-sentence");
 
   $("formTag").textContent = state.current.type;
   const callout = $("formCallout");
-  callout.textContent = state.current.form;
-  callout.classList.remove("entall", "flertall", "adj-inflect");
+  callout.textContent = state.current.form || "";
+  callout.classList.remove("entall", "flertall", "adj-inflect", "is-hidden");
   if (state.current.formClass) callout.classList.add(state.current.formClass);
+  if (!state.current.showCallout) callout.classList.add("is-hidden");
 
   const repeats = Math.max(0, state.queue.length - (state.total - state.asked));
   $("countTag").textContent = state.asked + " / " + state.total +
@@ -1086,7 +1386,8 @@ function nextQuestion() {
 
 function submitAnswer() {
   if (state.awaitingAdvance) return;
-  const given = norm($("answerInput").value);
+  const rawGiven = $("answerInput").value;
+  const given = norm(rawGiven);
   const correct = norm(state.current.answer);
 
   $("answerInput").disabled = true;
@@ -1113,6 +1414,23 @@ function submitAnswer() {
       "</span>";
     missedAnswer = state.current.ms + " / " + state.current.fs +
                  " · " + state.current.mp + " / " + state.current.fp;
+  } else if (state.current.kind === "verb-conj") {
+    const c = state.current.conjAll;
+    const labels = ["io","tu","lui/lei","noi","voi","loro"];
+    let grid = "<span class='adj-grid'>";
+    for (let i = 0; i < 6; i++) {
+      grid += "<span class='adj-cell'><em>" + labels[i] + "</em><b>" + c[i] + "</b></span>";
+    }
+    grid += "</span>";
+    fullAnswer =
+      "<span class='answer'>" + state.current.answer + "</span>" +
+      "<div style='font-family:\"Geist Mono\",monospace;font-size:11px;color:var(--muted);letter-spacing:0.04em;margin:10px 0 4px'>" +
+        state.current.noInfinitive + " · " + state.current.infinitive +
+      "</div>" + grid;
+    missedAnswer = state.current.answer + " (" + state.current.infinitive + ")";
+  } else if (state.current.kind === "sentence") {
+    fullAnswer = "<span class='answer'>" + state.current.itFull + "</span>";
+    missedAnswer = state.current.itFull;
   } else {
     fullAnswer = "<span class='answer'>" + state.current.answer + "</span>";
     missedAnswer = state.current.answer;
@@ -1138,11 +1456,13 @@ function submitAnswer() {
         prompt: state.current.prompt,
         answer: missedAnswer,
         tag: state.current.tag,
-        count: 0
+        count: 0,
+        wrongAnswers: []
       };
       state.missed.push(entry);
     }
     entry.count++;
+    entry.wrongAnswers.push(rawGiven.trim() === "" ? "(blankt)" : rawGiven.trim());
     state.queue.push(state.current);
     showFeedback(false,
       "Feil — riktig svar er " + fullAnswer +
@@ -1194,19 +1514,48 @@ function finish(interrupted) {
       "<div class='miss-chart'>";
     for (const m of sorted) {
       const units = Array(m.count).fill("<span class='unit'></span>").join("");
+      const attempts = (m.wrongAnswers || []);
+      let attemptsHtml = "";
+      if (attempts.length > 0) {
+        attemptsHtml = "<ol>" + attempts.map(a =>
+          "<li>" + escapeHtml(a) + "</li>"
+        ).join("") + "</ol>";
+      } else {
+        attemptsHtml = "<ol><li class='empty'>Ingen svar lagret.</li></ol>";
+      }
       html +=
-        "<div class='bar-row'>" +
-          "<div class='bar-word'>" + m.prompt +
+        "<div class='bar-row' role='button' tabindex='0'>" +
+          "<div class='bar-word'>" + escapeHtml(m.prompt) +
             "<span class='bar-tag'>" + m.tag + "</span>" +
           "</div>" +
           "<div class='bar-units'>" + units + "</div>" +
           "<div class='bar-count'>" + m.count + "</div>" +
-          "<div class='bar-answer'>" + m.answer + "</div>" +
+          "<div class='bar-answer'>" + escapeHtml(m.answer) + "</div>" +
+          "<div class='bar-chev'></div>" +
+          "<div class='bar-attempts'>" +
+            "<p class='attempts-title'>Dine svar (" + attempts.length + ")</p>" +
+            attemptsHtml +
+          "</div>" +
         "</div>";
     }
     html += "</div>";
     wrap.innerHTML = html;
+    wrap.querySelectorAll(".bar-row").forEach(row => {
+      row.addEventListener("click", () => row.classList.toggle("is-open"));
+      row.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          row.classList.toggle("is-open");
+        }
+      });
+    });
   }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+  }[c]));
 }
 
 function goHome() {
@@ -1235,7 +1584,7 @@ function globalKeys(e) {
       }
       return;
     }
-    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"adjectives" };
+    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"verbs-conj", "5":"adjectives", "6":"sentences" };
     if (map[e.key]) { e.preventDefault(); setMode(map[e.key]); }
     return;
   }
