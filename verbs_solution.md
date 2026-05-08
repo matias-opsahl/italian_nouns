@@ -50,3 +50,16 @@
 | å vente | aspettare |
 | å reise | viaggiare |
 | å åpne | aprire |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å lukke | chiudere |
+| å komme | venire |
+| å dra | partire |
+| å lage mat | cucinare |
+| å elske | amare |
+| å prøve | provare |
+| å hente | prendere |
+| å svare | rispondere |
+| å spørre | chiedere |
+| å like | piacere |

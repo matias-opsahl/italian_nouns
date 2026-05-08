@@ -49,3 +49,16 @@
 | sakte | lento | lenta | lenti | lente |
 | varm | caldo | calda | caldi | calde |
 | kald | freddo | fredda | freddi | fredde |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| vakker | bello | bella | belli | belle |
+| stygg | brutto | brutta | brutti | brutte |
+| sterk | forte | forte | forti | forti |
+| svak | debole | debole | deboli | deboli |
+| rik | ricco | ricca | ricchi | ricche |
+| fattig | povero | povera | poveri | povere |
+| intelligent | intelligente | intelligente | intelligenti | intelligenti |
+| rolig | calmo | calma | calmi | calme |
+| åpen | aperto | aperta | aperti | aperte |
+| lukket | chiuso | chiusa | chiusi | chiuse |

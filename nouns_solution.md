@@ -50,3 +50,16 @@
 | hånd | la mano | le mani | f |
 | øye | l'occhio | gli occhi | m |
 | natt | la notte | le notti | f |
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|
+| kjøtt | la carne | le carni | f |
+| fisk | il pesce | i pesci | m |
+| brød | il pane | i pani | m |
+| melk | il latte | i latti | m |
+| vann | l'acqua | le acque | f |
+| vin | il vino | i vini | m |
+| kaffe | il caffè | i caffè | m |
+| skole | la scuola | le scuole | f |
+| hus | la casa | le case | f |
+| familie | la famiglia | le famiglie | f |
