@@ -63,3 +63,16 @@
 | skole | la scuola | le scuole | f |
 | hus | la casa | le case | f |
 | familie | la famiglia | le famiglie | f |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|---|
+| ild | ildene | il fuoco | i fuochi | m |
+| snø | snøer | la neve | le nevi | f |
+| sky | skyer | la nuvola | le nuvole | f |
+| hav | hav | il mare | i mari | m |
+| skog | skoger | la foresta | le foreste | f |
+| hjerte | hjerter | il cuore | i cuori | m |
+| hode | hoder | la testa | le teste | f |
+| stemme | stemmer | la voce | le voci | f |
+| farge | farger | il colore | i colori | m |
+| uke | uker | la settimana | le settimane | f |

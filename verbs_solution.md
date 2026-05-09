@@ -63,3 +63,16 @@
 | å svare | rispondere |
 | å spørre | chiedere |
 | å like | piacere |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å møte | incontrare |
+| å ringe | telefonare |
+| å kjøre | guidare |
+| å lære | imparare |
+| å undervise | insegnare |
+| å smile | sorridere |
+| å fly | volare |
+| å ønske | desiderare |
+| å bestemme | decidere |
+| å feire | celebrare |

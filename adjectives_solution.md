@@ -62,3 +62,16 @@
 | rolig | calmo | calma | calmi | calme |
 | åpen | aperto | aperta | aperti | aperte |
 | lukket | chiuso | chiusa | chiusi | chiuse |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| morsom | divertente | divertente | divertenti | divertenti |
+| viktig | importante | importante | importanti | importanti |
+| vanskelig | difficile | difficile | difficili | difficili |
+| søt | dolce | dolce | dolci | dolci |
+| sjenerøs | generoso | generosa | generosi | generose |
+| snill | gentile | gentile | gentili | gentili |
+| lat | pigro | pigra | pigri | pigre |
+| nervøs | nervoso | nervosa | nervosi | nervose |
+| høflig | educato | educata | educati | educate |
+| takknemlig | grato | grata | grati | grate |

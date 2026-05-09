@@ -919,6 +919,45 @@ const DAILY_QUIZZES = [
     { no: "lukket",      ms: "chiuso",       fs: "chiusa",       mp: "chiusi",       fp: "chiuse" }
   ]
 },
+{
+  date: "2026-05-09",
+  nouns: [
+    { no: "ild",     noPl: "ildene",  sg: "il fuoco",      pl: "i fuochi" },
+    { no: "snø",     noPl: "snøer",   sg: "la neve",       pl: "le nevi" },
+    { no: "sky",     noPl: "skyer",   sg: "la nuvola",     pl: "le nuvole" },
+    { no: "hav",     noPl: "hav",     sg: "il mare",       pl: "i mari" },
+    { no: "skog",    noPl: "skoger",  sg: "la foresta",    pl: "le foreste" },
+    { no: "hjerte",  noPl: "hjerter", sg: "il cuore",      pl: "i cuori" },
+    { no: "hode",    noPl: "hoder",   sg: "la testa",      pl: "le teste" },
+    { no: "stemme",  noPl: "stemmer", sg: "la voce",       pl: "le voci" },
+    { no: "farge",   noPl: "farger",  sg: "il colore",     pl: "i colori" },
+    { no: "uke",     noPl: "uker",    sg: "la settimana",  pl: "le settimane" }
+  ],
+  verbs: [
+    { no: "å møte",      it: "incontrare" },
+    { no: "å ringe",     it: "telefonare" },
+    { no: "å kjøre",     it: "guidare" },
+    { no: "å lære",      it: "imparare" },
+    { no: "å undervise", it: "insegnare" },
+    { no: "å smile",     it: "sorridere" },
+    { no: "å fly",       it: "volare" },
+    { no: "å ønske",     it: "desiderare" },
+    { no: "å bestemme",  it: "decidere" },
+    { no: "å feire",     it: "celebrare" }
+  ],
+  adjectives: [
+    { no: "morsom",     ms: "divertente", fs: "divertente", mp: "divertenti", fp: "divertenti" },
+    { no: "viktig",     ms: "importante", fs: "importante", mp: "importanti", fp: "importanti" },
+    { no: "vanskelig",  ms: "difficile",  fs: "difficile",  mp: "difficili",  fp: "difficili" },
+    { no: "søt",        ms: "dolce",      fs: "dolce",      mp: "dolci",      fp: "dolci" },
+    { no: "sjenerøs",   ms: "generoso",   fs: "generosa",   mp: "generosi",   fp: "generose" },
+    { no: "snill",      ms: "gentile",    fs: "gentile",    mp: "gentili",    fp: "gentili" },
+    { no: "lat",        ms: "pigro",      fs: "pigra",      mp: "pigri",      fp: "pigre" },
+    { no: "nervøs",     ms: "nervoso",    fs: "nervosa",    mp: "nervosi",    fp: "nervose" },
+    { no: "høflig",     ms: "educato",    fs: "educata",    mp: "educati",    fp: "educate" },
+    { no: "takknemlig", ms: "grato",      fs: "grata",      mp: "grati",      fp: "grate" }
+  ]
+},
 /* === DAILY_QUIZZES_END === */
 ];
 
@@ -1462,8 +1501,9 @@ function submitAnswer() {
   } else if (state.current.kind === "verb-conj") {
     const c = state.current.conjAll;
     const labels = ["io","tu","lui/lei","noi","voi","loro"];
-    let grid = "<span class='adj-grid'>";
-    for (let i = 0; i < 6; i++) {
+    let grid = "<span class='adj-grid verb-grid'>";
+    const order = [0, 3, 1, 4, 2, 5];
+    for (const i of order) {
       grid += "<span class='adj-cell'><em>" + labels[i] + "</em><b>" + c[i] + "</b></span>";
     }
     grid += "</span>";
