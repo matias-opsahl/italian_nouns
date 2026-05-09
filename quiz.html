@@ -610,20 +610,20 @@
 
     <label class="field-label" style="margin-top:20px">Hva vil du øve på?</label>
     <div class="modes" id="modes" role="group">
-      <button type="button" class="mode-chip is-active" data-mode="all">
-        <span>Alt<span class="num" data-count="all">30</span></span>
+      <button type="button" class="mode-chip is-active" data-mode="nouns">
+        <span>Substantiv<span class="num" data-count="nouns">10</span></span>
         <span class="key">1</span>
       </button>
-      <button type="button" class="mode-chip" data-mode="nouns">
-        <span>Substantiv<span class="num" data-count="nouns">10</span></span>
+      <button type="button" class="mode-chip" data-mode="adjectives">
+        <span>Adjektiv<span class="num" data-count="adjectives">10</span></span>
         <span class="key">2</span>
       </button>
       <button type="button" class="mode-chip" data-mode="verbs">
         <span>Verb<span class="num" data-count="verbs">10</span></span>
         <span class="key">3</span>
       </button>
-      <button type="button" class="mode-chip" data-mode="adjectives">
-        <span>Adjektiv<span class="num" data-count="adjectives">10</span></span>
+      <button type="button" class="mode-chip" data-mode="all">
+        <span>Alt<span class="num" data-count="all">30</span></span>
         <span class="key">4</span>
       </button>
       <div class="modes-divider" aria-hidden="true"></div>
@@ -1276,7 +1276,7 @@ const state = {
   attempts: 0, correctAttempts: 0,
   askedKeys: null, missed: [], current: null, currentFirstTry: true,
   awaitingAdvance: false, lastDay: null,
-  mode: "all", lastMode: "all"
+  mode: "nouns", lastMode: "nouns"
 };
 
 const $ = id => document.getElementById(id);
@@ -1669,7 +1669,7 @@ function globalKeys(e) {
       }
       return;
     }
-    const map = { "1":"all", "2":"nouns", "3":"verbs", "4":"adjectives", "5":"verbs-conj", "6":"sentences" };
+    const map = { "1":"nouns", "2":"adjectives", "3":"verbs", "4":"all", "5":"verbs-conj", "6":"sentences" };
     if (map[e.key]) { e.preventDefault(); setMode(map[e.key]); }
     return;
   }
