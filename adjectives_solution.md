@@ -75,3 +75,16 @@
 | nervøs | nervoso | nervosa | nervosi | nervose |
 | høflig | educato | educata | educati | educate |
 | takknemlig | grato | grata | grati | grate |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| nysgjerrig | curioso | curiosa | curiosi | curiose |
+| tålmodig | paziente | paziente | pazienti | pazienti |
+| utålmodig | impaziente | impaziente | impazienti | impazienti |
+| forsiktig | attento | attenta | attenti | attente |
+| modig | coraggioso | coraggiosa | coraggiosi | coraggiose |
+| kjent | famoso | famosa | famosi | famose |
+| koselig | accogliente | accogliente | accoglienti | accoglienti |
+| fersk | fresco | fresca | freschi | fresche |
+| bitter | amaro | amara | amari | amare |
+| søvnig | assonnato | assonnata | assonnati | assonnate |

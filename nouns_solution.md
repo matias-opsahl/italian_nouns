@@ -76,3 +76,16 @@
 | stemme | stemmer | la voce | le voci | f |
 | farge | farger | il colore | i colori | m |
 | uke | uker | la settimana | le settimane | f |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|---|
+| nøkkel | nøkler | la chiave | le chiavi | f |
+| telefon | telefoner | il telefono | i telefoni | m |
+| kjøleskap | kjøleskap | il frigorifero | i frigoriferi | m |
+| lampe | lamper | la lampada | le lampade | f |
+| speil | speil | lo specchio | gli specchi | m |
+| skje | skjeer | il cucchiaio | i cucchiai | m |
+| gaffel | gafler | la forchetta | le forchette | f |
+| kniv | kniver | il coltello | i coltelli | m |
+| tallerken | tallerkener | il piatto | i piatti | m |
+| kopp | kopper | la tazza | le tazze | f |

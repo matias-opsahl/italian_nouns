@@ -76,3 +76,16 @@
 | å ønske | desiderare |
 | å bestemme | decidere |
 | å feire | celebrare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å sitte | sedere |
+| å tegne | disegnare |
+| å svømme | nuotare |
+| å hvile | riposare |
+| å dele | dividere |
+| å nyte | godere |
+| å gjette | indovinare |
+| å diskutere | discutere |
+| å følge | seguire |
+| å låne | prestare |
