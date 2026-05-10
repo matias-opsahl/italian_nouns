@@ -293,6 +293,64 @@
     color: #fff;
     border-color: var(--ink);
   }
+
+  /* Bredde-modus: egen seksjon, italiensk-flagg-aksent */
+  .bank-section {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--hairline-2);
+  }
+  .bank-section .field-label {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 12px;
+  }
+  .bank-section .field-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--green) 0%, var(--green) 33%,
+                                       #fff 33%, #fff 66%,
+                                       var(--red) 66%, var(--red) 100%);
+    opacity: 0.55;
+    margin-left: 4px;
+  }
+  .bank-hint {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    margin: -4px 0 12px;
+  }
+  .mode-chip.is-bank {
+    border-style: solid;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfaf6 100%);
+    position: relative;
+    padding-left: 18px;
+  }
+  .mode-chip.is-bank::before {
+    content: "";
+    position: absolute;
+    left: 8px; top: 12px; bottom: 12px;
+    width: 3px;
+    border-radius: 2px;
+    background: linear-gradient(180deg, var(--green) 0%, var(--green) 33%,
+                                        #ffffff 33%, #ffffff 66%,
+                                        var(--red) 66%, var(--red) 100%);
+    border: 1px solid var(--hairline-2);
+  }
+  .mode-chip.is-bank.is-active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .mode-chip.is-bank.is-active::before {
+    border-color: rgba(255,255,255,0.3);
+  }
+  .dateSel-wrap.is-dim {
+    opacity: 0.4;
+    pointer-events: none;
+    transition: opacity .2s;
+  }
   .mode-chip.is-active .num,
   .mode-chip.is-active .key {
     color: rgba(255,255,255,0.85);
@@ -604,9 +662,11 @@
 
   <!-- ── START ──────────────────────────────────────── -->
   <section id="screen-start" class="card">
-    <label class="field-label" for="dateSel">Dato</label>
-    <select id="dateSel"></select>
-    <div class="meta" id="meta"></div>
+    <div class="dateSel-wrap" id="dateSelWrap">
+      <label class="field-label" for="dateSel">Dato</label>
+      <select id="dateSel"></select>
+      <div class="meta" id="meta"></div>
+    </div>
 
     <label class="field-label" style="margin-top:20px">Hva vil du øve på?</label>
     <div class="modes" id="modes" role="group">
@@ -637,6 +697,29 @@
       </button>
     </div>
 
+    <div class="bank-section">
+      <label class="field-label">Bredde-quiz · på tvers av alle dager</label>
+      <p class="bank-hint" id="bankHint">tilfeldige ord fra hele ordbanken</p>
+      <div class="modes" id="modesBank" role="group">
+        <button type="button" class="mode-chip is-bank" data-mode="bank-nouns">
+          <span>Substantiv<span class="num" data-count="bank-nouns">0</span></span>
+          <span class="key">7</span>
+        </button>
+        <button type="button" class="mode-chip is-bank" data-mode="bank-adjectives">
+          <span>Adjektiv<span class="num" data-count="bank-adjectives">0</span></span>
+          <span class="key">8</span>
+        </button>
+        <button type="button" class="mode-chip is-bank" data-mode="bank-verbs">
+          <span>Verb<span class="num" data-count="bank-verbs">0</span></span>
+          <span class="key">9</span>
+        </button>
+        <button type="button" class="mode-chip is-bank" data-mode="bank-all">
+          <span>Alt<span class="num" data-count="bank-all">0</span></span>
+          <span class="key">0</span>
+        </button>
+      </div>
+    </div>
+
     <div class="stack" style="margin-top:18px">
       <button class="btn btn-go" id="startBtn">
         Start quiz <kbd>Enter</kbd>
@@ -644,7 +727,7 @@
     </div>
 
     <div class="keyhelp">
-      <kbd>↑</kbd><kbd>↓</kbd> bytt dato · <kbd>1</kbd>–<kbd>6</kbd> kategori · <kbd>Enter</kbd> start
+      <kbd>↑</kbd><kbd>↓</kbd> bytt dato · <kbd>1</kbd>–<kbd>6</kbd> dag · <kbd>7</kbd>–<kbd>0</kbd> bredde · <kbd>Enter</kbd> start
     </div>
   </section>
 
@@ -1102,6 +1185,95 @@ const PERSONS = [
 const PERSON_LABELS = ["1. person entall","2. person entall","3. person entall",
                        "1. person flertall","2. person flertall","3. person flertall"];
 
+const BANK_SAMPLE_SIZE = 10;
+
+function pickRandom(arr, n) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a.slice(0, Math.min(n, a.length));
+}
+
+function bankPool(kind) {
+  const out = [];
+  for (const day of DAILY_QUIZZES) {
+    if (kind === "nouns")      for (const n of day.nouns)      out.push(n);
+    if (kind === "verbs")      for (const v of day.verbs)      out.push(v);
+    if (kind === "adjectives") for (const a of day.adjectives) out.push(a);
+  }
+  return out;
+}
+
+function buildBankQuestions(mode, count) {
+  const total = count || BANK_SAMPLE_SIZE;
+  const qs = [];
+
+  const addNoun = (n) => {
+    const usePl = Math.random() < 0.5;
+    const noPl = n.noPl || n.no;
+    const norskPrompt = usePl ? noPl : n.no;
+    const ambiguous = (n.no === noPl);
+    qs.push({
+      kind: "noun", type: "Substantiv",
+      form: usePl ? "flertall" : "entall",
+      formClass: ambiguous ? (usePl ? "flertall" : "entall") : "",
+      showCallout: ambiguous,
+      tag: "subst.",
+      prompt: norskPrompt,
+      answer: usePl ? n.pl : n.sg,
+      sg: n.sg, pl: n.pl
+    });
+  };
+  const addVerb = (v) => {
+    qs.push({
+      kind: "verb", type: "Verb",
+      form: "", formClass: "", showCallout: false,
+      tag: "verb",
+      prompt: v.no, answer: v.it
+    });
+  };
+  const addAdj = (a) => {
+    if (!a.ms || !a.fs || !a.mp || !a.fp) return;
+    const adjForms = [
+      { key: "ms", label: "hankjønn entall" },
+      { key: "fs", label: "hunkjønn entall" },
+      { key: "mp", label: "hankjønn flertall" },
+      { key: "fp", label: "hunkjønn flertall" }
+    ];
+    const pick = adjForms[Math.floor(Math.random() * adjForms.length)];
+    qs.push({
+      kind: "adj", type: "Adjektiv",
+      form: pick.label, formClass: "adj-inflect", showCallout: true,
+      tag: "adj.",
+      prompt: a.no, answer: a[pick.key],
+      ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp
+    });
+  };
+
+  if (mode === "bank-nouns") {
+    for (const n of pickRandom(bankPool("nouns"), total)) addNoun(n);
+  } else if (mode === "bank-verbs") {
+    for (const v of pickRandom(bankPool("verbs"), total)) addVerb(v);
+  } else if (mode === "bank-adjectives") {
+    for (const a of pickRandom(bankPool("adjectives"), total)) addAdj(a);
+  } else if (mode === "bank-all") {
+    const nounShare = Math.ceil(total / 3);
+    const verbShare = Math.ceil(total / 3);
+    const adjShare = total - nounShare - verbShare;
+    for (const n of pickRandom(bankPool("nouns"), nounShare)) addNoun(n);
+    for (const v of pickRandom(bankPool("verbs"), verbShare)) addVerb(v);
+    for (const a of pickRandom(bankPool("adjectives"), adjShare)) addAdj(a);
+  }
+
+  for (let i = qs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [qs[i], qs[j]] = [qs[j], qs[i]];
+  }
+  return qs;
+}
+
 function buildQuestions(day, mode) {
   const qs = [];
   if (mode === "all" || mode === "nouns") {
@@ -1362,18 +1534,29 @@ function updateMeta() {
     day.nouns.length + " substantiv · " +
     day.verbs.length + " verb · " +
     day.adjectives.length + " adjektiv";
+  const bankN = bankPool("nouns").length;
+  const bankV = bankPool("verbs").length;
+  const bankA = bankPool("adjectives").length;
   const counts = {
     all: day.nouns.length + day.verbs.length + day.adjectives.length,
     nouns: day.nouns.length,
     verbs: day.verbs.length,
     "verbs-conj": day.verbs.length,
     adjectives: day.adjectives.length,
-    sentences: 8
+    sentences: 8,
+    "bank-nouns": Math.min(BANK_SAMPLE_SIZE, bankN) + " / " + bankN,
+    "bank-verbs": Math.min(BANK_SAMPLE_SIZE, bankV) + " / " + bankV,
+    "bank-adjectives": Math.min(BANK_SAMPLE_SIZE, bankA) + " / " + bankA,
+    "bank-all": BANK_SAMPLE_SIZE + " / " + (bankN + bankV + bankA)
   };
   document.querySelectorAll(".mode-chip .num").forEach(el => {
     const k = el.dataset.count;
     if (counts[k] != null) el.textContent = " " + counts[k];
   });
+  const hint = document.getElementById("bankHint");
+  if (hint) hint.textContent =
+    "tilfeldige ord fra " + DAILY_QUIZZES.length + " dager · " +
+    (bankN + bankV + bankA) + " ord totalt i banken";
 }
 
 function setMode(mode) {
@@ -1381,18 +1564,27 @@ function setMode(mode) {
   document.querySelectorAll(".mode-chip").forEach(c => {
     c.classList.toggle("is-active", c.dataset.mode === mode);
   });
+  const wrap = document.getElementById("dateSelWrap");
+  if (wrap) wrap.classList.toggle("is-dim", mode.startsWith("bank-"));
 }
 
 function startQuiz() {
   startQuizFor($("dateSel").value, state.mode);
 }
 function startQuizFor(date, mode) {
-  const day = DAILY_QUIZZES.find(d => d.date === date);
-  if (!day) return;
   const useMode = mode || "all";
-  state.lastDay = date;
-  state.lastMode = useMode;
-  const qs = buildQuestions(day, useMode);
+  let qs;
+  if (useMode.startsWith("bank-")) {
+    state.lastDay = date;
+    state.lastMode = useMode;
+    qs = buildBankQuestions(useMode, BANK_SAMPLE_SIZE);
+  } else {
+    const day = DAILY_QUIZZES.find(d => d.date === date);
+    if (!day) return;
+    state.lastDay = date;
+    state.lastMode = useMode;
+    qs = buildQuestions(day, useMode);
+  }
   if (qs.length === 0) return;
   state.queue = qs.slice();
   state.total = qs.length;
@@ -1708,7 +1900,11 @@ function globalKeys(e) {
       }
       return;
     }
-    const map = { "1":"nouns", "2":"adjectives", "3":"verbs", "4":"all", "5":"verbs-conj", "6":"sentences" };
+    const map = {
+      "1":"nouns", "2":"adjectives", "3":"verbs", "4":"all",
+      "5":"verbs-conj", "6":"sentences",
+      "7":"bank-nouns", "8":"bank-adjectives", "9":"bank-verbs", "0":"bank-all"
+    };
     if (map[e.key]) { e.preventDefault(); setMode(map[e.key]); }
     return;
   }
