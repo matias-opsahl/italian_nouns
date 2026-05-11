@@ -89,3 +89,16 @@
 | kniv | kniver | il coltello | i coltelli | m |
 | tallerken | tallerkener | il piatto | i piatti | m |
 | kopp | kopper | la tazza | le tazze | f |
+
+| ord (norsk) | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|
+| lege | il medico | i medici | m |
+| jobb | il lavoro | i lavori | m |
+| dag | il giorno | i giorni | m |
+| tid | il tempo | i tempi | m |
+| venn | l'amico | gli amici | m |
+| barn | il bambino | i bambini | m |
+| år | l'anno | gli anni | m |
+| morgen | la mattina | le mattine | f |
+| kveld | la sera | le sere | f |
+| penger | il denaro | i denari | m |

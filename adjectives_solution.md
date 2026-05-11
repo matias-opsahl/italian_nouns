@@ -88,3 +88,16 @@
 | fersk | fresco | fresca | freschi | fresche |
 | bitter | amaro | amara | amari | amare |
 | søvnig | assonnato | assonnata | assonnati | assonnate |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| hvit | bianco | bianca | bianchi | bianche |
+| svart | nero | nera | neri | nere |
+| rød | rosso | rossa | rossi | rosse |
+| grønn | verde | verde | verdi | verdi |
+| gul | giallo | gialla | gialli | gialle |
+| blå | azzurro | azzurra | azzurri | azzurre |
+| overrasket | sorpreso | sorpresa | sorpresi | sorprese |
+| sjalu | geloso | gelosa | gelosi | gelose |
+| spent | entusiasta | entusiasta | entusiasti | entusiaste |
+| nydelig | meraviglioso | meravigliosa | meravigliosi | meravigliose |

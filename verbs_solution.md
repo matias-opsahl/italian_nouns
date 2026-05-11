@@ -89,3 +89,16 @@
 | å diskutere | discutere |
 | å følge | seguire |
 | å låne | prestare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å vise | mostrare |
+| å forklare | spiegare |
+| å endre | cambiare |
+| å kjenne | conoscere |
+| å bære | portare |
+| å kaste | lanciare |
+| å bygge | costruire |
+| å sette | mettere |
+| å bruke | usare |
+| å forbedre | migliorare |
