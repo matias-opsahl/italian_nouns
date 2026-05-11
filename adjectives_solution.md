@@ -39,19 +39,6 @@
 
 | ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
 |---|---|---|---|---|
-| gammel | vecchio | vecchia | vecchi | vecchie |
-| ny | nuovo | nuova | nuovi | nuove |
-| stor | grande | grande | grandi | grandi |
-| liten | piccolo | piccola | piccoli | piccole |
-| lang | lungo | lunga | lunghi | lunghe |
-| kort | corto | corta | corti | corte |
-| rask | veloce | veloce | veloci | veloci |
-| sakte | lento | lenta | lenti | lente |
-| varm | caldo | calda | caldi | calde |
-| kald | freddo | fredda | freddi | fredde |
-
-| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
-|---|---|---|---|---|
 | vakker | bello | bella | belli | belle |
 | stygg | brutto | brutta | brutti | brutte |
 | sterk | forte | forte | forti | forti |

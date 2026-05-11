@@ -40,19 +40,6 @@
 
 | ord (norsk) | ord (italiensk) |
 |---|---|
-| å kjøpe | comprare |
-| å selge | vendere |
-| å hjelpe | aiutare |
-| å finne | trovare |
-| å tenke | pensare |
-| å forstå | capire |
-| å betale | pagare |
-| å vente | aspettare |
-| å reise | viaggiare |
-| å åpne | aprire |
-
-| ord (norsk) | ord (italiensk) |
-|---|---|
 | å lukke | chiudere |
 | å komme | venire |
 | å dra | partire |

@@ -14,7 +14,7 @@
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 |---|---|---|---|
-| stue | il salotto | i salotti | m |
+| stue | il soggiorno | i soggiorni | m |
 | hage | il giardino | i giardini | m |
 | torg | la piazza | le piazze | f |
 | marked | il mercato | i mercati | m |
@@ -37,19 +37,6 @@
 | bok | il libro | i libri | m |
 | bord | il tavolo | i tavoli | m |
 | stol | la sedia | le sedie | f |
-
-| ord (norsk) | ord (s.g) | ord (p.l) | gender |
-|---|---|---|---|
-| butikk | il negozio | i negozi | m |
-| hund | il cane | i cani | m |
-| katt | il gatto | i gatti | m |
-| blomst | il fiore | i fiori | m |
-| tre | l'albero | gli alberi | m |
-| regn | la pioggia | le piogge | f |
-| vind | il vento | i venti | m |
-| hånd | la mano | le mani | f |
-| øye | l'occhio | gli occhi | m |
-| natt | la notte | le notti | f |
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender |
 |---|---|---|---|

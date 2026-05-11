@@ -294,6 +294,32 @@
     border-color: var(--ink);
   }
 
+  /* Extras (skjult bak toggle) ───────────────────── */
+  .extras-wrap {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--hairline-2);
+  }
+  .extras-toggle {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--hairline-2);
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-family: "Geist", sans-serif;
+    font-size: 13px; font-weight: 500;
+    color: var(--ink-2); cursor: pointer;
+    transition: border-color .15s, background .15s, color .15s;
+  }
+  .extras-toggle:hover { border-color: var(--ink); color: var(--ink); }
+  .extras-toggle .chev {
+    display: inline-block;
+    transition: transform .15s;
+  }
+  .extras-wrap.is-open .extras-toggle .chev { transform: rotate(90deg); }
+  .extras-content { display: none; }
+  .extras-wrap.is-open .extras-content { display: block; }
+
   /* Bredde-modus: egen seksjon, italiensk-flagg-aksent */
   .bank-section {
     margin-top: 22px;
@@ -321,35 +347,146 @@
     color: var(--muted);
     margin: -4px 0 12px;
   }
-  .mode-chip.is-bank {
-    border-style: solid;
-    background: linear-gradient(180deg, #ffffff 0%, #fbfaf6 100%);
-    position: relative;
-    padding-left: 18px;
-  }
-  .mode-chip.is-bank::before {
-    content: "";
-    position: absolute;
-    left: 8px; top: 12px; bottom: 12px;
-    width: 3px;
-    border-radius: 2px;
-    background: linear-gradient(180deg, var(--green) 0%, var(--green) 33%,
-                                        #ffffff 33%, #ffffff 66%,
-                                        var(--red) 66%, var(--red) 100%);
-    border: 1px solid var(--hairline-2);
-  }
   .mode-chip.is-bank.is-active {
     background: var(--ink);
     color: #fff;
     border-color: var(--ink);
   }
-  .mode-chip.is-bank.is-active::before {
-    border-color: rgba(255,255,255,0.3);
-  }
   .dateSel-wrap.is-dim {
     opacity: 0.4;
     pointer-events: none;
     transition: opacity .2s;
+  }
+
+  /* ── Day list (hover preview) ───────────────────── */
+  .day-list-wrap { }
+  .day-list-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--hairline-2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: "Geist", sans-serif;
+    font-size: 16px;
+    color: var(--ink); cursor: pointer;
+    transition: border-color .15s, background .15s, color .15s;
+    text-align: left;
+  }
+  .day-list-toggle:hover { border-color: var(--ink); }
+  .day-list-wrap.is-open .day-list-toggle {
+    background: var(--ink); color: #fff; border-color: var(--ink);
+  }
+  .day-list-toggle .chev {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--muted);
+    transition: transform .15s, color .15s;
+    margin-left: 12px;
+  }
+  .day-list-wrap.is-open .day-list-toggle .chev { transform: rotate(180deg); color: #fff; }
+  .day-list {
+    margin-top: 10px;
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid var(--hairline-2);
+    border-radius: 8px;
+    background: var(--card);
+    display: none;
+  }
+  .day-list-wrap.is-open .day-list { display: block; }
+  .day-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--hairline);
+    font-size: 14px;
+    transition: background .12s;
+  }
+  .day-row:last-child { border-bottom: none; }
+  .day-row:hover { background: var(--soft-green); }
+  .day-row.is-selected {
+    background: var(--ink); color: #fff;
+  }
+  .day-row.is-selected:hover { background: #1d2128; }
+  .day-row .day-count {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .day-row.is-selected .day-count { color: rgba(255,255,255,0.7); }
+
+  /* ── Side preview panel ─────────────────────────── */
+  .date-preview {
+    position: fixed;
+    top: 64px;
+    left: calc(50% + 344px);
+    width: 360px;
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-shadow: 0 8px 24px -16px rgba(13,16,20,0.14);
+    opacity: 0;
+    transform: translateX(-6px);
+    pointer-events: none;
+    transition: opacity .15s, transform .15s;
+    z-index: 50;
+  }
+  .date-preview.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+  .date-preview .preview-close {
+    position: absolute;
+    top: 10px; right: 12px;
+    background: none; border: none;
+    font-size: 18px; line-height: 1;
+    color: var(--muted); cursor: pointer;
+    padding: 4px 6px; border-radius: 4px;
+  }
+  .date-preview .preview-close:hover { color: var(--ink); background: var(--bg); }
+  .date-preview h3 {
+    font-family: "Geist", sans-serif;
+    font-size: 14px; font-weight: 600;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+    padding-right: 24px;
+  }
+  .date-preview .preview-meta {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px; color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .date-preview .preview-section { margin-top: 14px; }
+  .date-preview .preview-section:first-of-type { margin-top: 0; }
+  .date-preview .preview-section h4 {
+    font-family: "Geist Mono", monospace;
+    font-size: 10.5px; letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 6px;
+    font-weight: 500;
+  }
+  .date-preview ul.preview-list {
+    list-style: none; margin: 0; padding: 0;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .date-preview ul.preview-list li {
+    display: flex; justify-content: space-between; gap: 12px;
+    padding: 3px 0;
+    border-bottom: 1px dashed var(--hairline);
+  }
+  .date-preview ul.preview-list li:last-child { border-bottom: none; }
+  .date-preview .pw-no  { color: var(--ink-2); }
+  .date-preview .pw-it  { color: var(--ink); font-weight: 500; text-align: right; }
+  @media (max-width: 1080px) {
+    .date-preview { display: none; }
   }
   .mode-chip.is-active .num,
   .mode-chip.is-active .key {
@@ -663,10 +800,18 @@
   <!-- ── START ──────────────────────────────────────── -->
   <section id="screen-start" class="card">
     <div class="dateSel-wrap" id="dateSelWrap">
-      <label class="field-label" for="dateSel">Dato</label>
-      <select id="dateSel"></select>
+      <label class="field-label">Dato</label>
+      <select id="dateSel" hidden></select>
+      <div class="day-list-wrap" id="dayListWrap">
+        <button type="button" class="day-list-toggle" id="dayListToggle" aria-expanded="false" aria-haspopup="listbox">
+          <span id="dayListToggleLabel">—</span>
+          <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <div class="day-list" id="dayList" role="listbox"></div>
+      </div>
       <div class="meta" id="meta"></div>
     </div>
+    <aside class="date-preview" id="datePreview" aria-hidden="true"></aside>
 
     <label class="field-label" style="margin-top:20px">Hva vil du øve på?</label>
     <div class="modes" id="modes" role="group">
@@ -686,37 +831,45 @@
         <span>Alt<span class="num" data-count="all">30</span></span>
         <span class="key">4</span>
       </button>
-      <div class="modes-divider" aria-hidden="true"></div>
-      <button type="button" class="mode-chip is-extra" data-mode="verbs-conj">
-        <span>Verb-bøyning<span class="num" data-count="verbs-conj">10</span></span>
-        <span class="key">5</span>
-      </button>
-      <button type="button" class="mode-chip is-extra" data-mode="sentences">
-        <span>Setninger<span class="num" data-count="sentences">8</span></span>
-        <span class="key">6</span>
-      </button>
     </div>
 
-    <div class="bank-section">
-      <label class="field-label">Bredde-quiz · på tvers av alle dager</label>
-      <p class="bank-hint" id="bankHint">tilfeldige ord fra hele ordbanken</p>
-      <div class="modes" id="modesBank" role="group">
-        <button type="button" class="mode-chip is-bank" data-mode="bank-nouns">
-          <span>Substantiv<span class="num" data-count="bank-nouns">0</span></span>
-          <span class="key">7</span>
-        </button>
-        <button type="button" class="mode-chip is-bank" data-mode="bank-adjectives">
-          <span>Adjektiv<span class="num" data-count="bank-adjectives">0</span></span>
-          <span class="key">8</span>
-        </button>
-        <button type="button" class="mode-chip is-bank" data-mode="bank-verbs">
-          <span>Verb<span class="num" data-count="bank-verbs">0</span></span>
-          <span class="key">9</span>
-        </button>
-        <button type="button" class="mode-chip is-bank" data-mode="bank-all">
-          <span>Alt<span class="num" data-count="bank-all">0</span></span>
-          <span class="key">0</span>
-        </button>
+    <div class="extras-wrap" id="extrasWrap">
+      <button type="button" class="extras-toggle" id="extrasToggle" aria-expanded="false">
+        <span class="chev">›</span><span id="extrasToggleLabel">Vis flere alternativer</span>
+      </button>
+      <div class="extras-content">
+        <label class="field-label" style="margin-top:14px">Andre øvelser</label>
+        <div class="modes">
+          <button type="button" class="mode-chip is-extra" data-mode="verbs-conj">
+            <span>Verb-bøyning<span class="num" data-count="verbs-conj">10</span></span>
+            <span class="key">5</span>
+          </button>
+          <button type="button" class="mode-chip is-extra" data-mode="sentences">
+            <span>Setninger<span class="num" data-count="sentences">8</span></span>
+            <span class="key">6</span>
+          </button>
+        </div>
+
+        <div class="bank-section">
+          <div class="modes" id="modesBank" role="group">
+            <button type="button" class="mode-chip is-bank" data-mode="bank-nouns">
+              <span>Substantiv<span class="num" data-count="bank-nouns">0</span></span>
+              <span class="key">7</span>
+            </button>
+            <button type="button" class="mode-chip is-bank" data-mode="bank-adjectives">
+              <span>Adjektiv<span class="num" data-count="bank-adjectives">0</span></span>
+              <span class="key">8</span>
+            </button>
+            <button type="button" class="mode-chip is-bank" data-mode="bank-verbs">
+              <span>Verb<span class="num" data-count="bank-verbs">0</span></span>
+              <span class="key">9</span>
+            </button>
+            <button type="button" class="mode-chip is-bank" data-mode="bank-all">
+              <span>Alt<span class="num" data-count="bank-all">0</span></span>
+              <span class="key">0</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -849,7 +1002,7 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-06",
   nouns: [
-    { no: "stue",    noPl: "stuer",     sg: "il salotto",    pl: "i salotti" },
+    { no: "stue",    noPl: "stuer",     sg: "il soggiorno",  pl: "i soggiorni" },
     { no: "hage",    noPl: "hager",     sg: "il giardino",   pl: "i giardini" },
     { no: "torg",    noPl: "torg",      sg: "la piazza",     pl: "le piazze" },
     { no: "marked",  noPl: "markeder",  sg: "il mercato",    pl: "i mercati" },
@@ -922,45 +1075,6 @@ const DAILY_QUIZZES = [
     { no: "frisk",  ms: "sano",       fs: "sana",       mp: "sani",       fp: "sane" },
     { no: "syk",    ms: "malato",     fs: "malata",     mp: "malati",     fp: "malate" },
     { no: "ung",    ms: "giovane",    fs: "giovane",    mp: "giovani",    fp: "giovani" }
-  ]
-},
-{
-  date: "2026-05-08",
-  nouns: [
-    { no: "butikk", noPl: "butikker", sg: "il negozio",  pl: "i negozi" },
-    { no: "hund",   noPl: "hunder",   sg: "il cane",     pl: "i cani" },
-    { no: "katt",   noPl: "katter",   sg: "il gatto",    pl: "i gatti" },
-    { no: "blomst", noPl: "blomster", sg: "il fiore",    pl: "i fiori" },
-    { no: "tre",    noPl: "trær",     sg: "l'albero",    pl: "gli alberi" },
-    { no: "regn",   noPl: "regn",     sg: "la pioggia",  pl: "le piogge" },
-    { no: "vind",   noPl: "vinder",   sg: "il vento",    pl: "i venti" },
-    { no: "hånd",   noPl: "hender",   sg: "la mano",     pl: "le mani" },
-    { no: "øye",    noPl: "øyne",     sg: "l'occhio",    pl: "gli occhi" },
-    { no: "natt",   noPl: "netter",   sg: "la notte",    pl: "le notti" }
-  ],
-  verbs: [
-    { no: "å kjøpe",   it: "comprare" },
-    { no: "å selge",   it: "vendere" },
-    { no: "å hjelpe",  it: "aiutare" },
-    { no: "å finne",   it: "trovare" },
-    { no: "å tenke",   it: "pensare" },
-    { no: "å forstå",  it: "capire" },
-    { no: "å betale",  it: "pagare" },
-    { no: "å vente",   it: "aspettare" },
-    { no: "å reise",   it: "viaggiare" },
-    { no: "å åpne",    it: "aprire" }
-  ],
-  adjectives: [
-    { no: "gammel", ms: "vecchio", fs: "vecchia", mp: "vecchi",  fp: "vecchie" },
-    { no: "ny",     ms: "nuovo",   fs: "nuova",   mp: "nuovi",   fp: "nuove" },
-    { no: "stor",   ms: "grande",  fs: "grande",  mp: "grandi",  fp: "grandi" },
-    { no: "liten",  ms: "piccolo", fs: "piccola", mp: "piccoli", fp: "piccole" },
-    { no: "lang",   ms: "lungo",   fs: "lunga",   mp: "lunghi",  fp: "lunghe" },
-    { no: "kort",   ms: "corto",   fs: "corta",   mp: "corti",   fp: "corte" },
-    { no: "rask",   ms: "veloce",  fs: "veloce",  mp: "veloci",  fp: "veloci" },
-    { no: "sakte",  ms: "lento",   fs: "lenta",   mp: "lenti",   fp: "lente" },
-    { no: "varm",   ms: "caldo",   fs: "calda",   mp: "caldi",   fp: "calde" },
-    { no: "kald",   ms: "freddo",  fs: "fredda",  mp: "freddi",  fp: "fredde" }
   ]
 },
 {
@@ -1542,7 +1656,37 @@ function init() {
     sel.appendChild(opt);
   }
   updateMeta();
-  sel.addEventListener("change", updateMeta);
+  updateDateComboLabel();
+  sel.addEventListener("change", () => { updateMeta(); renderDayList(); updateDateComboLabel(); });
+
+  buildDayList();
+  const toggle = $("dayListToggle");
+  const wrap = $("dayListWrap");
+  toggle.addEventListener("click", () => {
+    const open = wrap.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) showDatePreview($("dateSel").value);
+    else hideDatePreview();
+  });
+  $("dayList").addEventListener("mouseleave", () => {
+    if (wrap.classList.contains("is-open")) showDatePreview($("dateSel").value);
+  });
+
+  const exWrap = $("extrasWrap");
+  const exToggle = $("extrasToggle");
+  exToggle.addEventListener("click", () => {
+    const open = exWrap.classList.toggle("is-open");
+    exToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    $("extrasToggleLabel").textContent = open ? "Skjul flere alternativer" : "Vis flere alternativer";
+  });
+  document.addEventListener("click", (e) => {
+    const panel = $("datePreview");
+    if (!panel.classList.contains("is-visible")) return;
+    if (panel.contains(e.target)) return;
+    if ($("dayList").contains(e.target)) return;
+    if (toggle.contains(e.target)) return;
+    hideDatePreview();
+  });
 
   document.querySelectorAll(".mode-chip").forEach(chip => {
     chip.addEventListener("click", () => setMode(chip.dataset.mode));
@@ -1558,6 +1702,92 @@ function init() {
   });
 
   document.addEventListener("keydown", globalKeys);
+}
+
+function updateDateComboLabel() {
+  const sel = $("dateSel");
+  const day = DAILY_QUIZZES.find(d => d.date === sel.value);
+  if (!day) { $("dayListToggleLabel").textContent = "—"; return; }
+  const total = day.nouns.length + day.verbs.length + day.adjectives.length;
+  $("dayListToggleLabel").textContent = formatDate(day.date) + "  ·  " + total + " ord";
+}
+
+function buildDayList() {
+  const list = $("dayList");
+  const sorted = [...DAILY_QUIZZES].sort((a,b) => b.date.localeCompare(a.date));
+  list.innerHTML = "";
+  for (const d of sorted) {
+    const row = document.createElement("div");
+    row.className = "day-row";
+    row.dataset.date = d.date;
+    row.setAttribute("role", "option");
+    const total = d.nouns.length + d.verbs.length + d.adjectives.length;
+    row.innerHTML =
+      '<span class="day-label">' + formatDate(d.date) + '</span>' +
+      '<span class="day-count">' + total + ' ord</span>';
+    row.addEventListener("mouseenter", () => showDatePreview(d.date));
+    row.addEventListener("click", () => {
+      $("dateSel").value = d.date;
+      updateMeta();
+      renderDayList();
+      updateDateComboLabel();
+      $("dayListToggle").click();
+    });
+    list.appendChild(row);
+  }
+  renderDayList();
+}
+
+function renderDayList() {
+  const cur = $("dateSel").value;
+  document.querySelectorAll("#dayList .day-row").forEach(r => {
+    r.classList.toggle("is-selected", r.dataset.date === cur);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  })[c]);
+}
+
+function showDatePreview(date) {
+  const day = DAILY_QUIZZES.find(d => d.date === date);
+  if (!day) return;
+  const panel = $("datePreview");
+  const total = day.nouns.length + day.verbs.length + day.adjectives.length;
+  const nounsHtml = day.nouns.map(n =>
+    '<li><span class="pw-no">' + escapeHtml(n.no) + '</span>' +
+    '<span class="pw-it">' + escapeHtml(n.sg) + '</span></li>'
+  ).join("");
+  const verbsHtml = day.verbs.map(v =>
+    '<li><span class="pw-no">' + escapeHtml(v.no) + '</span>' +
+    '<span class="pw-it">' + escapeHtml(v.it) + '</span></li>'
+  ).join("");
+  const adjHtml = day.adjectives.map(a =>
+    '<li><span class="pw-no">' + escapeHtml(a.no) + '</span>' +
+    '<span class="pw-it">' + escapeHtml(a.ms) + " / " + escapeHtml(a.fs) + '</span></li>'
+  ).join("");
+  panel.innerHTML =
+    '<button type="button" class="preview-close" aria-label="Lukk">×</button>' +
+    '<h3>' + formatDate(date) + '</h3>' +
+    '<div class="preview-meta">' + total + ' ord · ' +
+      day.nouns.length + ' subst · ' +
+      day.verbs.length + ' verb · ' +
+      day.adjectives.length + ' adj</div>' +
+    '<div class="preview-section"><h4>Substantiv</h4><ul class="preview-list">' + nounsHtml + '</ul></div>' +
+    '<div class="preview-section"><h4>Verb</h4><ul class="preview-list">' + verbsHtml + '</ul></div>' +
+    '<div class="preview-section"><h4>Adjektiv (m / f)</h4><ul class="preview-list">' + adjHtml + '</ul></div>';
+  panel.classList.add("is-visible");
+  panel.setAttribute("aria-hidden", "false");
+  const closeBtn = panel.querySelector(".preview-close");
+  if (closeBtn) closeBtn.addEventListener("click", hideDatePreview);
+}
+
+function hideDatePreview() {
+  const panel = $("datePreview");
+  panel.classList.remove("is-visible");
+  panel.setAttribute("aria-hidden", "true");
 }
 
 function formatDate(iso) {
@@ -1592,10 +1822,6 @@ function updateMeta() {
     const k = el.dataset.count;
     if (counts[k] != null) el.textContent = " " + counts[k];
   });
-  const hint = document.getElementById("bankHint");
-  if (hint) hint.textContent =
-    "tilfeldige ord fra " + DAILY_QUIZZES.length + " dager · " +
-    (bankN + bankV + bankA) + " ord totalt i banken";
 }
 
 function setMode(mode) {
@@ -1927,15 +2153,31 @@ function globalKeys(e) {
   const onEnd   = !$("screen-end").classList.contains("hidden");
 
   if (onStart) {
-    if (e.key === "Enter") { e.preventDefault(); startQuiz(); return; }
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if ($("dayListWrap").classList.contains("is-open")) {
+        $("dayListToggle").click();
+      } else {
+        startQuiz();
+      }
+      return;
+    }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       const sel = $("dateSel");
-      if (document.activeElement !== sel) {
+      const listOpen = $("dayListWrap").classList.contains("is-open");
+      if (document.activeElement !== sel || listOpen) {
         e.preventDefault();
         const i = sel.selectedIndex;
         if (e.key === "ArrowDown" && i < sel.options.length - 1) sel.selectedIndex = i + 1;
         if (e.key === "ArrowUp"   && i > 0)                       sel.selectedIndex = i - 1;
         updateMeta();
+        updateDateComboLabel();
+        if (listOpen) {
+          renderDayList();
+          showDatePreview(sel.value);
+          const row = document.querySelector('#dayList .day-row[data-date="' + sel.value + '"]');
+          if (row) row.scrollIntoView({ block: "nearest" });
+        }
       }
       return;
     }
