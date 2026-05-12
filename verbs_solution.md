@@ -89,3 +89,16 @@
 | å sette | mettere |
 | å bruke | usare |
 | å forbedre | migliorare |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å åpne | aprire |
+| å betale | pagare |
+| å reise | viaggiare |
+| å tenke | pensare |
+| å forstå | capire |
+| å hjelpe | aiutare |
+| å returnere | tornare |
+| å vente | aspettare |
+| å kjøpe | comprare |
+| å selge | vendere |

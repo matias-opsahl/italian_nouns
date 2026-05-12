@@ -89,3 +89,16 @@
 | morgen | la mattina | le mattine | f |
 | kveld | la sera | le sere | f |
 | penger | il denaro | i denari | m |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|---|
+| blomst | blomster | il fiore | i fiori | m |
+| fugl | fugler | l'uccello | gli uccelli | m |
+| katt | katter | il gatto | i gatti | m |
+| hund | hunder | il cane | i cani | m |
+| sykkel | sykler | la bicicletta | le biciclette | f |
+| restaurant | restauranter | il ristorante | i ristoranti | m |
+| park | parker | il parco | i parchi | m |
+| natt | netter | la notte | le notti | f |
+| tre | trær | l'albero | gli alberi | m |
+| dyr | dyr | l'animale | gli animali | m |

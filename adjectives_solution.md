@@ -88,3 +88,16 @@
 | sjalu | geloso | gelosa | gelosi | gelose |
 | spent | entusiasta | entusiasta | entusiasti | entusiaste |
 | nydelig | meraviglioso | meravigliosa | meravigliosi | meravigliose |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| stor | grande | grande | grandi | grandi |
+| liten | piccolo | piccola | piccoli | piccole |
+| gammel | vecchio | vecchia | vecchi | vecchie |
+| ny | nuovo | nuova | nuovi | nuove |
+| rask | veloce | veloce | veloci | veloci |
+| langsom | lento | lenta | lenti | lente |
+| varm | caldo | calda | caldi | calde |
+| kald | freddo | fredda | freddi | fredde |
+| høy | alto | alta | alti | alte |
+| lav | basso | bassa | bassi | basse |
