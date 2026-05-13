@@ -553,6 +553,28 @@
     color: var(--ink);
     margin: 0;
   }
+  .prompt-alt {
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--muted, #888);
+    margin: 10px 0 0;
+    letter-spacing: 0.01em;
+  }
+  .prompt-alt:empty { display: none; }
+  .prompt-alt .alt-label {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    margin-right: 6px;
+    opacity: 0.7;
+  }
+  .pw-no .pw-alt {
+    color: var(--muted, #888);
+    font-weight: 400;
+    font-size: 0.85em;
+    margin-left: 6px;
+  }
 
   /* ── Feedback ───────────────────────────────────── */
   .feedback {
@@ -934,6 +956,7 @@
     <div class="prompt-block">
       <div class="form-callout" id="formCallout">—</div>
       <p class="prompt-word" id="qText">—</p>
+      <p class="prompt-alt" id="qAlt"></p>
     </div>
 
     <form id="answerForm" autocomplete="off">
@@ -1019,18 +1042,18 @@ const DAILY_QUIZZES = [
     { no: "å fortelle", it: "raccontare" },
     { no: "å vinne",    it: "vincere" },
     { no: "å bo",       it: "abitare" },
-    { no: "å begynne",  it: "cominciare" },
-    { no: "å avslutte", it: "finire" }
+    { no: "å begynne",  it: "cominciare", alt: ["å starte"] },
+    { no: "å avslutte", it: "finire",     alt: ["å slutte"] }
   ],
   adjectives: [
     { no: "tung",        ms: "pesante",     fs: "pesante",     mp: "pesanti",     fp: "pesanti" },
     { no: "lett (vekt)", ms: "leggero",     fs: "leggera",     mp: "leggeri",     fp: "leggere" },
     { no: "mørk",        ms: "scuro",       fs: "scura",       mp: "scuri",       fp: "scure" },
-    { no: "lys",         ms: "chiaro",      fs: "chiara",      mp: "chiari",      fp: "chiare" },
+    { no: "lys",         ms: "chiaro",      fs: "chiara",      mp: "chiari",      fp: "chiare",      alt: ["tydelig"] },
     { no: "tom",         ms: "vuoto",       fs: "vuota",       mp: "vuoti",       fp: "vuote" },
     { no: "full",        ms: "pieno",       fs: "piena",       mp: "pieni",       fp: "piene" },
     { no: "myk",         ms: "morbido",     fs: "morbida",     mp: "morbidi",     fp: "morbide" },
-    { no: "hard",        ms: "duro",        fs: "dura",        mp: "duri",        fp: "dure" },
+    { no: "hard",        ms: "duro",        fs: "dura",        mp: "duri",        fp: "dure",        alt: ["streng"] },
     { no: "stille",      ms: "silenzioso",  fs: "silenziosa",  mp: "silenziosi",  fp: "silenziose" },
     { no: "bred",        ms: "largo",       fs: "larga",       mp: "larghi",      fp: "larghe" }
   ]
@@ -1058,8 +1081,8 @@ const DAILY_QUIZZES = [
     { no: "å motta",     it: "ricevere" },
     { no: "å huske",     it: "ricordare" },
     { no: "å glemme",    it: "dimenticare" },
-    { no: "å føle",      it: "sentire" },
-    { no: "å spille",    it: "giocare" }
+    { no: "å føle",      it: "sentire", alt: ["å høre"] },
+    { no: "å spille",    it: "giocare", alt: ["å leke"] }
   ],
   adjectives: [
     { no: "ren",         ms: "pulito",       fs: "pulita",       mp: "puliti",       fp: "pulite" },
@@ -1093,12 +1116,12 @@ const DAILY_QUIZZES = [
     { no: "å drikke", it: "bere" },
     { no: "å sove",   it: "dormire" },
     { no: "å gå",     it: "camminare" },
-    { no: "å løpe",   it: "correre" },
+    { no: "å løpe",   it: "correre", alt: ["å skynde seg"] },
     { no: "å lese",   it: "leggere" },
     { no: "å skrive", it: "scrivere" },
     { no: "å snakke", it: "parlare" },
-    { no: "å høre",   it: "ascoltare" },
-    { no: "å se",     it: "guardare" }
+    { no: "å høre",   it: "ascoltare", alt: ["å lytte"] },
+    { no: "å se",     it: "guardare",  alt: ["å se på"] }
   ],
   adjectives: [
     { no: "glad",   ms: "felice",     fs: "felice",     mp: "felici",     fp: "felici" },
@@ -1128,21 +1151,21 @@ const DAILY_QUIZZES = [
     { no: "familie", noPl: "familier", sg: "la famiglia", pl: "le famiglie" }
   ],
   verbs: [
-    { no: "å lukke",    it: "chiudere" },
+    { no: "å lukke",    it: "chiudere", alt: ["å stenge"] },
     { no: "å komme",    it: "venire" },
-    { no: "å dra",      it: "partire" },
+    { no: "å dra",      it: "partire",  alt: ["å reise"] },
     { no: "å lage mat", it: "cucinare" },
     { no: "å elske",    it: "amare" },
-    { no: "å prøve",    it: "provare" },
-    { no: "å hente",    it: "prendere" },
+    { no: "å prøve",    it: "provare",  alt: ["å føle"] },
+    { no: "å hente",    it: "prendere", alt: ["å ta"] },
     { no: "å svare",    it: "rispondere" },
-    { no: "å spørre",   it: "chiedere" },
+    { no: "å spørre",   it: "chiedere", alt: ["å be om"] },
     { no: "å like",     it: "piacere" }
   ],
   adjectives: [
     { no: "vakker",      ms: "bello",        fs: "bella",        mp: "belli",        fp: "belle" },
     { no: "stygg",       ms: "brutto",       fs: "brutta",       mp: "brutti",       fp: "brutte" },
-    { no: "sterk",       ms: "forte",        fs: "forte",        mp: "forti",        fp: "forti" },
+    { no: "sterk",       ms: "forte",        fs: "forte",        mp: "forti",        fp: "forti",        alt: ["høy (om lyd)"] },
     { no: "svak",        ms: "debole",       fs: "debole",       mp: "deboli",       fp: "deboli" },
     { no: "rik",         ms: "ricco",        fs: "ricca",        mp: "ricchi",       fp: "ricche" },
     { no: "fattig",      ms: "povero",       fs: "povera",       mp: "poveri",       fp: "povere" },
@@ -1169,9 +1192,9 @@ const DAILY_QUIZZES = [
   verbs: [
     { no: "å møte",      it: "incontrare" },
     { no: "å ringe",     it: "telefonare" },
-    { no: "å kjøre",     it: "guidare" },
+    { no: "å kjøre",     it: "guidare", alt: ["å lede"] },
     { no: "å lære",      it: "imparare" },
-    { no: "å undervise", it: "insegnare" },
+    { no: "å undervise", it: "insegnare", alt: ["å lære bort"] },
     { no: "å smile",     it: "sorridere" },
     { no: "å fly",       it: "volare" },
     { no: "å ønske",     it: "desiderare" },
@@ -1215,7 +1238,7 @@ const DAILY_QUIZZES = [
     { no: "å gjette",    it: "indovinare" },
     { no: "å diskutere", it: "discutere" },
     { no: "å følge",     it: "seguire" },
-    { no: "å låne",      it: "prestare" }
+    { no: "å låne",      it: "prestare", alt: ["å låne ut"] }
   ],
   adjectives: [
     { no: "nysgjerrig", ms: "curioso",     fs: "curiosa",     mp: "curiosi",     fp: "curiose" },
@@ -1236,7 +1259,7 @@ const DAILY_QUIZZES = [
     { no: "lege",   noPl: "leger",    sg: "il medico",   pl: "i medici" },
     { no: "jobb",   noPl: "jobber",   sg: "il lavoro",   pl: "i lavori" },
     { no: "dag",    noPl: "dager",    sg: "il giorno",   pl: "i giorni" },
-    { no: "tid",    noPl: "tider",    sg: "il tempo",    pl: "i tempi" },
+    { no: "tid",    noPl: "tider",    sg: "il tempo",    pl: "i tempi", alt: ["vær"] },
     { no: "venn",   noPl: "venner",   sg: "l'amico",     pl: "gli amici" },
     { no: "barn",   noPl: "barn",     sg: "il bambino",  pl: "i bambini" },
     { no: "år",     noPl: "år",       sg: "l'anno",      pl: "gli anni" },
@@ -1247,12 +1270,12 @@ const DAILY_QUIZZES = [
   verbs: [
     { no: "å vise",     it: "mostrare" },
     { no: "å forklare", it: "spiegare" },
-    { no: "å endre",    it: "cambiare" },
-    { no: "å kjenne",   it: "conoscere" },
-    { no: "å bære",     it: "portare" },
-    { no: "å kaste",    it: "lanciare" },
+    { no: "å endre",    it: "cambiare",  alt: ["å bytte", "å veksle"] },
+    { no: "å kjenne",   it: "conoscere", alt: ["å bli kjent med"] },
+    { no: "å bære",     it: "portare",   alt: ["å ta med"] },
+    { no: "å kaste",    it: "lanciare",  alt: ["å lansere"] },
     { no: "å bygge",    it: "costruire" },
-    { no: "å sette",    it: "mettere" },
+    { no: "å sette",    it: "mettere",   alt: ["å legge"] },
     { no: "å bruke",    it: "usare" },
     { no: "å forbedre", it: "migliorare" }
   ],
@@ -1290,8 +1313,8 @@ const DAILY_QUIZZES = [
     { no: "å tenke",     it: "pensare" },
     { no: "å forstå",    it: "capire" },
     { no: "å hjelpe",    it: "aiutare" },
-    { no: "å returnere", it: "tornare" },
-    { no: "å vente",     it: "aspettare" },
+    { no: "å returnere", it: "tornare",   alt: ["å komme tilbake"] },
+    { no: "å vente",     it: "aspettare", alt: ["å forvente"] },
     { no: "å kjøpe",     it: "comprare" },
     { no: "å selge",     it: "vendere" }
   ],
@@ -1323,14 +1346,14 @@ const DAILY_QUIZZES = [
     { no: "navn",       noPl: "navn",         sg: "il nome",        pl: "i nomi" }
   ],
   verbs: [
-    { no: "å søke",      it: "cercare" },
+    { no: "å søke",      it: "cercare",  alt: ["å lete", "å prøve"] },
     { no: "å finne",     it: "trovare" },
     { no: "å falle",     it: "cadere" },
     { no: "å spare",     it: "risparmiare" },
     { no: "å velge",     it: "scegliere" },
     { no: "å anbefale",  it: "raccomandare" },
-    { no: "å leve",      it: "vivere" },
-    { no: "å miste",     it: "perdere" },
+    { no: "å leve",      it: "vivere",   alt: ["å bo"] },
+    { no: "å miste",     it: "perdere",  alt: ["å tape"] },
     { no: "å reparere",  it: "riparare" },
     { no: "å ordne",     it: "sistemare" }
   ],
@@ -1519,7 +1542,8 @@ function buildBankQuestions(mode, count) {
       tag: "subst.",
       prompt: norskPrompt,
       answer: usePl ? n.pl : n.sg,
-      sg: n.sg, pl: n.pl
+      sg: n.sg, pl: n.pl,
+      alt: n.alt || null
     });
   };
   const addVerb = (v) => {
@@ -1527,7 +1551,8 @@ function buildBankQuestions(mode, count) {
       kind: "verb", type: "Verb",
       form: "", formClass: "", showCallout: false,
       tag: "verb",
-      prompt: v.no, answer: v.it
+      prompt: v.no, answer: v.it,
+      alt: v.alt || null
     });
   };
   const addAdj = (a) => {
@@ -1544,7 +1569,8 @@ function buildBankQuestions(mode, count) {
       form: pick.label, formClass: "adj-inflect", showCallout: true,
       tag: "adj.",
       prompt: a.no, answer: a[pick.key],
-      ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp
+      ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp,
+      alt: a.alt || null
     });
   };
 
@@ -1598,7 +1624,8 @@ function buildQuestions(day, mode) {
         tag: "subst.",
         prompt: norskPrompt,
         answer: usePl ? n.pl : n.sg,
-        sg: n.sg, pl: n.pl
+        sg: n.sg, pl: n.pl,
+        alt: n.alt || null
       });
     }
   }
@@ -1612,7 +1639,8 @@ function buildQuestions(day, mode) {
         showCallout: false,
         tag: "verb",
         prompt: v.no,
-        answer: v.it
+        answer: v.it,
+        alt: v.alt || null
       });
     }
   }
@@ -1657,7 +1685,8 @@ function buildQuestions(day, mode) {
         tag: "adj.",
         prompt: a.no,
         answer: a[pick.key],
-        ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp
+        ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp,
+        alt: a.alt || null
       });
     }
   }
@@ -1956,16 +1985,19 @@ function showDatePreview(date) {
   if (!day) return;
   const panel = $("datePreview");
   const total = day.nouns.length + day.verbs.length + day.adjectives.length;
+  const altSpan = (item) => (item.alt && item.alt.length)
+    ? '<span class="pw-alt">(også: ' + escapeHtml(item.alt.join(", ")) + ')</span>'
+    : '';
   const nounsHtml = day.nouns.map(n =>
-    '<li><span class="pw-no">' + escapeHtml(n.no) + '</span>' +
+    '<li><span class="pw-no">' + escapeHtml(n.no) + altSpan(n) + '</span>' +
     '<span class="pw-it">' + escapeHtml(n.sg) + '</span></li>'
   ).join("");
   const verbsHtml = day.verbs.map(v =>
-    '<li><span class="pw-no">' + escapeHtml(v.no) + '</span>' +
+    '<li><span class="pw-no">' + escapeHtml(v.no) + altSpan(v) + '</span>' +
     '<span class="pw-it">' + escapeHtml(v.it) + '</span></li>'
   ).join("");
   const adjHtml = day.adjectives.map(a =>
-    '<li><span class="pw-no">' + escapeHtml(a.no) + '</span>' +
+    '<li><span class="pw-no">' + escapeHtml(a.no) + altSpan(a) + '</span>' +
     '<span class="pw-it">' + escapeHtml(a.ms) + " / " + escapeHtml(a.fs) + '</span></li>'
   ).join("");
   panel.innerHTML =
@@ -2151,6 +2183,15 @@ function nextQuestion() {
   $("bar").style.width = Math.min(100, Math.round(100 * Math.max(0,done) / Math.max(1,denom))) + "%";
 
   $("qText").textContent = state.current.prompt;
+  const qAlt = $("qAlt");
+  if (qAlt) {
+    const alts = state.current.alt;
+    if (alts && alts.length) {
+      qAlt.innerHTML = '<span class="alt-label">også</span>' + escapeHtml(alts.join(", "));
+    } else {
+      qAlt.innerHTML = "";
+    }
+  }
   $("answerInput").focus();
 }
 
