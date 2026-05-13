@@ -19,7 +19,7 @@
 | torg | la piazza | le piazze | f |  |
 | marked | il mercato | i mercati | m |  |
 | avis | il giornale | i giornali | m |  |
-| brev | la lettera | le lettere | f |  |
+| brev | la lettera | le lettere | f | bokstav |
 | penn | la penna | le penne | f |  |
 | blyant | la matita | le matite | f |  |
 | veske | la borsa | le borse | f |  |
@@ -74,7 +74,7 @@
 | skje | skjeer | il cucchiaio | i cucchiai | m |  |
 | gaffel | gafler | la forchetta | le forchette | f |  |
 | kniv | kniver | il coltello | i coltelli | m |  |
-| tallerken | tallerkener | il piatto | i piatti | m |  |
+| tallerken | tallerkener | il piatto | i piatti | m | rett (mat) |
 | kopp | kopper | la tazza | le tazze | f |  |
 
 | ord (norsk) | ord (s.g) | ord (p.l) | gender | også |
