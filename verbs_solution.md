@@ -102,3 +102,16 @@
 | å vente | aspettare |
 | å kjøpe | comprare |
 | å selge | vendere |
+
+| ord (norsk) | ord (italiensk) |
+|---|---|
+| å søke | cercare |
+| å finne | trovare |
+| å falle | cadere |
+| å spare | risparmiare |
+| å velge | scegliere |
+| å anbefale | raccomandare |
+| å leve | vivere |
+| å miste | perdere |
+| å reparere | riparare |
+| å ordne | sistemare |

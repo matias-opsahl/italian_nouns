@@ -101,3 +101,16 @@
 | kald | freddo | fredda | freddi | fredde |
 | høy | alto | alta | alti | alte |
 | lav | basso | bassa | bassi | basse |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall |
+|---|---|---|---|---|
+| hyggelig | simpatico | simpatica | simpatici | simpatiche |
+| rar | strano | strana | strani | strane |
+| klok | saggio | saggia | saggi | sagge |
+| kreativ | creativo | creativa | creativi | creative |
+| sjenert | timido | timida | timidi | timide |
+| mager | magro | magra | magri | magre |
+| tykk | grasso | grassa | grassi | grasse |
+| romslig | spazioso | spaziosa | spaziosi | spaziose |
+| smal | stretto | stretta | stretti | strette |
+| alvorlig | serio | seria | seri | serie |

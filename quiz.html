@@ -562,6 +562,32 @@
     font-size: 14.5px;
     border: 1px solid;
   }
+  .tts-word {
+    cursor: pointer;
+    border-bottom: 1px dotted transparent;
+    transition: color .12s, border-color .12s, background .12s;
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+  .tts-word:hover {
+    color: var(--green-d);
+    border-bottom-color: currentColor;
+  }
+  .tts-word.is-playing {
+    background: var(--soft-green);
+    color: var(--green-d);
+  }
+  .tts-toggle {
+    background: none; border: 1px solid var(--hairline-2);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font: 600 11px "Geist Mono", monospace;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-2); cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  .tts-toggle:hover { border-color: var(--ink); color: var(--ink); }
+  .tts-toggle.is-off { color: var(--muted); opacity: 0.6; }
   .feedback.good {
     color: var(--green-d);
     border-color: rgba(0,140,69,0.25);
@@ -888,7 +914,10 @@
   <section id="screen-quiz" class="card hidden">
     <div class="qhead" id="qhead">
       <div class="form-tag"><span class="dot"></span><span id="formTag">—</span></div>
-      <div id="countTag">0 / 0</div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <button type="button" class="tts-toggle" id="ttsToggle" title="Skru lyd av/på">🔊 Lyd</button>
+        <div id="countTag">0 / 0</div>
+      </div>
     </div>
 
     <div class="progress"><div id="bar" style="width:0%"></div></div>
@@ -1270,6 +1299,45 @@ const DAILY_QUIZZES = [
     { no: "kald",     ms: "freddo",  fs: "fredda",  mp: "freddi",  fp: "fredde" },
     { no: "høy",      ms: "alto",    fs: "alta",    mp: "alti",    fp: "alte" },
     { no: "lav",      ms: "basso",   fs: "bassa",   mp: "bassi",   fp: "basse" }
+  ]
+},
+{
+  date: "2026-05-13",
+  nouns: [
+    { no: "egg",        noPl: "egg",          sg: "l'uovo",         pl: "le uova" },
+    { no: "øye",        noPl: "øyne",         sg: "l'occhio",       pl: "gli occhi" },
+    { no: "hånd",       noPl: "hender",       sg: "la mano",        pl: "le mani" },
+    { no: "fot",        noPl: "føtter",       sg: "il piede",       pl: "i piedi" },
+    { no: "by",         noPl: "byer",         sg: "la città",       pl: "le città" },
+    { no: "gate",       noPl: "gater",        sg: "la via",         pl: "le vie" },
+    { no: "flaske",     noPl: "flasker",      sg: "la bottiglia",   pl: "le bottiglie" },
+    { no: "glass",      noPl: "glass",        sg: "il bicchiere",   pl: "i bicchieri" },
+    { no: "leilighet",  noPl: "leiligheter",  sg: "l'appartamento", pl: "gli appartamenti" },
+    { no: "navn",       noPl: "navn",         sg: "il nome",        pl: "i nomi" }
+  ],
+  verbs: [
+    { no: "å søke",      it: "cercare" },
+    { no: "å finne",     it: "trovare" },
+    { no: "å falle",     it: "cadere" },
+    { no: "å spare",     it: "risparmiare" },
+    { no: "å velge",     it: "scegliere" },
+    { no: "å anbefale",  it: "raccomandare" },
+    { no: "å leve",      it: "vivere" },
+    { no: "å miste",     it: "perdere" },
+    { no: "å reparere",  it: "riparare" },
+    { no: "å ordne",     it: "sistemare" }
+  ],
+  adjectives: [
+    { no: "hyggelig",  ms: "simpatico",  fs: "simpatica",  mp: "simpatici",  fp: "simpatiche" },
+    { no: "rar",       ms: "strano",     fs: "strana",     mp: "strani",     fp: "strane" },
+    { no: "klok",      ms: "saggio",     fs: "saggia",     mp: "saggi",      fp: "sagge" },
+    { no: "kreativ",   ms: "creativo",   fs: "creativa",   mp: "creativi",   fp: "creative" },
+    { no: "sjenert",   ms: "timido",     fs: "timida",     mp: "timidi",     fp: "timide" },
+    { no: "mager",     ms: "magro",      fs: "magra",      mp: "magri",      fp: "magre" },
+    { no: "tykk",      ms: "grasso",     fs: "grassa",     mp: "grassi",     fp: "grasse" },
+    { no: "romslig",   ms: "spazioso",   fs: "spaziosa",   mp: "spaziosi",   fp: "spaziose" },
+    { no: "smal",      ms: "stretto",    fs: "stretta",    mp: "stretti",    fp: "strette" },
+    { no: "alvorlig",  ms: "serio",      fs: "seria",      mp: "seri",       fp: "serie" }
   ]
 },
 /* === DAILY_QUIZZES_END === */
@@ -1698,6 +1766,26 @@ function init() {
   updateDateComboLabel();
   sel.addEventListener("change", () => { updateMeta(); renderDayList(); updateDateComboLabel(); });
 
+  const ttsBtn = $("ttsToggle");
+  if (ttsBtn) {
+    TTS.syncButton();
+    ttsBtn.addEventListener("click", () => TTS.toggle());
+  }
+
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest(".tts-word");
+    if (!el) return;
+    const word = el.getAttribute("data-tts");
+    if (!word) return;
+    document.querySelectorAll(".tts-word.is-playing").forEach(n => n.classList.remove("is-playing"));
+    el.classList.add("is-playing");
+    setTimeout(() => el.classList.remove("is-playing"), 1200);
+    const wasEnabled = TTS.enabled;
+    TTS.enabled = true;
+    TTS.speak(word);
+    TTS.enabled = wasEnabled;
+  });
+
   buildDayList();
   const toggle = $("dayListToggle");
   const wrap = $("dayListWrap");
@@ -1985,6 +2073,72 @@ function nextQuestion() {
   $("answerInput").focus();
 }
 
+// ── Italian Text-to-Speech (Web Speech API) ────────
+const TTS = {
+  enabled: (localStorage.getItem("ttsEnabled") !== "0"),
+  voice: null,
+  ready: false,
+  pickVoice() {
+    if (!("speechSynthesis" in window)) return;
+    const voices = speechSynthesis.getVoices();
+    if (!voices.length) return;
+    const it = voices.filter(v => (v.lang || "").toLowerCase().startsWith("it"));
+    const preferred = ["Alice", "Luca", "Federica", "Paola", "Tessa", "Google italiano"];
+    for (const name of preferred) {
+      const found = it.find(v => v.name.includes(name));
+      if (found) { this.voice = found; this.ready = true; return; }
+    }
+    this.voice = it[0] || null;
+    this.ready = !!this.voice;
+  },
+  speak(text) {
+    if (!this.enabled || !text || !("speechSynthesis" in window)) return;
+    try {
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "it-IT";
+      if (this.voice) u.voice = this.voice;
+      u.rate = 0.92;
+      u.pitch = 1.0;
+      speechSynthesis.speak(u);
+    } catch (e) {}
+  },
+  stop() {
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+  },
+  toggle() {
+    this.enabled = !this.enabled;
+    localStorage.setItem("ttsEnabled", this.enabled ? "1" : "0");
+    if (!this.enabled) this.stop();
+    this.syncButton();
+  },
+  syncButton() {
+    const b = document.getElementById("ttsToggle");
+    if (!b) return;
+    b.textContent = this.enabled ? "🔊 Lyd" : "🔇 Lyd";
+    b.classList.toggle("is-off", !this.enabled);
+  }
+};
+if ("speechSynthesis" in window) {
+  TTS.pickVoice();
+  speechSynthesis.onvoiceschanged = () => TTS.pickVoice();
+}
+
+function spokenTextFor(q) {
+  if (!q) return "";
+  if (q.kind === "sentence") return q.itFull || q.answer || "";
+  return q.answer || "";
+}
+
+function ttsAttr(text) {
+  return (text || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
+function tw(word) {
+  if (!word) return "";
+  const attr = ttsAttr(word);
+  return "<span class='tts-word' data-tts=\"" + attr + "\" title='Klikk for å høre uttalen'>" + word + "</span>";
+}
+
 function submitAnswer() {
   if (state.awaitingAdvance) return;
   const rawGiven = $("answerInput").value;
@@ -2019,17 +2173,17 @@ function submitAnswer() {
   let fullAnswer, missedAnswer;
   if (state.current.kind === "noun") {
     fullAnswer =
-      "<span class='answer'>" + state.current.sg + "</span>" +
+      "<span class='answer'>" + tw(state.current.sg) + "</span>" +
       " <span style='color:var(--muted)'>·</span> " +
-      "<span class='answer'>" + state.current.pl + "</span>";
+      "<span class='answer'>" + tw(state.current.pl) + "</span>";
     missedAnswer = state.current.sg + " · " + state.current.pl;
   } else if (state.current.kind === "adj") {
     fullAnswer =
       "<span class='adj-grid'>" +
-        "<span class='adj-cell'><em>m. sg.</em><b>" + state.current.ms + "</b></span>" +
-        "<span class='adj-cell'><em>f. sg.</em><b>" + state.current.fs + "</b></span>" +
-        "<span class='adj-cell'><em>m. pl.</em><b>" + state.current.mp + "</b></span>" +
-        "<span class='adj-cell'><em>f. pl.</em><b>" + state.current.fp + "</b></span>" +
+        "<span class='adj-cell'><em>m. sg.</em><b>" + tw(state.current.ms) + "</b></span>" +
+        "<span class='adj-cell'><em>f. sg.</em><b>" + tw(state.current.fs) + "</b></span>" +
+        "<span class='adj-cell'><em>m. pl.</em><b>" + tw(state.current.mp) + "</b></span>" +
+        "<span class='adj-cell'><em>f. pl.</em><b>" + tw(state.current.fp) + "</b></span>" +
       "</span>";
     missedAnswer = state.current.ms + " / " + state.current.fs +
                  " · " + state.current.mp + " / " + state.current.fp;
@@ -2039,32 +2193,34 @@ function submitAnswer() {
     let grid = "<span class='adj-grid verb-grid'>";
     const order = [0, 3, 1, 4, 2, 5];
     for (const i of order) {
-      grid += "<span class='adj-cell'><em>" + labels[i] + "</em><b>" + c[i] + "</b></span>";
+      grid += "<span class='adj-cell'><em>" + labels[i] + "</em><b>" + tw(c[i]) + "</b></span>";
     }
     grid += "</span>";
     fullAnswer =
-      "<span class='answer'>" + state.current.answer + "</span>" +
+      "<span class='answer'>" + tw(state.current.answer) + "</span>" +
       "<div style='font-family:\"Geist Mono\",monospace;font-size:11px;color:var(--muted);letter-spacing:0.04em;margin:10px 0 4px'>" +
-        state.current.noInfinitive + " · " + state.current.infinitive +
+        state.current.noInfinitive + " · " + tw(state.current.infinitive) +
       "</div>" + grid;
     missedAnswer = state.current.answer + " (" + state.current.infinitive + ")";
   } else if (state.current.kind === "sentence") {
-    fullAnswer = "<span class='answer'>" + state.current.itFull + "</span>";
+    fullAnswer = "<span class='answer'>" + tw(state.current.itFull) + "</span>";
     missedAnswer = state.current.itFull;
   } else {
-    fullAnswer = "<span class='answer'>" + state.current.answer + "</span>";
+    fullAnswer = "<span class='answer'>" + tw(state.current.answer) + "</span>";
     missedAnswer = state.current.answer;
   }
 
   state.attempts++;
   const boxIdx = state.boxIndex.get(state.current.kind + "|" + state.current.prompt);
+  const spoken = spokenTextFor(state.current);
   if (given === correct) {
     state.correctAttempts++;
     if (state.currentFirstTry) state.firstTryRight++;
     markBox(boxIdx, "is-right");
     showFeedback(true,
       "Riktig &nbsp; " + fullAnswer +
-      "<span class='nudge'>Trykk Enter for å fortsette</span>");
+      "<span class='nudge'>Trykk Enter for å fortsette · klikk et ord for å høre uttalen</span>");
+    TTS.speak(spoken);
   } else {
     if (state.currentFirstTry) markBox(boxIdx, "is-wrong");
     state.currentFirstTry = false;
@@ -2086,7 +2242,8 @@ function submitAnswer() {
     state.queue.push(state.current);
     showFeedback(false,
       "Feil — riktig svar er " + fullAnswer +
-      "<span class='nudge'>Spørsmålet kommer tilbake. Trykk Enter for å fortsette</span>");
+      "<span class='nudge'>Spørsmålet kommer tilbake. Trykk Enter for å fortsette · klikk et ord for å høre uttalen</span>");
+    TTS.speak(spoken);
   }
 }
 

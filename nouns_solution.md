@@ -102,3 +102,16 @@
 | natt | netter | la notte | le notti | f |
 | tre | trær | l'albero | gli alberi | m |
 | dyr | dyr | l'animale | gli animali | m |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender |
+|---|---|---|---|---|
+| egg | egg | l'uovo | le uova | m |
+| øye | øyne | l'occhio | gli occhi | m |
+| hånd | hender | la mano | le mani | f |
+| fot | føtter | il piede | i piedi | m |
+| by | byer | la città | le città | f |
+| gate | gater | la via | le vie | f |
+| flaske | flasker | la bottiglia | le bottiglie | f |
+| glass | glass | il bicchiere | i bicchieri | m |
+| leilighet | leiligheter | l'appartamento | gli appartamenti | m |
+| navn | navn | il nome | i nomi | m |
