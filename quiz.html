@@ -825,6 +825,10 @@
 
   <!-- ── START ──────────────────────────────────────── -->
   <section id="screen-start" class="card">
+    <div class="weekSel-wrap" id="weekSelWrap" style="margin-bottom:16px">
+      <label class="field-label">Uke</label>
+      <select id="weekSel"></select>
+    </div>
     <div class="dateSel-wrap" id="dateSelWrap">
       <label class="field-label">Dato</label>
       <select id="dateSel" hidden></select>
@@ -856,6 +860,9 @@
       <button type="button" class="mode-chip" data-mode="all">
         <span>Alt<span class="num" data-count="all">30</span></span>
         <span class="key">4</span>
+      </button>
+      <button type="button" class="mode-chip is-bank" data-mode="bank-week" style="grid-column: 1 / -1">
+        <span>Uke (tilfeldig)<span class="num" data-count="bank-week">0</span></span>
       </button>
     </div>
 
@@ -1466,6 +1473,35 @@ function bankPool(kind) {
   return out;
 }
 
+function isoWeek(iso) {
+  const d = new Date(iso + "T00:00:00Z");
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
+}
+
+function weekKey(iso) {
+  const d = new Date(iso + "T00:00:00Z");
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  return d.getUTCFullYear() + "-W" + String(isoWeek(iso)).padStart(2, "0");
+}
+
+function daysInWeek(wk) {
+  return DAILY_QUIZZES.filter(d => weekKey(d.date) === wk);
+}
+
+function bankPoolWeek(kind, wk) {
+  const out = [];
+  for (const day of daysInWeek(wk)) {
+    if (kind === "nouns")      for (const n of day.nouns)      out.push(n);
+    if (kind === "verbs")      for (const v of day.verbs)      out.push(v);
+    if (kind === "adjectives") for (const a of day.adjectives) out.push(a);
+  }
+  return out;
+}
+
 function buildBankQuestions(mode, count) {
   const total = count || BANK_SAMPLE_SIZE;
   const qs = [];
@@ -1525,6 +1561,17 @@ function buildBankQuestions(mode, count) {
     for (const n of pickRandom(bankPool("nouns"), nounShare)) addNoun(n);
     for (const v of pickRandom(bankPool("verbs"), verbShare)) addVerb(v);
     for (const a of pickRandom(bankPool("adjectives"), adjShare)) addAdj(a);
+  } else if (mode === "bank-week") {
+    const wk = $("weekSel").value;
+    const nouns = bankPoolWeek("nouns", wk);
+    const verbs = bankPoolWeek("verbs", wk);
+    const adjs  = bankPoolWeek("adjectives", wk);
+    const nounShare = Math.ceil(count / 3);
+    const verbShare = Math.ceil(count / 3);
+    const adjShare  = count - nounShare - verbShare;
+    for (const n of pickRandom(nouns, nounShare)) addNoun(n);
+    for (const v of pickRandom(verbs, verbShare)) addVerb(v);
+    for (const a of pickRandom(adjs,  adjShare))  addAdj(a);
   }
 
   for (let i = qs.length - 1; i > 0; i--) {
@@ -1753,18 +1800,26 @@ const state = {
 const $ = id => document.getElementById(id);
 
 function init() {
-  const sel = $("dateSel");
-  const sorted = [...DAILY_QUIZZES].sort((a,b) => b.date.localeCompare(a.date));
-  for (const d of sorted) {
+  const wkSel = $("weekSel");
+  const weeks = [...new Set(DAILY_QUIZZES.map(d => weekKey(d.date)))]
+    .sort((a,b) => b.localeCompare(a));
+  for (const wk of weeks) {
     const opt = document.createElement("option");
-    opt.value = d.date;
-    const total = d.nouns.length + d.verbs.length + d.adjectives.length;
-    opt.textContent = formatDate(d.date) + "  ·  " + total + " ord";
-    sel.appendChild(opt);
+    opt.value = wk;
+    opt.textContent = "Uke " + parseInt(wk.split("-W")[1], 10);
+    wkSel.appendChild(opt);
   }
+  wkSel.addEventListener("change", () => {
+    rebuildDateOptions();
+    buildDayList();
+    updateMeta();
+    updateDateComboLabel();
+  });
+
+  rebuildDateOptions();
   updateMeta();
   updateDateComboLabel();
-  sel.addEventListener("change", () => { updateMeta(); renderDayList(); updateDateComboLabel(); });
+  $("dateSel").addEventListener("change", () => { updateMeta(); renderDayList(); updateDateComboLabel(); });
 
   const ttsBtn = $("ttsToggle");
   if (ttsBtn) {
@@ -1839,9 +1894,27 @@ function updateDateComboLabel() {
   $("dayListToggleLabel").textContent = formatDate(day.date) + "  ·  " + total + " ord";
 }
 
+function rebuildDateOptions() {
+  const sel = $("dateSel");
+  const wk = $("weekSel").value;
+  const filtered = DAILY_QUIZZES.filter(d => weekKey(d.date) === wk)
+    .sort((a,b) => b.date.localeCompare(a.date));
+  sel.innerHTML = "";
+  for (const d of filtered) {
+    const opt = document.createElement("option");
+    opt.value = d.date;
+    const total = d.nouns.length + d.verbs.length + d.adjectives.length;
+    opt.textContent = formatDate(d.date) + "  ·  " + total + " ord";
+    sel.appendChild(opt);
+  }
+}
+
 function buildDayList() {
   const list = $("dayList");
-  const sorted = [...DAILY_QUIZZES].sort((a,b) => b.date.localeCompare(a.date));
+  const wk = $("weekSel").value;
+  const sorted = DAILY_QUIZZES
+    .filter(d => weekKey(d.date) === wk)
+    .sort((a,b) => b.date.localeCompare(a.date));
   list.innerHTML = "";
   for (const d of sorted) {
     const row = document.createElement("div");
@@ -1943,7 +2016,14 @@ function updateMeta() {
     "bank-nouns": Math.min(BANK_SAMPLE_SIZE, bankN) + " / " + bankN,
     "bank-verbs": Math.min(BANK_SAMPLE_SIZE, bankV) + " / " + bankV,
     "bank-adjectives": Math.min(BANK_SAMPLE_SIZE, bankA) + " / " + bankA,
-    "bank-all": BANK_SAMPLE_SIZE + " / " + (bankN + bankV + bankA)
+    "bank-all": BANK_SAMPLE_SIZE + " / " + (bankN + bankV + bankA),
+    "bank-week": (function() {
+      const wk = $("weekSel").value;
+      const tot = bankPoolWeek("nouns", wk).length
+                + bankPoolWeek("verbs", wk).length
+                + bankPoolWeek("adjectives", wk).length;
+      return Math.min(30, tot) + " / " + tot;
+    })()
   };
   document.querySelectorAll(".mode-chip .num").forEach(el => {
     const k = el.dataset.count;
@@ -1969,7 +2049,8 @@ function startQuizFor(date, mode) {
   if (useMode.startsWith("bank-")) {
     state.lastDay = date;
     state.lastMode = useMode;
-    qs = buildBankQuestions(useMode, BANK_SAMPLE_SIZE);
+    const size = useMode === "bank-week" ? 30 : BANK_SAMPLE_SIZE;
+    qs = buildBankQuestions(useMode, size);
   } else {
     const day = DAILY_QUIZZES.find(d => d.date === date);
     if (!day) return;
