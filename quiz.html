@@ -895,6 +895,88 @@
     .wrap { padding-top: 40px; }
     .card { padding: 22px; }
   }
+
+  /* ── Statistikk ─────────────────────────────────── */
+  .search-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px; gap: 12px;
+  }
+  .link-btn {
+    background: transparent; border: 1px solid var(--hairline-2);
+    border-radius: 999px; padding: 6px 14px;
+    font-family: "Geist", sans-serif; font-size: 13px;
+    color: var(--ink); cursor: pointer;
+    transition: background .12s, border-color .12s;
+  }
+  .link-btn:hover { background: var(--soft-green); border-color: var(--green); }
+  .stats-head {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 16px; margin-bottom: 18px;
+  }
+  .stats-filters {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin: 18px 0 12px;
+  }
+  .filter-chip {
+    background: var(--bg); border: 1px solid var(--hairline-2);
+    border-radius: 999px; padding: 6px 14px;
+    font-family: "Geist", sans-serif; font-size: 13px;
+    color: var(--ink-2); cursor: pointer;
+    transition: background .12s, border-color .12s, color .12s;
+  }
+  .filter-chip:hover { border-color: var(--ink); color: var(--ink); }
+  .filter-chip.is-active {
+    background: var(--ink); color: #fff; border-color: var(--ink);
+  }
+  .lb-empty {
+    padding: 28px 14px; text-align: center;
+    color: var(--muted); font-size: 14px;
+  }
+  .lb-table {
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .lb-row {
+    display: grid;
+    grid-template-columns: 36px 1fr auto 70px 70px;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--hairline);
+    font-size: 14px;
+  }
+  .lb-row:last-child { border-bottom: none; }
+  .lb-row.lb-head {
+    background: var(--bg);
+    font-size: 11px; text-transform: uppercase;
+    color: var(--muted); letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+  .lb-rank {
+    font-variant-numeric: tabular-nums;
+    color: var(--muted); font-weight: 600;
+  }
+  .lb-row:nth-child(2) .lb-rank,
+  .lb-row:nth-child(3) .lb-rank,
+  .lb-row:nth-child(4) .lb-rank { color: var(--ink); }
+  .lb-word { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .lb-word b { color: var(--ink); font-weight: 600; }
+  .lb-word .sub { color: var(--muted); font-size: 13px; }
+  .lb-tag {
+    font-size: 10px; text-transform: uppercase;
+    color: var(--muted); border: 1px solid var(--hairline-2);
+    padding: 2px 8px; border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+  .lb-wrong {
+    text-align: right; font-variant-numeric: tabular-nums;
+    font-weight: 600; color: #9a1a1a;
+  }
+  .lb-rate {
+    text-align: right; font-variant-numeric: tabular-nums;
+    color: var(--ink-2);
+  }
 </style>
 </head>
 <body>
@@ -910,11 +992,50 @@
 
   <!-- ── SØK ────────────────────────────────────────── -->
   <section id="screen-search" class="card" style="margin-bottom:16px">
-    <label class="field-label" for="searchInput">Slå opp ord</label>
+    <div class="search-head">
+      <label class="field-label" for="searchInput" style="margin:0">Slå opp ord</label>
+      <button type="button" class="link-btn" id="openStatsBtn">📊 Statistikk</button>
+    </div>
     <input type="text" id="searchInput"
            autocomplete="off" autocapitalize="off" spellcheck="false"
            placeholder="Skriv et ord på italiensk eller norsk …">
     <div id="searchResults" class="search-results" hidden></div>
+  </section>
+
+  <!-- ── STATISTIKK ─────────────────────────────────── -->
+  <section id="screen-stats" class="card hidden">
+    <div class="stats-head">
+      <div>
+        <h2 class="end-title" style="margin:0 0 6px">Statistikk</h2>
+        <p class="end-sub" id="statsSub" style="margin:0">Ord du har bommet på flest ganger – over tid.</p>
+      </div>
+      <button class="btn btn-ghost" id="statsBackBtn">Tilbake</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b id="lifeWords">0</b><span>unike ord</span></div>
+      <div class="stat"><b id="lifeAttempts">0</b><span>forsøk totalt</span></div>
+      <div class="stat"><b id="lifeWrong">0</b><span>feil totalt</span></div>
+      <div class="stat"><b id="lifeAcc">0%</b><span>nøyaktighet</span></div>
+    </div>
+
+    <div class="stats-filters">
+      <button type="button" class="filter-chip is-active" data-filter="all">Alle</button>
+      <button type="button" class="filter-chip" data-filter="noun">Substantiv</button>
+      <button type="button" class="filter-chip" data-filter="adj">Adjektiv</button>
+      <button type="button" class="filter-chip" data-filter="verb">Verb</button>
+      <button type="button" class="filter-chip" data-filter="verb-conj">Verb-bøyning</button>
+      <button type="button" class="filter-chip" data-filter="sentence">Setning</button>
+    </div>
+
+    <div id="leaderboardWrap"></div>
+
+    <div class="row" style="margin-top:18px">
+      <button class="btn btn-ghost" id="exportStatsBtn">Eksporter JSON</button>
+      <button class="btn btn-ghost" id="importStatsBtn">Importer JSON</button>
+      <button class="btn btn-ghost" id="resetStatsBtn" style="color:#9a1a1a">Nullstill</button>
+    </div>
+    <input type="file" id="importStatsFile" accept="application/json" style="display:none">
   </section>
 
   <!-- ── START ──────────────────────────────────────── -->
@@ -1939,6 +2060,74 @@ const state = {
 
 const $ = id => document.getElementById(id);
 
+/* ── Langsiktig statistikk (localStorage) ─────────── */
+const Stats = {
+  KEY: "quizStats_v1",
+  data: null,
+  load() {
+    try {
+      const raw = localStorage.getItem(this.KEY);
+      this.data = raw ? JSON.parse(raw) : {};
+    } catch { this.data = {}; }
+    return this.data;
+  },
+  save() {
+    try { localStorage.setItem(this.KEY, JSON.stringify(this.data)); } catch {}
+  },
+  keyFor(q, answerForDisplay) {
+    return q.kind + "|" + q.prompt + "|" + (answerForDisplay || q.answer);
+  },
+  record(q, wasCorrect, firstTry, answerForDisplay) {
+    if (!this.data) this.load();
+    const k = this.keyFor(q, answerForDisplay);
+    const e = this.data[k] || { p: q.prompt, a: answerForDisplay || q.answer, k: q.kind, t: q.tag, asked: 0, wrong: 0, last: 0 };
+    e.asked++;
+    if (!wasCorrect) { e.wrong++; e.last = Date.now(); }
+    e.p = q.prompt; e.a = answerForDisplay || q.answer; e.k = q.kind; e.t = q.tag;
+    this.data[k] = e;
+    this.save();
+  },
+  list(filter) {
+    if (!this.data) this.load();
+    const arr = Object.entries(this.data).map(([k, v]) => ({ key: k, ...v }));
+    const filtered = filter && filter !== "all" ? arr.filter(x => x.k === filter) : arr;
+    filtered.sort((a, b) => (b.wrong - a.wrong) || ((b.wrong/Math.max(1,b.asked)) - (a.wrong/Math.max(1,a.asked))) || (b.last - a.last));
+    return filtered;
+  },
+  totals(filter) {
+    if (!this.data) this.load();
+    let words = 0, asked = 0, wrong = 0;
+    for (const v of Object.values(this.data)) {
+      if (filter && filter !== "all" && v.k !== filter) continue;
+      words++; asked += v.asked; wrong += v.wrong;
+    }
+    return { words, asked, wrong, acc: asked ? Math.round(100 * (asked - wrong) / asked) : 0 };
+  },
+  exportJSON() {
+    if (!this.data) this.load();
+    return JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), data: this.data }, null, 2);
+  },
+  importJSON(text) {
+    const obj = JSON.parse(text);
+    const incoming = obj && obj.data ? obj.data : obj;
+    if (!incoming || typeof incoming !== "object") throw new Error("Ugyldig fil");
+    if (!this.data) this.load();
+    for (const [k, v] of Object.entries(incoming)) {
+      const existing = this.data[k];
+      if (!existing) { this.data[k] = v; continue; }
+      this.data[k] = {
+        p: v.p || existing.p, a: v.a || existing.a, k: v.k || existing.k, t: v.t || existing.t,
+        asked: (existing.asked || 0) + (v.asked || 0),
+        wrong: (existing.wrong || 0) + (v.wrong || 0),
+        last:  Math.max(existing.last || 0, v.last || 0)
+      };
+    }
+    this.save();
+  },
+  reset() { this.data = {}; this.save(); }
+};
+Stats.load();
+
 function init() {
   const wkSel = $("weekSel");
   const weeks = [...new Set(DAILY_QUIZZES.map(d => weekKey(d.date)))]
@@ -1982,6 +2171,7 @@ function init() {
   });
 
   buildDayList();
+  setupStatsScreen();
   const toggle = $("dayListToggle");
   const wrap = $("dayListWrap");
   toggle.addEventListener("click", () => {
@@ -2217,6 +2407,7 @@ function startQuizFor(date, mode) {
   $("screen-start").classList.add("hidden");
   $("screen-end").classList.add("hidden");
   $("screen-search").classList.add("hidden");
+  $("screen-stats").classList.add("hidden");
   $("screen-quiz").classList.remove("hidden");
   $("feedback").innerHTML = "";
   $("advanceWrap").classList.add("hidden");
@@ -2468,6 +2659,7 @@ function submitAnswer() {
   }
 
   state.attempts++;
+  Stats.record(state.current, given === correct, state.currentFirstTry, missedAnswer);
   const boxIdx = state.boxIndex.get(state.current.kind + "|" + state.current.prompt);
   const spoken = spokenTextFor(state.current);
   if (given === correct) {
@@ -2596,9 +2788,99 @@ function escapeHtml(s) {
 function goHome() {
   $("screen-quiz").classList.add("hidden");
   $("screen-end").classList.add("hidden");
+  $("screen-stats").classList.add("hidden");
   $("screen-start").classList.remove("hidden");
   $("screen-search").classList.remove("hidden");
   $("dateSel").focus();
+}
+
+/* ── Statistikk-side ──────────────────────────────── */
+let statsFilter = "all";
+
+function showStats() {
+  $("screen-start").classList.add("hidden");
+  $("screen-end").classList.add("hidden");
+  $("screen-quiz").classList.add("hidden");
+  $("screen-search").classList.add("hidden");
+  $("screen-stats").classList.remove("hidden");
+  renderStats();
+}
+
+function renderStats() {
+  const t = Stats.totals(statsFilter);
+  $("lifeWords").textContent = t.words;
+  $("lifeAttempts").textContent = t.asked;
+  $("lifeWrong").textContent = t.wrong;
+  $("lifeAcc").textContent = t.acc + "%";
+
+  const items = Stats.list(statsFilter).filter(x => x.wrong > 0);
+  const wrap = $("leaderboardWrap");
+  if (!items.length) {
+    wrap.innerHTML = "<div class='lb-empty'>Ingen feil registrert ennå. Ta noen quizer så fyller det seg opp her.</div>";
+    return;
+  }
+  const tagLabel = { noun: "subst.", adj: "adj.", verb: "verb", "verb-conj": "verb", sentence: "setn." };
+  let html = "<div class='lb-table'>" +
+    "<div class='lb-row lb-head'>" +
+      "<div class='lb-rank'>#</div>" +
+      "<div>Ord</div><div></div>" +
+      "<div class='lb-wrong'>Feil</div>" +
+      "<div class='lb-rate'>Rate</div>" +
+    "</div>";
+  items.forEach((it, i) => {
+    const rate = it.asked ? Math.round(100 * it.wrong / it.asked) : 0;
+    const tag = it.t || tagLabel[it.k] || "";
+    const ans = String(it.a || "").replace(/<[^>]+>/g, "");
+    html +=
+      "<div class='lb-row'>" +
+        "<div class='lb-rank'>" + (i + 1) + "</div>" +
+        "<div class='lb-word'><b>" + escapeHtml(it.p) + "</b><span class='sub'>" + escapeHtml(ans) + "</span></div>" +
+        "<div><span class='lb-tag'>" + escapeHtml(tag) + "</span></div>" +
+        "<div class='lb-wrong'>" + it.wrong + " / " + it.asked + "</div>" +
+        "<div class='lb-rate'>" + rate + "%</div>" +
+      "</div>";
+  });
+  html += "</div>";
+  wrap.innerHTML = html;
+}
+
+function setupStatsScreen() {
+  $("openStatsBtn").addEventListener("click", showStats);
+  $("statsBackBtn").addEventListener("click", goHome);
+  document.querySelectorAll("#screen-stats .filter-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#screen-stats .filter-chip").forEach(c => c.classList.remove("is-active"));
+      chip.classList.add("is-active");
+      statsFilter = chip.dataset.filter;
+      renderStats();
+    });
+  });
+  $("exportStatsBtn").addEventListener("click", () => {
+    const blob = new Blob([Stats.exportJSON()], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "quiz-stats-" + new Date().toISOString().slice(0, 10) + ".json";
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+  });
+  $("importStatsBtn").addEventListener("click", () => $("importStatsFile").click());
+  $("importStatsFile").addEventListener("change", (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try { Stats.importJSON(reader.result); renderStats(); alert("Importert."); }
+      catch (err) { alert("Kunne ikke importere: " + err.message); }
+    };
+    reader.readAsText(f);
+    e.target.value = "";
+  });
+  $("resetStatsBtn").addEventListener("click", () => {
+    if (confirm("Nullstille all statistikk? Dette kan ikke angres.")) {
+      Stats.reset(); renderStats();
+    }
+  });
 }
 
 /* ── Global keyboard ──────────────────────────────── */
