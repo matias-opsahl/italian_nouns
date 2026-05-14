@@ -431,7 +431,7 @@
   }
   .day-list-toggle:hover { border-color: var(--ink); }
   .day-list-wrap.is-open .day-list-toggle {
-    background: var(--ink); color: #fff; border-color: var(--ink);
+    border-color: var(--ink);
   }
   .day-list-toggle .chev {
     display: inline-block;
@@ -440,7 +440,7 @@
     transition: transform .15s, color .15s;
     margin-left: 12px;
   }
-  .day-list-wrap.is-open .day-list-toggle .chev { transform: rotate(180deg); color: #fff; }
+  .day-list-wrap.is-open .day-list-toggle .chev { transform: rotate(180deg); color: var(--ink); }
   .day-list {
     margin-top: 10px;
     max-height: 260px;
@@ -2216,6 +2216,7 @@ function startQuizFor(date, mode) {
   state.awaitingAdvance = false;
   $("screen-start").classList.add("hidden");
   $("screen-end").classList.add("hidden");
+  $("screen-search").classList.add("hidden");
   $("screen-quiz").classList.remove("hidden");
   $("feedback").innerHTML = "";
   $("advanceWrap").classList.add("hidden");
@@ -2517,6 +2518,7 @@ function advance() {
 function finish(interrupted) {
   $("screen-quiz").classList.add("hidden");
   $("screen-end").classList.remove("hidden");
+  $("screen-search").classList.remove("hidden");
 
   const seen = state.uniqueAsked;
   const partial = interrupted && seen < state.total;
@@ -2595,6 +2597,7 @@ function goHome() {
   $("screen-quiz").classList.add("hidden");
   $("screen-end").classList.add("hidden");
   $("screen-start").classList.remove("hidden");
+  $("screen-search").classList.remove("hidden");
   $("dateSel").focus();
 }
 
@@ -2615,6 +2618,16 @@ function globalKeys(e) {
       return;
     }
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      if (e.shiftKey) {
+        const wkSel = $("weekSel");
+        if (!wkSel.options.length) return;
+        e.preventDefault();
+        const i = wkSel.selectedIndex;
+        if (e.key === "ArrowDown" && i < wkSel.options.length - 1) wkSel.selectedIndex = i + 1;
+        if (e.key === "ArrowUp"   && i > 0)                         wkSel.selectedIndex = i - 1;
+        wkSel.dispatchEvent(new Event("change"));
+        return;
+      }
       const sel = $("dateSel");
       const listOpen = $("dayListWrap").classList.contains("is-open");
       if (document.activeElement !== sel || listOpen) {
