@@ -38,11 +38,11 @@
   .wrap {
     max-width: 640px;
     margin: 0 auto;
-    padding: 64px 24px 96px;
+    padding: 28px 24px 64px;
   }
 
   /* ── Masthead ───────────────────────────────────── */
-  header.mast { margin-bottom: 32px; }
+  header.mast { margin-bottom: 18px; }
   .flag {
     display: flex; height: 4px; width: 64px; margin-bottom: 18px;
     border-radius: 1px; overflow: hidden;
@@ -892,7 +892,7 @@
 
   @media (max-width: 480px) {
     .row { grid-template-columns: 1fr; }
-    .wrap { padding-top: 40px; }
+    .wrap { padding-top: 16px; }
     .card { padding: 22px; }
   }
 
@@ -977,6 +977,21 @@
     text-align: right; font-variant-numeric: tabular-nums;
     color: var(--ink-2);
   }
+  .stress-hint {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 10px;
+    font-family: "Geist Mono", ui-monospace, monospace;
+    font-size: 13px; letter-spacing: 0.04em;
+    color: var(--ink-2);
+    background: #fff5e0; border: 1px solid #e8c879;
+    padding: 4px 12px; border-radius: 999px;
+  }
+  .stress-hint::before {
+    content: "uttale"; font-family: "Geist", sans-serif;
+    font-size: 10px; text-transform: uppercase;
+    color: #8a6411; letter-spacing: 0.06em; font-weight: 600;
+  }
+  .stress-hint b { font-weight: 700; color: var(--ink); }
 </style>
 </head>
 <body>
@@ -1215,391 +1230,391 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-05",
   nouns: [
-    { no: "sol",     noPl: "soler",     sg: "il sole",        pl: "i soli" },
-    { no: "måne",    noPl: "måner",     sg: "la luna",        pl: "le lune" },
-    { no: "himmel",  noPl: "himler",    sg: "il cielo",       pl: "i cieli" },
-    { no: "fjell",   noPl: "fjell",     sg: "la montagna",    pl: "le montagne" },
-    { no: "elv",     noPl: "elver",     sg: "il fiume",       pl: "i fiumi" },
-    { no: "strand",  noPl: "strender",  sg: "la spiaggia",    pl: "le spiagge" },
-    { no: "kirke",   noPl: "kirker",    sg: "la chiesa",      pl: "le chiese" },
-    { no: "seng",    noPl: "senger",    sg: "il letto",       pl: "i letti" },
-    { no: "kjøkken", noPl: "kjøkken",   sg: "la cucina",      pl: "le cucine" },
-    { no: "bad",     noPl: "bad",       sg: "il bagno",       pl: "i bagni" }
+    { no: "sol",     noPl: "soler",     sg: "il sole",        pl: "i soli",        stress: "SO-le" },
+    { no: "måne",    noPl: "måner",     sg: "la luna",        pl: "le lune",       stress: "LU-na" },
+    { no: "himmel",  noPl: "himler",    sg: "il cielo",       pl: "i cieli",       stress: "CIE-lo" },
+    { no: "fjell",   noPl: "fjell",     sg: "la montagna",    pl: "le montagne",   stress: "mon-TA-gna" },
+    { no: "elv",     noPl: "elver",     sg: "il fiume",       pl: "i fiumi",       stress: "FIU-me" },
+    { no: "strand",  noPl: "strender",  sg: "la spiaggia",    pl: "le spiagge",    stress: "SPIAG-gia" },
+    { no: "kirke",   noPl: "kirker",    sg: "la chiesa",      pl: "le chiese",     stress: "CHIE-sa" },
+    { no: "seng",    noPl: "senger",    sg: "il letto",       pl: "i letti",       stress: "LET-to" },
+    { no: "kjøkken", noPl: "kjøkken",   sg: "la cucina",      pl: "le cucine",     stress: "cu-CI-na" },
+    { no: "bad",     noPl: "bad",       sg: "il bagno",       pl: "i bagni",       stress: "BA-gno" }
   ],
   verbs: [
-    { no: "å danse",    it: "ballare" },
-    { no: "å synge",    it: "cantare" },
-    { no: "å le",       it: "ridere" },
-    { no: "å gråte",    it: "piangere" },
-    { no: "å gi",       it: "dare" },
-    { no: "å fortelle", it: "raccontare" },
-    { no: "å vinne",    it: "vincere" },
-    { no: "å bo",       it: "abitare" },
-    { no: "å begynne",  it: "cominciare", alt: ["å starte"] },
-    { no: "å avslutte", it: "finire",     alt: ["å slutte"] }
+    { no: "å danse",    it: "ballare",    stress: "bal-LA-re" },
+    { no: "å synge",    it: "cantare",    stress: "can-TA-re" },
+    { no: "å le",       it: "ridere",     stress: "RI-de-re" },
+    { no: "å gråte",    it: "piangere",   stress: "PIAN-ge-re" },
+    { no: "å gi",       it: "dare",       stress: "DA-re" },
+    { no: "å fortelle", it: "raccontare", stress: "rac-con-TA-re" },
+    { no: "å vinne",    it: "vincere",    stress: "VIN-ce-re" },
+    { no: "å bo",       it: "abitare",    stress: "a-bi-TA-re" },
+    { no: "å begynne",  it: "cominciare", stress: "co-min-CIA-re", alt: ["å starte"] },
+    { no: "å avslutte", it: "finire",     stress: "fi-NI-re",      alt: ["å slutte"] }
   ],
   adjectives: [
-    { no: "tung",        ms: "pesante",     fs: "pesante",     mp: "pesanti",     fp: "pesanti" },
-    { no: "lett (vekt)", ms: "leggero",     fs: "leggera",     mp: "leggeri",     fp: "leggere" },
-    { no: "mørk",        ms: "scuro",       fs: "scura",       mp: "scuri",       fp: "scure" },
-    { no: "lys",         ms: "chiaro",      fs: "chiara",      mp: "chiari",      fp: "chiare",      alt: ["tydelig"] },
-    { no: "tom",         ms: "vuoto",       fs: "vuota",       mp: "vuoti",       fp: "vuote" },
-    { no: "full",        ms: "pieno",       fs: "piena",       mp: "pieni",       fp: "piene" },
-    { no: "myk",         ms: "morbido",     fs: "morbida",     mp: "morbidi",     fp: "morbide" },
-    { no: "hard",        ms: "duro",        fs: "dura",        mp: "duri",        fp: "dure",        alt: ["streng"] },
-    { no: "stille",      ms: "silenzioso",  fs: "silenziosa",  mp: "silenziosi",  fp: "silenziose" },
-    { no: "bred",        ms: "largo",       fs: "larga",       mp: "larghi",      fp: "larghe" }
+    { no: "tung",        ms: "pesante",     fs: "pesante",     mp: "pesanti",     fp: "pesanti",     stress: "pe-SAN-te" },
+    { no: "lett (vekt)", ms: "leggero",     fs: "leggera",     mp: "leggeri",     fp: "leggere",     stress: "leg-GE-ro" },
+    { no: "mørk",        ms: "scuro",       fs: "scura",       mp: "scuri",       fp: "scure",       stress: "SCU-ro" },
+    { no: "lys",         ms: "chiaro",      fs: "chiara",      mp: "chiari",      fp: "chiare",      stress: "CHIA-ro", alt: ["tydelig"] },
+    { no: "tom",         ms: "vuoto",       fs: "vuota",       mp: "vuoti",       fp: "vuote",       stress: "VUO-to" },
+    { no: "full",        ms: "pieno",       fs: "piena",       mp: "pieni",       fp: "piene",       stress: "PIE-no" },
+    { no: "myk",         ms: "morbido",     fs: "morbida",     mp: "morbidi",     fp: "morbide",     stress: "MOR-bi-do" },
+    { no: "hard",        ms: "duro",        fs: "dura",        mp: "duri",        fp: "dure",        stress: "DU-ro", alt: ["streng"] },
+    { no: "stille",      ms: "silenzioso",  fs: "silenziosa",  mp: "silenziosi",  fp: "silenziose",  stress: "si-len-ZIO-so" },
+    { no: "bred",        ms: "largo",       fs: "larga",       mp: "larghi",      fp: "larghe",      stress: "LAR-go" }
   ]
 },
 {
   date: "2026-05-06",
   nouns: [
-    { no: "stue",    noPl: "stuer",     sg: "il soggiorno",  pl: "i soggiorni" },
-    { no: "hage",    noPl: "hager",     sg: "il giardino",   pl: "i giardini" },
-    { no: "torg",    noPl: "torg",      sg: "la piazza",     pl: "le piazze" },
-    { no: "marked",  noPl: "markeder",  sg: "il mercato",    pl: "i mercati" },
-    { no: "avis",    noPl: "aviser",    sg: "il giornale",   pl: "i giornali" },
-    { no: "brev",    noPl: "brev",      sg: "la lettera",    pl: "le lettere", alt: ["bokstav"] },
-    { no: "penn",    noPl: "penner",    sg: "la penna",      pl: "le penne" },
-    { no: "blyant",  noPl: "blyanter",  sg: "la matita",     pl: "le matite" },
-    { no: "veske",   noPl: "vesker",    sg: "la borsa",      pl: "le borse" },
-    { no: "klokke",  noPl: "klokker",   sg: "l'orologio",    pl: "gli orologi" }
+    { no: "stue",    noPl: "stuer",     sg: "il soggiorno",  pl: "i soggiorni",   stress: "sog-GIOR-no" },
+    { no: "hage",    noPl: "hager",     sg: "il giardino",   pl: "i giardini",    stress: "giar-DI-no" },
+    { no: "torg",    noPl: "torg",      sg: "la piazza",     pl: "le piazze",     stress: "PIAZ-za" },
+    { no: "marked",  noPl: "markeder",  sg: "il mercato",    pl: "i mercati",     stress: "mer-CA-to" },
+    { no: "avis",    noPl: "aviser",    sg: "il giornale",   pl: "i giornali",    stress: "gior-NA-le" },
+    { no: "brev",    noPl: "brev",      sg: "la lettera",    pl: "le lettere",    stress: "LET-te-ra", alt: ["bokstav"] },
+    { no: "penn",    noPl: "penner",    sg: "la penna",      pl: "le penne",      stress: "PEN-na" },
+    { no: "blyant",  noPl: "blyanter",  sg: "la matita",     pl: "le matite",     stress: "ma-TI-ta" },
+    { no: "veske",   noPl: "vesker",    sg: "la borsa",      pl: "le borse",      stress: "BOR-sa" },
+    { no: "klokke",  noPl: "klokker",   sg: "l'orologio",    pl: "gli orologi",   stress: "o-ro-LO-gio" }
   ],
   verbs: [
-    { no: "å arbeide",   it: "lavorare" },
-    { no: "å studere",   it: "studiare" },
-    { no: "å vaske",     it: "lavare" },
-    { no: "å forberede", it: "preparare" },
-    { no: "å sende",     it: "inviare" },
-    { no: "å motta",     it: "ricevere" },
-    { no: "å huske",     it: "ricordare" },
-    { no: "å glemme",    it: "dimenticare" },
-    { no: "å føle",      it: "sentire", alt: ["å høre"] },
-    { no: "å spille",    it: "giocare", alt: ["å leke"] }
+    { no: "å arbeide",   it: "lavorare",    stress: "la-vo-RA-re" },
+    { no: "å studere",   it: "studiare",    stress: "stu-DIA-re" },
+    { no: "å vaske",     it: "lavare",      stress: "la-VA-re" },
+    { no: "å forberede", it: "preparare",   stress: "pre-pa-RA-re" },
+    { no: "å sende",     it: "inviare",     stress: "in-VIA-re" },
+    { no: "å motta",     it: "ricevere",    stress: "ri-CE-ve-re" },
+    { no: "å huske",     it: "ricordare",   stress: "ri-cor-DA-re" },
+    { no: "å glemme",    it: "dimenticare", stress: "di-men-ti-CA-re" },
+    { no: "å føle",      it: "sentire",     stress: "sen-TI-re", alt: ["å høre"] },
+    { no: "å spille",    it: "giocare",     stress: "gio-CA-re", alt: ["å leke"] }
   ],
   adjectives: [
-    { no: "ren",         ms: "pulito",       fs: "pulita",       mp: "puliti",       fp: "pulite" },
-    { no: "skitten",     ms: "sporco",       fs: "sporca",       mp: "sporchi",      fp: "sporche" },
-    { no: "kjedelig",    ms: "noioso",       fs: "noiosa",       mp: "noiosi",       fp: "noiose" },
-    { no: "spennende",   ms: "emozionante",  fs: "emozionante",  mp: "emozionanti",  fp: "emozionanti" },
-    { no: "enkel",       ms: "semplice",     fs: "semplice",     mp: "semplici",     fp: "semplici" },
-    { no: "komplisert",  ms: "complicato",   fs: "complicata",   mp: "complicati",   fp: "complicate" },
-    { no: "trygg",       ms: "sicuro",       fs: "sicura",       mp: "sicuri",       fp: "sicure" },
-    { no: "farlig",      ms: "pericoloso",   fs: "pericolosa",   mp: "pericolosi",   fp: "pericolose" },
-    { no: "ærlig",       ms: "onesto",       fs: "onesta",       mp: "onesti",       fp: "oneste" },
-    { no: "stolt",       ms: "orgoglioso",   fs: "orgogliosa",   mp: "orgogliosi",   fp: "orgogliose" }
+    { no: "ren",         ms: "pulito",       fs: "pulita",       mp: "puliti",       fp: "pulite",       stress: "pu-LI-to" },
+    { no: "skitten",     ms: "sporco",       fs: "sporca",       mp: "sporchi",      fp: "sporche",      stress: "SPOR-co" },
+    { no: "kjedelig",    ms: "noioso",       fs: "noiosa",       mp: "noiosi",       fp: "noiose",       stress: "no-IO-so" },
+    { no: "spennende",   ms: "emozionante",  fs: "emozionante",  mp: "emozionanti",  fp: "emozionanti",  stress: "e-mo-zio-NAN-te" },
+    { no: "enkel",       ms: "semplice",     fs: "semplice",     mp: "semplici",     fp: "semplici",     stress: "SEM-pli-ce" },
+    { no: "komplisert",  ms: "complicato",   fs: "complicata",   mp: "complicati",   fp: "complicate",   stress: "com-pli-CA-to" },
+    { no: "trygg",       ms: "sicuro",       fs: "sicura",       mp: "sicuri",       fp: "sicure",       stress: "si-CU-ro" },
+    { no: "farlig",      ms: "pericoloso",   fs: "pericolosa",   mp: "pericolosi",   fp: "pericolose",   stress: "pe-ri-co-LO-so" },
+    { no: "ærlig",       ms: "onesto",       fs: "onesta",       mp: "onesti",       fp: "oneste",       stress: "o-NE-sto" },
+    { no: "stolt",       ms: "orgoglioso",   fs: "orgogliosa",   mp: "orgogliosi",   fp: "orgogliose",   stress: "or-go-GLIO-so" }
   ]
 },
 {
   date: "2026-05-07",
   nouns: [
-    { no: "bil",    noPl: "biler",    sg: "l'auto",       pl: "le auto" },
-    { no: "tog",    noPl: "tog",      sg: "il treno",     pl: "i treni" },
-    { no: "fly",    noPl: "fly",      sg: "l'aereo",      pl: "gli aerei" },
-    { no: "vei",    noPl: "veier",    sg: "la strada",    pl: "le strade" },
-    { no: "bro",    noPl: "broer",    sg: "il ponte",     pl: "i ponti" },
-    { no: "dør",    noPl: "dører",    sg: "la porta",     pl: "le porte" },
-    { no: "vindu",  noPl: "vinduer",  sg: "la finestra",  pl: "le finestre" },
-    { no: "bok",    noPl: "bøker",    sg: "il libro",     pl: "i libri" },
-    { no: "bord",   noPl: "bord",     sg: "il tavolo",    pl: "i tavoli" },
-    { no: "stol",   noPl: "stoler",   sg: "la sedia",     pl: "le sedie" }
+    { no: "bil",    noPl: "biler",    sg: "l'auto",       pl: "le auto",      stress: "AU-to" },
+    { no: "tog",    noPl: "tog",      sg: "il treno",     pl: "i treni",      stress: "TRE-no" },
+    { no: "fly",    noPl: "fly",      sg: "l'aereo",      pl: "gli aerei",    stress: "a-E-re-o" },
+    { no: "vei",    noPl: "veier",    sg: "la strada",    pl: "le strade",    stress: "STRA-da" },
+    { no: "bro",    noPl: "broer",    sg: "il ponte",     pl: "i ponti",      stress: "PON-te" },
+    { no: "dør",    noPl: "dører",    sg: "la porta",     pl: "le porte",     stress: "POR-ta" },
+    { no: "vindu",  noPl: "vinduer",  sg: "la finestra",  pl: "le finestre",  stress: "fi-NE-stra" },
+    { no: "bok",    noPl: "bøker",    sg: "il libro",     pl: "i libri",      stress: "LI-bro" },
+    { no: "bord",   noPl: "bord",     sg: "il tavolo",    pl: "i tavoli",     stress: "TA-vo-lo" },
+    { no: "stol",   noPl: "stoler",   sg: "la sedia",     pl: "le sedie",     stress: "SE-dia" }
   ],
   verbs: [
-    { no: "å spise",  it: "mangiare" },
-    { no: "å drikke", it: "bere" },
-    { no: "å sove",   it: "dormire" },
-    { no: "å gå",     it: "camminare" },
-    { no: "å løpe",   it: "correre", alt: ["å skynde seg"] },
-    { no: "å lese",   it: "leggere" },
-    { no: "å skrive", it: "scrivere" },
-    { no: "å snakke", it: "parlare" },
-    { no: "å høre",   it: "ascoltare", alt: ["å lytte"] },
-    { no: "å se",     it: "guardare",  alt: ["å se på"] }
+    { no: "å spise",  it: "mangiare",  stress: "man-GIA-re" },
+    { no: "å drikke", it: "bere",      stress: "BE-re" },
+    { no: "å sove",   it: "dormire",   stress: "dor-MI-re" },
+    { no: "å gå",     it: "camminare", stress: "cam-mi-NA-re" },
+    { no: "å løpe",   it: "correre",   stress: "COR-re-re", alt: ["å skynde seg"] },
+    { no: "å lese",   it: "leggere",   stress: "LEG-ge-re" },
+    { no: "å skrive", it: "scrivere",  stress: "SCRI-ve-re" },
+    { no: "å snakke", it: "parlare",   stress: "par-LA-re" },
+    { no: "å høre",   it: "ascoltare", stress: "a-scol-TA-re", alt: ["å lytte"] },
+    { no: "å se",     it: "guardare",  stress: "guar-DA-re",   alt: ["å se på"] }
   ],
   adjectives: [
-    { no: "glad",   ms: "felice",     fs: "felice",     mp: "felici",     fp: "felici" },
-    { no: "trist",  ms: "triste",     fs: "triste",     mp: "tristi",     fp: "tristi" },
-    { no: "sint",   ms: "arrabbiato", fs: "arrabbiata", mp: "arrabbiati", fp: "arrabbiate" },
-    { no: "redd",   ms: "spaventato", fs: "spaventata", mp: "spaventati", fp: "spaventate" },
-    { no: "sulten", ms: "affamato",   fs: "affamata",   mp: "affamati",   fp: "affamate" },
-    { no: "tørst",  ms: "assetato",   fs: "assetata",   mp: "assetati",   fp: "assetate" },
-    { no: "trøtt",  ms: "stanco",     fs: "stanca",     mp: "stanchi",    fp: "stanche" },
-    { no: "frisk",  ms: "sano",       fs: "sana",       mp: "sani",       fp: "sane" },
-    { no: "syk",    ms: "malato",     fs: "malata",     mp: "malati",     fp: "malate" },
-    { no: "ung",    ms: "giovane",    fs: "giovane",    mp: "giovani",    fp: "giovani" }
+    { no: "glad",   ms: "felice",     fs: "felice",     mp: "felici",     fp: "felici",     stress: "fe-LI-ce" },
+    { no: "trist",  ms: "triste",     fs: "triste",     mp: "tristi",     fp: "tristi",     stress: "TRI-ste" },
+    { no: "sint",   ms: "arrabbiato", fs: "arrabbiata", mp: "arrabbiati", fp: "arrabbiate", stress: "ar-rab-BIA-to" },
+    { no: "redd",   ms: "spaventato", fs: "spaventata", mp: "spaventati", fp: "spaventate", stress: "spa-ven-TA-to" },
+    { no: "sulten", ms: "affamato",   fs: "affamata",   mp: "affamati",   fp: "affamate",   stress: "af-fa-MA-to" },
+    { no: "tørst",  ms: "assetato",   fs: "assetata",   mp: "assetati",   fp: "assetate",   stress: "as-se-TA-to" },
+    { no: "trøtt",  ms: "stanco",     fs: "stanca",     mp: "stanchi",    fp: "stanche",    stress: "STAN-co" },
+    { no: "frisk",  ms: "sano",       fs: "sana",       mp: "sani",       fp: "sane",       stress: "SA-no" },
+    { no: "syk",    ms: "malato",     fs: "malata",     mp: "malati",     fp: "malate",     stress: "ma-LA-to" },
+    { no: "ung",    ms: "giovane",    fs: "giovane",    mp: "giovani",    fp: "giovani",    stress: "GIO-va-ne" }
   ]
 },
 {
   date: "2026-05-08",
   nouns: [
-    { no: "kjøtt",   noPl: "kjøtt",    sg: "la carne",    pl: "le carni" },
-    { no: "fisk",    noPl: "fisker",   sg: "il pesce",    pl: "i pesci" },
-    { no: "brød",    noPl: "brød",     sg: "il pane",     pl: "i pani" },
-    { no: "melk",    noPl: "melk",     sg: "il latte",    pl: "i latti" },
-    { no: "vann",    noPl: "vann",     sg: "l'acqua",     pl: "le acque" },
-    { no: "vin",     noPl: "viner",    sg: "il vino",     pl: "i vini" },
-    { no: "kaffe",   noPl: "kaffer",   sg: "il caffè",    pl: "i caffè" },
-    { no: "skole",   noPl: "skoler",   sg: "la scuola",   pl: "le scuole" },
-    { no: "hus",     noPl: "hus",      sg: "la casa",     pl: "le case" },
-    { no: "familie", noPl: "familier", sg: "la famiglia", pl: "le famiglie" }
+    { no: "kjøtt",   noPl: "kjøtt",    sg: "la carne",    pl: "le carni",    stress: "CAR-ne" },
+    { no: "fisk",    noPl: "fisker",   sg: "il pesce",    pl: "i pesci",     stress: "PE-sce" },
+    { no: "brød",    noPl: "brød",     sg: "il pane",     pl: "i pani",      stress: "PA-ne" },
+    { no: "melk",    noPl: "melk",     sg: "il latte",    pl: "i latti",     stress: "LAT-te" },
+    { no: "vann",    noPl: "vann",     sg: "l'acqua",     pl: "le acque",    stress: "AC-qua" },
+    { no: "vin",     noPl: "viner",    sg: "il vino",     pl: "i vini",      stress: "VI-no" },
+    { no: "kaffe",   noPl: "kaffer",   sg: "il caffè",    pl: "i caffè",     stress: "caf-FÈ" },
+    { no: "skole",   noPl: "skoler",   sg: "la scuola",   pl: "le scuole",   stress: "SCUO-la" },
+    { no: "hus",     noPl: "hus",      sg: "la casa",     pl: "le case",     stress: "CA-sa" },
+    { no: "familie", noPl: "familier", sg: "la famiglia", pl: "le famiglie", stress: "fa-MI-glia" }
   ],
   verbs: [
-    { no: "å lukke",    it: "chiudere", alt: ["å stenge"] },
-    { no: "å komme",    it: "venire" },
-    { no: "å dra",      it: "partire",  alt: ["å reise"] },
-    { no: "å lage mat", it: "cucinare" },
-    { no: "å elske",    it: "amare" },
-    { no: "å prøve",    it: "provare",  alt: ["å føle"] },
-    { no: "å hente",    it: "prendere", alt: ["å ta"] },
-    { no: "å svare",    it: "rispondere" },
-    { no: "å spørre",   it: "chiedere", alt: ["å be om"] },
-    { no: "å like",     it: "piacere" }
+    { no: "å lukke",    it: "chiudere",   stress: "CHIU-de-re", alt: ["å stenge"] },
+    { no: "å komme",    it: "venire",     stress: "ve-NI-re" },
+    { no: "å dra",      it: "partire",    stress: "par-TI-re", alt: ["å reise"] },
+    { no: "å lage mat", it: "cucinare",   stress: "cu-ci-NA-re" },
+    { no: "å elske",    it: "amare",      stress: "a-MA-re" },
+    { no: "å prøve",    it: "provare",    stress: "pro-VA-re", alt: ["å føle"] },
+    { no: "å hente",    it: "prendere",   stress: "PREN-de-re", alt: ["å ta"] },
+    { no: "å svare",    it: "rispondere", stress: "ri-SPON-de-re" },
+    { no: "å spørre",   it: "chiedere",   stress: "CHIE-de-re", alt: ["å be om"] },
+    { no: "å like",     it: "piacere",    stress: "pia-CE-re" }
   ],
   adjectives: [
-    { no: "vakker",      ms: "bello",        fs: "bella",        mp: "belli",        fp: "belle" },
-    { no: "stygg",       ms: "brutto",       fs: "brutta",       mp: "brutti",       fp: "brutte" },
-    { no: "sterk",       ms: "forte",        fs: "forte",        mp: "forti",        fp: "forti",        alt: ["høy (om lyd)"] },
-    { no: "svak",        ms: "debole",       fs: "debole",       mp: "deboli",       fp: "deboli" },
-    { no: "rik",         ms: "ricco",        fs: "ricca",        mp: "ricchi",       fp: "ricche" },
-    { no: "fattig",      ms: "povero",       fs: "povera",       mp: "poveri",       fp: "povere" },
-    { no: "intelligent", ms: "intelligente", fs: "intelligente", mp: "intelligenti", fp: "intelligenti" },
-    { no: "rolig",       ms: "calmo",        fs: "calma",        mp: "calmi",        fp: "calme" },
-    { no: "åpen",        ms: "aperto",       fs: "aperta",       mp: "aperti",       fp: "aperte" },
-    { no: "lukket",      ms: "chiuso",       fs: "chiusa",       mp: "chiusi",       fp: "chiuse" }
+    { no: "vakker",      ms: "bello",        fs: "bella",        mp: "belli",        fp: "belle",        stress: "BEL-lo" },
+    { no: "stygg",       ms: "brutto",       fs: "brutta",       mp: "brutti",       fp: "brutte",       stress: "BRUT-to" },
+    { no: "sterk",       ms: "forte",        fs: "forte",        mp: "forti",        fp: "forti",        stress: "FOR-te", alt: ["høy (om lyd)"] },
+    { no: "svak",        ms: "debole",       fs: "debole",       mp: "deboli",       fp: "deboli",       stress: "DE-bo-le" },
+    { no: "rik",         ms: "ricco",        fs: "ricca",        mp: "ricchi",       fp: "ricche",       stress: "RIC-co" },
+    { no: "fattig",      ms: "povero",       fs: "povera",       mp: "poveri",       fp: "povere",       stress: "PO-ve-ro" },
+    { no: "intelligent", ms: "intelligente", fs: "intelligente", mp: "intelligenti", fp: "intelligenti", stress: "in-tel-li-GEN-te" },
+    { no: "rolig",       ms: "calmo",        fs: "calma",        mp: "calmi",        fp: "calme",        stress: "CAL-mo" },
+    { no: "åpen",        ms: "aperto",       fs: "aperta",       mp: "aperti",       fp: "aperte",       stress: "a-PER-to" },
+    { no: "lukket",      ms: "chiuso",       fs: "chiusa",       mp: "chiusi",       fp: "chiuse",       stress: "CHIU-so" }
   ]
 },
 {
   date: "2026-05-09",
   nouns: [
-    { no: "ild",     noPl: "ildene",  sg: "il fuoco",      pl: "i fuochi" },
-    { no: "snø",     noPl: "snøer",   sg: "la neve",       pl: "le nevi" },
-    { no: "sky",     noPl: "skyer",   sg: "la nuvola",     pl: "le nuvole" },
-    { no: "hav",     noPl: "hav",     sg: "il mare",       pl: "i mari" },
-    { no: "skog",    noPl: "skoger",  sg: "la foresta",    pl: "le foreste" },
-    { no: "hjerte",  noPl: "hjerter", sg: "il cuore",      pl: "i cuori" },
-    { no: "hode",    noPl: "hoder",   sg: "la testa",      pl: "le teste" },
-    { no: "stemme",  noPl: "stemmer", sg: "la voce",       pl: "le voci" },
-    { no: "farge",   noPl: "farger",  sg: "il colore",     pl: "i colori" },
-    { no: "uke",     noPl: "uker",    sg: "la settimana",  pl: "le settimane" }
+    { no: "ild",     noPl: "ildene",  sg: "il fuoco",      pl: "i fuochi",      stress: "FUO-co" },
+    { no: "snø",     noPl: "snøer",   sg: "la neve",       pl: "le nevi",       stress: "NE-ve" },
+    { no: "sky",     noPl: "skyer",   sg: "la nuvola",     pl: "le nuvole",     stress: "NU-vo-la" },
+    { no: "hav",     noPl: "hav",     sg: "il mare",       pl: "i mari",        stress: "MA-re" },
+    { no: "skog",    noPl: "skoger",  sg: "la foresta",    pl: "le foreste",    stress: "fo-RE-sta" },
+    { no: "hjerte",  noPl: "hjerter", sg: "il cuore",      pl: "i cuori",       stress: "CUO-re" },
+    { no: "hode",    noPl: "hoder",   sg: "la testa",      pl: "le teste",      stress: "TE-sta" },
+    { no: "stemme",  noPl: "stemmer", sg: "la voce",       pl: "le voci",       stress: "VO-ce" },
+    { no: "farge",   noPl: "farger",  sg: "il colore",     pl: "i colori",      stress: "co-LO-re" },
+    { no: "uke",     noPl: "uker",    sg: "la settimana",  pl: "le settimane",  stress: "set-ti-MA-na" }
   ],
   verbs: [
-    { no: "å møte",      it: "incontrare" },
-    { no: "å ringe",     it: "telefonare" },
-    { no: "å kjøre",     it: "guidare", alt: ["å lede"] },
-    { no: "å lære",      it: "imparare" },
-    { no: "å undervise", it: "insegnare", alt: ["å lære bort"] },
-    { no: "å smile",     it: "sorridere" },
-    { no: "å fly",       it: "volare" },
-    { no: "å ønske",     it: "desiderare" },
-    { no: "å bestemme",  it: "decidere" },
-    { no: "å feire",     it: "celebrare" }
+    { no: "å møte",      it: "incontrare",  stress: "in-con-TRA-re" },
+    { no: "å ringe",     it: "telefonare",  stress: "te-le-fo-NA-re" },
+    { no: "å kjøre",     it: "guidare",     stress: "gui-DA-re", alt: ["å lede"] },
+    { no: "å lære",      it: "imparare",    stress: "im-pa-RA-re" },
+    { no: "å undervise", it: "insegnare",   stress: "in-se-GNA-re", alt: ["å lære bort"] },
+    { no: "å smile",     it: "sorridere",   stress: "sor-RI-de-re" },
+    { no: "å fly",       it: "volare",      stress: "vo-LA-re" },
+    { no: "å ønske",     it: "desiderare",  stress: "de-si-de-RA-re" },
+    { no: "å bestemme",  it: "decidere",    stress: "de-CI-de-re" },
+    { no: "å feire",     it: "celebrare",   stress: "ce-le-BRA-re" }
   ],
   adjectives: [
-    { no: "morsom",     ms: "divertente", fs: "divertente", mp: "divertenti", fp: "divertenti" },
-    { no: "viktig",     ms: "importante", fs: "importante", mp: "importanti", fp: "importanti" },
-    { no: "vanskelig",  ms: "difficile",  fs: "difficile",  mp: "difficili",  fp: "difficili" },
-    { no: "søt",        ms: "dolce",      fs: "dolce",      mp: "dolci",      fp: "dolci" },
-    { no: "sjenerøs",   ms: "generoso",   fs: "generosa",   mp: "generosi",   fp: "generose" },
-    { no: "snill",      ms: "gentile",    fs: "gentile",    mp: "gentili",    fp: "gentili" },
-    { no: "lat",        ms: "pigro",      fs: "pigra",      mp: "pigri",      fp: "pigre" },
-    { no: "nervøs",     ms: "nervoso",    fs: "nervosa",    mp: "nervosi",    fp: "nervose" },
-    { no: "høflig",     ms: "educato",    fs: "educata",    mp: "educati",    fp: "educate" },
-    { no: "takknemlig", ms: "grato",      fs: "grata",      mp: "grati",      fp: "grate" }
+    { no: "morsom",     ms: "divertente", fs: "divertente", mp: "divertenti", fp: "divertenti", stress: "di-ver-TEN-te" },
+    { no: "viktig",     ms: "importante", fs: "importante", mp: "importanti", fp: "importanti", stress: "im-por-TAN-te" },
+    { no: "vanskelig",  ms: "difficile",  fs: "difficile",  mp: "difficili",  fp: "difficili",  stress: "dif-FI-ci-le" },
+    { no: "søt",        ms: "dolce",      fs: "dolce",      mp: "dolci",      fp: "dolci",      stress: "DOL-ce" },
+    { no: "sjenerøs",   ms: "generoso",   fs: "generosa",   mp: "generosi",   fp: "generose",   stress: "ge-ne-RO-so" },
+    { no: "snill",      ms: "gentile",    fs: "gentile",    mp: "gentili",    fp: "gentili",    stress: "gen-TI-le" },
+    { no: "lat",        ms: "pigro",      fs: "pigra",      mp: "pigri",      fp: "pigre",      stress: "PI-gro" },
+    { no: "nervøs",     ms: "nervoso",    fs: "nervosa",    mp: "nervosi",    fp: "nervose",    stress: "ner-VO-so" },
+    { no: "høflig",     ms: "educato",    fs: "educata",    mp: "educati",    fp: "educate",    stress: "e-du-CA-to" },
+    { no: "takknemlig", ms: "grato",      fs: "grata",      mp: "grati",      fp: "grate",      stress: "GRA-to" }
   ]
 },
 {
   date: "2026-05-10",
   nouns: [
-    { no: "nøkkel",    noPl: "nøkler",      sg: "la chiave",      pl: "le chiavi" },
-    { no: "telefon",   noPl: "telefoner",    sg: "il telefono",    pl: "i telefoni" },
-    { no: "kjøleskap", noPl: "kjøleskap",    sg: "il frigorifero", pl: "i frigoriferi" },
-    { no: "lampe",     noPl: "lamper",       sg: "la lampada",     pl: "le lampade" },
-    { no: "speil",     noPl: "speil",        sg: "lo specchio",    pl: "gli specchi" },
-    { no: "skje",      noPl: "skjeer",       sg: "il cucchiaio",   pl: "i cucchiai" },
-    { no: "gaffel",    noPl: "gafler",       sg: "la forchetta",   pl: "le forchette" },
-    { no: "kniv",      noPl: "kniver",       sg: "il coltello",    pl: "i coltelli" },
-    { no: "tallerken", noPl: "tallerkener",  sg: "il piatto",      pl: "i piatti", alt: ["rett (mat)"] },
-    { no: "kopp",      noPl: "kopper",       sg: "la tazza",       pl: "le tazze" }
+    { no: "nøkkel",    noPl: "nøkler",      sg: "la chiave",      pl: "le chiavi",      stress: "CHIA-ve" },
+    { no: "telefon",   noPl: "telefoner",    sg: "il telefono",    pl: "i telefoni",     stress: "te-LE-fo-no" },
+    { no: "kjøleskap", noPl: "kjøleskap",    sg: "il frigorifero", pl: "i frigoriferi",  stress: "fri-go-RI-fe-ro" },
+    { no: "lampe",     noPl: "lamper",       sg: "la lampada",     pl: "le lampade",     stress: "LAM-pa-da" },
+    { no: "speil",     noPl: "speil",        sg: "lo specchio",    pl: "gli specchi",    stress: "SPEC-chio" },
+    { no: "skje",      noPl: "skjeer",       sg: "il cucchiaio",   pl: "i cucchiai",     stress: "cuc-CHIA-io" },
+    { no: "gaffel",    noPl: "gafler",       sg: "la forchetta",   pl: "le forchette",   stress: "for-CHET-ta" },
+    { no: "kniv",      noPl: "kniver",       sg: "il coltello",    pl: "i coltelli",     stress: "col-TEL-lo" },
+    { no: "tallerken", noPl: "tallerkener",  sg: "il piatto",      pl: "i piatti",       stress: "PIAT-to", alt: ["rett (mat)"] },
+    { no: "kopp",      noPl: "kopper",       sg: "la tazza",       pl: "le tazze",       stress: "TAZ-za" }
   ],
   verbs: [
-    { no: "å sitte",     it: "sedere" },
-    { no: "å tegne",     it: "disegnare" },
-    { no: "å svømme",    it: "nuotare" },
-    { no: "å hvile",     it: "riposare" },
-    { no: "å dele",      it: "dividere" },
-    { no: "å nyte",      it: "godere" },
-    { no: "å gjette",    it: "indovinare" },
-    { no: "å diskutere", it: "discutere" },
-    { no: "å følge",     it: "seguire" },
-    { no: "å låne",      it: "prestare", alt: ["å låne ut"] }
+    { no: "å sitte",     it: "sedere",     stress: "se-DE-re" },
+    { no: "å tegne",     it: "disegnare",  stress: "di-se-GNA-re" },
+    { no: "å svømme",    it: "nuotare",    stress: "nuo-TA-re" },
+    { no: "å hvile",     it: "riposare",   stress: "ri-po-SA-re" },
+    { no: "å dele",      it: "dividere",   stress: "di-VI-de-re" },
+    { no: "å nyte",      it: "godere",     stress: "go-DE-re" },
+    { no: "å gjette",    it: "indovinare", stress: "in-do-vi-NA-re" },
+    { no: "å diskutere", it: "discutere",  stress: "di-SCU-te-re" },
+    { no: "å følge",     it: "seguire",    stress: "se-GUI-re" },
+    { no: "å låne",      it: "prestare",   stress: "pre-STA-re", alt: ["å låne ut"] }
   ],
   adjectives: [
-    { no: "nysgjerrig", ms: "curioso",     fs: "curiosa",     mp: "curiosi",     fp: "curiose" },
-    { no: "tålmodig",   ms: "paziente",    fs: "paziente",    mp: "pazienti",    fp: "pazienti" },
-    { no: "utålmodig",  ms: "impaziente",  fs: "impaziente",  mp: "impazienti",  fp: "impazienti" },
-    { no: "forsiktig",  ms: "attento",     fs: "attenta",     mp: "attenti",     fp: "attente" },
-    { no: "modig",      ms: "coraggioso",  fs: "coraggiosa",  mp: "coraggiosi",  fp: "coraggiose" },
-    { no: "kjent",      ms: "famoso",      fs: "famosa",      mp: "famosi",      fp: "famose" },
-    { no: "koselig",    ms: "accogliente", fs: "accogliente", mp: "accoglienti", fp: "accoglienti" },
-    { no: "fersk",      ms: "fresco",      fs: "fresca",      mp: "freschi",     fp: "fresche" },
-    { no: "bitter",     ms: "amaro",       fs: "amara",       mp: "amari",       fp: "amare" },
-    { no: "søvnig",     ms: "assonnato",   fs: "assonnata",   mp: "assonnati",   fp: "assonnate" }
+    { no: "nysgjerrig", ms: "curioso",     fs: "curiosa",     mp: "curiosi",     fp: "curiose",     stress: "cu-RIO-so" },
+    { no: "tålmodig",   ms: "paziente",    fs: "paziente",    mp: "pazienti",    fp: "pazienti",    stress: "pa-ZIEN-te" },
+    { no: "utålmodig",  ms: "impaziente",  fs: "impaziente",  mp: "impazienti",  fp: "impazienti",  stress: "im-pa-ZIEN-te" },
+    { no: "forsiktig",  ms: "attento",     fs: "attenta",     mp: "attenti",     fp: "attente",     stress: "at-TEN-to" },
+    { no: "modig",      ms: "coraggioso",  fs: "coraggiosa",  mp: "coraggiosi",  fp: "coraggiose",  stress: "co-rag-GIO-so" },
+    { no: "kjent",      ms: "famoso",      fs: "famosa",      mp: "famosi",      fp: "famose",      stress: "fa-MO-so" },
+    { no: "koselig",    ms: "accogliente", fs: "accogliente", mp: "accoglienti", fp: "accoglienti", stress: "ac-co-GLIEN-te" },
+    { no: "fersk",      ms: "fresco",      fs: "fresca",      mp: "freschi",     fp: "fresche",     stress: "FRE-sco" },
+    { no: "bitter",     ms: "amaro",       fs: "amara",       mp: "amari",       fp: "amare",       stress: "a-MA-ro" },
+    { no: "søvnig",     ms: "assonnato",   fs: "assonnata",   mp: "assonnati",   fp: "assonnate",   stress: "as-son-NA-to" }
   ]
 },
 {
   date: "2026-05-11",
   nouns: [
-    { no: "lege",   noPl: "leger",    sg: "il medico",   pl: "i medici" },
-    { no: "jobb",   noPl: "jobber",   sg: "il lavoro",   pl: "i lavori" },
-    { no: "dag",    noPl: "dager",    sg: "il giorno",   pl: "i giorni" },
-    { no: "tid",    noPl: "tider",    sg: "il tempo",    pl: "i tempi", alt: ["vær"] },
-    { no: "venn",   noPl: "venner",   sg: "l'amico",     pl: "gli amici" },
-    { no: "barn",   noPl: "barn",     sg: "il bambino",  pl: "i bambini" },
-    { no: "år",     noPl: "år",       sg: "l'anno",      pl: "gli anni" },
-    { no: "morgen", noPl: "morgener", sg: "la mattina",  pl: "le mattine" },
-    { no: "kveld",  noPl: "kvelder",  sg: "la sera",     pl: "le sere" },
-    { no: "penger", noPl: "penger",   sg: "il denaro",   pl: "i denari" }
+    { no: "lege",   noPl: "leger",    sg: "il medico",   pl: "i medici",   stress: "ME-di-co" },
+    { no: "jobb",   noPl: "jobber",   sg: "il lavoro",   pl: "i lavori",   stress: "la-VO-ro" },
+    { no: "dag",    noPl: "dager",    sg: "il giorno",   pl: "i giorni",   stress: "GIOR-no" },
+    { no: "tid",    noPl: "tider",    sg: "il tempo",    pl: "i tempi",    stress: "TEM-po", alt: ["vær"] },
+    { no: "venn",   noPl: "venner",   sg: "l'amico",     pl: "gli amici",  stress: "a-MI-co" },
+    { no: "barn",   noPl: "barn",     sg: "il bambino",  pl: "i bambini",  stress: "bam-BI-no" },
+    { no: "år",     noPl: "år",       sg: "l'anno",      pl: "gli anni",   stress: "AN-no" },
+    { no: "morgen", noPl: "morgener", sg: "la mattina",  pl: "le mattine", stress: "mat-TI-na" },
+    { no: "kveld",  noPl: "kvelder",  sg: "la sera",     pl: "le sere",    stress: "SE-ra" },
+    { no: "penger", noPl: "penger",   sg: "il denaro",   pl: "i denari",   stress: "de-NA-ro" }
   ],
   verbs: [
-    { no: "å vise",     it: "mostrare" },
-    { no: "å forklare", it: "spiegare" },
-    { no: "å endre",    it: "cambiare",  alt: ["å bytte", "å veksle"] },
-    { no: "å kjenne",   it: "conoscere", alt: ["å bli kjent med"] },
-    { no: "å bære",     it: "portare",   alt: ["å ta med"] },
-    { no: "å kaste",    it: "lanciare",  alt: ["å lansere"] },
-    { no: "å bygge",    it: "costruire" },
-    { no: "å sette",    it: "mettere",   alt: ["å legge"] },
-    { no: "å bruke",    it: "usare" },
-    { no: "å forbedre", it: "migliorare" }
+    { no: "å vise",     it: "mostrare",   stress: "mo-STRA-re" },
+    { no: "å forklare", it: "spiegare",   stress: "spie-GA-re" },
+    { no: "å endre",    it: "cambiare",   stress: "cam-BIA-re", alt: ["å bytte", "å veksle"] },
+    { no: "å kjenne",   it: "conoscere",  stress: "co-NO-sce-re", alt: ["å bli kjent med"] },
+    { no: "å bære",     it: "portare",    stress: "por-TA-re", alt: ["å ta med"] },
+    { no: "å kaste",    it: "lanciare",   stress: "lan-CIA-re", alt: ["å lansere"] },
+    { no: "å bygge",    it: "costruire",  stress: "co-stru-I-re" },
+    { no: "å sette",    it: "mettere",    stress: "MET-te-re", alt: ["å legge"] },
+    { no: "å bruke",    it: "usare",      stress: "u-SA-re" },
+    { no: "å forbedre", it: "migliorare", stress: "mi-glio-RA-re" }
   ],
   adjectives: [
-    { no: "hvit",       ms: "bianco",       fs: "bianca",       mp: "bianchi",       fp: "bianche" },
-    { no: "svart",      ms: "nero",         fs: "nera",         mp: "neri",          fp: "nere" },
-    { no: "rød",        ms: "rosso",        fs: "rossa",        mp: "rossi",         fp: "rosse" },
-    { no: "grønn",      ms: "verde",        fs: "verde",        mp: "verdi",         fp: "verdi" },
-    { no: "gul",        ms: "giallo",       fs: "gialla",       mp: "gialli",        fp: "gialle" },
-    { no: "blå",        ms: "azzurro",      fs: "azzurra",      mp: "azzurri",       fp: "azzurre" },
-    { no: "overrasket", ms: "sorpreso",     fs: "sorpresa",     mp: "sorpresi",      fp: "sorprese" },
-    { no: "sjalu",      ms: "geloso",       fs: "gelosa",       mp: "gelosi",        fp: "gelose" },
-    { no: "spent",      ms: "entusiasta",   fs: "entusiasta",   mp: "entusiasti",    fp: "entusiaste" },
-    { no: "nydelig",    ms: "meraviglioso", fs: "meravigliosa", mp: "meravigliosi",  fp: "meravigliose" }
+    { no: "hvit",       ms: "bianco",       fs: "bianca",       mp: "bianchi",       fp: "bianche",      stress: "BIAN-co" },
+    { no: "svart",      ms: "nero",         fs: "nera",         mp: "neri",          fp: "nere",         stress: "NE-ro" },
+    { no: "rød",        ms: "rosso",        fs: "rossa",        mp: "rossi",         fp: "rosse",        stress: "ROS-so" },
+    { no: "grønn",      ms: "verde",        fs: "verde",        mp: "verdi",         fp: "verdi",        stress: "VER-de" },
+    { no: "gul",        ms: "giallo",       fs: "gialla",       mp: "gialli",        fp: "gialle",       stress: "GIAL-lo" },
+    { no: "blå",        ms: "azzurro",      fs: "azzurra",      mp: "azzurri",       fp: "azzurre",      stress: "az-ZUR-ro" },
+    { no: "overrasket", ms: "sorpreso",     fs: "sorpresa",     mp: "sorpresi",      fp: "sorprese",     stress: "sor-PRE-so" },
+    { no: "sjalu",      ms: "geloso",       fs: "gelosa",       mp: "gelosi",        fp: "gelose",       stress: "ge-LO-so" },
+    { no: "spent",      ms: "entusiasta",   fs: "entusiasta",   mp: "entusiasti",    fp: "entusiaste",   stress: "en-tu-SIA-sta" },
+    { no: "nydelig",    ms: "meraviglioso", fs: "meravigliosa", mp: "meravigliosi",  fp: "meravigliose", stress: "me-ra-vi-GLIO-so" }
   ]
 },
 {
   date: "2026-05-12",
   nouns: [
-    { no: "blomst",     noPl: "blomster",     sg: "il fiore",       pl: "i fiori" },
-    { no: "fugl",       noPl: "fugler",       sg: "l'uccello",      pl: "gli uccelli" },
-    { no: "katt",       noPl: "katter",       sg: "il gatto",       pl: "i gatti" },
-    { no: "hund",       noPl: "hunder",       sg: "il cane",        pl: "i cani" },
-    { no: "sykkel",     noPl: "sykler",       sg: "la bicicletta",  pl: "le biciclette" },
-    { no: "restaurant", noPl: "restauranter", sg: "il ristorante",  pl: "i ristoranti" },
-    { no: "park",       noPl: "parker",       sg: "il parco",       pl: "i parchi" },
-    { no: "natt",       noPl: "netter",       sg: "la notte",       pl: "le notti" },
-    { no: "tre",        noPl: "trær",         sg: "l'albero",       pl: "gli alberi" },
-    { no: "dyr",        noPl: "dyr",          sg: "l'animale",      pl: "gli animali" }
+    { no: "blomst",     noPl: "blomster",     sg: "il fiore",       pl: "i fiori",       stress: "FIO-re" },
+    { no: "fugl",       noPl: "fugler",       sg: "l'uccello",      pl: "gli uccelli",   stress: "uc-CEL-lo" },
+    { no: "katt",       noPl: "katter",       sg: "il gatto",       pl: "i gatti",       stress: "GAT-to" },
+    { no: "hund",       noPl: "hunder",       sg: "il cane",        pl: "i cani",        stress: "CA-ne" },
+    { no: "sykkel",     noPl: "sykler",       sg: "la bicicletta",  pl: "le biciclette", stress: "bi-ci-CLET-ta" },
+    { no: "restaurant", noPl: "restauranter", sg: "il ristorante",  pl: "i ristoranti",  stress: "ri-sto-RAN-te" },
+    { no: "park",       noPl: "parker",       sg: "il parco",       pl: "i parchi",      stress: "PAR-co" },
+    { no: "natt",       noPl: "netter",       sg: "la notte",       pl: "le notti",      stress: "NOT-te" },
+    { no: "tre",        noPl: "trær",         sg: "l'albero",       pl: "gli alberi",    stress: "AL-be-ro" },
+    { no: "dyr",        noPl: "dyr",          sg: "l'animale",      pl: "gli animali",   stress: "a-ni-MA-le" }
   ],
   verbs: [
-    { no: "å åpne",      it: "aprire" },
-    { no: "å betale",    it: "pagare" },
-    { no: "å reise",     it: "viaggiare" },
-    { no: "å tenke",     it: "pensare" },
-    { no: "å forstå",    it: "capire" },
-    { no: "å hjelpe",    it: "aiutare" },
-    { no: "å returnere", it: "tornare",   alt: ["å komme tilbake"] },
-    { no: "å vente",     it: "aspettare", alt: ["å forvente"] },
-    { no: "å kjøpe",     it: "comprare" },
-    { no: "å selge",     it: "vendere" }
+    { no: "å åpne",      it: "aprire",     stress: "a-PRI-re" },
+    { no: "å betale",    it: "pagare",     stress: "pa-GA-re" },
+    { no: "å reise",     it: "viaggiare",  stress: "viag-GIA-re" },
+    { no: "å tenke",     it: "pensare",    stress: "pen-SA-re" },
+    { no: "å forstå",    it: "capire",     stress: "ca-PI-re" },
+    { no: "å hjelpe",    it: "aiutare",    stress: "a-iu-TA-re" },
+    { no: "å returnere", it: "tornare",    stress: "tor-NA-re", alt: ["å komme tilbake"] },
+    { no: "å vente",     it: "aspettare",  stress: "a-spet-TA-re", alt: ["å forvente"] },
+    { no: "å kjøpe",     it: "comprare",   stress: "com-PRA-re" },
+    { no: "å selge",     it: "vendere",    stress: "VEN-de-re" }
   ],
   adjectives: [
-    { no: "stor",     ms: "grande",  fs: "grande",  mp: "grandi",  fp: "grandi" },
-    { no: "liten",    ms: "piccolo", fs: "piccola", mp: "piccoli", fp: "piccole" },
-    { no: "gammel",   ms: "vecchio", fs: "vecchia", mp: "vecchi",  fp: "vecchie" },
-    { no: "ny",       ms: "nuovo",   fs: "nuova",   mp: "nuovi",   fp: "nuove" },
-    { no: "rask",     ms: "veloce",  fs: "veloce",  mp: "veloci",  fp: "veloci" },
-    { no: "langsom",  ms: "lento",   fs: "lenta",   mp: "lenti",   fp: "lente" },
-    { no: "varm",     ms: "caldo",   fs: "calda",   mp: "caldi",   fp: "calde" },
-    { no: "kald",     ms: "freddo",  fs: "fredda",  mp: "freddi",  fp: "fredde" },
-    { no: "høy",      ms: "alto",    fs: "alta",    mp: "alti",    fp: "alte" },
-    { no: "lav",      ms: "basso",   fs: "bassa",   mp: "bassi",   fp: "basse" }
+    { no: "stor",     ms: "grande",  fs: "grande",  mp: "grandi",  fp: "grandi",  stress: "GRAN-de" },
+    { no: "liten",    ms: "piccolo", fs: "piccola", mp: "piccoli", fp: "piccole", stress: "PIC-co-lo" },
+    { no: "gammel",   ms: "vecchio", fs: "vecchia", mp: "vecchi",  fp: "vecchie", stress: "VEC-chio" },
+    { no: "ny",       ms: "nuovo",   fs: "nuova",   mp: "nuovi",   fp: "nuove",   stress: "NUO-vo" },
+    { no: "rask",     ms: "veloce",  fs: "veloce",  mp: "veloci",  fp: "veloci",  stress: "ve-LO-ce" },
+    { no: "langsom",  ms: "lento",   fs: "lenta",   mp: "lenti",   fp: "lente",   stress: "LEN-to" },
+    { no: "varm",     ms: "caldo",   fs: "calda",   mp: "caldi",   fp: "calde",   stress: "CAL-do" },
+    { no: "kald",     ms: "freddo",  fs: "fredda",  mp: "freddi",  fp: "fredde",  stress: "FRED-do" },
+    { no: "høy",      ms: "alto",    fs: "alta",    mp: "alti",    fp: "alte",    stress: "AL-to" },
+    { no: "lav",      ms: "basso",   fs: "bassa",   mp: "bassi",   fp: "basse",   stress: "BAS-so" }
   ]
 },
 {
   date: "2026-05-13",
   nouns: [
-    { no: "egg",        noPl: "egg",          sg: "l'uovo",         pl: "le uova" },
-    { no: "øye",        noPl: "øyne",         sg: "l'occhio",       pl: "gli occhi" },
-    { no: "hånd",       noPl: "hender",       sg: "la mano",        pl: "le mani" },
-    { no: "fot",        noPl: "føtter",       sg: "il piede",       pl: "i piedi" },
-    { no: "by",         noPl: "byer",         sg: "la città",       pl: "le città" },
-    { no: "gate",       noPl: "gater",        sg: "la via",         pl: "le vie" },
-    { no: "flaske",     noPl: "flasker",      sg: "la bottiglia",   pl: "le bottiglie" },
-    { no: "glass",      noPl: "glass",        sg: "il bicchiere",   pl: "i bicchieri" },
-    { no: "leilighet",  noPl: "leiligheter",  sg: "l'appartamento", pl: "gli appartamenti" },
-    { no: "navn",       noPl: "navn",         sg: "il nome",        pl: "i nomi" }
+    { no: "egg",        noPl: "egg",          sg: "l'uovo",         pl: "le uova",          stress: "UO-vo" },
+    { no: "øye",        noPl: "øyne",         sg: "l'occhio",       pl: "gli occhi",        stress: "OC-chio" },
+    { no: "hånd",       noPl: "hender",       sg: "la mano",        pl: "le mani",          stress: "MA-no" },
+    { no: "fot",        noPl: "føtter",       sg: "il piede",       pl: "i piedi",          stress: "PIE-de" },
+    { no: "by",         noPl: "byer",         sg: "la città",       pl: "le città",         stress: "cit-TÀ" },
+    { no: "gate",       noPl: "gater",        sg: "la via",         pl: "le vie",           stress: "VI-a" },
+    { no: "flaske",     noPl: "flasker",      sg: "la bottiglia",   pl: "le bottiglie",     stress: "bot-TI-glia" },
+    { no: "glass",      noPl: "glass",        sg: "il bicchiere",   pl: "i bicchieri",      stress: "bic-CHIE-re" },
+    { no: "leilighet",  noPl: "leiligheter",  sg: "l'appartamento", pl: "gli appartamenti", stress: "ap-par-ta-MEN-to" },
+    { no: "navn",       noPl: "navn",         sg: "il nome",        pl: "i nomi",           stress: "NO-me" }
   ],
   verbs: [
-    { no: "å søke",      it: "cercare",  alt: ["å lete", "å prøve"] },
-    { no: "å finne",     it: "trovare" },
-    { no: "å falle",     it: "cadere" },
-    { no: "å spare",     it: "risparmiare" },
-    { no: "å velge",     it: "scegliere" },
-    { no: "å anbefale",  it: "raccomandare" },
-    { no: "å leve",      it: "vivere",   alt: ["å bo"] },
-    { no: "å miste",     it: "perdere",  alt: ["å tape"] },
-    { no: "å reparere",  it: "riparare" },
-    { no: "å ordne",     it: "sistemare" }
+    { no: "å søke",      it: "cercare",     stress: "cer-CA-re", alt: ["å lete", "å prøve"] },
+    { no: "å finne",     it: "trovare",     stress: "tro-VA-re" },
+    { no: "å falle",     it: "cadere",      stress: "ca-DE-re" },
+    { no: "å spare",     it: "risparmiare", stress: "ri-spar-MIA-re" },
+    { no: "å velge",     it: "scegliere",   stress: "SCE-glie-re" },
+    { no: "å anbefale",  it: "raccomandare", stress: "rac-co-man-DA-re" },
+    { no: "å leve",      it: "vivere",      stress: "VI-ve-re", alt: ["å bo"] },
+    { no: "å miste",     it: "perdere",     stress: "PER-de-re", alt: ["å tape"] },
+    { no: "å reparere",  it: "riparare",    stress: "ri-pa-RA-re" },
+    { no: "å ordne",     it: "sistemare",   stress: "si-ste-MA-re" }
   ],
   adjectives: [
-    { no: "hyggelig",  ms: "simpatico",  fs: "simpatica",  mp: "simpatici",  fp: "simpatiche" },
-    { no: "rar",       ms: "strano",     fs: "strana",     mp: "strani",     fp: "strane" },
-    { no: "klok",      ms: "saggio",     fs: "saggia",     mp: "saggi",      fp: "sagge" },
-    { no: "kreativ",   ms: "creativo",   fs: "creativa",   mp: "creativi",   fp: "creative" },
-    { no: "sjenert",   ms: "timido",     fs: "timida",     mp: "timidi",     fp: "timide" },
-    { no: "mager",     ms: "magro",      fs: "magra",      mp: "magri",      fp: "magre" },
-    { no: "tykk",      ms: "grasso",     fs: "grassa",     mp: "grassi",     fp: "grasse" },
-    { no: "romslig",   ms: "spazioso",   fs: "spaziosa",   mp: "spaziosi",   fp: "spaziose" },
-    { no: "smal",      ms: "stretto",    fs: "stretta",    mp: "stretti",    fp: "strette" },
-    { no: "alvorlig",  ms: "serio",      fs: "seria",      mp: "seri",       fp: "serie" }
+    { no: "hyggelig",  ms: "simpatico",  fs: "simpatica",  mp: "simpatici",  fp: "simpatiche", stress: "sim-PA-ti-co" },
+    { no: "rar",       ms: "strano",     fs: "strana",     mp: "strani",     fp: "strane",     stress: "STRA-no" },
+    { no: "klok",      ms: "saggio",     fs: "saggia",     mp: "saggi",      fp: "sagge",      stress: "SAG-gio" },
+    { no: "kreativ",   ms: "creativo",   fs: "creativa",   mp: "creativi",   fp: "creative",   stress: "cre-a-TI-vo" },
+    { no: "sjenert",   ms: "timido",     fs: "timida",     mp: "timidi",     fp: "timide",     stress: "TI-mi-do" },
+    { no: "mager",     ms: "magro",      fs: "magra",      mp: "magri",      fp: "magre",      stress: "MA-gro" },
+    { no: "tykk",      ms: "grasso",     fs: "grassa",     mp: "grassi",     fp: "grasse",     stress: "GRAS-so" },
+    { no: "romslig",   ms: "spazioso",   fs: "spaziosa",   mp: "spaziosi",   fp: "spaziose",   stress: "spa-ZIO-so" },
+    { no: "smal",      ms: "stretto",    fs: "stretta",    mp: "stretti",    fp: "strette",    stress: "STRET-to" },
+    { no: "alvorlig",  ms: "serio",      fs: "seria",      mp: "seri",       fp: "serie",      stress: "SE-rio" }
   ]
 },
 {
   date: "2026-05-14",
   nouns: [
-    { no: "regn",    noPl: "regn",     sg: "la pioggia",     pl: "le piogge" },
-    { no: "måned",   noPl: "måneder",  sg: "il mese",        pl: "i mesi" },
-    { no: "nese",    noPl: "neser",    sg: "il naso",        pl: "i nasi" },
-    { no: "munn",    noPl: "munner",   sg: "la bocca",       pl: "le bocche" },
-    { no: "skulder", noPl: "skuldre",  sg: "la spalla",      pl: "le spalle" },
-    { no: "kne",     noPl: "knær",     sg: "il ginocchio",   pl: "le ginocchia" },
-    { no: "arm",     noPl: "armer",    sg: "il braccio",     pl: "le braccia" },
-    { no: "finger",  noPl: "fingre",   sg: "il dito",        pl: "le dita" },
-    { no: "øre",     noPl: "ører",     sg: "l'orecchio",     pl: "le orecchie" },
-    { no: "vinter",  noPl: "vintre",   sg: "l'inverno",      pl: "gli inverni" }
+    { no: "regn",    noPl: "regn",     sg: "la pioggia",     pl: "le piogge",    stress: "PIOG-gia" },
+    { no: "måned",   noPl: "måneder",  sg: "il mese",        pl: "i mesi",       stress: "ME-se" },
+    { no: "nese",    noPl: "neser",    sg: "il naso",        pl: "i nasi",       stress: "NA-so" },
+    { no: "munn",    noPl: "munner",   sg: "la bocca",       pl: "le bocche",    stress: "BOC-ca" },
+    { no: "skulder", noPl: "skuldre",  sg: "la spalla",      pl: "le spalle",    stress: "SPAL-la" },
+    { no: "kne",     noPl: "knær",     sg: "il ginocchio",   pl: "le ginocchia", stress: "gi-NOC-chio" },
+    { no: "arm",     noPl: "armer",    sg: "il braccio",     pl: "le braccia",   stress: "BRAC-cio" },
+    { no: "finger",  noPl: "fingre",   sg: "il dito",        pl: "le dita",      stress: "DI-to" },
+    { no: "øre",     noPl: "ører",     sg: "l'orecchio",     pl: "le orecchie",  stress: "o-REC-chio" },
+    { no: "vinter",  noPl: "vintre",   sg: "l'inverno",      pl: "gli inverni",  stress: "in-VER-no" }
   ],
   verbs: [
-    { no: "å rope",      it: "gridare",     alt: ["å skrike"] },
-    { no: "å kysse",     it: "baciare" },
-    { no: "å besøke",    it: "visitare" },
-    { no: "å planlegge", it: "pianificare" },
-    { no: "å berøre",    it: "toccare" },
-    { no: "å drømme",    it: "sognare" },
-    { no: "å sloss",     it: "combattere",  alt: ["å kjempe"] },
-    { no: "å invitere",  it: "invitare" },
-    { no: "å fylle",     it: "riempire" },
-    { no: "å telle",     it: "contare" }
+    { no: "å rope",      it: "gridare",      stress: "gri-DA-re", alt: ["å skrike"] },
+    { no: "å kysse",     it: "baciare",      stress: "ba-CIA-re" },
+    { no: "å besøke",    it: "visitare",     stress: "vi-si-TA-re" },
+    { no: "å planlegge", it: "pianificare",  stress: "pia-ni-fi-CA-re" },
+    { no: "å berøre",    it: "toccare",      stress: "toc-CA-re" },
+    { no: "å drømme",    it: "sognare",      stress: "so-GNA-re" },
+    { no: "å sloss",     it: "combattere",   stress: "com-BAT-te-re", alt: ["å kjempe"] },
+    { no: "å invitere",  it: "invitare",     stress: "in-vi-TA-re" },
+    { no: "å fylle",     it: "riempire",     stress: "riem-PI-re" },
+    { no: "å telle",     it: "contare",      stress: "con-TA-re" }
   ],
   adjectives: [
-    { no: "sann",         ms: "vero",        fs: "vera",        mp: "veri",        fp: "vere" },
-    { no: "falsk",        ms: "falso",       fs: "falsa",       mp: "falsi",       fp: "false" },
-    { no: "moderne",      ms: "moderno",     fs: "moderna",     mp: "moderni",     fp: "moderne" },
-    { no: "naturlig",     ms: "naturale",    fs: "naturale",    mp: "naturali",    fp: "naturali" },
-    { no: "tradisjonell", ms: "tradizionale",fs: "tradizionale",mp: "tradizionali",fp: "tradizionali" },
-    { no: "gratis",       ms: "gratuito",    fs: "gratuita",    mp: "gratuiti",    fp: "gratuite" },
-    { no: "privat",       ms: "privato",     fs: "privata",     mp: "privati",     fp: "private" },
-    { no: "offentlig",    ms: "pubblico",    fs: "pubblica",    mp: "pubblici",    fp: "pubbliche" },
-    { no: "nødvendig",    ms: "necessario",  fs: "necessaria",  mp: "necessari",   fp: "necessarie" },
-    { no: "mulig",        ms: "possibile",   fs: "possibile",   mp: "possibili",   fp: "possibili" }
+    { no: "sann",         ms: "vero",        fs: "vera",        mp: "veri",        fp: "vere",        stress: "VE-ro" },
+    { no: "falsk",        ms: "falso",       fs: "falsa",       mp: "falsi",       fp: "false",       stress: "FAL-so" },
+    { no: "moderne",      ms: "moderno",     fs: "moderna",     mp: "moderni",     fp: "moderne",     stress: "mo-DER-no" },
+    { no: "naturlig",     ms: "naturale",    fs: "naturale",    mp: "naturali",    fp: "naturali",    stress: "na-tu-RA-le" },
+    { no: "tradisjonell", ms: "tradizionale",fs: "tradizionale",mp: "tradizionali",fp: "tradizionali",stress: "tra-di-zio-NA-le" },
+    { no: "gratis",       ms: "gratuito",    fs: "gratuita",    mp: "gratuiti",    fp: "gratuite",    stress: "gra-TUI-to" },
+    { no: "privat",       ms: "privato",     fs: "privata",     mp: "privati",     fp: "private",     stress: "pri-VA-to" },
+    { no: "offentlig",    ms: "pubblico",    fs: "pubblica",    mp: "pubblici",    fp: "pubbliche",   stress: "PUB-bli-co" },
+    { no: "nødvendig",    ms: "necessario",  fs: "necessaria",  mp: "necessari",   fp: "necessarie",  stress: "ne-ces-SA-rio" },
+    { no: "mulig",        ms: "possibile",   fs: "possibile",   mp: "possibili",   fp: "possibili",   stress: "pos-SI-bi-le" }
   ]
 },
 /* === DAILY_QUIZZES_END === */
@@ -1608,7 +1623,10 @@ const DAILY_QUIZZES = [
 /* ============================================================
    ENGINE
    ============================================================ */
-const norm = s => s.trim().toLowerCase().replace(/\s+/g, " ").replace(/[.!?,;]+$/, "");
+const norm = s => s.trim().toLowerCase()
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .replace(/\s+/g, " ")
+  .replace(/[.!?,;]+$/, "");
 
 /* ── Italian present-tense conjugation ───────────────── */
 const IRREG_CONJ = {
@@ -1775,6 +1793,7 @@ function buildBankQuestions(mode, count) {
       prompt: norskPrompt,
       answer: usePl ? n.pl : n.sg,
       sg: n.sg, pl: n.pl,
+      stress: n.stress || null,
       alt: n.alt || null
     });
   };
@@ -1784,6 +1803,7 @@ function buildBankQuestions(mode, count) {
       form: "", formClass: "", showCallout: false,
       tag: "verb",
       prompt: v.no, answer: v.it,
+      stress: v.stress || null,
       alt: v.alt || null
     });
   };
@@ -1802,6 +1822,7 @@ function buildBankQuestions(mode, count) {
       tag: "adj.",
       prompt: a.no, answer: a[pick.key],
       ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp,
+      stress: a.stress || null,
       alt: a.alt || null
     });
   };
@@ -1857,6 +1878,7 @@ function buildQuestions(day, mode) {
         prompt: norskPrompt,
         answer: usePl ? n.pl : n.sg,
         sg: n.sg, pl: n.pl,
+        stress: n.stress || null,
         alt: n.alt || null
       });
     }
@@ -1872,6 +1894,7 @@ function buildQuestions(day, mode) {
         tag: "verb",
         prompt: v.no,
         answer: v.it,
+        stress: v.stress || null,
         alt: v.alt || null
       });
     }
@@ -1894,6 +1917,7 @@ function buildQuestions(day, mode) {
         personIdx: p.idx,
         infinitive: v.it,
         noInfinitive: v.no,
+        stress: v.stress || null,
         conjAll: conj
       });
     }
@@ -1918,6 +1942,7 @@ function buildQuestions(day, mode) {
         prompt: a.no,
         answer: a[pick.key],
         ms: a.ms, fs: a.fs, mp: a.mp, fp: a.fp,
+        stress: a.stress || null,
         alt: a.alt || null
       });
     }
@@ -2658,6 +2683,11 @@ function submitAnswer() {
     missedAnswer = state.current.answer;
   }
 
+  if (state.current.stress) {
+    fullAnswer += "<div><span class='stress-hint'><b>" +
+      escapeHtml(state.current.stress) + "</b></span></div>";
+  }
+
   state.attempts++;
   Stats.record(state.current, given === correct, state.currentFirstTry, missedAnswer);
   const boxIdx = state.boxIndex.get(state.current.kind + "|" + state.current.prompt);
@@ -2888,6 +2918,12 @@ function globalKeys(e) {
   const onStart = !$("screen-start").classList.contains("hidden");
   const onQuiz  = !$("screen-quiz").classList.contains("hidden");
   const onEnd   = !$("screen-end").classList.contains("hidden");
+  const onStats = !$("screen-stats").classList.contains("hidden");
+
+  if (onStats) {
+    if (e.key === "Escape") { e.preventDefault(); goHome(); }
+    return;
+  }
 
   if (onStart) {
     if (e.key === "Enter") {
