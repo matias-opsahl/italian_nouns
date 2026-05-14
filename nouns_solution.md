@@ -115,3 +115,16 @@
 | glass | glass | il bicchiere | i bicchieri | m |  |
 | leilighet | leiligheter | l'appartamento | gli appartamenti | m |  |
 | navn | navn | il nome | i nomi | m |  |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender | også |
+|---|---|---|---|---|---|
+| regn | regn | la pioggia | le piogge | f |  |
+| måned | måneder | il mese | i mesi | m |  |
+| nese | neser | il naso | i nasi | m |  |
+| munn | munner | la bocca | le bocche | f |  |
+| skulder | skuldre | la spalla | le spalle | f |  |
+| kne | knær | il ginocchio | le ginocchia | m |  |
+| arm | armer | il braccio | le braccia | m |  |
+| finger | fingre | il dito | le dita | m |  |
+| øre | ører | l'orecchio | le orecchie | m |  |
+| vinter | vintre | l'inverno | gli inverni | m |  |

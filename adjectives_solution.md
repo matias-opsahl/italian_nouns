@@ -114,3 +114,16 @@
 | romslig | spazioso | spaziosa | spaziosi | spaziose |  |
 | smal | stretto | stretta | stretti | strette |  |
 | alvorlig | serio | seria | seri | serie |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | også |
+|---|---|---|---|---|---|
+| sann | vero | vera | veri | vere |  |
+| falsk | falso | falsa | falsi | false |  |
+| moderne | moderno | moderna | moderni | moderne |  |
+| naturlig | naturale | naturale | naturali | naturali |  |
+| tradisjonell | tradizionale | tradizionale | tradizionali | tradizionali |  |
+| gratis | gratuito | gratuita | gratuiti | gratuite |  |
+| privat | privato | privata | privati | private |  |
+| offentlig | pubblico | pubblica | pubblici | pubbliche |  |
+| nødvendig | necessario | necessaria | necessari | necessarie |  |
+| mulig | possibile | possibile | possibili | possibili |  |

@@ -115,3 +115,16 @@
 | å miste | perdere | å tape |
 | å reparere | riparare |  |
 | å ordne | sistemare |  |
+
+| ord (norsk) | ord (italiensk) | også |
+|---|---|---|
+| å rope | gridare | å skrike |
+| å kysse | baciare |  |
+| å besøke | visitare |  |
+| å planlegge | pianificare |  |
+| å berøre | toccare |  |
+| å drømme | sognare |  |
+| å sloss | combattere | å kjempe |
+| å invitere | invitare |  |
+| å fylle | riempire |  |
+| å telle | contare |  |
