@@ -2861,10 +2861,15 @@ function renderStats() {
     const rate = it.asked ? Math.round(100 * it.wrong / it.asked) : 0;
     const tag = it.t || tagLabel[it.k] || "";
     const ans = String(it.a || "").replace(/<[^>]+>/g, "");
+    const speakable = ans.split(/\s+·\s+|\s+\/\s+/)[0].trim();
+    const ansHtml = speakable
+      ? "<span class='sub tts-word' data-tts=\"" + ttsAttr(speakable) +
+        "\" title='Klikk for å høre uttalen'>" + escapeHtml(ans) + "</span>"
+      : "<span class='sub'>" + escapeHtml(ans) + "</span>";
     html +=
       "<div class='lb-row'>" +
         "<div class='lb-rank'>" + (i + 1) + "</div>" +
-        "<div class='lb-word'><b>" + escapeHtml(it.p) + "</b><span class='sub'>" + escapeHtml(ans) + "</span></div>" +
+        "<div class='lb-word'><b>" + escapeHtml(it.p) + "</b>" + ansHtml + "</div>" +
         "<div><span class='lb-tag'>" + escapeHtml(tag) + "</span></div>" +
         "<div class='lb-wrong'>" + it.wrong + " / " + it.asked + "</div>" +
         "<div class='lb-rate'>" + rate + "%</div>" +
@@ -2940,12 +2945,16 @@ function globalKeys(e) {
         const wkSel = $("weekSel");
         if (!wkSel.options.length) return;
         e.preventDefault();
+        e.stopPropagation();
         const i = wkSel.selectedIndex;
         if (e.key === "ArrowDown" && i < wkSel.options.length - 1) wkSel.selectedIndex = i + 1;
         if (e.key === "ArrowUp"   && i > 0)                         wkSel.selectedIndex = i - 1;
         wkSel.dispatchEvent(new Event("change"));
+        wkSel.blur();
+        $("dateSel").focus();
         return;
       }
+      if (document.activeElement === $("weekSel")) $("weekSel").blur();
       const sel = $("dateSel");
       const listOpen = $("dayListWrap").classList.contains("is-open");
       if (document.activeElement !== sel || listOpen) {
