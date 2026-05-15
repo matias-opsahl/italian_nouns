@@ -127,3 +127,16 @@
 | offentlig | pubblico | pubblica | pubblici | pubbliche |  |
 | nødvendig | necessario | necessaria | necessari | necessarie |  |
 | mulig | possibile | possibile | possibili | possibili |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| pen | carino | carina | carini | carine | ca-RI-no | søt |
+| sjelden | raro | rara | rari | rare | RA-ro |  |
+| fjern | lontano | lontana | lontani | lontane | lon-TA-no | langt borte |
+| nær | vicino | vicina | vicini | vicine | vi-CI-no |  |
+| ekte | autentico | autentica | autentici | autentiche | au-TEN-ti-co |  |
+| skremmende | spaventoso | spaventosa | spaventosi | spaventose | spa-ven-TO-so | skummel |
+| ambisiøs | ambizioso | ambiziosa | ambiziosi | ambiziose | am-bi-ZIO-so |  |
+| taus | muto | muta | muti | mute | MU-to | stum |
+| skarp | acuto | acuta | acuti | acute | a-CU-to | klok |
+| livlig | vivace | vivace | vivaci | vivaci | vi-VA-ce |  |

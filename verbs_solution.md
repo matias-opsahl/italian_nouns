@@ -128,3 +128,16 @@
 | å invitere | invitare |  |
 | å fylle | riempire |  |
 | å telle | contare |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å håpe | sperare | spe-RA-re |  |
+| å tilgi | perdonare | per-do-NA-re |  |
+| å bryte | rompere | ROM-pe-re | å knekke |
+| å skape | creare | cre-A-re |  |
+| å male | dipingere | di-PIN-ge-re |  |
+| å feire | festeggiare | fe-steg-GIA-re |  |
+| å si | dire | DI-re | å fortelle |
+| å overleve | sopravvivere | so-prav-VI-ve-re |  |
+| å overraske | sorprendere | sor-PREN-de-re |  |
+| å løfte | alzare | al-ZA-re | å heve |

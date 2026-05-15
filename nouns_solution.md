@@ -127,4 +127,17 @@
 | arm | armer | il braccio | le braccia | m |  |
 | finger | fingre | il dito | le dita | m |  |
 | øre | ører | l'orecchio | le orecchie | m |  |
+
+| ord (norsk) | norsk flertall | ord (s.g) | ord (p.l) | gender | uttale | også |
+|---|---|---|---|---|---|---|
+| bein | bein | la gamba | le gambe | f | GAM-ba |  |
+| hals | halser | il collo | i colli | m | COL-lo |  |
+| hår | hår | il capello | i capelli | m | ca-PEL-lo |  |
+| tann | tenner | il dente | i denti | m | DEN-te |  |
+| tunge | tunger | la lingua | le lingue | f | LIN-gua | språk |
+| panne | panner | la fronte | le fronti | f | FRON-te |  |
+| landsby | landsbyer | il villaggio | i villaggi | m | vil-LAG-gio |  |
+| innsjø | innsjøer | il lago | i laghi | m | LA-go |  |
+| ås | åser | la collina | le colline | f | col-LI-na |  |
+| ørken | ørkener | il deserto | i deserti | m | de-SER-to |  |
 | vinter | vintre | l'inverno | gli inverni | m |  |
