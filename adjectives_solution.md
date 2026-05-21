@@ -140,3 +140,16 @@
 | taus | muto | muta | muti | mute | MU-to | stum |
 | skarp | acuto | acuta | acuti | acute | a-CU-to | klok |
 | livlig | vivace | vivace | vivaci | vivaci | vi-VA-ce |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| lett (enkelt) | facile | facile | facili | facili | FA-ci-le |  |
+| lang | lungo | lunga | lunghi | lunghe | LUN-go |  |
+| kort | corto | corta | corti | corte | COR-to |  |
+| rund | rotondo | rotonda | rotondi | rotonde | ro-TON-do |  |
+| rett | corretto | corretta | corretti | corrette | cor-RET-to | giusto |
+| gal | sbagliato | sbagliata | sbagliati | sbagliate | sba-GLIA-to | feil |
+| kjær | caro | cara | cari | care | CA-ro | dyr |
+| grå | grigio | grigia | grigi | grigie | GRI-gio |  |
+| oransje | arancione | arancione | arancioni | arancioni | a-ran-CIO-ne |  |
+| lilla | viola | viola | viola | viola | VIO-la |  |

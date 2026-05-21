@@ -584,6 +584,8 @@
   .form-chip.t-hunkjonn { background:#fce7f3; border-color:#f9a8d4; color:#9d174d; }
 .form-chip.t-entall   { background:#fef3c7; border-color:#fcd34d; color:#92400e; }
 .form-chip.t-flertall { background:#ede9fe; border-color:#c4b5fd; color:#5b21b6; }
+.form-chip.t-bestemt  { background:#dcfce7; border-color:#86efac; color:#166534; }
+.form-chip.t-ubestemt { background:#ffedd5; border-color:#fdba74; color:#9a3412; }
   
   .form-chip.t-person   { background: var(--soft-green); border-color: rgba(0,140,69,0.3); color: var(--green-d); }
 
@@ -1230,16 +1232,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-05",
   nouns: [
-    { no: "sol",     noPl: "soler",     sg: "il sole",        pl: "i soli",        stress: "SO-le" },
-    { no: "måne",    noPl: "måner",     sg: "la luna",        pl: "le lune",       stress: "LU-na" },
-    { no: "himmel",  noPl: "himler",    sg: "il cielo",       pl: "i cieli",       stress: "CIE-lo" },
-    { no: "fjell",   noPl: "fjell",     sg: "la montagna",    pl: "le montagne",   stress: "mon-TA-gna" },
-    { no: "elv",     noPl: "elver",     sg: "il fiume",       pl: "i fiumi",       stress: "FIU-me" },
-    { no: "strand",  noPl: "strender",  sg: "la spiaggia",    pl: "le spiagge",    stress: "SPIAG-gia" },
-    { no: "kirke",   noPl: "kirker",    sg: "la chiesa",      pl: "le chiese",     stress: "CHIE-sa" },
-    { no: "seng",    noPl: "senger",    sg: "il letto",       pl: "i letti",       stress: "LET-to" },
-    { no: "kjøkken", noPl: "kjøkken",   sg: "la cucina",      pl: "le cucine",     stress: "cu-CI-na" },
-    { no: "bad",     noPl: "bad",       sg: "il bagno",       pl: "i bagni",       stress: "BA-gno" }
+    { no: "sol",     noPl: "soler",     noDef: "solen",      noPlDef: "solene",      sg: "il sole",     pl: "i soli",     sgI: "un sole",     plI: "dei soli",     stress: "SO-le" },
+    { no: "måne",    noPl: "måner",     noDef: "månen",      noPlDef: "månene",      sg: "la luna",     pl: "le lune",    sgI: "una luna",    plI: "delle lune",   stress: "LU-na" },
+    { no: "himmel",  noPl: "himler",    noDef: "himmelen",   noPlDef: "himlene",     sg: "il cielo",    pl: "i cieli",    sgI: "un cielo",    plI: "dei cieli",    stress: "CIE-lo" },
+    { no: "fjell",   noPl: "fjell",     noDef: "fjellet",    noPlDef: "fjellene",    sg: "la montagna", pl: "le montagne", sgI: "una montagna", plI: "delle montagne", stress: "mon-TA-gna" },
+    { no: "elv",     noPl: "elver",     noDef: "elven",      noPlDef: "elvene",      sg: "il fiume",    pl: "i fiumi",    sgI: "un fiume",    plI: "dei fiumi",    stress: "FIU-me" },
+    { no: "strand",  noPl: "strender",  noDef: "stranden",   noPlDef: "strendene",   sg: "la spiaggia", pl: "le spiagge", sgI: "una spiaggia", plI: "delle spiagge", stress: "SPIAG-gia" },
+    { no: "kirke",   noPl: "kirker",    noDef: "kirken",     noPlDef: "kirkene",     sg: "la chiesa",   pl: "le chiese",  sgI: "una chiesa",  plI: "delle chiese", stress: "CHIE-sa" },
+    { no: "seng",    noPl: "senger",    noDef: "sengen",     noPlDef: "sengene",     sg: "il letto",    pl: "i letti",    sgI: "un letto",    plI: "dei letti",    stress: "LET-to" },
+    { no: "kjøkken", noPl: "kjøkken",   noDef: "kjøkkenet",  noPlDef: "kjøkkenene",  sg: "la cucina",   pl: "le cucine",  sgI: "una cucina",  plI: "delle cucine", stress: "cu-CI-na" },
+    { no: "bad",     noPl: "bad",       noDef: "badet",      noPlDef: "badene",      sg: "il bagno",    pl: "i bagni",    sgI: "un bagno",    plI: "dei bagni",    stress: "BA-gno" }
   ],
   verbs: [
     { no: "å danse",    it: "ballare",    stress: "bal-LA-re" },
@@ -1269,16 +1271,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-06",
   nouns: [
-    { no: "stue",    noPl: "stuer",     sg: "il soggiorno",  pl: "i soggiorni",   stress: "sog-GIOR-no" },
-    { no: "hage",    noPl: "hager",     sg: "il giardino",   pl: "i giardini",    stress: "giar-DI-no" },
-    { no: "torg",    noPl: "torg",      sg: "la piazza",     pl: "le piazze",     stress: "PIAZ-za" },
-    { no: "marked",  noPl: "markeder",  sg: "il mercato",    pl: "i mercati",     stress: "mer-CA-to" },
-    { no: "avis",    noPl: "aviser",    sg: "il giornale",   pl: "i giornali",    stress: "gior-NA-le" },
-    { no: "brev",    noPl: "brev",      sg: "la lettera",    pl: "le lettere",    stress: "LET-te-ra", alt: ["bokstav"] },
-    { no: "penn",    noPl: "penner",    sg: "la penna",      pl: "le penne",      stress: "PEN-na" },
-    { no: "blyant",  noPl: "blyanter",  sg: "la matita",     pl: "le matite",     stress: "ma-TI-ta" },
-    { no: "veske",   noPl: "vesker",    sg: "la borsa",      pl: "le borse",      stress: "BOR-sa" },
-    { no: "klokke",  noPl: "klokker",   sg: "l'orologio",    pl: "gli orologi",   stress: "o-ro-LO-gio" }
+    { no: "stue",    noPl: "stuer",     noDef: "stuen",     noPlDef: "stuene",     sg: "il soggiorno", pl: "i soggiorni",  sgI: "un soggiorno", plI: "dei soggiorni", stress: "sog-GIOR-no" },
+    { no: "hage",    noPl: "hager",     noDef: "hagen",     noPlDef: "hagene",     sg: "il giardino",  pl: "i giardini",   sgI: "un giardino",  plI: "dei giardini",  stress: "giar-DI-no" },
+    { no: "torg",    noPl: "torg",      noDef: "torget",    noPlDef: "torgene",    sg: "la piazza",    pl: "le piazze",    sgI: "una piazza",   plI: "delle piazze",  stress: "PIAZ-za" },
+    { no: "marked",  noPl: "markeder",  noDef: "markedet",  noPlDef: "markedene",  sg: "il mercato",   pl: "i mercati",    sgI: "un mercato",   plI: "dei mercati",   stress: "mer-CA-to" },
+    { no: "avis",    noPl: "aviser",    noDef: "avisen",    noPlDef: "avisene",    sg: "il giornale",  pl: "i giornali",   sgI: "un giornale",  plI: "dei giornali",  stress: "gior-NA-le" },
+    { no: "brev",    noPl: "brev",      noDef: "brevet",    noPlDef: "brevene",    sg: "la lettera",   pl: "le lettere",   sgI: "una lettera",  plI: "delle lettere", stress: "LET-te-ra", alt: ["bokstav"] },
+    { no: "penn",    noPl: "penner",    noDef: "pennen",    noPlDef: "pennene",    sg: "la penna",     pl: "le penne",     sgI: "una penna",    plI: "delle penne",   stress: "PEN-na" },
+    { no: "blyant",  noPl: "blyanter",  noDef: "blyanten",  noPlDef: "blyantene",  sg: "la matita",    pl: "le matite",    sgI: "una matita",   plI: "delle matite",  stress: "ma-TI-ta" },
+    { no: "veske",   noPl: "vesker",    noDef: "vesken",    noPlDef: "veskene",    sg: "la borsa",     pl: "le borse",     sgI: "una borsa",    plI: "delle borse",   stress: "BOR-sa" },
+    { no: "klokke",  noPl: "klokker",   noDef: "klokken",   noPlDef: "klokkene",   sg: "l'orologio",   pl: "gli orologi",  sgI: "un orologio",  plI: "degli orologi", stress: "o-ro-LO-gio" }
   ],
   verbs: [
     { no: "å arbeide",   it: "lavorare",    stress: "la-vo-RA-re" },
@@ -1308,16 +1310,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-07",
   nouns: [
-    { no: "bil",    noPl: "biler",    sg: "l'auto",       pl: "le auto",      stress: "AU-to" },
-    { no: "tog",    noPl: "tog",      sg: "il treno",     pl: "i treni",      stress: "TRE-no" },
-    { no: "fly",    noPl: "fly",      sg: "l'aereo",      pl: "gli aerei",    stress: "a-E-re-o" },
-    { no: "vei",    noPl: "veier",    sg: "la strada",    pl: "le strade",    stress: "STRA-da" },
-    { no: "bro",    noPl: "broer",    sg: "il ponte",     pl: "i ponti",      stress: "PON-te" },
-    { no: "dør",    noPl: "dører",    sg: "la porta",     pl: "le porte",     stress: "POR-ta" },
-    { no: "vindu",  noPl: "vinduer",  sg: "la finestra",  pl: "le finestre",  stress: "fi-NE-stra" },
-    { no: "bok",    noPl: "bøker",    sg: "il libro",     pl: "i libri",      stress: "LI-bro" },
-    { no: "bord",   noPl: "bord",     sg: "il tavolo",    pl: "i tavoli",     stress: "TA-vo-lo" },
-    { no: "stol",   noPl: "stoler",   sg: "la sedia",     pl: "le sedie",     stress: "SE-dia" }
+    { no: "bil",    noPl: "biler",    noDef: "bilen",    noPlDef: "bilene",    sg: "la macchina", pl: "le macchine", sgI: "una macchina", plI: "delle macchine", stress: "MAC-chi-na" },
+    { no: "tog",    noPl: "tog",      noDef: "toget",    noPlDef: "togene",    sg: "il treno",    pl: "i treni",     sgI: "un treno",    plI: "dei treni",      stress: "TRE-no" },
+    { no: "fly",    noPl: "fly",      noDef: "flyet",    noPlDef: "flyene",    sg: "l'aereo",     pl: "gli aerei",   sgI: "un aereo",    plI: "degli aerei",    stress: "a-E-re-o" },
+    { no: "vei",    noPl: "veier",    noDef: "veien",    noPlDef: "veiene",    sg: "la strada",   pl: "le strade",   sgI: "una strada",  plI: "delle strade",   stress: "STRA-da" },
+    { no: "bro",    noPl: "broer",    noDef: "broen",    noPlDef: "broene",    sg: "il ponte",    pl: "i ponti",     sgI: "un ponte",    plI: "dei ponti",      stress: "PON-te" },
+    { no: "dør",    noPl: "dører",    noDef: "døren",    noPlDef: "dørene",    sg: "la porta",    pl: "le porte",    sgI: "una porta",   plI: "delle porte",    stress: "POR-ta" },
+    { no: "vindu",  noPl: "vinduer",  noDef: "vinduet",  noPlDef: "vinduene",  sg: "la finestra", pl: "le finestre", sgI: "una finestra", plI: "delle finestre", stress: "fi-NE-stra" },
+    { no: "bok",    noPl: "bøker",    noDef: "boken",    noPlDef: "bøkene",    sg: "il libro",    pl: "i libri",     sgI: "un libro",    plI: "dei libri",      stress: "LI-bro" },
+    { no: "bord",   noPl: "bord",     noDef: "bordet",   noPlDef: "bordene",   sg: "il tavolo",   pl: "i tavoli",    sgI: "un tavolo",   plI: "dei tavoli",     stress: "TA-vo-lo" },
+    { no: "stol",   noPl: "stoler",   noDef: "stolen",   noPlDef: "stolene",   sg: "la sedia",    pl: "le sedie",    sgI: "una sedia",   plI: "delle sedie",    stress: "SE-dia" }
   ],
   verbs: [
     { no: "å spise",  it: "mangiare",  stress: "man-GIA-re" },
@@ -1347,16 +1349,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-08",
   nouns: [
-    { no: "kjøtt",   noPl: "kjøtt",    sg: "la carne",    pl: "le carni",    stress: "CAR-ne" },
-    { no: "fisk",    noPl: "fisker",   sg: "il pesce",    pl: "i pesci",     stress: "PE-sce" },
-    { no: "brød",    noPl: "brød",     sg: "il pane",     pl: "i pani",      stress: "PA-ne" },
-    { no: "melk",    noPl: "melk",     sg: "il latte",    pl: "i latti",     stress: "LAT-te" },
-    { no: "vann",    noPl: "vann",     sg: "l'acqua",     pl: "le acque",    stress: "AC-qua" },
-    { no: "vin",     noPl: "viner",    sg: "il vino",     pl: "i vini",      stress: "VI-no" },
-    { no: "kaffe",   noPl: "kaffer",   sg: "il caffè",    pl: "i caffè",     stress: "caf-FÈ" },
-    { no: "skole",   noPl: "skoler",   sg: "la scuola",   pl: "le scuole",   stress: "SCUO-la" },
-    { no: "hus",     noPl: "hus",      sg: "la casa",     pl: "le case",     stress: "CA-sa" },
-    { no: "familie", noPl: "familier", sg: "la famiglia", pl: "le famiglie", stress: "fa-MI-glia" }
+    { no: "kjøtt",   noPl: "kjøtt",    noDef: "kjøttet",   noPlDef: "kjøttene",   sg: "la carne",    pl: "le carni",    sgI: "una carne",    plI: "delle carni",    stress: "CAR-ne" },
+    { no: "fisk",    noPl: "fisker",   noDef: "fisken",    noPlDef: "fiskene",    sg: "il pesce",    pl: "i pesci",     sgI: "un pesce",     plI: "dei pesci",      stress: "PE-sce" },
+    { no: "brød",    noPl: "brød",     noDef: "brødet",    noPlDef: "brødene",    sg: "il pane",     pl: "i pani",      sgI: "un pane",      plI: "dei pani",       stress: "PA-ne" },
+    { no: "melk",    noPl: "melk",     noDef: "melken",    noPlDef: "melkene",    sg: "il latte",    pl: "i latti",     sgI: "un latte",     plI: "dei latti",      stress: "LAT-te" },
+    { no: "vann",    noPl: "vann",     noDef: "vannet",    noPlDef: "vannene",    sg: "l'acqua",     pl: "le acque",    sgI: "un'acqua",     plI: "delle acque",    stress: "AC-qua" },
+    { no: "vin",     noPl: "viner",    noDef: "vinen",     noPlDef: "vinene",     sg: "il vino",     pl: "i vini",      sgI: "un vino",      plI: "dei vini",       stress: "VI-no" },
+    { no: "kaffe",   noPl: "kaffer",   noDef: "kaffen",    noPlDef: "kaffene",    sg: "il caffè",    pl: "i caffè",     sgI: "un caffè",     plI: "dei caffè",      stress: "caf-FÈ" },
+    { no: "skole",   noPl: "skoler",   noDef: "skolen",    noPlDef: "skolene",    sg: "la scuola",   pl: "le scuole",   sgI: "una scuola",   plI: "delle scuole",   stress: "SCUO-la" },
+    { no: "hus",     noPl: "hus",      noDef: "huset",     noPlDef: "husene",     sg: "la casa",     pl: "le case",     sgI: "una casa",     plI: "delle case",     stress: "CA-sa" },
+    { no: "familie", noPl: "familier", noDef: "familien",  noPlDef: "familiene",  sg: "la famiglia", pl: "le famiglie", sgI: "una famiglia", plI: "delle famiglie", stress: "fa-MI-glia" }
   ],
   verbs: [
     { no: "å lukke",    it: "chiudere",   stress: "CHIU-de-re", alt: ["å stenge"] },
@@ -1386,22 +1388,22 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-09",
   nouns: [
-    { no: "ild",     noPl: "ildene",  sg: "il fuoco",      pl: "i fuochi",      stress: "FUO-co" },
-    { no: "snø",     noPl: "snøer",   sg: "la neve",       pl: "le nevi",       stress: "NE-ve" },
-    { no: "sky",     noPl: "skyer",   sg: "la nuvola",     pl: "le nuvole",     stress: "NU-vo-la" },
-    { no: "hav",     noPl: "hav",     sg: "il mare",       pl: "i mari",        stress: "MA-re" },
-    { no: "skog",    noPl: "skoger",  sg: "la foresta",    pl: "le foreste",    stress: "fo-RE-sta" },
-    { no: "hjerte",  noPl: "hjerter", sg: "il cuore",      pl: "i cuori",       stress: "CUO-re" },
-    { no: "hode",    noPl: "hoder",   sg: "la testa",      pl: "le teste",      stress: "TE-sta" },
-    { no: "stemme",  noPl: "stemmer", sg: "la voce",       pl: "le voci",       stress: "VO-ce" },
-    { no: "farge",   noPl: "farger",  sg: "il colore",     pl: "i colori",      stress: "co-LO-re" },
-    { no: "uke",     noPl: "uker",    sg: "la settimana",  pl: "le settimane",  stress: "set-ti-MA-na" }
+    { no: "ild",     noPl: "ilder",   noDef: "ilden",    noPlDef: "ildene",    sg: "il fuoco",     pl: "i fuochi",     sgI: "un fuoco",     plI: "dei fuochi",     stress: "FUO-co" },
+    { no: "snø",     noPl: "snøer",   noDef: "snøen",    noPlDef: "snøene",    sg: "la neve",      pl: "le nevi",      sgI: "una neve",     plI: "delle nevi",     stress: "NE-ve" },
+    { no: "sky",     noPl: "skyer",   noDef: "skyen",    noPlDef: "skyene",    sg: "la nuvola",    pl: "le nuvole",    sgI: "una nuvola",   plI: "delle nuvole",   stress: "NU-vo-la" },
+    { no: "hav",     noPl: "hav",     noDef: "havet",    noPlDef: "havene",    sg: "il mare",      pl: "i mari",       sgI: "un mare",      plI: "dei mari",       stress: "MA-re" },
+    { no: "skog",    noPl: "skoger",  noDef: "skogen",   noPlDef: "skogene",   sg: "la foresta",   pl: "le foreste",   sgI: "una foresta",  plI: "delle foreste",  stress: "fo-RE-sta" },
+    { no: "hjerte",  noPl: "hjerter", noDef: "hjertet",  noPlDef: "hjertene",  sg: "il cuore",     pl: "i cuori",      sgI: "un cuore",     plI: "dei cuori",      stress: "CUO-re" },
+    { no: "hode",    noPl: "hoder",   noDef: "hodet",    noPlDef: "hodene",    sg: "la testa",     pl: "le teste",     sgI: "una testa",    plI: "delle teste",    stress: "TE-sta" },
+    { no: "stemme",  noPl: "stemmer", noDef: "stemmen",  noPlDef: "stemmene",  sg: "la voce",      pl: "le voci",      sgI: "una voce",     plI: "delle voci",     stress: "VO-ce" },
+    { no: "farge",   noPl: "farger",  noDef: "fargen",   noPlDef: "fargene",   sg: "il colore",    pl: "i colori",     sgI: "un colore",    plI: "dei colori",     stress: "co-LO-re" },
+    { no: "uke",     noPl: "uker",    noDef: "uken",     noPlDef: "ukene",     sg: "la settimana", pl: "le settimane", sgI: "una settimana", plI: "delle settimane", stress: "set-ti-MA-na" }
   ],
   verbs: [
     { no: "å møte",      it: "incontrare",  stress: "in-con-TRA-re" },
     { no: "å ringe",     it: "telefonare",  stress: "te-le-fo-NA-re" },
     { no: "å kjøre",     it: "guidare",     stress: "gui-DA-re", alt: ["å lede"] },
-    { no: "å lære",      it: "imparare",    stress: "im-pa-RA-re" },
+    { no: "å lære",      it: "imparare",    stress: "im-pa-RA-re", alt: ["å lære noe selv"] },
     { no: "å undervise", it: "insegnare",   stress: "in-se-GNA-re", alt: ["å lære bort"] },
     { no: "å smile",     it: "sorridere",   stress: "sor-RI-de-re" },
     { no: "å fly",       it: "volare",      stress: "vo-LA-re" },
@@ -1425,16 +1427,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-10",
   nouns: [
-    { no: "nøkkel",    noPl: "nøkler",      sg: "la chiave",      pl: "le chiavi",      stress: "CHIA-ve" },
-    { no: "telefon",   noPl: "telefoner",    sg: "il telefono",    pl: "i telefoni",     stress: "te-LE-fo-no" },
-    { no: "kjøleskap", noPl: "kjøleskap",    sg: "il frigorifero", pl: "i frigoriferi",  stress: "fri-go-RI-fe-ro" },
-    { no: "lampe",     noPl: "lamper",       sg: "la lampada",     pl: "le lampade",     stress: "LAM-pa-da" },
-    { no: "speil",     noPl: "speil",        sg: "lo specchio",    pl: "gli specchi",    stress: "SPEC-chio" },
-    { no: "skje",      noPl: "skjeer",       sg: "il cucchiaio",   pl: "i cucchiai",     stress: "cuc-CHIA-io" },
-    { no: "gaffel",    noPl: "gafler",       sg: "la forchetta",   pl: "le forchette",   stress: "for-CHET-ta" },
-    { no: "kniv",      noPl: "kniver",       sg: "il coltello",    pl: "i coltelli",     stress: "col-TEL-lo" },
-    { no: "tallerken", noPl: "tallerkener",  sg: "il piatto",      pl: "i piatti",       stress: "PIAT-to", alt: ["rett (mat)"] },
-    { no: "kopp",      noPl: "kopper",       sg: "la tazza",       pl: "le tazze",       stress: "TAZ-za" }
+    { no: "nøkkel",    noPl: "nøkler",      noDef: "nøkkelen",    noPlDef: "nøklene",      sg: "la chiave",      pl: "le chiavi",      sgI: "una chiave",      plI: "delle chiavi",      stress: "CHIA-ve" },
+    { no: "telefon",   noPl: "telefoner",   noDef: "telefonen",   noPlDef: "telefonene",   sg: "il telefono",    pl: "i telefoni",     sgI: "un telefono",     plI: "dei telefoni",      stress: "te-LE-fo-no" },
+    { no: "kjøleskap", noPl: "kjøleskap",   noDef: "kjøleskapet", noPlDef: "kjøleskapene", sg: "il frigorifero", pl: "i frigoriferi",  sgI: "un frigorifero",  plI: "dei frigoriferi",   stress: "fri-go-RI-fe-ro" },
+    { no: "lampe",     noPl: "lamper",      noDef: "lampen",      noPlDef: "lampene",      sg: "la lampada",     pl: "le lampade",     sgI: "una lampada",     plI: "delle lampade",     stress: "LAM-pa-da" },
+    { no: "speil",     noPl: "speil",       noDef: "speilet",     noPlDef: "speilene",     sg: "lo specchio",    pl: "gli specchi",    sgI: "uno specchio",    plI: "degli specchi",     stress: "SPEC-chio" },
+    { no: "skje",      noPl: "skjeer",      noDef: "skjeen",      noPlDef: "skjeene",      sg: "il cucchiaio",   pl: "i cucchiai",     sgI: "un cucchiaio",    plI: "dei cucchiai",      stress: "cuc-CHIA-io" },
+    { no: "gaffel",    noPl: "gafler",      noDef: "gaffelen",    noPlDef: "gaflene",      sg: "la forchetta",   pl: "le forchette",   sgI: "una forchetta",   plI: "delle forchette",   stress: "for-CHET-ta" },
+    { no: "kniv",      noPl: "kniver",      noDef: "kniven",      noPlDef: "knivene",      sg: "il coltello",    pl: "i coltelli",     sgI: "un coltello",     plI: "dei coltelli",      stress: "col-TEL-lo" },
+    { no: "tallerken", noPl: "tallerkener", noDef: "tallerkenen", noPlDef: "tallerkenene", sg: "il piatto",      pl: "i piatti",       sgI: "un piatto",       plI: "dei piatti",        stress: "PIAT-to", alt: ["rett (mat)"] },
+    { no: "kopp",      noPl: "kopper",      noDef: "koppen",      noPlDef: "koppene",      sg: "la tazza",       pl: "le tazze",       sgI: "una tazza",       plI: "delle tazze",       stress: "TAZ-za" }
   ],
   verbs: [
     { no: "å sitte",     it: "sedere",     stress: "se-DE-re" },
@@ -1464,16 +1466,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-11",
   nouns: [
-    { no: "lege",   noPl: "leger",    sg: "il medico",   pl: "i medici",   stress: "ME-di-co" },
-    { no: "jobb",   noPl: "jobber",   sg: "il lavoro",   pl: "i lavori",   stress: "la-VO-ro" },
-    { no: "dag",    noPl: "dager",    sg: "il giorno",   pl: "i giorni",   stress: "GIOR-no" },
-    { no: "tid",    noPl: "tider",    sg: "il tempo",    pl: "i tempi",    stress: "TEM-po", alt: ["vær"] },
-    { no: "venn",   noPl: "venner",   sg: "l'amico",     pl: "gli amici",  stress: "a-MI-co" },
-    { no: "barn",   noPl: "barn",     sg: "il bambino",  pl: "i bambini",  stress: "bam-BI-no" },
-    { no: "år",     noPl: "år",       sg: "l'anno",      pl: "gli anni",   stress: "AN-no" },
-    { no: "morgen", noPl: "morgener", sg: "la mattina",  pl: "le mattine", stress: "mat-TI-na" },
-    { no: "kveld",  noPl: "kvelder",  sg: "la sera",     pl: "le sere",    stress: "SE-ra" },
-    { no: "penger", noPl: "penger",   sg: "il denaro",   pl: "i denari",   stress: "de-NA-ro" }
+    { no: "lege",   noPl: "leger",    noDef: "legen",    noPlDef: "legene",     sg: "il medico",  pl: "i medici",   sgI: "un medico",   plI: "dei medici",   stress: "ME-di-co" },
+    { no: "jobb",   noPl: "jobber",   noDef: "jobben",   noPlDef: "jobbene",    sg: "il lavoro",  pl: "i lavori",   sgI: "un lavoro",   plI: "dei lavori",   stress: "la-VO-ro" },
+    { no: "dag",    noPl: "dager",    noDef: "dagen",    noPlDef: "dagene",     sg: "il giorno",  pl: "i giorni",   sgI: "un giorno",   plI: "dei giorni",   stress: "GIOR-no" },
+    { no: "tid",    noPl: "tider",    noDef: "tiden",    noPlDef: "tidene",     sg: "il tempo",   pl: "i tempi",    sgI: "un tempo",    plI: "dei tempi",    stress: "TEM-po", alt: ["vær"] },
+    { no: "venn",   noPl: "venner",   noDef: "vennen",   noPlDef: "vennene",    sg: "l'amico",    pl: "gli amici",  sgI: "un amico",    plI: "degli amici",  stress: "a-MI-co" },
+    { no: "barn",   noPl: "barn",     noDef: "barnet",   noPlDef: "barna",      sg: "il bambino", pl: "i bambini",  sgI: "un bambino",  plI: "dei bambini",  stress: "bam-BI-no" },
+    { no: "år",     noPl: "år",       noDef: "året",     noPlDef: "årene",      sg: "l'anno",     pl: "gli anni",   sgI: "un anno",     plI: "degli anni",   stress: "AN-no" },
+    { no: "morgen", noPl: "morgener", noDef: "morgenen", noPlDef: "morgenene",  sg: "la mattina", pl: "le mattine", sgI: "una mattina", plI: "delle mattine", stress: "mat-TI-na" },
+    { no: "kveld",  noPl: "kvelder",  noDef: "kvelden",  noPlDef: "kveldene",   sg: "la sera",    pl: "le sere",    sgI: "una sera",    plI: "delle sere",   stress: "SE-ra" },
+    { no: "penger", noPl: "penger",   noDef: "pengene",  noPlDef: "pengene",    sg: "il denaro",  pl: "i denari",   sgI: "un denaro",   plI: "dei denari",   stress: "de-NA-ro" }
   ],
   verbs: [
     { no: "å vise",     it: "mostrare",   stress: "mo-STRA-re" },
@@ -1503,16 +1505,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-12",
   nouns: [
-    { no: "blomst",     noPl: "blomster",     sg: "il fiore",       pl: "i fiori",       stress: "FIO-re" },
-    { no: "fugl",       noPl: "fugler",       sg: "l'uccello",      pl: "gli uccelli",   stress: "uc-CEL-lo" },
-    { no: "katt",       noPl: "katter",       sg: "il gatto",       pl: "i gatti",       stress: "GAT-to" },
-    { no: "hund",       noPl: "hunder",       sg: "il cane",        pl: "i cani",        stress: "CA-ne" },
-    { no: "sykkel",     noPl: "sykler",       sg: "la bicicletta",  pl: "le biciclette", stress: "bi-ci-CLET-ta" },
-    { no: "restaurant", noPl: "restauranter", sg: "il ristorante",  pl: "i ristoranti",  stress: "ri-sto-RAN-te" },
-    { no: "park",       noPl: "parker",       sg: "il parco",       pl: "i parchi",      stress: "PAR-co" },
-    { no: "natt",       noPl: "netter",       sg: "la notte",       pl: "le notti",      stress: "NOT-te" },
-    { no: "tre",        noPl: "trær",         sg: "l'albero",       pl: "gli alberi",    stress: "AL-be-ro" },
-    { no: "dyr",        noPl: "dyr",          sg: "l'animale",      pl: "gli animali",   stress: "a-ni-MA-le" }
+    { no: "blomst",     noPl: "blomster",     noDef: "blomsten",     noPlDef: "blomstene",     sg: "il fiore",      pl: "i fiori",       sgI: "un fiore",      plI: "dei fiori",       stress: "FIO-re" },
+    { no: "fugl",       noPl: "fugler",       noDef: "fuglen",       noPlDef: "fuglene",       sg: "l'uccello",     pl: "gli uccelli",   sgI: "un uccello",    plI: "degli uccelli",   stress: "uc-CEL-lo" },
+    { no: "katt",       noPl: "katter",       noDef: "katten",       noPlDef: "kattene",       sg: "il gatto",      pl: "i gatti",       sgI: "un gatto",      plI: "dei gatti",       stress: "GAT-to" },
+    { no: "hund",       noPl: "hunder",       noDef: "hunden",       noPlDef: "hundene",       sg: "il cane",       pl: "i cani",        sgI: "un cane",       plI: "dei cani",        stress: "CA-ne" },
+    { no: "sykkel",     noPl: "sykler",       noDef: "sykkelen",     noPlDef: "syklene",       sg: "la bicicletta", pl: "le biciclette", sgI: "una bicicletta", plI: "delle biciclette", stress: "bi-ci-CLET-ta" },
+    { no: "restaurant", noPl: "restauranter", noDef: "restauranten", noPlDef: "restaurantene", sg: "il ristorante", pl: "i ristoranti",  sgI: "un ristorante", plI: "dei ristoranti",  stress: "ri-sto-RAN-te" },
+    { no: "park",       noPl: "parker",       noDef: "parken",       noPlDef: "parkene",       sg: "il parco",      pl: "i parchi",      sgI: "un parco",      plI: "dei parchi",      stress: "PAR-co" },
+    { no: "natt",       noPl: "netter",       noDef: "natten",       noPlDef: "nettene",       sg: "la notte",      pl: "le notti",      sgI: "una notte",     plI: "delle notti",     stress: "NOT-te" },
+    { no: "tre",        noPl: "trær",         noDef: "treet",        noPlDef: "trærne",        sg: "l'albero",      pl: "gli alberi",    sgI: "un albero",     plI: "degli alberi",    stress: "AL-be-ro" },
+    { no: "dyr",        noPl: "dyr",          noDef: "dyret",        noPlDef: "dyrene",        sg: "l'animale",     pl: "gli animali",   sgI: "un animale",    plI: "degli animali",   stress: "a-ni-MA-le" }
   ],
   verbs: [
     { no: "å åpne",      it: "aprire",     stress: "a-PRI-re" },
@@ -1542,16 +1544,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-13",
   nouns: [
-    { no: "egg",        noPl: "egg",          sg: "l'uovo",         pl: "le uova",          stress: "UO-vo" },
-    { no: "øye",        noPl: "øyne",         sg: "l'occhio",       pl: "gli occhi",        stress: "OC-chio" },
-    { no: "hånd",       noPl: "hender",       sg: "la mano",        pl: "le mani",          stress: "MA-no" },
-    { no: "fot",        noPl: "føtter",       sg: "il piede",       pl: "i piedi",          stress: "PIE-de" },
-    { no: "by",         noPl: "byer",         sg: "la città",       pl: "le città",         stress: "cit-TÀ" },
-    { no: "gate",       noPl: "gater",        sg: "la via",         pl: "le vie",           stress: "VI-a" },
-    { no: "flaske",     noPl: "flasker",      sg: "la bottiglia",   pl: "le bottiglie",     stress: "bot-TI-glia" },
-    { no: "glass",      noPl: "glass",        sg: "il bicchiere",   pl: "i bicchieri",      stress: "bic-CHIE-re" },
-    { no: "leilighet",  noPl: "leiligheter",  sg: "l'appartamento", pl: "gli appartamenti", stress: "ap-par-ta-MEN-to" },
-    { no: "navn",       noPl: "navn",         sg: "il nome",        pl: "i nomi",           stress: "NO-me" }
+    { no: "egg",        noPl: "egg",          noDef: "egget",       noPlDef: "eggene",        sg: "l'uovo",         pl: "le uova",          sgI: "un uovo",         plI: "delle uova",        stress: "UO-vo" },
+    { no: "øye",        noPl: "øyne",         noDef: "øyet",        noPlDef: "øynene",        sg: "l'occhio",       pl: "gli occhi",        sgI: "un occhio",       plI: "degli occhi",       stress: "OC-chio" },
+    { no: "hånd",       noPl: "hender",       noDef: "hånden",      noPlDef: "hendene",       sg: "la mano",        pl: "le mani",          sgI: "una mano",        plI: "delle mani",        stress: "MA-no" },
+    { no: "fot",        noPl: "føtter",       noDef: "foten",       noPlDef: "føttene",       sg: "il piede",       pl: "i piedi",          sgI: "un piede",        plI: "dei piedi",         stress: "PIE-de" },
+    { no: "by",         noPl: "byer",         noDef: "byen",        noPlDef: "byene",         sg: "la città",       pl: "le città",         sgI: "una città",       plI: "delle città",       stress: "cit-TÀ" },
+    { no: "gate",       noPl: "gater",        noDef: "gaten",       noPlDef: "gatene",        sg: "la via",         pl: "le vie",           sgI: "una via",         plI: "delle vie",         stress: "VI-a" },
+    { no: "flaske",     noPl: "flasker",      noDef: "flasken",     noPlDef: "flaskene",      sg: "la bottiglia",   pl: "le bottiglie",     sgI: "una bottiglia",   plI: "delle bottiglie",   stress: "bot-TI-glia" },
+    { no: "glass",      noPl: "glass",        noDef: "glasset",     noPlDef: "glassene",      sg: "il bicchiere",   pl: "i bicchieri",      sgI: "un bicchiere",    plI: "dei bicchieri",     stress: "bic-CHIE-re" },
+    { no: "leilighet",  noPl: "leiligheter",  noDef: "leiligheten", noPlDef: "leilighetene",  sg: "l'appartamento", pl: "gli appartamenti", sgI: "un appartamento", plI: "degli appartamenti", stress: "ap-par-ta-MEN-to" },
+    { no: "navn",       noPl: "navn",         noDef: "navnet",      noPlDef: "navnene",       sg: "il nome",        pl: "i nomi",           sgI: "un nome",         plI: "dei nomi",          stress: "NO-me" }
   ],
   verbs: [
     { no: "å søke",      it: "cercare",     stress: "cer-CA-re", alt: ["å lete", "å prøve"] },
@@ -1581,16 +1583,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-14",
   nouns: [
-    { no: "regn",    noPl: "regn",     sg: "la pioggia",     pl: "le piogge",    stress: "PIOG-gia" },
-    { no: "måned",   noPl: "måneder",  sg: "il mese",        pl: "i mesi",       stress: "ME-se" },
-    { no: "nese",    noPl: "neser",    sg: "il naso",        pl: "i nasi",       stress: "NA-so" },
-    { no: "munn",    noPl: "munner",   sg: "la bocca",       pl: "le bocche",    stress: "BOC-ca" },
-    { no: "skulder", noPl: "skuldre",  sg: "la spalla",      pl: "le spalle",    stress: "SPAL-la" },
-    { no: "kne",     noPl: "knær",     sg: "il ginocchio",   pl: "le ginocchia", stress: "gi-NOC-chio" },
-    { no: "arm",     noPl: "armer",    sg: "il braccio",     pl: "le braccia",   stress: "BRAC-cio" },
-    { no: "finger",  noPl: "fingre",   sg: "il dito",        pl: "le dita",      stress: "DI-to" },
-    { no: "øre",     noPl: "ører",     sg: "l'orecchio",     pl: "le orecchie",  stress: "o-REC-chio" },
-    { no: "vinter",  noPl: "vintre",   sg: "l'inverno",      pl: "gli inverni",  stress: "in-VER-no" }
+    { no: "regn",    noPl: "regn",     noDef: "regnet",    noPlDef: "regnene",    sg: "la pioggia",   pl: "le piogge",    sgI: "una pioggia",   plI: "delle piogge",    stress: "PIOG-gia" },
+    { no: "måned",   noPl: "måneder",  noDef: "måneden",   noPlDef: "månedene",   sg: "il mese",      pl: "i mesi",       sgI: "un mese",       plI: "dei mesi",        stress: "ME-se" },
+    { no: "nese",    noPl: "neser",    noDef: "nesen",     noPlDef: "nesene",     sg: "il naso",      pl: "i nasi",       sgI: "un naso",       plI: "dei nasi",        stress: "NA-so" },
+    { no: "munn",    noPl: "munner",   noDef: "munnen",    noPlDef: "munnene",    sg: "la bocca",     pl: "le bocche",    sgI: "una bocca",     plI: "delle bocche",    stress: "BOC-ca" },
+    { no: "skulder", noPl: "skuldre",  noDef: "skulderen", noPlDef: "skuldrene",  sg: "la spalla",    pl: "le spalle",    sgI: "una spalla",    plI: "delle spalle",    stress: "SPAL-la" },
+    { no: "kne",     noPl: "knær",     noDef: "kneet",     noPlDef: "knærne",     sg: "il ginocchio", pl: "le ginocchia", sgI: "un ginocchio",  plI: "delle ginocchia", stress: "gi-NOC-chio" },
+    { no: "arm",     noPl: "armer",    noDef: "armen",     noPlDef: "armene",     sg: "il braccio",   pl: "le braccia",   sgI: "un braccio",    plI: "delle braccia",   stress: "BRAC-cio" },
+    { no: "finger",  noPl: "fingre",   noDef: "fingeren",  noPlDef: "fingrene",   sg: "il dito",      pl: "le dita",      sgI: "un dito",       plI: "delle dita",      stress: "DI-to" },
+    { no: "øre",     noPl: "ører",     noDef: "øret",      noPlDef: "ørene",      sg: "l'orecchio",   pl: "le orecchie",  sgI: "un orecchio",   plI: "delle orecchie",  stress: "o-REC-chio" },
+    { no: "vinter",  noPl: "vintre",   noDef: "vinteren",  noPlDef: "vintrene",   sg: "l'inverno",    pl: "gli inverni",  sgI: "un inverno",    plI: "degli inverni",   stress: "in-VER-no" }
   ],
   verbs: [
     { no: "å rope",      it: "gridare",      stress: "gri-DA-re", alt: ["å skrike"] },
@@ -1620,16 +1622,16 @@ const DAILY_QUIZZES = [
 {
   date: "2026-05-15",
   nouns: [
-    { no: "bein",     noPl: "bein",      sg: "la gamba",    pl: "le gambe",    stress: "GAM-ba" },
-    { no: "hals",     noPl: "halser",    sg: "il collo",    pl: "i colli",     stress: "COL-lo" },
-    { no: "hår",      noPl: "hår",       sg: "il capello",  pl: "i capelli",   stress: "ca-PEL-lo" },
-    { no: "tann",     noPl: "tenner",    sg: "il dente",    pl: "i denti",     stress: "DEN-te" },
-    { no: "tunge",    noPl: "tunger",    sg: "la lingua",   pl: "le lingue",   stress: "LIN-gua",    alt: ["språk"] },
-    { no: "panne",    noPl: "panner",    sg: "la fronte",   pl: "le fronti",   stress: "FRON-te" },
-    { no: "landsby",  noPl: "landsbyer", sg: "il villaggio",pl: "i villaggi",  stress: "vil-LAG-gio" },
-    { no: "innsjø",   noPl: "innsjøer",  sg: "il lago",     pl: "i laghi",     stress: "LA-go" },
-    { no: "ås",       noPl: "åser",      sg: "la collina",  pl: "le colline",  stress: "col-LI-na" },
-    { no: "ørken",    noPl: "ørkener",   sg: "il deserto",  pl: "i deserti",   stress: "de-SER-to" }
+    { no: "bein",     noPl: "bein",      noDef: "beinet",    noPlDef: "beinene",    sg: "la gamba",     pl: "le gambe",    sgI: "una gamba",     plI: "delle gambe",    stress: "GAM-ba" },
+    { no: "hals",     noPl: "halser",    noDef: "halsen",    noPlDef: "halsene",    sg: "il collo",     pl: "i colli",     sgI: "un collo",      plI: "dei colli",      stress: "COL-lo" },
+    { no: "hår",      noPl: "hår",       noDef: "håret",     noPlDef: "hårene",     sg: "il capello",   pl: "i capelli",   sgI: "un capello",    plI: "dei capelli",    stress: "ca-PEL-lo" },
+    { no: "tann",     noPl: "tenner",    noDef: "tannen",    noPlDef: "tennene",    sg: "il dente",     pl: "i denti",     sgI: "un dente",      plI: "dei denti",      stress: "DEN-te" },
+    { no: "tunge",    noPl: "tunger",    noDef: "tungen",    noPlDef: "tungene",    sg: "la lingua",    pl: "le lingue",   sgI: "una lingua",    plI: "delle lingue",   stress: "LIN-gua", alt: ["språk"] },
+    { no: "panne",    noPl: "panner",    noDef: "pannen",    noPlDef: "pannene",    sg: "la fronte",    pl: "le fronti",   sgI: "una fronte",    plI: "delle fronti",   stress: "FRON-te" },
+    { no: "landsby",  noPl: "landsbyer", noDef: "landsbyen", noPlDef: "landsbyene", sg: "il villaggio", pl: "i villaggi",  sgI: "un villaggio",  plI: "dei villaggi",   stress: "vil-LAG-gio" },
+    { no: "innsjø",   noPl: "innsjøer",  noDef: "innsjøen",  noPlDef: "innsjøene",  sg: "il lago",      pl: "i laghi",     sgI: "un lago",       plI: "dei laghi",      stress: "LA-go" },
+    { no: "ås",       noPl: "åser",      noDef: "åsen",      noPlDef: "åsene",      sg: "la collina",   pl: "le colline",  sgI: "una collina",   plI: "delle colline",  stress: "col-LI-na" },
+    { no: "ørken",    noPl: "ørkener",   noDef: "ørkenen",   noPlDef: "ørkenene",   sg: "il deserto",   pl: "i deserti",   sgI: "un deserto",    plI: "dei deserti",    stress: "de-SER-to" }
   ],
   verbs: [
     { no: "å håpe",      it: "sperare",      stress: "spe-RA-re" },
@@ -1654,6 +1656,45 @@ const DAILY_QUIZZES = [
     { no: "taus",       ms: "muto",       fs: "muta",       mp: "muti",       fp: "mute",       stress: "MU-to",        alt: ["stum"] },
     { no: "skarp",      ms: "acuto",      fs: "acuta",      mp: "acuti",      fp: "acute",      stress: "a-CU-to",      alt: ["klok"] },
     { no: "livlig",     ms: "vivace",     fs: "vivace",     mp: "vivaci",     fp: "vivaci",     stress: "vi-VA-ce" }
+  ]
+},
+{
+  date: "2026-05-21",
+  nouns: [
+    { no: "butikk",     noPl: "butikker",      noDef: "butikken",      noPlDef: "butikkene",      sg: "il negozio",       pl: "i negozi",          sgI: "un negozio",       plI: "dei negozi",          stress: "ne-GO-zio" },
+    { no: "supermarked",noPl: "supermarkeder", noDef: "supermarkedet", noPlDef: "supermarkedene", sg: "il supermercato",  pl: "i supermercati",    sgI: "un supermercato",  plI: "dei supermercati",    stress: "su-per-mer-CA-to" },
+    { no: "sykehus",    noPl: "sykehus",       noDef: "sykehuset",     noPlDef: "sykehusene",     sg: "l'ospedale",       pl: "gli ospedali",      sgI: "un ospedale",      plI: "degli ospedali",      stress: "o-spe-DA-le" },
+    { no: "kontor",     noPl: "kontorer",      noDef: "kontoret",      noPlDef: "kontorene",      sg: "l'ufficio",        pl: "gli uffici",        sgI: "un ufficio",       plI: "degli uffici",        stress: "uf-FI-cio" },
+    { no: "papir",      noPl: "papirer",       noDef: "papiret",       noPlDef: "papirene",       sg: "la carta",         pl: "le carte",          sgI: "una carta",        plI: "delle carte",         stress: "CAR-ta",        alt: ["kort"] },
+    { no: "ryggsekk",   noPl: "ryggsekker",    noDef: "ryggsekken",    noPlDef: "ryggsekkene",    sg: "lo zaino",         pl: "gli zaini",         sgI: "uno zaino",        plI: "degli zaini",         stress: "ZAI-no" },
+    { no: "sko",        noPl: "sko",           noDef: "skoen",         noPlDef: "skoene",         sg: "la scarpa",        pl: "le scarpe",         sgI: "una scarpa",       plI: "delle scarpe",        stress: "SCAR-pa" },
+    { no: "hatt",       noPl: "hatter",        noDef: "hatten",        noPlDef: "hattene",        sg: "il cappello",      pl: "i cappelli",        sgI: "un cappello",      plI: "dei cappelli",        stress: "cap-PEL-lo" },
+    { no: "skjorte",    noPl: "skjorter",      noDef: "skjorten",      noPlDef: "skjortene",      sg: "la camicia",       pl: "le camicie",        sgI: "una camicia",      plI: "delle camicie",       stress: "ca-MI-cia" },
+    { no: "stasjon",    noPl: "stasjoner",     noDef: "stasjonen",     noPlDef: "stasjonene",     sg: "la stazione",      pl: "le stazioni",       sgI: "una stazione",     plI: "delle stazioni",      stress: "sta-ZIO-ne" }
+  ],
+  verbs: [
+    { no: "å være",              it: "essere",    stress: "ES-se-re" },
+    { no: "å ha",                it: "avere",     stress: "a-VE-re" },
+    { no: "å gå",                it: "andare",    stress: "an-DA-re" },
+    { no: "å gjøre",             it: "fare",      stress: "FA-re",        alt: ["å lage"] },
+    { no: "å vekke",             it: "svegliare", stress: "sve-GLIA-re",  alt: ["å stå opp"] },
+    { no: "å skjære",            it: "tagliare",  stress: "ta-GLIA-re",   alt: ["å klippe"] },
+    { no: "å spille (instrument)",it: "suonare",  stress: "suo-NA-re" },
+    { no: "å bli",               it: "diventare", stress: "di-ven-TA-re" },
+    { no: "å trekke",            it: "tirare",    stress: "ti-RA-re" },
+    { no: "å skyve",             it: "spingere",  stress: "SPIN-ge-re" }
+  ],
+  adjectives: [
+    { no: "lett (enkelt)", ms: "facile",    fs: "facile",    mp: "facili",    fp: "facili",    stress: "FA-ci-le" },
+    { no: "lang",          ms: "lungo",     fs: "lunga",     mp: "lunghi",    fp: "lunghe",    stress: "LUN-go" },
+    { no: "kort",          ms: "corto",     fs: "corta",     mp: "corti",     fp: "corte",     stress: "COR-to" },
+    { no: "rund",          ms: "rotondo",   fs: "rotonda",   mp: "rotondi",   fp: "rotonde",   stress: "ro-TON-do" },
+    { no: "rett",          ms: "corretto",  fs: "corretta",  mp: "corretti",  fp: "corrette",  stress: "cor-RET-to",  alt: ["giusto"] },
+    { no: "gal",           ms: "sbagliato", fs: "sbagliata", mp: "sbagliati", fp: "sbagliate", stress: "sba-GLIA-to", alt: ["feil"] },
+    { no: "kjær",          ms: "caro",      fs: "cara",      mp: "cari",      fp: "care",      stress: "CA-ro",       alt: ["dyr"] },
+    { no: "grå",           ms: "grigio",    fs: "grigia",    mp: "grigi",     fp: "grigie",    stress: "GRI-gio" },
+    { no: "oransje",       ms: "arancione", fs: "arancione", mp: "arancioni", fp: "arancioni", stress: "a-ran-CIO-ne" },
+    { no: "lilla",         ms: "viola",     fs: "viola",     mp: "viola",     fp: "viola",     stress: "VIO-la" }
   ]
 },
 /* === DAILY_QUIZZES_END === */
@@ -1814,28 +1855,38 @@ function bankPoolWeek(kind, wk) {
   return out;
 }
 
+function buildNounQuestion(n) {
+  const hasIndef = !!(n.sgI && n.plI);
+  const useIndef = hasIndef && Math.random() < 0.5;
+  const usePl    = Math.random() < 0.5;
+  const noIndefPl = n.noPl || n.no;
+  const noDefSg   = n.noDef  || n.no;
+  const noDefPl   = n.noPlDef || noIndefPl;
+  let norskPrompt, answer, formLabel;
+  if (useIndef && usePl)       { norskPrompt = noIndefPl; answer = n.plI; formLabel = "ubestemt flertall"; }
+  else if (useIndef && !usePl) { norskPrompt = n.no;      answer = n.sgI; formLabel = "ubestemt entall"; }
+  else if (!useIndef && usePl) { norskPrompt = noDefPl;   answer = n.pl;  formLabel = hasIndef ? "bestemt flertall" : "flertall"; }
+  else                         { norskPrompt = noDefSg;   answer = n.sg;  formLabel = hasIndef ? "bestemt entall"   : "entall"; }
+  return {
+    kind: "noun", type: "Substantiv",
+    form: formLabel,
+    formClass: usePl ? "flertall" : "entall",
+    showCallout: true,
+    tag: "subst.",
+    prompt: norskPrompt,
+    answer: answer,
+    sg: n.sg, pl: n.pl,
+    sgI: n.sgI || null, plI: n.plI || null,
+    stress: n.stress || null,
+    alt: n.alt || null
+  };
+}
+
 function buildBankQuestions(mode, count) {
   const total = count || BANK_SAMPLE_SIZE;
   const qs = [];
 
-  const addNoun = (n) => {
-    const usePl = Math.random() < 0.5;
-    const noPl = n.noPl || n.no;
-    const norskPrompt = usePl ? noPl : n.no;
-    const ambiguous = (n.no === noPl);
-    qs.push({
-      kind: "noun", type: "Substantiv",
-      form: usePl ? "flertall" : "entall",
-      formClass: ambiguous ? (usePl ? "flertall" : "entall") : "",
-      showCallout: ambiguous,
-      tag: "subst.",
-      prompt: norskPrompt,
-      answer: usePl ? n.pl : n.sg,
-      sg: n.sg, pl: n.pl,
-      stress: n.stress || null,
-      alt: n.alt || null
-    });
-  };
+  const addNoun = (n) => { qs.push(buildNounQuestion(n)); };
   const addVerb = (v) => {
     qs.push({
       kind: "verb", type: "Verb",
@@ -1902,25 +1953,7 @@ function buildBankQuestions(mode, count) {
 function buildQuestions(day, mode) {
   const qs = [];
   if (mode === "all" || mode === "nouns") {
-    for (const n of day.nouns) {
-      const usePl = Math.random() < 0.5;
-      const noPl = n.noPl || n.no;
-      const norskPrompt = usePl ? noPl : n.no;
-      const ambiguous = (n.no === noPl);
-      qs.push({
-        kind: "noun",
-        type: "Substantiv",
-        form: usePl ? "flertall" : "entall",
-        formClass: ambiguous ? (usePl ? "flertall" : "entall") : "",
-        showCallout: ambiguous,
-        tag: "subst.",
-        prompt: norskPrompt,
-        answer: usePl ? n.pl : n.sg,
-        sg: n.sg, pl: n.pl,
-        stress: n.stress || null,
-        alt: n.alt || null
-      });
-    }
+    for (const n of day.nouns) qs.push(buildNounQuestion(n));
   }
   if (mode === "all" || mode === "verbs") {
     for (const v of day.verbs) {
@@ -2353,10 +2386,13 @@ function showDatePreview(date) {
   const altSpan = (item) => (item.alt && item.alt.length)
     ? '<span class="pw-alt">(også: ' + escapeHtml(item.alt.join(", ")) + ')</span>'
     : '';
-  const nounsHtml = day.nouns.map(n =>
-    '<li><span class="pw-no">' + escapeHtml(n.no) + altSpan(n) + '</span>' +
-    '<span class="pw-it">' + escapeHtml(n.sg) + '</span></li>'
-  ).join("");
+  const nounsHtml = day.nouns.map(n => {
+    const itTxt = (n.sgI)
+      ? escapeHtml(n.sg) + ' / ' + escapeHtml(n.sgI)
+      : escapeHtml(n.sg);
+    return '<li><span class="pw-no">' + escapeHtml(n.no) + altSpan(n) + '</span>' +
+      '<span class="pw-it">' + itTxt + '</span></li>';
+  }).join("");
   const verbsHtml = day.verbs.map(v =>
     '<li><span class="pw-no">' + escapeHtml(v.no) + altSpan(v) + '</span>' +
     '<span class="pw-it">' + escapeHtml(v.it) + '</span></li>'
@@ -2507,7 +2543,9 @@ const FORM_TOKEN_CLASS = {
   "hankjønn": "t-hankjonn",
   "hunkjønn": "t-hunkjonn",
   "entall":   "t-entall",
-  "flertall": "t-flertall"
+  "flertall": "t-flertall",
+  "bestemt":  "t-bestemt",
+  "ubestemt": "t-ubestemt"
 };
 function splitFormTokens(s) {
   if (!s) return [];
@@ -2684,11 +2722,24 @@ function submitAnswer() {
 
   let fullAnswer, missedAnswer;
   if (state.current.kind === "noun") {
-    fullAnswer =
-      "<span class='answer'>" + tw(state.current.sg) + "</span>" +
-      " <span style='color:var(--muted)'>·</span> " +
-      "<span class='answer'>" + tw(state.current.pl) + "</span>";
-    missedAnswer = state.current.sg + " · " + state.current.pl;
+    const hasI = !!(state.current.sgI && state.current.plI);
+    if (hasI) {
+      fullAnswer =
+        "<span class='adj-grid'>" +
+          "<span class='adj-cell'><em>bestemt sg.</em><b>"  + tw(state.current.sg)  + "</b></span>" +
+          "<span class='adj-cell'><em>bestemt pl.</em><b>"  + tw(state.current.pl)  + "</b></span>" +
+          "<span class='adj-cell'><em>ubestemt sg.</em><b>" + tw(state.current.sgI) + "</b></span>" +
+          "<span class='adj-cell'><em>ubestemt pl.</em><b>" + tw(state.current.plI) + "</b></span>" +
+        "</span>";
+      missedAnswer = state.current.sg + " / " + state.current.sgI +
+                   " · " + state.current.pl + " / " + state.current.plI;
+    } else {
+      fullAnswer =
+        "<span class='answer'>" + tw(state.current.sg) + "</span>" +
+        " <span style='color:var(--muted)'>·</span> " +
+        "<span class='answer'>" + tw(state.current.pl) + "</span>";
+      missedAnswer = state.current.sg + " · " + state.current.pl;
+    }
   } else if (state.current.kind === "adj") {
     fullAnswer =
       "<span class='adj-grid'>" +
@@ -3105,7 +3156,7 @@ init();
   const ENTRIES = buildEntries();
 
   function fieldsFor(e) {
-    if (e.kind === "noun") return [e.no, e.noPl, e.sg, e.pl, ...(e.alt||[])];
+    if (e.kind === "noun") return [e.no, e.noPl, e.noDef, e.noPlDef, e.sg, e.pl, e.sgI, e.plI, ...(e.alt||[])];
     if (e.kind === "verb") return [e.no, e.it, ...(e.alt||[])];
     return [e.no, e.ms, e.fs, e.mp, e.fp, ...(e.alt||[])];
   }
@@ -3125,15 +3176,17 @@ init();
 
   function renderNoun(e, q) {
     const noAlt = e.alt && e.alt.length ? ' <span class="sub">(' + e.alt.map(a => hl(a,q)).join(", ") + ')</span>' : "";
+    const noDef = e.noDef ? ' <span class="sub">/ ' + hl(e.noDef,q) + ' · ' + hl(e.noPlDef||"",q) + '</span>' : "";
+    const itI = (e.sgI && e.plI) ? ' <span class="sub">/ ' + hl(e.sgI,q) + ' · ' + hl(e.plI,q) + '</span>' : "";
     return `
       <div class="search-row">
         <div class="side">
           <div class="lang">No</div>
-          <div class="word">${hl(e.no,q)} · <span class="sub">${hl(e.noPl,q)}</span>${noAlt}</div>
+          <div class="word">${hl(e.no,q)} · <span class="sub">${hl(e.noPl,q)}</span>${noDef}${noAlt}</div>
         </div>
         <div class="side">
           <div class="lang">It</div>
-          <div class="word">${hl(e.sg,q)} · <span class="sub">${hl(e.pl,q)}</span></div>
+          <div class="word">${hl(e.sg,q)} · <span class="sub">${hl(e.pl,q)}</span>${itI}</div>
         </div>
       </div>`;
   }

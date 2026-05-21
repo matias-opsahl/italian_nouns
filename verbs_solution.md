@@ -141,3 +141,16 @@
 | å overleve | sopravvivere | so-prav-VI-ve-re |  |
 | å overraske | sorprendere | sor-PREN-de-re |  |
 | å løfte | alzare | al-ZA-re | å heve |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å være | essere | ES-se-re |  |
+| å ha | avere | a-VE-re |  |
+| å gå | andare | an-DA-re |  |
+| å gjøre | fare | FA-re | å lage |
+| å vekke | svegliare | sve-GLIA-re | å stå opp |
+| å skjære | tagliare | ta-GLIA-re | å klippe |
+| å spille (instrument) | suonare | suo-NA-re |  |
+| å bli | diventare | di-ven-TA-re |  |
+| å trekke | tirare | ti-RA-re |  |
+| å skyve | spingere | SPIN-ge-re |  |
