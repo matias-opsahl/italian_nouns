@@ -154,3 +154,16 @@
 | hatt | hatter | hatten | hattene | il cappello | i cappelli | un cappello | dei cappelli | m | cap-PEL-lo |  |
 | skjorte | skjorter | skjorten | skjortene | la camicia | le camicie | una camicia | delle camicie | f | ca-MI-cia |  |
 | stasjon | stasjoner | stasjonen | stasjonene | la stazione | le stazioni | una stazione | delle stazioni | f | sta-ZIO-ne |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| vår | vårer | våren | vårene | la primavera | le primavere | una primavera | delle primavere | f | pri-ma-VE-ra |  |
+| sommer | somre | sommeren | somrene | l'estate | le estati | un'estate | delle estati | f | e-STA-te |  |
+| høst | høster | høsten | høstene | l'autunno | gli autunni | un autunno | degli autunni | m | au-TUN-no |  |
+| museum | museer | museet | museene | il museo | i musei | un museo | dei musei | m | mu-ZE-o |  |
+| kino | kinoer | kinoen | kinoene | il cinema | i cinema | un cinema | dei cinema | m | CI-ne-ma |  |
+| treningssenter | treningssentre | treningssenteret | treningssentrene | la palestra | le palestre | una palestra | delle palestre | f | pa-LE-stra |  |
+| apotek | apotek | apoteket | apotekene | la farmacia | le farmacie | una farmacia | delle farmacie | f | far-ma-CI-a |  |
+| ost | oster | osten | ostene | il formaggio | i formaggi | un formaggio | dei formaggi | m | for-MAG-gio |  |
+| frukt | frukter | frukten | fruktene | la frutta | le frutta | una frutta | delle frutta | f | FRUT-ta |  |
+| grønnsak | grønnsaker | grønnsakene | grønnsaker | la verdura | le verdure | una verdura | delle verdure | f | ver-DU-ra |  |

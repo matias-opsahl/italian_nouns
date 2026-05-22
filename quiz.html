@@ -586,6 +586,22 @@
 .form-chip.t-flertall { background:#ede9fe; border-color:#c4b5fd; color:#5b21b6; }
 .form-chip.t-bestemt  { background:#dcfce7; border-color:#86efac; color:#166534; }
 .form-chip.t-ubestemt { background:#ffedd5; border-color:#fdba74; color:#9a3412; }
+
+  /* ── Regler-side ──────────────────────────────── */
+  .rules-grid { display:flex; flex-direction:column; gap:18px; margin-top:18px; }
+  .rule-block { border:1px solid var(--soft-border); border-radius:14px; padding:16px 18px; background:#fff; }
+  .rule-block h3 { margin:0 0 6px; font-size:18px; color:var(--green-d); }
+  .rule-lead { margin:0 0 12px; color:var(--muted); font-size:14px; }
+  .rule-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:10px; }
+  .rule-table th, .rule-table td { padding:6px 8px; text-align:left; border-bottom:1px solid var(--soft-border); }
+  .rule-table thead th { background:var(--soft-green); color:var(--green-d); font-weight:600; }
+  .rule-table tbody th { font-weight:600; color:var(--muted); width:90px; }
+  .rule-table td b { color:var(--green-d); }
+  .rule-table td i { color:var(--muted); font-style:italic; font-size:12px; }
+  .rule-list { margin:8px 0 0; padding-left:18px; font-size:13px; line-height:1.55; }
+  .rule-list li { margin-bottom:4px; }
+  .rule-list code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:12px; }
+  .rule-list b { color:var(--green-d); }
   
   .form-chip.t-person   { background: var(--soft-green); border-color: rgba(0,140,69,0.3); color: var(--green-d); }
 
@@ -1011,7 +1027,10 @@
   <section id="screen-search" class="card" style="margin-bottom:16px">
     <div class="search-head">
       <label class="field-label" for="searchInput" style="margin:0">Slå opp ord</label>
-      <button type="button" class="link-btn" id="openStatsBtn">📊 Statistikk</button>
+      <div style="display:flex;gap:10px;align-items:center">
+        <button type="button" class="link-btn" id="openRulesBtn">📘 Regler</button>
+        <button type="button" class="link-btn" id="openStatsBtn">📊 Statistikk</button>
+      </div>
     </div>
     <input type="text" id="searchInput"
            autocomplete="off" autocapitalize="off" spellcheck="false"
@@ -1053,6 +1072,80 @@
       <button class="btn btn-ghost" id="resetStatsBtn" style="color:#9a1a1a">Nullstill</button>
     </div>
     <input type="file" id="importStatsFile" accept="application/json" style="display:none">
+  </section>
+
+  <!-- ── REGLER ─────────────────────────────────────── -->
+  <section id="screen-rules" class="card hidden">
+    <div class="stats-head">
+      <div>
+        <h2 class="end-title" style="margin:0 0 6px">Regler</h2>
+        <p class="end-sub" style="margin:0">Superkomprimert oversikt over reglene quizen tester.</p>
+      </div>
+      <button class="btn btn-ghost" id="rulesBackBtn">Tilbake</button>
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-block">
+        <h3>Substantiv</h3>
+        <p class="rule-lead">4 former testes: <b>bestemt/ubestemt × entall/flertall</b>.</p>
+        <table class="rule-table">
+          <thead><tr><th></th><th>m</th><th>f</th></tr></thead>
+          <tbody>
+            <tr><th>bestemt sg</th><td>il / lo / l'</td><td>la / l'</td></tr>
+            <tr><th>bestemt pl</th><td>i / gli</td><td>le</td></tr>
+            <tr><th>ubestemt sg</th><td>un / uno</td><td>una / un'</td></tr>
+            <tr><th>ubestemt pl</th><td>dei / degli</td><td>delle</td></tr>
+          </tbody>
+        </table>
+        <ul class="rule-list">
+          <li><b>lo / uno / gli</b> foran <i>s+kons, z, ps, gn, x, y, i+vokal</i> — <code>lo specchio · uno zaino · gli studenti</code></li>
+          <li><b>l' / un'</b> foran vokal (un' kun feminin) — <code>l'amico · un amico · l'auto · un'auto</code></li>
+          <li>Ubestemt flertall = <b>partitiv</b> (<code>dei/degli/delle</code> = "noen X")</li>
+          <li>Plural-bøying: -o→-i, -a→-e, -e→-i. Spesial: -co/-go beholder hard k (<code>parchi, laghi</code>), -io mister i (<code>vecchi</code>).</li>
+          <li>Uregelrette: <code>uovo→uova · braccio→braccia · dito→dita · orecchio→orecchie · ginocchio→ginocchia</code> (m sg → f pl).</li>
+        </ul>
+      </div>
+
+      <div class="rule-block">
+        <h3>Verb (presens)</h3>
+        <p class="rule-lead">Tre bøyningsklasser etter infinitiv-endelse. Drop endelsen, legg på presens-ending.</p>
+        <table class="rule-table">
+          <thead><tr><th></th><th>-are <i>(parlare)</i></th><th>-ere <i>(prendere)</i></th><th>-ire <i>(dormire)</i></th><th>-ire (isc) <i>(finire)</i></th></tr></thead>
+          <tbody>
+            <tr><th>io</th><td>parl<b>o</b></td><td>prend<b>o</b></td><td>dorm<b>o</b></td><td>fin<b>isco</b></td></tr>
+            <tr><th>tu</th><td>parl<b>i</b></td><td>prend<b>i</b></td><td>dorm<b>i</b></td><td>fin<b>isci</b></td></tr>
+            <tr><th>lui/lei</th><td>parl<b>a</b></td><td>prend<b>e</b></td><td>dorm<b>e</b></td><td>fin<b>isce</b></td></tr>
+            <tr><th>noi</th><td>parl<b>iamo</b></td><td>prend<b>iamo</b></td><td>dorm<b>iamo</b></td><td>fin<b>iamo</b></td></tr>
+            <tr><th>voi</th><td>parl<b>ate</b></td><td>prend<b>ete</b></td><td>dorm<b>ite</b></td><td>fin<b>ite</b></td></tr>
+            <tr><th>loro</th><td>parl<b>ano</b></td><td>prend<b>ono</b></td><td>dorm<b>ono</b></td><td>fin<b>iscono</b></td></tr>
+          </tbody>
+        </table>
+        <ul class="rule-list">
+          <li><b>-isc-</b>: settes inn i io/tu/lui/loro for mange -ire (capire, preferire, pulire, costruire …). Ikke i noi/voi.</li>
+          <li><b>Uregelrette</b> må læres: <code>essere · avere · andare · fare · stare · dare · venire · dire · uscire · potere · volere · dovere · sapere</code> …</li>
+          <li>Avsluttende <b>-care/-gare</b> får ekstra h foran -i/-e (<code>cerchi, paghi</code>).</li>
+        </ul>
+      </div>
+
+      <div class="rule-block">
+        <h3>Adjektiv</h3>
+        <p class="rule-lead">Bøyes etter substantivets kjønn og tall. Står oftest <i>etter</i> substantivet.</p>
+        <table class="rule-table">
+          <thead><tr><th>type</th><th>m sg</th><th>f sg</th><th>m pl</th><th>f pl</th></tr></thead>
+          <tbody>
+            <tr><th>-o (bello)</th><td>bell<b>o</b></td><td>bell<b>a</b></td><td>bell<b>i</b></td><td>bell<b>e</b></td></tr>
+            <tr><th>-e (grande)</th><td>grand<b>e</b></td><td>grand<b>e</b></td><td>grand<b>i</b></td><td>grand<b>i</b></td></tr>
+            <tr><th>invariabel</th><td colspan="4">rosa, blu, viola — uendret i alle former</td></tr>
+          </tbody>
+        </table>
+        <ul class="rule-list">
+          <li><b>-co/-go</b>: m.pl beholder hard lyd (<code>stanco→stanchi · lungo→lunghi</code>). -ico mister h (<code>simpatici</code>).</li>
+          <li><b>-io</b>: m.pl mister i (<code>vecchio→vecchi</code>).</li>
+          <li>Vanlige -ista-adj: lik m/f sg (<code>ottimista</code>), m.pl -isti, f.pl -iste.</li>
+          <li>Plassering: oftest etter substantiv. Få adj (buono, bello, grande, piccolo, vecchio, giovane) kan stå før — da bøyes <i>buono/bello</i> som artikler (<code>un buon amico · bei ragazzi</code>).</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- ── START ──────────────────────────────────────── -->
@@ -1695,6 +1788,45 @@ const DAILY_QUIZZES = [
     { no: "grå",           ms: "grigio",    fs: "grigia",    mp: "grigi",     fp: "grigie",    stress: "GRI-gio" },
     { no: "oransje",       ms: "arancione", fs: "arancione", mp: "arancioni", fp: "arancioni", stress: "a-ran-CIO-ne" },
     { no: "lilla",         ms: "viola",     fs: "viola",     mp: "viola",     fp: "viola",     stress: "VIO-la" }
+  ]
+},
+{
+  date: "2026-05-22",
+  nouns: [
+    { no: "vår",           noPl: "vårer",           noDef: "våren",            noPlDef: "vårene",            sg: "la primavera",   pl: "le primavere",   sgI: "una primavera",   plI: "delle primavere",   stress: "pri-ma-VE-ra" },
+    { no: "sommer",        noPl: "somre",            noDef: "sommeren",         noPlDef: "somrene",           sg: "l'estate",       pl: "le estati",      sgI: "un'estate",       plI: "delle estati",      stress: "e-STA-te" },
+    { no: "høst",          noPl: "høster",           noDef: "høsten",           noPlDef: "høstene",           sg: "l'autunno",      pl: "gli autunni",    sgI: "un autunno",      plI: "degli autunni",     stress: "au-TUN-no" },
+    { no: "museum",        noPl: "museer",           noDef: "museet",           noPlDef: "museene",           sg: "il museo",       pl: "i musei",        sgI: "un museo",        plI: "dei musei",         stress: "mu-ZE-o" },
+    { no: "kino",          noPl: "kinoer",           noDef: "kinoen",           noPlDef: "kinoene",           sg: "il cinema",      pl: "i cinema",       sgI: "un cinema",       plI: "dei cinema",        stress: "CI-ne-ma" },
+    { no: "treningssenter",noPl: "treningssentre",   noDef: "treningssenteret", noPlDef: "treningssentrene",  sg: "la palestra",    pl: "le palestre",    sgI: "una palestra",    plI: "delle palestre",    stress: "pa-LE-stra" },
+    { no: "apotek",        noPl: "apotek",           noDef: "apoteket",         noPlDef: "apotekene",         sg: "la farmacia",    pl: "le farmacie",    sgI: "una farmacia",    plI: "delle farmacie",    stress: "far-ma-CI-a" },
+    { no: "ost",           noPl: "oster",            noDef: "osten",            noPlDef: "ostene",            sg: "il formaggio",   pl: "i formaggi",     sgI: "un formaggio",    plI: "dei formaggi",      stress: "for-MAG-gio" },
+    { no: "frukt",         noPl: "frukter",          noDef: "frukten",          noPlDef: "fruktene",          sg: "la frutta",      pl: "le frutta",      sgI: "una frutta",      plI: "delle frutta",      stress: "FRUT-ta" },
+    { no: "grønnsak",      noPl: "grønnsaker",       noDef: "grønnsaken",       noPlDef: "grønnsaker",        sg: "la verdura",     pl: "le verdure",     sgI: "una verdura",     plI: "delle verdure",     stress: "ver-DU-ra" }
+  ],
+  verbs: [
+    { no: "å hoppe",      it: "saltare",     stress: "sal-TA-re" },
+    { no: "å gå inn",     it: "entrare",     stress: "en-TRA-re" },
+    { no: "å gå ut",      it: "uscire",      stress: "u-SCI-re" },
+    { no: "å ringe",      it: "chiamare",    stress: "chia-MA-re",   alt: ["å kalle"] },
+    { no: "å vaske/rydde",it: "pulire",      stress: "pu-LI-re" },
+    { no: "å klemme",     it: "abbracciare", stress: "ab-brac-CIA-re" },
+    { no: "å fortsette",  it: "continuare",  stress: "con-ti-nu-A-re" },
+    { no: "å skrike",     it: "urlare",      stress: "ur-LA-re" },
+    { no: "å slå på",     it: "accendere",   stress: "ac-CEN-de-re" },
+    { no: "å slå av",     it: "spegnere",    stress: "SPE-gne-re" }
+  ],
+  adjectives: [
+    { no: "dyp",         ms: "profondo",    fs: "profonda",    mp: "profondi",    fp: "profonde",    stress: "pro-FON-do" },
+    { no: "lys/lysende", ms: "luminoso",    fs: "luminosa",    mp: "luminosi",    fp: "luminose",    stress: "lu-mi-NO-so" },
+    { no: "fuktig",      ms: "umido",       fs: "umida",       mp: "umidi",       fp: "umide",       stress: "U-mi-do" },
+    { no: "tørr",        ms: "secco",       fs: "secca",       mp: "secchi",      fp: "secche",      stress: "SEC-co" },
+    { no: "våt",         ms: "bagnato",     fs: "bagnata",     mp: "bagnati",     fp: "bagnate",     stress: "ba-GNA-to" },
+    { no: "opptatt",     ms: "occupato",    fs: "occupata",    mp: "occupati",    fp: "occupate",    stress: "oc-cu-PA-to" },
+    { no: "fri/ledig",   ms: "libero",      fs: "libera",      mp: "liberi",      fp: "libere",      stress: "LI-be-ro" },
+    { no: "interessant", ms: "interessante",fs: "interessante",mp: "interessanti",fp: "interessanti",stress: "in-te-res-SAN-te" },
+    { no: "verdifull",   ms: "prezioso",    fs: "preziosa",    mp: "preziosi",    fp: "preziose",    stress: "pre-ZIO-so" },
+    { no: "erfaren",     ms: "esperto",     fs: "esperta",     mp: "esperti",     fp: "esperte",     stress: "e-SPER-to" }
   ]
 },
 /* === DAILY_QUIZZES_END === */
@@ -2508,6 +2640,7 @@ function startQuizFor(date, mode) {
   $("screen-end").classList.add("hidden");
   $("screen-search").classList.add("hidden");
   $("screen-stats").classList.add("hidden");
+  $("screen-rules").classList.add("hidden");
   $("screen-quiz").classList.remove("hidden");
   $("feedback").innerHTML = "";
   $("advanceWrap").classList.add("hidden");
@@ -2909,6 +3042,7 @@ function goHome() {
   $("screen-quiz").classList.add("hidden");
   $("screen-end").classList.add("hidden");
   $("screen-stats").classList.add("hidden");
+  $("screen-rules").classList.add("hidden");
   $("screen-start").classList.remove("hidden");
   $("screen-search").classList.remove("hidden");
   $("dateSel").focus();
@@ -2922,8 +3056,19 @@ function showStats() {
   $("screen-end").classList.add("hidden");
   $("screen-quiz").classList.add("hidden");
   $("screen-search").classList.add("hidden");
+  $("screen-rules").classList.add("hidden");
   $("screen-stats").classList.remove("hidden");
   renderStats();
+}
+
+function showRules() {
+  $("screen-start").classList.add("hidden");
+  $("screen-end").classList.add("hidden");
+  $("screen-quiz").classList.add("hidden");
+  $("screen-search").classList.add("hidden");
+  $("screen-stats").classList.add("hidden");
+  $("screen-rules").classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderStats() {
@@ -2972,6 +3117,8 @@ function renderStats() {
 function setupStatsScreen() {
   $("openStatsBtn").addEventListener("click", showStats);
   $("statsBackBtn").addEventListener("click", goHome);
+  $("openRulesBtn").addEventListener("click", showRules);
+  $("rulesBackBtn").addEventListener("click", goHome);
   document.querySelectorAll("#screen-stats .filter-chip").forEach(chip => {
     chip.addEventListener("click", () => {
       document.querySelectorAll("#screen-stats .filter-chip").forEach(c => c.classList.remove("is-active"));

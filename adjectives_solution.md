@@ -153,3 +153,16 @@
 | grå | grigio | grigia | grigi | grigie | GRI-gio |  |
 | oransje | arancione | arancione | arancioni | arancioni | a-ran-CIO-ne |  |
 | lilla | viola | viola | viola | viola | VIO-la |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| dyp | profondo | profonda | profondi | profonde | pro-FON-do |  |
+| lys/lysende | luminoso | luminosa | luminosi | luminose | lu-mi-NO-so |  |
+| fuktig | umido | umida | umidi | umide | U-mi-do |  |
+| tørr | secco | secca | secchi | secche | SEC-co |  |
+| våt | bagnato | bagnata | bagnati | bagnate | ba-GNA-to |  |
+| opptatt | occupato | occupata | occupati | occupate | oc-cu-PA-to |  |
+| fri/ledig | libero | libera | liberi | libere | LI-be-ro |  |
+| interessant | interessante | interessante | interessanti | interessanti | in-te-res-SAN-te |  |
+| verdifull | prezioso | preziosa | preziosi | preziose | pre-ZIO-so |  |
+| erfaren | esperto | esperta | esperti | esperte | e-SPER-to |  |

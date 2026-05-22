@@ -154,3 +154,16 @@
 | å bli | diventare | di-ven-TA-re |  |
 | å trekke | tirare | ti-RA-re |  |
 | å skyve | spingere | SPIN-ge-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å hoppe | saltare | sal-TA-re |  |
+| å gå inn | entrare | en-TRA-re |  |
+| å gå ut | uscire | u-SCI-re |  |
+| å ringe | chiamare | chia-MA-re | å kalle |
+| å vaske/rydde | pulire | pu-LI-re |  |
+| å klemme | abbracciare | ab-brac-CIA-re |  |
+| å fortsette | continuare | con-ti-nu-A-re |  |
+| å skrike | urlare | ur-LA-re |  |
+| å slå på | accendere | ac-CEN-de-re |  |
+| å slå av | spegnere | SPE-gne-re |  |
