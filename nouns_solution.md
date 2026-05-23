@@ -167,3 +167,16 @@
 | ost | oster | osten | ostene | il formaggio | i formaggi | un formaggio | dei formaggi | m | for-MAG-gio |  |
 | frukt | frukter | frukten | fruktene | la frutta | le frutta | una frutta | delle frutta | f | FRUT-ta |  |
 | grønnsak | grønnsaker | grønnsakene | grønnsaker | la verdura | le verdure | una verdura | delle verdure | f | ver-DU-ra |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| luft | lufter | luften | luftene | l'aria | le arie | un'aria | delle arie | f | A-ria |  |
+| drøm | drømmer | drømmen | drømmene | il sogno | i sogni | un sogno | dei sogni | m | SO-gno |  |
+| sted | steder | stedet | stedene | il posto | i posti | un posto | dei posti | m | PO-sto | sete |
+| tur | turer | turen | turene | il viaggio | i viaggi | un viaggio | dei viaggi | m | VIAG-gio | reise |
+| saft | safter | saften | saftene | il succo | i succhi | un succo | dei succhi | m | SUC-co |  |
+| pasta | pastaer | pastaen | pastaene | la pasta | le paste | una pasta | delle paste | f | PA-sta |  |
+| kjøpesenter | kjøpesentre | kjøpesenteret | kjøpesentrene | il centro commerciale | i centri commerciali | un centro commerciale | dei centri commerciali | m | CEN-tro com-mer-CIA-le |  |
+| lys | lys | lyset | lysene | la luce | le luci | una luce | delle luci | f | LU-ce |  |
+| jord | jorder | jorden | jordene | la terra | le terre | una terra | delle terre | f | TER-ra | land, bakke |
+| kjærlighet | kjærligheter | kjærligheten | kjærlighetene | l'amore | gli amori | un amore | degli amori | m | a-MO-re |  |

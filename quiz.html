@@ -1010,6 +1010,56 @@
     color: #8a6411; letter-spacing: 0.06em; font-weight: 600;
   }
   .stress-hint b { font-weight: 700; color: var(--ink); }
+
+  /* ── Mobile pass (iPhone portrait) ─────────────── */
+  @media (max-width: 600px) {
+    .wrap { padding: 18px 14px 48px; }
+    .card { padding: 18px; border-radius: 14px; }
+
+    h1.title { font-size: 26px; }
+    .lede { font-size: 13px; }
+
+    /* Collapse two-column layouts to single column */
+    .search-row { grid-template-columns: 1fr; gap: 4px; }
+    .row { grid-template-columns: 1fr; }
+    .adj-grid { grid-template-columns: 1fr; }
+    .modes { grid-template-columns: 1fr; }
+
+    /* Bump up small fonts so they stay readable */
+    label.field-label,
+    .keyhelp,
+    .missed-title,
+    .missed-total,
+    .stat span,
+    .adj-cell em { font-size: 12px; }
+
+    /* End-screen stats: keep 3 columns but tighter padding */
+    .stats { gap: 6px; }
+    .stat { padding: 12px 6px; }
+    .stat b { font-size: 22px; }
+
+    /* Leaderboard table: drop the wrong-count column, shrink ranks */
+    .lb-row { grid-template-columns: 28px 1fr 60px; gap: 8px; padding: 10px; font-size: 13px; }
+    .lb-row .lb-tag,
+    .lb-row .lb-wrong { display: none; }
+
+    /* Header rows should wrap rather than overflow */
+    .search-head,
+    .stats-head,
+    .missed-head { flex-wrap: wrap; }
+
+    /* Inputs stay 16px to prevent iOS auto-zoom on focus */
+    select, input[type=text] { font-size: 16px; }
+
+    /* Quiz question + buttons */
+    .end-title { font-size: 24px; }
+  }
+
+  @media (max-width: 380px) {
+    .wrap { padding: 14px 10px 40px; }
+    .card { padding: 14px; }
+    h1.title { font-size: 22px; }
+  }
 </style>
 </head>
 <body>

@@ -166,3 +166,16 @@
 | interessant | interessante | interessante | interessanti | interessanti | in-te-res-SAN-te |  |
 | verdifull | prezioso | preziosa | preziosi | preziose | pre-ZIO-so |  |
 | erfaren | esperto | esperta | esperti | esperte | e-SPER-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| ensom | solitario | solitaria | solitari | solitarie | so-li-TA-rio |  |
+| ryddig | ordinato | ordinata | ordinati | ordinate | or-di-NA-to |  |
+| moden | maturo | matura | maturi | mature | ma-TU-ro |  |
+| levende | vivo | viva | vivi | vive | VI-vo |  |
+| skjult | nascosto | nascosta | nascosti | nascoste | na-SCO-sto |  |
+| uskyldig | innocente | innocente | innocenti | innocenti | in-no-CEN-te |  |
+| klar/ferdig | pronto | pronta | pronti | pronte | PRON-to |  |
+| sur | acido | acida | acidi | acide | A-ci-do |  |
+| tett | denso | densa | densi | dense | DEN-so |  |
+| fargerik | colorato | colorata | colorati | colorate | co-lo-RA-to |  |

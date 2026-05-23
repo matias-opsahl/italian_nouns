@@ -167,3 +167,16 @@
 | å skrike | urlare | ur-LA-re |  |
 | å slå på | accendere | ac-CEN-de-re |  |
 | å slå av | spegnere | SPE-gne-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å koke | bollire | bol-LI-re |  |
+| å lyve | mentire | men-TI-re |  |
+| å fotografere | fotografare | fo-to-gra-FA-re |  |
+| å tørke | asciugare | a-sciu-GA-re |  |
+| å klappe | applaudire | ap-plau-DI-re |  |
+| å henge | appendere | ap-PEN-de-re | å feste |
+| å trene | allenare | al-le-NA-re |  |
+| å knuse | schiacciare | schia-CCIA-re |  |
+| å vokse | crescere | CRES-ce-re |  |
+| å registrere | registrare | re-gi-STRA-re | å ta opp |
