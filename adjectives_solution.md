@@ -179,3 +179,16 @@
 | sur | acido | acida | acidi | acide | A-ci-do |  |
 | tett | denso | densa | densi | dense | DEN-so |  |
 | fargerik | colorato | colorata | colorati | colorate | co-lo-RA-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| fornøyd | soddisfatto | soddisfatta | soddisfatti | soddisfatte | sod-dis-FAT-to |  |
+| fleksibel | flessibile | flessibile | flessibili | flessibili | fles-SI-bi-le |  |
+| populær | popolare | popolare | popolari | popolari | po-po-LA-re |  |
+| praktisk | pratico | pratica | pratici | pratiche | PRA-ti-co |  |
+| ansvarlig | responsabile | responsabile | responsabili | responsabili | re-spon-SA-bi-le |  |
+| aktiv | attivo | attiva | attivi | attive | at-TI-vo |  |
+| positiv | positivo | positiva | positivi | positive | po-si-TI-vo |  |
+| følsom | sensibile | sensibile | sensibili | sensibili | sen-SI-bi-le |  |
+| respektfull | rispettoso | rispettosa | rispettosi | rispettose | ri-spet-TO-so |  |
+| beskjeden | modesto | modesta | modesti | modeste | mo-DE-sto |  |

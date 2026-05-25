@@ -180,3 +180,16 @@
 | lys | lys | lyset | lysene | la luce | le luci | una luce | delle luci | f | LU-ce |  |
 | jord | jorder | jorden | jordene | la terra | le terre | una terra | delle terre | f | TER-ra | land, bakke |
 | kjærlighet | kjærligheter | kjærligheten | kjærlighetene | l'amore | gli amori | un amore | degli amori | m | a-MO-re |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| vind | vinder | vinden | vindene | il vento | i venti | un vento | dei venti | m | VEN-to |  |
+| frokost | frokosten | frokosten | frokostene | la colazione | le colazioni | una colazione | delle colazioni | f | co-la-ZIO-ne |  |
+| lunsj | lunsjer | lunsjen | lunsjene | il pranzo | i pranzi | un pranzo | dei pranzi | m | PRAN-zo |  |
+| smil | smil | smilet | smilene | il sorriso | i sorrisi | un sorriso | dei sorrisi | m | sor-RI-so |  |
+| feil | feil | feilen | feilene | l'errore | gli errori | un errore | degli errori | m | er-RO-re |  |
+| historie | historier | historien | historiene | la storia | le storie | una storia | delle storie | f | STO-ria | historie (faget) |
+| pris | priser | prisen | prisene | il prezzo | i prezzi | un prezzo | dei prezzi | m | PREZ-zo |  |
+| stillhet | stillheter | stillheten | stillhetene | il silenzio | i silenzi | un silenzio | dei silenzi | m | si-LEN-zio |  |
+| fare | farer | faren | farene | il pericolo | i pericoli | un pericolo | dei pericoli | m | pe-RI-co-lo |  |
+| skygge | skygger | skyggen | skyggene | l'ombra | le ombre | un'ombra | delle ombre | f | OM-bra | skygge (av noe) |

@@ -180,3 +180,16 @@
 | å knuse | schiacciare | schia-CCIA-re |  |
 | å vokse | crescere | CRES-ce-re |  |
 | å registrere | registrare | re-gi-STRA-re | å ta opp |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å unngå | evitare | e-vi-TA-re |  |
+| å oppdage | scoprire | sco-PRI-re |  |
+| å beskytte | proteggere | pro-TEG-ge-re |  |
+| å fortjene | meritare | me-ri-TA-re |  |
+| å dekke | coprire | co-PRI-re | å skjule |
+| å utvikle | sviluppare | svi-lup-PA-re |  |
+| å avbryte | interrompere | in-ter-ROM-pe-re |  |
+| å gjenbruke | riciclare | ri-ci-CLA-re |  |
+| å nå | raggiungere | rag-GIUN-ge-re | å oppnå |
+| å love | promettere | pro-MET-te-re |  |
