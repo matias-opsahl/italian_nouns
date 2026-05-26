@@ -193,3 +193,16 @@
 | stillhet | stillheter | stillheten | stillhetene | il silenzio | i silenzi | un silenzio | dei silenzi | m | si-LEN-zio |  |
 | fare | farer | faren | farene | il pericolo | i pericoli | un pericolo | dei pericoli | m | pe-RI-co-lo |  |
 | skygge | skygger | skyggen | skyggene | l'ombra | le ombre | un'ombra | delle ombre | f | OM-bra | skygge (av noe) |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| sofa | sofaer | sofaen | sofaene | il divano | i divani | un divano | dei divani | m | di-VA-no |  |
+| pute | puter | puten | putene | il cuscino | i cuscini | un cuscino | dei cuscini | m | cu-SCI-no |  |
+| teppe | tepper | teppet | teppene | il tappeto | i tappeti | un tappeto | dei tappeti | m | tap-PE-to |  |
+| nabolag | nabolag | nabolaget | nabolagene | il quartiere | i quartieri | un quartiere | dei quartieri | m | quar-TIE-re | bydel |
+| sang | sanger | sangen | sangene | la canzone | le canzoni | una canzone | delle canzoni | f | can-ZO-ne |  |
+| tillit | tilliter | tilliten | tillitene | la fiducia | le fiducie | una fiducia | delle fiducie | f | fi-DU-cia |  |
+| råd | råd | rådet | rådene | il consiglio | i consigli | un consiglio | dei consigli | m | con-SI-glio | council |
+| nyhet | nyheter | nyheten | nyhetene | la notizia | le notizie | una notizia | delle notizie | f | no-TI-zia |  |
+| svar | svar | svaret | svarene | la risposta | le risposte | una risposta | delle risposte | f | ri-SPO-sta |  |
+| kake | kaker | kaken | kakene | la torta | le torte | una torta | delle torte | f | TOR-ta |  |

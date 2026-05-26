@@ -193,3 +193,16 @@
 | å gjenbruke | riciclare | ri-ci-CLA-re |  |
 | å nå | raggiungere | rag-GIUN-ge-re | å oppnå |
 | å love | promettere | pro-MET-te-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å smake | assaggiare | as-sag-GIA-re |  |
+| å dele | condividere | con-di-VI-de-re |  |
+| å sende | mandare | man-DA-re |  |
+| å hate | odiare | o-DIA-re |  |
+| å beundre | ammirare | am-mi-RA-re |  |
+| å puste | respirare | re-spi-RA-re |  |
+| å bruke (penger) | spendere | SPEN-de-re |  |
+| å tjene | guadagnare | gua-da-GNA-re | å vinne |
+| å avhenge av | dipendere | di-PEN-de-re |  |
+| å løse | risolvere | ri-SOL-ve-re |  |

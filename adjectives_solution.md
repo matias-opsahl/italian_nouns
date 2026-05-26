@@ -192,3 +192,16 @@
 | følsom | sensibile | sensibile | sensibili | sensibili | sen-SI-bi-le |  |
 | respektfull | rispettoso | rispettosa | rispettosi | rispettose | ri-spet-TO-so |  |
 | beskjeden | modesto | modesta | modesti | modeste | mo-DE-sto |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| krydret | piccante | piccante | piccanti | piccanti | pic-CAN-te | sterk |
+| salt | salato | salata | salati | salate | sa-LA-to | dyr |
+| heldig | fortunato | fortunata | fortunati | fortunate | for-tu-NA-to |  |
+| elegant | elegante | elegante | eleganti | eleganti | e-le-GAN-te |  |
+| grusom | crudele | crudele | crudeli | crudeli | cru-DE-le |  |
+| nyttig | utile | utile | utili | utili | U-ti-le |  |
+| bråkete | rumoroso | rumorosa | rumorosi | rumorose | ru-mo-RO-so |  |
+| dum | stupido | stupida | stupidi | stupide | STU-pi-do |  |
+| gammeldags/antikk | antico | antica | antichi | antiche | an-TI-co |  |
+| presserende | urgente | urgente | urgenti | urgenti | ur-GEN-te |  |
