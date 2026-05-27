@@ -205,3 +205,16 @@
 | dum | stupido | stupida | stupidi | stupide | STU-pi-do |  |
 | gammeldags/antikk | antico | antica | antichi | antiche | an-TI-co |  |
 | presserende | urgente | urgente | urgenti | urgenti | ur-GEN-te |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| kjærlig | affettuoso | affettuosa | affettuosi | affettuose | af-fet-TUO-so | øm |
+| fredelig | tranquillo | tranquilla | tranquilli | tranquille | tran-QUIL-lo | rolig |
+| original | originale | originale | originali | originali | o-ri-gi-NA-le |  |
+| spesiell | speciale | speciale | speciali | speciali | spe-CIA-le |  |
+| punktlig | puntuale | puntuale | puntuali | puntuali | pun-tu-A-le |  |
+| forelsket | innamorato | innamorata | innamorati | innamorate | in-na-mo-RA-to |  |
+| kraftig | potente | potente | potenti | potenti | po-TEN-te | mektig |
+| enorm | enorme | enorme | enormi | enormi | e-NOR-me |  |
+| deilig | delizioso | deliziosa | deliziosi | deliziose | de-li-ZIO-so | lekker |
+| komfortabel | comodo | comoda | comodi | comode | CO-mo-do | bekvem |

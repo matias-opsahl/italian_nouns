@@ -196,6 +196,19 @@
 
 | ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
 |---|---|---|---|---|---|---|---|---|---|---|
+| paraply | paraplyer | paraplyen | paraplyene | l'ombrello | gli ombrelli | un ombrello | degli ombrelli | m | om-BREL-lo |  |
+| frakk | frakker | frakken | frakkene | il cappotto | i cappotti | un cappotto | dei cappotti | m | cap-POT-to |  |
+| skjerf | skjerf | skjerfet | skjerfene | la sciarpa | le sciarpe | una sciarpa | delle sciarpe | f | SCAR-pa |  |
+| tak | tak | taket | takene | il tetto | i tetti | un tetto | dei tetti | m | TET-to |  |
+| trapp | trapper | trappen | trappene | la scala | le scale | una scala | delle scale | f | SCA-la | stige, skala |
+| svømmebasseng | svømmebasseng | svømmebassenget | svømmebassengene | la piscina | le piscine | una piscina | delle piscine | f | pi-SCI-na |  |
+| øy | øyer | øya | øyene | l'isola | le isole | un'isola | delle isole | f | I-so-la |  |
+| havn | havner | havnen | havnene | il porto | i porti | un porto | dei porti | m | POR-to |  |
+| slips | slips | slipset | slipsene | la cravatta | le cravatte | una cravatta | delle cravatte | f | cra-VAT-ta |  |
+| hanske | hansker | hansken | hanskene | il guanto | i guanti | un guanto | dei guanti | m | GUAN-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
 | sofa | sofaer | sofaen | sofaene | il divano | i divani | un divano | dei divani | m | di-VA-no |  |
 | pute | puter | puten | putene | il cuscino | i cuscini | un cuscino | dei cuscini | m | cu-SCI-no |  |
 | teppe | tepper | teppet | teppene | il tappeto | i tappeti | un tappeto | dei tappeti | m | tap-PE-to |  |

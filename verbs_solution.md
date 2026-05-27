@@ -206,3 +206,16 @@
 | å tjene | guadagnare | gua-da-GNA-re | å vinne |
 | å avhenge av | dipendere | di-PEN-de-re |  |
 | å løse | risolvere | ri-SOL-ve-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å foretrekke | preferire | pre-fe-RI-re |  |
+| å tilby | offrire | of-FRI-re |  |
+| å akseptere | accettare | ac-cet-TA-re |  |
+| å bestille | prenotare | pre-no-TA-re | å reservere |
+| å kontrollere | controllare | con-trol-LA-re | å sjekke |
+| å krangle | litigare | li-ti-GA-re |  |
+| å signere | firmare | fir-MA-re |  |
+| å veie | pesare | pe-SA-re |  |
+| å blande | mescolare | me-sco-LA-re |  |
+| å parkere | parcheggiare | par-cheg-GIA-re |  |
