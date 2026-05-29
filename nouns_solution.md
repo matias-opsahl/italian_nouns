@@ -219,3 +219,16 @@
 | nyhet | nyheter | nyheten | nyhetene | la notizia | le notizie | una notizia | delle notizie | f | no-TI-zia |  |
 | svar | svar | svaret | svarene | la risposta | le risposte | una risposta | delle risposte | f | ri-SPO-sta |  |
 | kake | kaker | kaken | kakene | la torta | le torte | una torta | delle torte | f | TOR-ta |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| stjerne | stjerner | stjernen | stjernene | la stella | le stelle | una stella | delle stelle | f | STEL-la |  |
+| koffert | kofferter | kofferten | koffertene | la valigia | le valigie | una valigia | delle valigie | f | va-LI-gia |  |
+| lønn | lønninger | lønnen | lønningene | lo stipendio | gli stipendi | uno stipendio | degli stipendi | m | sti-PEN-dio |  |
+| dukke | dukker | dukken | dukkene | la bambola | le bambole | una bambola | delle bambole | f | BAM-bo-la |  |
+| grense | grenser | grensen | grensene | il confine | i confini | un confine | dei confini | m | con-FI-ne |  |
+| telt | telt | teltet | teltene | la tenda | le tende | una tenda | delle tende | f | TEN-da | gardin |
+| mur | murer | muren | murene | il muro | i muri | un muro | dei muri | m | MU-ro | vegg |
+| regning | regninger | regningen | regningene | il conto | i conti | un conto | dei conti | m | CON-to | konto |
+| skip | skip | skipet | skipene | la nave | le navi | una nave | delle navi | f | NA-ve |  |
+| etasje | etasjer | etasjen | etasjene | il piano | i piani | un piano | dei piani | m | PIA-no | plan |

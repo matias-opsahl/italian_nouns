@@ -219,3 +219,16 @@
 | å veie | pesare | pe-SA-re |  |
 | å blande | mescolare | me-sco-LA-re |  |
 | å parkere | parcheggiare | par-cheg-GIA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å savne | mancare | man-CA-re | å mangle |
+| å bekrefte | confermare | con-fer-MA-re |  |
+| å oppfordre | incoraggiare | in-co-rag-GIA-re | å oppmuntre |
+| å fange | catturare | cat-tu-RA-re | å gripe |
+| å trykke | premere | PRE-me-re |  |
+| å laste ned | scaricare | sca-ri-CA-re | å losse |
+| å sykle | pedalare | pe-da-LA-re |  |
+| å hilse | salutare | sa-lu-TA-re | å vinke |
+| å more | divertire | di-ver-TI-re | å underholde |
+| å krysse | attraversare | at-tra-ver-SA-re |  |

@@ -218,3 +218,16 @@
 | enorm | enorme | enorme | enormi | enormi | e-NOR-me |  |
 | deilig | delizioso | deliziosa | deliziosi | deliziose | de-li-ZIO-so | lekker |
 | komfortabel | comodo | comoda | comodi | comode | CO-mo-do | bekvem |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| naken | nudo | nuda | nudi | nude | NU-do |  |
+| fremmed | straniero | straniera | stranieri | straniere | stra-NIE-ro | utenlandsk |
+| vill | selvaggio | selvaggia | selvaggi | selvagge | sel-VAG-gio | primitiv |
+| konsentrert | concentrato | concentrata | concentrati | concentrate | con-cen-TRA-to |  |
+| lystig | allegro | allegra | allegri | allegre | al-LE-gro |  |
+| utmattet | esausto | esausta | esausti | esauste | e-SAU-sto |  |
+| blind | cieco | cieca | ciechi | cieche | CIE-co |  |
+| ydmyk | umile | umile | umili | umili | U-mi-le |  |
+| flau | imbarazzato | imbarazzata | imbarazzati | imbarazzate | im-ba-raz-ZA-to |  |
+| overbevist | convinto | convinta | convinti | convinte | con-VIN-to |  |
