@@ -232,3 +232,16 @@
 | regning | regninger | regningen | regningene | il conto | i conti | un conto | dei conti | m | CON-to | konto |
 | skip | skip | skipet | skipene | la nave | le navi | una nave | delle navi | f | NA-ve |  |
 | etasje | etasjer | etasjen | etasjene | il piano | i piani | un piano | dei piani | m | PIA-no | plan |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| lommebok | lommebøker | lommeboken | lommebøkene | il portafoglio | i portafogli | un portafoglio | dei portafogli | m | por-ta-FO-glio |  |
+| lue | luer | luen | luene | il berretto | i berretti | un berretto | dei berretti | m | ber-RET-to |  |
+| jakke | jakker | jakken | jakkene | la giacca | le giacche | una giacca | delle giacche | f | GIAC-ca |  |
+| gave | gaver | gaven | gavene | il regalo | i regali | un regalo | dei regali | m | re-GA-lo |  |
+| bilde | bilder | bildet | bildene | il quadro | i quadri | un quadro | dei quadri | m | QUA-dro | maleri |
+| mote | moter | moten | motene | la moda | le mode | una moda | delle mode | f | MO-da |  |
+| kart | kart | kartet | kartene | la mappa | le mappe | una mappa | delle mappe | f | MAP-pa |  |
+| sykdom | sykdommer | sykdommen | sykdommene | la malattia | le malattie | una malattia | delle malattie | f | ma-lat-TI-a |  |
+| leie | leier | leien | leiene | l'affitto | gli affitti | un affitto | degli affitti | m | af-FIT-to | husleie |
+| genser | gensere | genseren | genserne | il maglione | i maglioni | un maglione | dei maglioni | m | ma-GLIO-ne |  |

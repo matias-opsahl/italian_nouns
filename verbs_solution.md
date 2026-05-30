@@ -232,3 +232,16 @@
 | å hilse | salutare | sa-lu-TA-re | å vinke |
 | å more | divertire | di-ver-TI-re | å underholde |
 | å krysse | attraversare | at-tra-ver-SA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å slappe av | rilassarsi | ri-las-SAR-si |  |
+| å flytte | traslocare | tra-slo-CA-re | å flytte (hjem) |
+| å samle | raccogliere | rac-CO-glie-re | å plukke opp |
+| å støtte | sostenere | so-ste-NE-re | å holde oppe |
+| å klage | lamentarsi | la-men-TAR-si |  |
+| å stole på | fidarsi | fi-DAR-si |  |
+| å bake | cuocere | CUO-ce-re | å steke |
+| å fikse | aggiustare | ag-giu-STA-re | å reparere |
+| å rive | strappare | strap-PA-re | å slite i stykker |
+| å fornye | rinnovare | rin-no-VA-re | å renovere |

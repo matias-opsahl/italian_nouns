@@ -231,3 +231,16 @@
 | ydmyk | umile | umile | umili | umili | U-mi-le |  |
 | flau | imbarazzato | imbarazzata | imbarazzati | imbarazzate | im-ba-raz-ZA-to |  |
 | overbevist | convinto | convinta | convinti | convinte | con-VIN-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| bekymret | preoccupato | preoccupata | preoccupati | preoccupate | pre-oc-cu-PA-to |  |
+| irritert | irritato | irritata | irritati | irritate | ir-ri-TA-to |  |
+| bevisst | consapevole | consapevole | consapevoli | consapevoli | con-sa-PE-vo-le | klar over |
+| brun | marrone | marrone | marroni | marroni | mar-RO-ne |  |
+| flink | bravo | brava | bravi | brave | BRA-vo | dyktig |
+| bleik | pallido | pallida | pallidi | pallide | PAL-li-do |  |
+| utrolig | incredibile | incredibile | incredibili | incredibili | in-cre-DI-bi-le |  |
+| herlig | magnifico | magnifica | magnifici | magnifiche | ma-GNI-fi-co | fantastisk |
+| ukjent | sconosciuto | sconosciuta | sconosciuti | sconosciute | sco-no-SCIU-to |  |
+| misunnelig | invidioso | invidiosa | invidiosi | invidiose | in-vi-DIO-so |  |
