@@ -245,3 +245,16 @@
 | å fikse | aggiustare | ag-giu-STA-re | å reparere |
 | å rive | strappare | strap-PA-re | å slite i stykker |
 | å fornye | rinnovare | rin-no-VA-re | å renovere |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å kjenne igjen | riconoscere | ri-co-NO-sce-re | å anerkjenne |
+| å redde | salvare | sal-VA-re |  |
+| å svinge | girare | gi-RA-re | å dreie |
+| å virke | sembrare | sem-BRA-re | å ligne, å se ut |
+| å feie | spazzare | spaz-ZA-re |  |
+| å synke | affondare | af-fon-DA-re |  |
+| å strekke | allungare | al-lun-GA-re | å forlenge |
+| å sparke | calciare | cal-CIA-re |  |
+| å vurdere | considerare | con-si-de-RA-re | å tenke på |
+| å gjemme | nascondere | na-SCON-de-re |  |

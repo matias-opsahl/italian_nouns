@@ -245,3 +245,16 @@
 | sykdom | sykdommer | sykdommen | sykdommene | la malattia | le malattie | una malattia | delle malattie | f | ma-lat-TI-a |  |
 | leie | leier | leien | leiene | l'affitto | gli affitti | un affitto | degli affitti | m | af-FIT-to | husleie |
 | genser | gensere | genseren | genserne | il maglione | i maglioni | un maglione | dei maglioni | m | ma-GLIO-ne |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ettermiddag | ettermiddager | ettermiddagen | ettermiddagene | il pomeriggio | i pomeriggi | un pomeriggio | dei pomeriggi | m | po-me-RIG-gio |  |
+| støy | støyer | støyen | støyene | il rumore | i rumori | un rumore | dei rumori | m | ru-MO-re |  |
+| oppskrift | oppskrifter | oppskriften | oppskriftene | la ricetta | le ricette | una ricetta | delle ricette | f | ri-CET-ta | resept |
+| smak | smaker | smaken | smakene | il gusto | i gusti | un gusto | dei gusti | m | GU-sto |  |
+| vegg | vegger | veggen | veggene | la parete | le pareti | una parete | delle pareti | f | pa-RE-te |  |
+| hale | haler | halen | halene | la coda | le code | una coda | delle code | f | CO-da | kø |
+| bagasje | bagasjer | bagasjen | bagasjene | il bagaglio | i bagagli | un bagaglio | dei bagagli | m | ba-GA-glio |  |
+| sinn | sinn | sinnet | sinnene | la mente | le menti | una mente | delle menti | f | MEN-te |  |
+| pust | puster | pusten | pustene | il respiro | i respiri | un respiro | dei respiri | m | re-SPI-ro |  |
+| håndledd | håndledd | håndleddet | håndleddene | il polso | i polsi | un polso | dei polsi | m | POL-so | puls |

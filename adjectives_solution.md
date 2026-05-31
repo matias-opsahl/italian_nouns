@@ -244,3 +244,16 @@
 | herlig | magnifico | magnifica | magnifici | magnifiche | ma-GNI-fi-co | fantastisk |
 | ukjent | sconosciuto | sconosciuta | sconosciuti | sconosciute | sco-no-SCIU-to |  |
 | misunnelig | invidioso | invidiosa | invidiosi | invidiose | in-vi-DIO-so |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| tynn | sottile | sottile | sottili | sottili | sot-TI-le | fin |
+| glatt | liscio | liscia | lisci | lisce | LIS-cio |  |
+| overfylt | affollato | affollata | affollati | affolate | af-fol-LA-to | travel |
+| dyktig | abile | abile | abili | abili | A-bi-le |  |
+| sprø | pazzo | pazza | pazzi | pazze | PAZ-zo | gal |
+| lur | furbo | furba | furbi | furbe | FUR-bo | slu |
+| stiv | rigido | rigida | rigidi | rigide | RI-gi-do | streng |
+| urolig | agitato | agitata | agitati | agitate | a-gi-TA-to |  |
+| distrahert | distratto | distratta | distratti | distratte | di-STRAT-to |  |
+| delikat | delicato | delicata | delicati | delicate | de-li-CA-to | ømfintlig |
