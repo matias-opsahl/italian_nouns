@@ -258,3 +258,16 @@
 | å sparke | calciare | cal-CIA-re |  |
 | å vurdere | considerare | con-si-de-RA-re | å tenke på |
 | å gjemme | nascondere | na-SCON-de-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å sovne | addormentarsi | ad-dor-men-TAR-si |  |
+| å kle på seg | vestirsi | ve-STIR-si |  |
+| å vaske seg | lavarsi | la-VAR-si |  |
+| å gjespe | sbadigliare | sba-di-GLIA-re |  |
+| å organisere | organizzare | or-ga-niz-ZA-re |  |
+| å slutte | smettere | SMET-te-re | å holde opp |
+| å klare | riuscire | riu-SCI-re | å lykkes |
+| å bestille | ordinare | or-di-NA-re | å ordne |
+| å fryse | congelare | con-ge-LA-re |  |
+| å grille | grigliare | gri-GLIA-re |  |

@@ -257,3 +257,16 @@
 | urolig | agitato | agitata | agitati | agitate | a-gi-TA-to |  |
 | distrahert | distratto | distratta | distratti | distratte | di-STRAT-to |  |
 | delikat | delicato | delicata | delicati | delicate | de-li-CA-to | ømfintlig |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| melankolsk | malinconico | malinconica | malinconici | malinconiche | ma-lin-CO-ni-co |  |
+| pålitelig | affidabile | affidabile | affidabili | affidabili | af-fi-DA-bi-le |  |
+| dristig | audace | audace | audaci | audaci | au-DA-ce |  |
+| iskald | gelido | gelida | gelidi | gelide | GE-li-do |  |
+| smakfull | saporito | saporita | saporiti | saporite | sa-po-RI-to |  |
+| dyster | cupo | cupa | cupi | cupe | CU-po | mørk |
+| eldre | anziano | anziana | anziani | anziane | an-ZIA-no |  |
+| selvopptatt | egoista | egoista | egoisti | egoiste | e-go-I-sta |  |
+| lidenskapelig | appassionato | appassionata | appassionati | appassionate | ap-pas-sio-NA-to |  |
+| motløs | scoraggiato | scoraggiata | scoraggiati | scoraggiate | sco-rag-GIA-to |  |

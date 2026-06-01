@@ -258,3 +258,16 @@
 | sinn | sinn | sinnet | sinnene | la mente | le menti | una mente | delle menti | f | MEN-te |  |
 | pust | puster | pusten | pustene | il respiro | i respiri | un respiro | dei respiri | m | re-SPI-ro |  |
 | håndledd | håndledd | håndleddet | håndleddene | il polso | i polsi | un polso | dei polsi | m | POL-so | puls |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| sukker | sukker | sukkeret | sukkerene | lo zucchero | gli zuccheri | uno zucchero | degli zuccheri | m | ZUC-che-ro |  |
+| olje | oljer | oljen | oljene | l'olio | gli oli | un olio | degli oli | m | O-lio |  |
+| salt | salt | saltet | saltene | il sale | i sali | un sale | dei sali | m | SA-le |  |
+| tomat | tomater | tomaten | tomatene | il pomodoro | i pomodori | un pomodoro | dei pomodori | m | po-mo-DO-ro |  |
+| løk | løk | løken | løkene | la cipolla | le cipolle | una cipolla | delle cipolle | f | ci-POL-la |  |
+| hvitløk | hvitløk | hvitløken | hvitløkene | l'aglio | gli agli | un aglio | degli agli | m | A-glio |  |
+| trafikklys | trafikklys | trafikklyset | trafikklysene | il semaforo | i semafori | un semaforo | dei semafori | m | se-MA-fo-ro |  |
+| solnedgang | solnedganger | solnedgangen | solnedgangene | il tramonto | i tramonti | un tramonto | dei tramonti | m | tra-MON-to |  |
+| gutt | gutter | gutten | guttene | il ragazzo | i ragazzi | un ragazzo | dei ragazzi | m | ra-GAZ-zo | kjæreste |
+| jente | jenter | jenta | jentene | la ragazza | le ragazze | una ragazza | delle ragazze | f | ra-GAZ-za | kjæreste |
