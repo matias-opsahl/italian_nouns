@@ -270,3 +270,16 @@
 | selvopptatt | egoista | egoista | egoisti | egoiste | e-go-I-sta |  |
 | lidenskapelig | appassionato | appassionata | appassionati | appassionate | ap-pas-sio-NA-to |  |
 | motløs | scoraggiato | scoraggiata | scoraggiati | scoraggiate | sco-rag-GIA-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| billig | economico | economica | economici | economiche | e-co-NO-mi-co | rimelig |
+| dyr (kostbar) | costoso | costosa | costosi | costose | co-STO-so |  |
+| perfekt | perfetto | perfetta | perfetti | perfette | per-FET-to |  |
+| uheldig | sfortunato | sfortunata | sfortunati | sfortunate | sfor-tu-NA-to |  |
+| umulig | impossibile | impossibile | impossibili | impossibili | im-pos-SI-bi-le |  |
+| sikker (viss) | certo | certa | certi | certe | CER-to | bestemt |
+| felles | comune | comune | comuni | comuni | co-MU-ne | vanlig |
+| forbudt | vietato | vietata | vietati | vietate | vie-TA-to |  |
+| romantisk | romantico | romantica | romantici | romantiche | ro-MAN-ti-co |  |
+| sjarmerende | affascinante | affascinante | affascinanti | affascinanti | af-fa-sci-NAN-te | fascinerende |

@@ -271,3 +271,16 @@
 | å bestille | ordinare | or-di-NA-re | å ordne |
 | å fryse | congelare | con-ge-LA-re |  |
 | å grille | grigliare | gri-GLIA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å forbli | rimanere | ri-ma-NE-re | å bli igjen |
+| å bekymre seg | preoccuparsi | pre-oc-cu-PAR-si |  |
+| å ankomme | arrivare | ar-ri-VA-re | å komme frem |
+| å introdusere | introdurre | in-tro-DUR-re |  |
+| å sammenligne | confrontare | con-fron-TA-re |  |
+| å overvinne | superare | su-pe-RA-re | å overgå |
+| å innse | accorgersi | ac-cor-GER-si |  |
+| å ødelegge | distruggere | di-STRUG-ge-re |  |
+| å oppføre seg | comportarsi | com-por-TAR-si |  |
+| å skynde seg | affrettarsi | af-fret-TAR-si |  |

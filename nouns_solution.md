@@ -271,3 +271,16 @@
 | solnedgang | solnedganger | solnedgangen | solnedgangene | il tramonto | i tramonti | un tramonto | dei tramonti | m | tra-MON-to |  |
 | gutt | gutter | gutten | guttene | il ragazzo | i ragazzi | un ragazzo | dei ragazzi | m | ra-GAZ-zo | kjæreste |
 | jente | jenter | jenta | jentene | la ragazza | le ragazze | una ragazza | delle ragazze | f | ra-GAZ-za | kjæreste |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| mor | mødre | moren | mødrene | la madre | le madri | una madre | delle madri | f | MA-dre |  |
+| far | fedre | faren | fedrene | il padre | i padri | un padre | dei padri | m | PA-dre |  |
+| bror | brødre | broren | brødrene | il fratello | i fratelli | un fratello | dei fratelli | m | fra-TEL-lo |  |
+| søster | søstre | søsteren | søstrene | la sorella | le sorelle | una sorella | delle sorelle | f | so-REL-la |  |
+| mann | menn | mannen | mennene | l'uomo | gli uomini | un uomo | degli uomini | m | UO-mo | ektemann |
+| kvinne | kvinner | kvinnen | kvinnene | la donna | le donne | una donna | delle donne | f | DON-na | ektefelle |
+| mat | mater | maten | matene | il cibo | i cibi | un cibo | dei cibi | m | CI-bo |  |
+| musikk | musikker | musikken | musikkene | la musica | le musiche | una musica | delle musiche | f | MU-si-ca |  |
+| fred | freder | freden | fredene | la pace | le paci | una pace | delle paci | f | PA-ce |  |
+| krig | kriger | krigen | krigene | la guerra | le guerre | una guerra | delle guerre | f | GUER-ra |  |
