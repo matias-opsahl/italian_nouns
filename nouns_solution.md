@@ -284,3 +284,16 @@
 | musikk | musikker | musikken | musikkene | la musica | le musiche | una musica | delle musiche | f | MU-si-ca |  |
 | fred | freder | freden | fredene | la pace | le paci | una pace | delle paci | f | PA-ce |  |
 | krig | kriger | krigen | krigene | la guerra | le guerre | una guerra | delle guerre | f | GUER-ra |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| gjeld | gjeld | gjelden | gjeldene | il debito | i debiti | un debito | dei debiti | m | DE-bi-to |  |
+| lån | lån | lånet | lånene | il prestito | i prestiti | un prestito | dei prestiti | m | pre-STI-to |  |
+| sti | stier | stien | stiene | il sentiero | i sentieri | un sentiero | dei sentieri | m | sen-TIE-ro |  |
+| tåke | tåker | tåken | tåkene | la nebbia | le nebbie | una nebbia | delle nebbie | f | NEB-bia |  |
+| søppel | søppel | søppelet | søpplene | la spazzatura | le spazzature | una spazzatura | delle spazzature | f | spaz-za-TU-ra | avfall |
+| skål | skåler | skålen | skålene | la ciotola | le ciotole | una ciotola | delle ciotole | f | CIO-to-la |  |
+| fabrikk | fabrikker | fabrikken | fabrikkene | la fabbrica | le fabbriche | una fabbrica | delle fabbriche | f | FAB-bri-ca |  |
+| flyplass | flyplasser | flyplassen | flyplassene | l'aeroporto | gli aeroporti | un aeroporto | degli aeroporti | m | a-e-ro-POR-to |  |
+| hotell | hoteller | hotellet | hotellene | l'albergo | gli alberghi | un albergo | degli alberghi | m | al-BER-go |  |
+| sommerfugl | sommerfugler | sommerfuglen | sommerfuglene | la farfalla | le farfalle | una farfalla | delle farfalle | f | far-FAL-la |  |

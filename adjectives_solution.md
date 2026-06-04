@@ -283,3 +283,16 @@
 | forbudt | vietato | vietata | vietati | vietate | vie-TA-to |  |
 | romantisk | romantico | romantica | romantici | romantiche | ro-MAN-ti-co |  |
 | sjarmerende | affascinante | affascinante | affascinanti | affascinanti | af-fa-sci-NAN-te | fascinerende |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| hysterisk | isterico | isterica | isterici | isteriche | i-STE-ri-co |  |
+| gjennomsnittlig | medio | media | medi | medie | ME-dio | middels |
+| tilgjengelig | disponibile | disponibile | disponibili | disponibili | di-spo-NI-bi-le | ledig |
+| kompleks | complesso | complessa | complessi | complesse | com-PLES-so |  |
+| ekstraordinær | straordinario | straordinaria | straordinari | straordinarie | stra-or-di-NA-rio |  |
+| bemerkelsesverdig | notevole | notevole | notevoli | notevoli | no-TE-vo-le |  |
+| abstrakt | astratto | astratta | astratti | astratte | a-STRAT-to |  |
+| konkret | concreto | concreta | concreti | concrete | con-CRE-to |  |
+| flittig | diligente | diligente | diligenti | diligenti | di-li-GEN-te |  |
+| talentfull | talentuoso | talentuosa | talentuosi | talentuose | ta-len-TUO-so |  |

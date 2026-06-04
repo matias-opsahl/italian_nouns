@@ -284,3 +284,16 @@
 | å ødelegge | distruggere | di-STRUG-ge-re |  |
 | å oppføre seg | comportarsi | com-por-TAR-si |  |
 | å skynde seg | affrettarsi | af-fret-TAR-si |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å trøste | consolare | con-so-LA-re |  |
+| å koble til | collegare | col-le-GA-re | å sette sammen |
+| å investere | investire | in-ve-STI-re |  |
+| å irritere | irritare | ir-ri-TA-re | å ergre |
+| å teste | testare | te-STA-re |  |
+| å lure | ingannare | in-gan-NA-re | å bedra |
+| å slite | faticare | fa-ti-CA-re |  |
+| å beregne | calcolare | cal-co-LA-re | å regne ut |
+| å forene | unire | u-NI-re | å slå sammen |
+| å respektere | rispettare | ri-spet-TA-re |  |
