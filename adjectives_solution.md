@@ -296,3 +296,29 @@
 | konkret | concreto | concreta | concreti | concrete | con-CRE-to |  |
 | flittig | diligente | diligente | diligenti | diligenti | di-li-GEN-te |  |
 | talentfull | talentuoso | talentuosa | talentuosi | talentuose | ta-len-TUO-so |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| forvirret | confuso | confusa | confusi | confuse | con-FU-so |  |
+| besluttsom | determinato | determinata | determinati | determinate | de-ter-mi-NA-to |  |
+| kjedet | annoiato | annoiata | annoiati | annoiate | an-no-IA-to |  |
+| begeistret | emozionato | emozionata | emozionati | emozionate | e-mo-zio-NA-to | rørt |
+| deprimert | depresso | depressa | depressi | depresse | de-PRES-so |  |
+| skamfull | vergognoso | vergognosa | vergognosi | vergognose | ver-go-GNO-so | flau |
+| skyldig | colpevole | colpevole | colpevoli | colpevoli | col-PE-vo-le |  |
+| i stand til | capace | capace | capaci | capaci | ca-PA-ce | dyktig |
+| fryktelig | terribile | terribile | terribili | terribili | ter-RI-bi-le |  |
+| overraskende | sorprendente | sorprendente | sorprendenti | sorprendenti | sor-pren-DEN-te |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| god/bra | buono | buona | buoni | buone | BUO-no | velsmakende |
+| slem | cattivo | cattiva | cattivi | cattive | cat-TI-vo | dårlig |
+| blond | biondo | bionda | biondi | bionde | BION-do |  |
+| mystisk | misterioso | misteriosa | misteriosi | misteriose | mi-ste-RIO-so |  |
+| gjennomskinnelig | trasparente | trasparente | trasparenti | trasparenti | tra-spa-REN-te |  |
+| eventyrlysten | avventuroso | avventurosa | avventurosi | avventurose | av-ven-tu-RO-so |  |
+| hellig | sacro | sacra | sacri | sacre | SA-cro |  |
+| likegyldig | indifferente | indifferente | indifferenti | indifferenti | in-dif-fe-REN-te |  |
+| flat | piatto | piatta | piatti | piatte | PIAT-to |  |
+| voksen | adulto | adulta | adulti | adulte | a-DUL-to |  |

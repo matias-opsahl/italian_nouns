@@ -297,3 +297,29 @@
 | å beregne | calcolare | cal-co-LA-re | å regne ut |
 | å forene | unire | u-NI-re | å slå sammen |
 | å respektere | rispettare | ri-spet-TA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å delta | partecipare | par-te-ci-PA-re |  |
+| å uttrykke | esprimere | e-SPRI-me-re |  |
+| å fjerne | togliere | TO-glie-re | å ta bort |
+| å tømme | svuotare | svuo-TA-re |  |
+| å bevise | dimostrare | di-mo-STRA-re | å demonstrere |
+| å stoppe | fermarsi | fer-MAR-si | å stanse |
+| å unnskylde seg | scusarsi | scu-SAR-si |  |
+| å ledsage | accompagnare | ac-com-pa-GNA-re | å følge med |
+| å nekte | negare | ne-GA-re | å avvise |
+| å reise seg | alzarsi | al-ZAR-si | å stå opp |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å nevne | menzionare | men-zio-NA-re |  |
+| å innrømme | ammettere | am-MET-te-re |  |
+| å forsvinne | sparire | spa-RI-re |  |
+| å forhindre | impedire | im-pe-DI-re | å hindre |
+| å advare | avvertire | av-ver-TI-re | å varsle |
+| å inneholde | contenere | con-te-NE-re |  |
+| å laste opp | caricare | ca-ri-CA-re | å lade (batteri) |
+| å kjempe | lottare | lot-TA-re |  |
+| å tygge | masticare | ma-sti-CA-re |  |
+| å flykte | fuggire | fug-GI-re | å rømme |

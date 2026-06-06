@@ -297,3 +297,29 @@
 | flyplass | flyplasser | flyplassen | flyplassene | l'aeroporto | gli aeroporti | un aeroporto | degli aeroporti | m | a-e-ro-POR-to |  |
 | hotell | hoteller | hotellet | hotellene | l'albergo | gli alberghi | un albergo | degli alberghi | m | al-BER-go |  |
 | sommerfugl | sommerfugler | sommerfuglen | sommerfuglene | la farfalla | le farfalle | una farfalla | delle farfalle | f | far-FAL-la |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| svelg | svelg | svelget | svelgene | la gola | le gole | una gola | delle gole | f | GO-la |  |
+| lunge | lunger | lungen | lungene | il polmone | i polmoni | un polmone | dei polmoni | m | pol-MO-ne |  |
+| plen | plener | plenen | plenene | il prato | i prati | un prato | dei prati | m | PRA-to | eng |
+| slott | slott | slottet | slottene | il castello | i castelli | un castello | dei castelli | m | ca-STEL-lo |  |
+| håndkle | håndklær | håndkleet | håndklærne | l'asciugamano | gli asciugamani | un asciugamano | degli asciugamani | m | a-sciu-ga-MA-no |  |
+| såpe | såper | såpen | såpene | il sapone | i saponi | un sapone | dei saponi | m | sa-PO-ne |  |
+| pledd | pledd | pleddet | pleddene | la coperta | le coperte | una coperta | delle coperte | f | co-PER-ta |  |
+| rot | røtter | roten | røttene | la radice | le radici | una radice | delle radici | f | ra-DI-ce |  |
+| gren | grener | grenen | grenene | il ramo | i rami | un ramo | dei rami | m | RA-mo |  |
+| lever | levere | leveren | leverene | il fegato | i fegati | un fegato | dei fegati | m | FE-ga-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| eple | epler | eplet | eplene | la mela | le mele | una mela | delle mele | f | ME-la |  |
+| banan | bananer | bananen | bananene | la banana | le banane | una banana | delle banane | f | ba-NA-na |  |
+| potet | poteter | poteten | potetene | la patata | le patate | una patata | delle patate | f | pa-TA-ta |  |
+| gulrot | gulrøtter | gulroten | gulrøttene | la carota | le carote | una carota | delle carote | f | ca-RO-ta |  |
+| sopp | sopper | soppen | soppene | il fungo | i funghi | un fungo | dei funghi | m | FUN-go |  |
+| ris | ris | risen | risene | il riso | i risi | un riso | dei risi | m | RI-so |  |
+| suppe | supper | suppen | suppene | la zuppa | le zuppe | una zuppa | delle zuppe | f | ZUP-pa |  |
+| kjole | kjoler | kjolen | kjolene | il vestito | i vestiti | un vestito | dei vestiti | m | ve-STI-to | antrekk |
+| bukse | bukser | buksen | buksene | il pantalone | i pantaloni | un pantalone | dei pantaloni | m | pan-ta-LO-ne |  |
+| trening | treninger | treningen | treningene | l'allenamento | gli allenamenti | un allenamento | degli allenamenti | m | al-le-na-MEN-to |  |

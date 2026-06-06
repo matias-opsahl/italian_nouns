@@ -476,6 +476,101 @@
   }
   .day-row.is-selected .day-count { color: rgba(255,255,255,0.7); }
 
+  /* done-markers inside day rows */
+  .day-row { gap: 10px; }
+  .day-row .day-main { display: flex; align-items: center; gap: 9px; flex: 1; min-width: 0; }
+  .day-status-dot {
+    width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0;
+    border: 1.5px solid var(--hairline-2); background: var(--card);
+  }
+  .day-status-dot.is-partial { border-color: var(--green); background: var(--soft-green); }
+  .day-status-dot.is-done    { border-color: var(--green-d); background: var(--green); }
+  .day-row.is-done   { box-shadow: inset 3px 0 0 var(--green); }
+  .day-row.is-partial{ box-shadow: inset 3px 0 0 var(--soft-green); }
+  .day-row .day-when {
+    font-family: "Geist Mono", monospace; font-size: 10.5px;
+    color: var(--green-d); white-space: nowrap; flex-shrink: 0;
+  }
+  .day-row.is-selected .day-when { color: rgba(255,255,255,0.75); }
+  .day-row.is-selected .day-status-dot.is-done { background: #fff; border-color: #fff; }
+
+  /* ── Fremgang (progress overview) ───────────────── */
+  .progress-panel {
+    border: 1px solid var(--hairline-2);
+    border-radius: 10px;
+    background: var(--card);
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .progress-head {
+    display: flex; align-items: center; gap: 10px;
+    width: 100%;
+    padding: 13px 15px;
+    background: none; border: none;
+    cursor: pointer; text-align: left;
+    font-family: "Geist", sans-serif; color: var(--ink);
+  }
+  .progress-head:hover { background: var(--bg); }
+  .progress-head .pg-title { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+  .progress-head .pg-overall {
+    font-family: "Geist Mono", monospace; font-size: 12px;
+    color: var(--muted); margin-left: auto;
+  }
+  .progress-head .pg-chev { font-size: 12px; color: var(--muted); transition: transform .15s; }
+  .progress-panel.is-open .progress-head .pg-chev { transform: rotate(180deg); }
+  .progress-body { display: none; padding: 2px 15px 14px; max-height: 340px; overflow-y: auto; }
+  .progress-panel.is-open .progress-body { display: block; }
+
+  .pg-legend {
+    display: flex; gap: 15px; align-items: center; flex-wrap: wrap;
+    padding: 10px 2px 11px;
+    font-size: 11.5px; color: var(--muted);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 2px;
+  }
+  .pg-legend .lg { display: inline-flex; align-items: center; gap: 6px; }
+  .pg-legend .pg-dot { width: 13px; height: 13px; cursor: default; }
+  .pg-legend .pg-dot:hover { transform: none; }
+  .progress-reset {
+    background: none; border: none; cursor: pointer;
+    font-family: "Geist", sans-serif; font-size: 11.5px;
+    color: var(--muted); padding: 0; margin-left: auto;
+    text-decoration: underline; text-underline-offset: 2px;
+  }
+  .progress-reset:hover { color: var(--red); }
+
+  .pg-week {
+    display: flex; align-items: center; gap: 12px;
+    padding: 9px 2px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .pg-week:last-child { border-bottom: none; }
+  .pg-week-label {
+    width: 66px; flex-shrink: 0; line-height: 1.25;
+    font-size: 13px; font-weight: 600; color: var(--ink);
+  }
+  .pg-week-label small {
+    display: block; font-weight: 400; font-size: 10px;
+    color: var(--muted); font-family: "Geist Mono", monospace;
+  }
+  .pg-dots { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+  .pg-dot {
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 1.5px solid var(--hairline-2); background: var(--card);
+    cursor: pointer; padding: 0;
+    transition: transform .1s; position: relative;
+  }
+  .pg-dot:hover { transform: scale(1.18); }
+  .pg-dot.is-partial { border-color: var(--green); background: var(--soft-green); }
+  .pg-dot.is-done    { border-color: var(--green-d); background: var(--green); }
+  .pg-dot.is-current { box-shadow: 0 0 0 2px var(--card), 0 0 0 3.5px var(--ink); }
+  .pg-week-sum {
+    font-family: "Geist Mono", monospace; font-size: 11px;
+    color: var(--muted); min-width: 44px; text-align: right; flex-shrink: 0;
+  }
+  .pg-week-sum.is-complete { color: var(--green-d); font-weight: 500; }
+  .pg-empty { padding: 16px 2px; color: var(--muted); font-size: 13px; }
+
   /* ── Side preview panel ─────────────────────────── */
   .date-preview {
     position: fixed;
@@ -1204,6 +1299,14 @@
 
   <!-- ── START ──────────────────────────────────────── -->
   <section id="screen-start" class="card">
+    <div class="progress-panel is-open" id="progressPanel">
+      <button type="button" class="progress-head" id="progressToggle" aria-expanded="true">
+        <span class="pg-title">Fremgang</span>
+        <span class="pg-overall" id="progressOverall">0/0 dager</span>
+        <span class="pg-chev" aria-hidden="true">▾</span>
+      </button>
+      <div class="progress-body" id="progressBody"></div>
+    </div>
     <div class="weekSel-wrap" id="weekSelWrap" style="margin-bottom:16px">
       <label class="field-label">Uke</label>
       <select id="weekSel"></select>
@@ -2374,6 +2477,124 @@ const DAILY_QUIZZES = [
     { no: "talentfull",        ms: "talentuoso",    fs: "talentuosa",    mp: "talentuosi",    fp: "talentuose",    stress: "ta-len-TUO-so" }
   ]
 },
+{
+  date: "2026-06-05",
+  nouns: [
+    { no: "svelg",   noPl: "svelg",     noDef: "svelget",    noPlDef: "svelgene",
+      sg: "la gola",          pl: "le gole",          sgI: "una gola",          plI: "delle gole",
+      stress: "GO-la" },
+    { no: "lunge",   noPl: "lunger",    noDef: "lungen",     noPlDef: "lungene",
+      sg: "il polmone",       pl: "i polmoni",        sgI: "un polmone",        plI: "dei polmoni",
+      stress: "pol-MO-ne" },
+    { no: "plen",    noPl: "plener",    noDef: "plenen",     noPlDef: "plenene",
+      sg: "il prato",         pl: "i prati",          sgI: "un prato",          plI: "dei prati",
+      stress: "PRA-to",       alt: ["eng"] },
+    { no: "slott",   noPl: "slott",     noDef: "slottet",    noPlDef: "slottene",
+      sg: "il castello",      pl: "i castelli",       sgI: "un castello",       plI: "dei castelli",
+      stress: "ca-STEL-lo" },
+    { no: "håndkle", noPl: "håndklær",  noDef: "håndkleet",  noPlDef: "håndklærne",
+      sg: "l'asciugamano",    pl: "gli asciugamani",  sgI: "un asciugamano",    plI: "degli asciugamani",
+      stress: "a-sciu-ga-MA-no" },
+    { no: "såpe",    noPl: "såper",     noDef: "såpen",      noPlDef: "såpene",
+      sg: "il sapone",        pl: "i saponi",         sgI: "un sapone",         plI: "dei saponi",
+      stress: "sa-PO-ne" },
+    { no: "pledd",   noPl: "pledd",     noDef: "pleddet",    noPlDef: "pleddene",
+      sg: "la coperta",       pl: "le coperte",       sgI: "una coperta",       plI: "delle coperte",
+      stress: "co-PER-ta" },
+    { no: "rot",     noPl: "røtter",    noDef: "roten",      noPlDef: "røttene",
+      sg: "la radice",        pl: "le radici",        sgI: "una radice",        plI: "delle radici",
+      stress: "ra-DI-ce" },
+    { no: "gren",    noPl: "grener",    noDef: "grenen",     noPlDef: "grenene",
+      sg: "il ramo",          pl: "i rami",           sgI: "un ramo",           plI: "dei rami",
+      stress: "RA-mo" },
+    { no: "lever",   noPl: "levere",    noDef: "leveren",    noPlDef: "leverene",
+      sg: "il fegato",        pl: "i fegati",         sgI: "un fegato",         plI: "dei fegati",
+      stress: "FE-ga-to" }
+  ],
+  verbs: [
+    { no: "å delta",         it: "partecipare",  stress: "par-te-ci-PA-re" },
+    { no: "å uttrykke",      it: "esprimere",    stress: "e-SPRI-me-re" },
+    { no: "å fjerne",        it: "togliere",     stress: "TO-glie-re",       alt: ["å ta bort"] },
+    { no: "å tømme",         it: "svuotare",     stress: "svuo-TA-re" },
+    { no: "å bevise",        it: "dimostrare",   stress: "di-mo-STRA-re",    alt: ["å demonstrere"] },
+    { no: "å stoppe",        it: "fermarsi",     stress: "fer-MAR-si",       alt: ["å stanse"] },
+    { no: "å unnskylde seg", it: "scusarsi",     stress: "scu-SAR-si" },
+    { no: "å ledsage",       it: "accompagnare", stress: "ac-com-pa-GNA-re", alt: ["å følge med"] },
+    { no: "å nekte",         it: "negare",       stress: "ne-GA-re",         alt: ["å avvise"] },
+    { no: "å reise seg",     it: "alzarsi",      stress: "al-ZAR-si",        alt: ["å stå opp"] }
+  ],
+  adjectives: [
+    { no: "forvirret",    ms: "confuso",      fs: "confusa",      mp: "confusi",      fp: "confuse",      stress: "con-FU-so" },
+    { no: "besluttsom",   ms: "determinato",  fs: "determinata",  mp: "determinati",  fp: "determinate",  stress: "de-ter-mi-NA-to" },
+    { no: "kjedet",       ms: "annoiato",     fs: "annoiata",     mp: "annoiati",     fp: "annoiate",     stress: "an-no-IA-to" },
+    { no: "begeistret",   ms: "emozionato",   fs: "emozionata",   mp: "emozionati",   fp: "emozionate",   stress: "e-mo-zio-NA-to",   alt: ["rørt"] },
+    { no: "deprimert",    ms: "depresso",     fs: "depressa",     mp: "depressi",     fp: "depresse",     stress: "de-PRES-so" },
+    { no: "skamfull",     ms: "vergognoso",   fs: "vergognosa",   mp: "vergognosi",   fp: "vergognose",   stress: "ver-go-GNO-so",    alt: ["flau"] },
+    { no: "skyldig",      ms: "colpevole",    fs: "colpevole",    mp: "colpevoli",    fp: "colpevoli",    stress: "col-PE-vo-le" },
+    { no: "i stand til",  ms: "capace",       fs: "capace",       mp: "capaci",       fp: "capaci",       stress: "ca-PA-ce",         alt: ["dyktig"] },
+    { no: "fryktelig",    ms: "terribile",    fs: "terribile",    mp: "terribili",    fp: "terribili",    stress: "ter-RI-bi-le" },
+    { no: "overraskende", ms: "sorprendente", fs: "sorprendente", mp: "sorprendenti", fp: "sorprendenti", stress: "sor-pren-DEN-te" }
+  ]
+},
+{
+  date: "2026-06-06",
+  nouns: [
+    { no: "eple",    noPl: "epler",     noDef: "eplet",      noPlDef: "eplene",
+      sg: "la mela",          pl: "le mele",          sgI: "una mela",          plI: "delle mele",
+      stress: "ME-la" },
+    { no: "banan",   noPl: "bananer",   noDef: "bananen",    noPlDef: "bananene",
+      sg: "la banana",        pl: "le banane",         sgI: "una banana",        plI: "delle banane",
+      stress: "ba-NA-na" },
+    { no: "potet",   noPl: "poteter",   noDef: "poteten",    noPlDef: "potetene",
+      sg: "la patata",        pl: "le patate",         sgI: "una patata",        plI: "delle patate",
+      stress: "pa-TA-ta" },
+    { no: "gulrot",  noPl: "gulrøtter", noDef: "gulroten",   noPlDef: "gulrøttene",
+      sg: "la carota",        pl: "le carote",         sgI: "una carota",        plI: "delle carote",
+      stress: "ca-RO-ta" },
+    { no: "sopp",    noPl: "sopper",    noDef: "soppen",     noPlDef: "soppene",
+      sg: "il fungo",         pl: "i funghi",          sgI: "un fungo",          plI: "dei funghi",
+      stress: "FUN-go" },
+    { no: "ris",     noPl: "ris",       noDef: "risen",      noPlDef: "risene",
+      sg: "il riso",          pl: "i risi",            sgI: "un riso",           plI: "dei risi",
+      stress: "RI-so" },
+    { no: "suppe",   noPl: "supper",    noDef: "suppen",     noPlDef: "suppene",
+      sg: "la zuppa",         pl: "le zuppe",          sgI: "una zuppa",         plI: "delle zuppe",
+      stress: "ZUP-pa" },
+    { no: "kjole",   noPl: "kjoler",    noDef: "kjolen",     noPlDef: "kjolene",
+      sg: "il vestito",       pl: "i vestiti",         sgI: "un vestito",        plI: "dei vestiti",
+      stress: "ve-STI-to",    alt: ["antrekk"] },
+    { no: "bukse",   noPl: "bukser",    noDef: "buksen",     noPlDef: "buksene",
+      sg: "il pantalone",     pl: "i pantaloni",       sgI: "un pantalone",      plI: "dei pantaloni",
+      stress: "pan-ta-LO-ne" },
+    { no: "trening", noPl: "treninger", noDef: "treningen",  noPlDef: "treningene",
+      sg: "l'allenamento",    pl: "gli allenamenti",   sgI: "un allenamento",    plI: "degli allenamenti",
+      stress: "al-le-na-MEN-to" }
+  ],
+  verbs: [
+    { no: "å nevne",      it: "menzionare", stress: "men-zio-NA-re" },
+    { no: "å innrømme",   it: "ammettere",  stress: "am-MET-te-re" },
+    { no: "å forsvinne",  it: "sparire",    stress: "spa-RI-re" },
+    { no: "å forhindre",  it: "impedire",   stress: "im-pe-DI-re",  alt: ["å hindre"] },
+    { no: "å advare",     it: "avvertire",  stress: "av-ver-TI-re", alt: ["å varsle"] },
+    { no: "å inneholde",  it: "contenere",  stress: "con-te-NE-re" },
+    { no: "å laste opp",  it: "caricare",   stress: "ca-ri-CA-re",  alt: ["å lade (batteri)"] },
+    { no: "å kjempe",     it: "lottare",    stress: "lot-TA-re" },
+    { no: "å tygge",      it: "masticare",  stress: "ma-sti-CA-re" },
+    { no: "å flykte",     it: "fuggire",    stress: "fug-GI-re",    alt: ["å rømme"] }
+  ],
+  adjectives: [
+    { no: "god/bra",           ms: "buono",       fs: "buona",       mp: "buoni",       fp: "buone",       stress: "BUO-no",          alt: ["velsmakende"] },
+    { no: "slem",              ms: "cattivo",      fs: "cattiva",     mp: "cattivi",     fp: "cattive",     stress: "cat-TI-vo",       alt: ["dårlig"] },
+    { no: "blond",             ms: "biondo",       fs: "bionda",      mp: "biondi",      fp: "bionde",      stress: "BION-do" },
+    { no: "mystisk",           ms: "misterioso",   fs: "misteriosa",  mp: "misteriosi",  fp: "misteriose",  stress: "mi-ste-RIO-so" },
+    { no: "gjennomskinnelig",  ms: "trasparente",  fs: "trasparente", mp: "trasparenti", fp: "trasparenti", stress: "tra-spa-REN-te" },
+    { no: "eventyrlysten",     ms: "avventuroso",  fs: "avventurosa", mp: "avventurosi", fp: "avventurose", stress: "av-ven-tu-RO-so" },
+    { no: "hellig",            ms: "sacro",        fs: "sacra",       mp: "sacri",       fp: "sacre",       stress: "SA-cro" },
+    { no: "likegyldig",        ms: "indifferente", fs: "indifferente",mp: "indifferenti",fp: "indifferenti",stress: "in-dif-fe-REN-te" },
+    { no: "flat",              ms: "piatto",       fs: "piatta",      mp: "piatti",      fp: "piatte",      stress: "PIAT-to" },
+    { no: "voksen",            ms: "adulto",       fs: "adulta",      mp: "adulti",      fp: "adulte",      stress: "a-DUL-to" }
+  ]
+},
 /* === DAILY_QUIZZES_END === */
 ];
 
@@ -2422,9 +2643,10 @@ const IRREG_CONJ = {
   "riuscire": ["riesco","riesci","riesce","riusciamo","riuscite","riescono"],
   "parere":   ["paio","pari","pare","paiamo","parete","paiono"],
   "ottenere": ["ottengo","ottieni","ottiene","otteniamo","ottenete","ottengono"],
-  "mantenere":["mantengo","mantieni","mantiene","manteniamo","mantenete","mantengono"]
+  "mantenere":["mantengo","mantieni","mantiene","manteniamo","mantenete","mantengono"],
+  "contenere":["contengo","contieni","contiene","conteniamo","contenete","contengono"]
 };
-const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire"]);
+const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire","sparire","impedire"]);
 
 function conjugate(it) {
   if (IRREG_CONJ[it]) return IRREG_CONJ[it].slice();
@@ -2902,21 +3124,198 @@ const Stats = {
 };
 Stats.load();
 
-function init() {
+/* ── Fremgang: hvilke dager er gjort (localStorage) ─ */
+const Progress = {
+  KEY: "quizProgress_v1",
+  data: null,
+  load() {
+    try {
+      const raw = localStorage.getItem(this.KEY);
+      this.data = raw ? JSON.parse(raw) : {};
+    } catch { this.data = {}; }
+    return this.data;
+  },
+  save() {
+    try { localStorage.setItem(this.KEY, JSON.stringify(this.data)); } catch {}
+  },
+  /* completed = så alle spørsmål; ellers regnes økten som "påbegynt" */
+  record(date, mode, completed) {
+    if (!this.data) this.load();
+    const e = this.data[date] || { last: 0, count: 0, completed: 0, modes: {} };
+    e.count++;
+    e.last = Date.now();
+    if (completed) {
+      e.completed = (e.completed || 0) + 1;
+      e.modes[mode] = (e.modes[mode] || 0) + 1;
+    }
+    this.data[date] = e;
+    this.save();
+  },
+  get(date) {
+    if (!this.data) this.load();
+    return this.data[date] || null;
+  },
+  /* En dag er "fullført" først når alle tre ordkategoriene er gjort.
+     "Alt" dekker alle tre på én gang. Verb-bøyning/setninger er ekstra
+     og kreves ikke. */
+  CORE: ["nouns", "adjectives", "verbs"],
+  doneCats(date) {
+    if (!this.data) this.load();
+    const e = this.data[date];
+    const cats = new Set();
+    if (!e || !e.modes) return cats;
+    for (const m of Object.keys(e.modes)) {
+      if (m === "all") { cats.add("nouns"); cats.add("adjectives"); cats.add("verbs"); }
+      else if (this.CORE.includes(m)) cats.add(m);
+    }
+    return cats;
+  },
+  status(date) {
+    if (!this.data) this.load();
+    const e = this.data[date];
+    if (!e) return "none";
+    return this.doneCats(date).size >= this.CORE.length ? "done" : "partial";
+  },
+  reset() { this.data = {}; this.save(); }
+};
+Progress.load();
+
+function relTime(ts) {
+  if (!ts) return "";
+  const days = Math.floor((Date.now() - ts) / 86400000);
+  if (days <= 0) return "i dag";
+  if (days === 1) return "i går";
+  if (days < 7) return days + " dager siden";
+  const w = Math.floor(days / 7);
+  if (w === 1) return "1 uke siden";
+  if (w < 5) return w + " uker siden";
+  return Math.floor(days / 30) + " mnd siden";
+}
+
+function weekDates(wk) {
+  return DAILY_QUIZZES
+    .filter(d => weekKey(d.date) === wk)
+    .map(d => d.date)
+    .sort();
+}
+
+function weeksDesc() {
+  return [...new Set(DAILY_QUIZZES.map(d => weekKey(d.date)))]
+    .sort((a, b) => b.localeCompare(a));
+}
+
+function formatRange(dates) {
+  if (!dates.length) return "";
+  const f = dates[0].split("-"), l = dates[dates.length - 1].split("-");
+  const fd = +f[2], ld = +l[2], fm = +f[1], lm = +l[1];
+  return fm === lm ? (fd + "–" + ld + "." + fm) : (fd + "." + fm + "–" + ld + "." + lm);
+}
+
+function selectDay(wk, date) {
+  $("weekSel").value = wk;
+  rebuildDateOptions();
+  buildDayList();
+  $("dateSel").value = date;
+  updateMeta();
+  renderDayList();
+  updateDateComboLabel();
+  renderProgressOverview();
+}
+
+function rebuildWeekOptions() {
   const wkSel = $("weekSel");
-  const weeks = [...new Set(DAILY_QUIZZES.map(d => weekKey(d.date)))]
-    .sort((a,b) => b.localeCompare(a));
-  for (const wk of weeks) {
+  const prev = wkSel.value;
+  wkSel.innerHTML = "";
+  for (const wk of weeksDesc()) {
+    const dates = weekDates(wk);
+    const done = dates.filter(d => Progress.status(d) === "done").length;
+    const complete = done === dates.length && dates.length > 0;
     const opt = document.createElement("option");
     opt.value = wk;
-    opt.textContent = "Uke " + parseInt(wk.split("-W")[1], 10);
+    const wkNum = parseInt(wk.split("-W")[1], 10);
+    opt.textContent = "Uke " + wkNum + "  ·  " + done + "/" + dates.length + (complete ? "  ✓" : "");
     wkSel.appendChild(opt);
   }
+  if (prev) wkSel.value = prev;
+}
+
+function renderProgressOverview() {
+  const body = $("progressBody");
+  if (!body) return;
+  const cur = $("dateSel").value;
+  let doneTotal = 0;
+  const allTotal = DAILY_QUIZZES.length;
+  let rows = "";
+  for (const wk of weeksDesc()) {
+    const dates = weekDates(wk);
+    let wkDone = 0;
+    let dotsHtml = "";
+    for (const date of dates) {
+      const st = Progress.status(date);
+      if (st === "done") { wkDone++; doneTotal++; }
+      const cls = st === "done" ? " is-done" : st === "partial" ? " is-partial" : "";
+      const curCls = date === cur ? " is-current" : "";
+      const info = Progress.get(date);
+      const word = st === "done" ? "fullført" : st === "partial" ? "påbegynt" : "ikke gjort";
+      const catTxt = st === "partial" ? " · " + Progress.doneCats(date).size + "/3 kategorier" : "";
+      const title = formatDate(date) + " · " + word + catTxt + (info && info.last ? " · sist " + relTime(info.last) : "");
+      dotsHtml += '<button type="button" class="pg-dot' + cls + curCls + '" data-date="' + date +
+        '" data-wk="' + wk + '" title="' + escapeHtml(title) + '" aria-label="' + escapeHtml(title) + '"></button>';
+    }
+    const complete = wkDone === dates.length && dates.length > 0;
+    const wkNum = parseInt(wk.split("-W")[1], 10);
+    rows +=
+      '<div class="pg-week">' +
+        '<div class="pg-week-label">Uke ' + wkNum + '<small>' + formatRange(dates) + '</small></div>' +
+        '<div class="pg-dots">' + dotsHtml + '</div>' +
+        '<div class="pg-week-sum' + (complete ? " is-complete" : "") + '">' +
+          (complete ? "✓ " : "") + wkDone + "/" + dates.length +
+        '</div>' +
+      '</div>';
+  }
+  if (!rows) rows = '<div class="pg-empty">Ingen quizer enda.</div>';
+  body.innerHTML =
+    '<div class="pg-legend">' +
+      '<span class="lg"><span class="pg-dot is-done"></span> fullført</span>' +
+      '<span class="lg"><span class="pg-dot is-partial"></span> påbegynt</span>' +
+      '<span class="lg"><span class="pg-dot"></span> ikke gjort</span>' +
+      '<button type="button" class="progress-reset" id="progressReset">Nullstill fremgang</button>' +
+    '</div>' + rows;
+  $("progressOverall").textContent = doneTotal + "/" + allTotal + " dager";
+  body.querySelectorAll(".pg-dot[data-date]").forEach(dot => {
+    dot.addEventListener("click", () => selectDay(dot.dataset.wk, dot.dataset.date));
+  });
+  const rb = $("progressReset");
+  if (rb) rb.addEventListener("click", () => {
+    if (confirm("Nullstille fremgang (hvilke dager du har gjort)? Statistikken din beholdes.")) {
+      Progress.reset();
+      refreshProgressUI();
+    }
+  });
+}
+
+function refreshProgressUI() {
+  const selDate = $("dateSel").value;
+  const selWk = $("weekSel").value;
+  rebuildWeekOptions();
+  if (selWk) $("weekSel").value = selWk;
+  rebuildDateOptions();
+  buildDayList();
+  if (selDate) $("dateSel").value = selDate;
+  renderDayList();
+  updateDateComboLabel();
+  renderProgressOverview();
+}
+
+function init() {
+  const wkSel = $("weekSel");
+  rebuildWeekOptions();
   wkSel.addEventListener("change", () => {
     rebuildDateOptions();
     buildDayList();
     updateMeta();
     updateDateComboLabel();
+    renderProgressOverview();
   });
 
   rebuildDateOptions();
@@ -2946,6 +3345,20 @@ function init() {
 
   buildDayList();
   setupStatsScreen();
+
+  const pgPanel = $("progressPanel");
+  const pgToggle = $("progressToggle");
+  if (localStorage.getItem("quizProgressOpen") === "0") {
+    pgPanel.classList.remove("is-open");
+    pgToggle.setAttribute("aria-expanded", "false");
+  }
+  pgToggle.addEventListener("click", () => {
+    const open = pgPanel.classList.toggle("is-open");
+    pgToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    localStorage.setItem("quizProgressOpen", open ? "1" : "0");
+  });
+  renderProgressOverview();
+
   const toggle = $("dayListToggle");
   const wrap = $("dayListWrap");
   toggle.addEventListener("click", () => {
@@ -2995,7 +3408,10 @@ function updateDateComboLabel() {
   const day = DAILY_QUIZZES.find(d => d.date === sel.value);
   if (!day) { $("dayListToggleLabel").textContent = "—"; return; }
   const total = day.nouns.length + day.verbs.length + day.adjectives.length;
-  $("dayListToggleLabel").textContent = formatDate(day.date) + "  ·  " + total + " ord";
+  const st = Progress.status(day.date);
+  const mark = st === "done" ? "  ·  ✓ gjort"
+    : st === "partial" ? "  ·  påbegynt (" + Progress.doneCats(day.date).size + "/3)" : "";
+  $("dayListToggleLabel").textContent = formatDate(day.date) + "  ·  " + total + " ord" + mark;
 }
 
 function rebuildDateOptions() {
@@ -3026,8 +3442,20 @@ function buildDayList() {
     row.dataset.date = d.date;
     row.setAttribute("role", "option");
     const total = d.nouns.length + d.verbs.length + d.adjectives.length;
+    const st = Progress.status(d.date);
+    const info = Progress.get(d.date);
+    if (st === "done") row.classList.add("is-done");
+    else if (st === "partial") row.classList.add("is-partial");
+    const dotCls = st === "done" ? " is-done" : st === "partial" ? " is-partial" : "";
+    let metaTxt = (info && info.last) ? "sist " + relTime(info.last) : "";
+    if (st === "partial") metaTxt = (metaTxt ? metaTxt + " · " : "") + Progress.doneCats(d.date).size + "/3";
+    const whenHtml = metaTxt ? '<span class="day-when">' + metaTxt + '</span>' : '';
     row.innerHTML =
-      '<span class="day-label">' + formatDate(d.date) + '</span>' +
+      '<span class="day-main">' +
+        '<span class="day-status-dot' + dotCls + '"></span>' +
+        '<span class="day-label">' + formatDate(d.date) + '</span>' +
+      '</span>' +
+      whenHtml +
       '<span class="day-count">' + total + ' ord</span>';
     row.addEventListener("mouseenter", () => showDatePreview(d.date));
     row.addEventListener("click", () => {
@@ -3513,6 +3941,10 @@ function finish(interrupted) {
   const seen = state.uniqueAsked;
   const partial = interrupted && seen < state.total;
 
+  if (state.lastDay && state.lastMode && !state.lastMode.startsWith("bank-") && seen > 0) {
+    Progress.record(state.lastDay, state.lastMode, !partial);
+  }
+
   $("end-title-el").textContent = partial ? "Avbrutt" : "Ferdig";
   $("end-sub-el").textContent   = partial
     ? "Du svarte på " + seen + " av " + state.total + " spørsmål."
@@ -3590,6 +4022,7 @@ function goHome() {
   $("screen-rules").classList.add("hidden");
   $("screen-start").classList.remove("hidden");
   $("screen-search").classList.remove("hidden");
+  refreshProgressUI();
   $("dateSel").focus();
 }
 
@@ -3673,7 +4106,13 @@ function setupStatsScreen() {
     });
   });
   $("exportStatsBtn").addEventListener("click", () => {
-    const blob = new Blob([Stats.exportJSON()], { type: "application/json" });
+    const payload = JSON.stringify({
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      data: Stats.data || {},
+      progress: Progress.data || {}
+    }, null, 2);
+    const blob = new Blob([payload], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -3687,7 +4126,28 @@ function setupStatsScreen() {
     if (!f) return;
     const reader = new FileReader();
     reader.onload = () => {
-      try { Stats.importJSON(reader.result); renderStats(); alert("Importert."); }
+      try {
+        Stats.importJSON(reader.result);
+        try {
+          const obj = JSON.parse(reader.result);
+          if (obj && obj.progress && typeof obj.progress === "object") {
+            if (!Progress.data) Progress.load();
+            for (const [d, v] of Object.entries(obj.progress)) {
+              const ex = Progress.data[d];
+              Progress.data[d] = ex ? {
+                last: Math.max(ex.last || 0, v.last || 0),
+                count: (ex.count || 0) + (v.count || 0),
+                completed: (ex.completed || 0) + (v.completed || 0),
+                modes: Object.assign({}, ex.modes, v.modes)
+              } : v;
+            }
+            Progress.save();
+            refreshProgressUI();
+          }
+        } catch {}
+        renderStats();
+        alert("Importert.");
+      }
       catch (err) { alert("Kunne ikke importere: " + err.message); }
     };
     reader.readAsText(f);
