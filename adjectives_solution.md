@@ -322,3 +322,16 @@
 | likegyldig | indifferente | indifferente | indifferenti | indifferenti | in-dif-fe-REN-te |  |
 | flat | piatto | piatta | piatti | piatte | PIAT-to |  |
 | voksen | adulto | adulta | adulti | adulte | a-DUL-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| overfladisk | superficiale | superficiale | superficiali | superficiali | su-per-fi-CIA-le |  |
+| strålende | brillante | brillante | brillanti | brillanti | bril-LAN-te | genial |
+| naiv | ingenuo | ingenua | ingenui | ingenue | in-GE-nuo |  |
+| overdrevet | esagerato | esagerata | esagerati | esagerate | e-sa-ge-RA-to |  |
+| balansert | equilibrato | equilibrata | equilibrati | equilibrate | e-qui-li-BRA-to |  |
+| edel | nobile | nobile | nobili | nobili | NO-bi-le | adelig |
+| sportslig | sportivo | sportiva | sportivi | sportive | spor-TI-vo |  |
+| optimistisk | ottimista | ottimista | ottimisti | ottimiste | ot-ti-MI-sta |  |
+| pessimistisk | pessimista | pessimista | pessimisti | pessimiste | pes-si-MI-sta |  |
+| spontan | spontaneo | spontanea | spontanei | spontanee | spon-TA-neo |  |

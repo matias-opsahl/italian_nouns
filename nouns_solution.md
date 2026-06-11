@@ -323,3 +323,16 @@
 | kjole | kjoler | kjolen | kjolene | il vestito | i vestiti | un vestito | dei vestiti | m | ve-STI-to | antrekk |
 | bukse | bukser | buksen | buksene | il pantalone | i pantaloni | un pantalone | dei pantaloni | m | pan-ta-LO-ne |  |
 | trening | treninger | treningen | treningene | l'allenamento | gli allenamenti | un allenamento | degli allenamenti | m | al-le-na-MEN-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| billett | billetter | billetten | billettene | il biglietto | i biglietti | un biglietto | dei biglietti | m | bi-GLIET-to |  |
+| inngang | innganger | inngangen | inngangene | l'ingresso | gli ingressi | un ingresso | degli ingressi | m | in-GRES-so |  |
+| sannhet | sannheter | sannheten | sannhetene | la verità | le verità | una verità | delle verità | f | ve-ri-TÀ |  |
+| løgn | løgner | løgnen | løgnene | la bugia | le bugie | una bugia | delle bugie | f | bu-GI-a |  |
+| hukommelse | hukommelser | hukommelsen | hukommelsene | la memoria | le memorie | una memoria | delle memorie | f | me-MO-ria | minne |
+| erfaring | erfaringer | erfaringen | erfaringene | l'esperienza | le esperienze | un'esperienza | delle esperienze | f | e-spe-RIEN-za | opplevelse |
+| mening | meninger | meningen | meningene | l'opinione | le opinioni | un'opinione | delle opinioni | f | o-pi-NIO-ne |  |
+| ord | ord | ordet | ordene | la parola | le parole | una parola | delle parole | f | pa-RO-la |  |
+| side | sider | siden | sidene | la pagina | le pagine | una pagina | delle pagine | f | PA-gi-na |  |
+| eksempel | eksempler | eksempelet | eksemplene | l'esempio | gli esempi | un esempio | degli esempi | m | e-SEM-pio |  |

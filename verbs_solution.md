@@ -323,3 +323,16 @@
 | å kjempe | lottare | lot-TA-re |  |
 | å tygge | masticare | ma-sti-CA-re |  |
 | å flykte | fuggire | fug-GI-re | å rømme |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å bite | mordere | MOR-de-re |  |
+| å hviske | sussurrare | sus-sur-RA-re |  |
+| å peke | indicare | in-di-CA-re |  |
+| å klatre | arrampicarsi | ar-ram-pi-CAR-si |  |
+| å sy | cucire | cu-CI-re |  |
+| å skrive ut | stampare | stam-PA-re | å trykke |
+| å stjele | rubare | ru-BA-re |  |
+| å kaste bort | sprecare | spre-CA-re |  |
+| å tilpasse seg | adattarsi | a-dat-TAR-si |  |
+| å dykke | immergersi | im-mer-GER-si |  |
