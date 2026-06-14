@@ -336,3 +336,16 @@
 | ord | ord | ordet | ordene | la parola | le parole | una parola | delle parole | f | pa-RO-la |  |
 | side | sider | siden | sidene | la pagina | le pagine | una pagina | delle pagine | f | PA-gi-na |  |
 | eksempel | eksempler | eksempelet | eksemplene | l'esempio | gli esempi | un esempio | degli esempi | m | e-SEM-pio |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| appelsin | appelsiner | appelsinen | appelsinene | l'arancia | le arance | un'arancia | delle arance | f | a-RAN-cia |  |
+| jordbær | jordbær | jordbæret | jordbærene | la fragola | le fragole | una fragola | delle fragole | f | FRA-go-la |  |
+| iskrem | iskremer | iskremen | iskremene | il gelato | i gelati | un gelato | dei gelati | m | ge-LA-to |  |
+| sjokolade | sjokolader | sjokoladen | sjokoladene | il cioccolato | i cioccolati | un cioccolato | dei cioccolati | m | cioc-co-LA-to |  |
+| buss | busser | bussen | bussene | l'autobus | gli autobus | un autobus | degli autobus | m | AU-to-bus |  |
+| taxi | taxier | taxien | taxiene | il taxi | i taxi | un taxi | dei taxi | m | TAX-i |  |
+| tannbørste | tannbørster | tannbørsten | tannbørstene | lo spazzolino | gli spazzolini | uno spazzolino | degli spazzolini | m | spaz-zo-LI-no |  |
+| skjerm | skjermer | skjermen | skjermene | lo schermo | gli schermi | uno schermo | degli schermi | m | SCHER-mo |  |
+| kamera | kameraer | kameraet | kameraene | la fotocamera | le fotocamere | una fotocamera | delle fotocamere | f | fo-to-CA-me-ra |  |
+| ferge | ferger | fergen | fergene | il traghetto | i traghetti | un traghetto | dei traghetti | m | tra-GET-to |  |

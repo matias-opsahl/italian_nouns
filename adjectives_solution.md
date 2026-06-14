@@ -335,3 +335,16 @@
 | optimistisk | ottimista | ottimista | ottimisti | ottimiste | ot-ti-MI-sta |  |
 | pessimistisk | pessimista | pessimista | pessimisti | pessimiste | pes-si-MI-sta |  |
 | spontan | spontaneo | spontanea | spontanei | spontanee | spon-TA-neo |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| tilfeldig | casuale | casuale | casuali | casuali | ca-SUA-le |  |
+| fantastisk | fantastico | fantastica | fantastici | fantastiche | fan-TAS-ti-co |  |
+| flott | splendido | splendida | splendidi | splendide | SPLEN-di-do |  |
+| tidlig | precoce | precoce | precoci | precoci | pre-CO-ce |  |
+| sen | tardo | tarda | tardi | tarde | TAR-do |  |
+| skjev | storto | storta | storti | storte | STOR-to |  |
+| blank | lucido | lucida | lucidi | lucide | LU-ci-do | skinnende |
+| nøyaktig | preciso | precisa | precisi | precise | pre-CI-so |  |
+| diskret | discreto | discreta | discreti | discrete | di-SCRE-to |  |
+| skrekkelig | orribile | orribile | orribili | orribili | or-RI-bi-le |  |

@@ -336,3 +336,16 @@
 | å kaste bort | sprecare | spre-CA-re |  |
 | å tilpasse seg | adattarsi | a-dat-TAR-si |  |
 | å dykke | immergersi | im-mer-GER-si |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å stirre | fissare | fis-SA-re |  |
+| å skjelve | tremare | TRE-ma-re |  |
+| å nype | pizzicare | piz-zi-CA-re |  |
+| å nynne | canticchiare | can-tic-CHIA-re |  |
+| å rødme | arrossire | ar-ros-SI-re |  |
+| å abonnere | abbonarsi | ab-bo-NAR-si |  |
+| å oversette | tradurre | tra-DUR-re |  |
+| å melde seg på | iscriversi | i-SCRI-ver-si | å registrere seg |
+| å strekke seg | stiracchiarsi | sti-rac-CHIAR-si |  |
+| å kaste opp | vomitare | vo-mi-TA-re |  |
