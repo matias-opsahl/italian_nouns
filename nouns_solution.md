@@ -349,3 +349,16 @@
 | skjerm | skjermer | skjermen | skjermene | lo schermo | gli schermi | uno schermo | degli schermi | m | SCHER-mo |  |
 | kamera | kameraer | kameraet | kameraene | la fotocamera | le fotocamere | una fotocamera | delle fotocamere | f | fo-to-CA-me-ra |  |
 | ferge | ferger | fergen | fergene | il traghetto | i traghetti | un traghetto | dei traghetti | m | tra-GET-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| middag | middager | middagen | middagene | la cena | le cene | una cena | delle cene | f | CE-na | kveldsmat |
+| rom | rom | rommet | rommene | la stanza | le stanze | una stanza | delle stanze | f | STAN-za |  |
+| mage | mager | magen | magene | lo stomaco | gli stomaci | uno stomaco | degli stomaci | m | STO-ma-co | buk |
+| rygg | rygger | ryggen | ryggene | la schiena | le schiene | una schiena | delle schiene | f | SCHI-e-na |  |
+| gryte | gryter | gryten | grytene | la pentola | le pentole | una pentola | delle pentole | f | PEN-to-la |  |
+| skrivebord | skrivebord | skrivebordet | skrivebordene | la scrivania | le scrivanie | una scrivania | delle scrivanie | f | scri-VA-nia |  |
+| kran | kraner | kranen | kranene | il rubinetto | i rubinetti | un rubinetto | dei rubinetti | m | ru-bi-NET-to |  |
+| fjord | fjorder | fjorden | fjordene | il fiordo | i fiordi | un fiordo | dei fiordi | m | FIOR-do |  |
+| lomme | lommer | lommen | lommene | la tasca | le tasche | una tasca | delle tasche | f | TA-sca |  |
+| skuff | skuffer | skuffen | skuffene | il cassetto | i cassetti | un cassetto | dei cassetti | m | cas-SET-to |  |

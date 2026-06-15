@@ -349,3 +349,16 @@
 | å melde seg på | iscriversi | i-SCRI-ver-si | å registrere seg |
 | å strekke seg | stiracchiarsi | sti-rac-CHIAR-si |  |
 | å kaste opp | vomitare | vo-mi-TA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å leie | affittare | af-fit-TA-re |  |
+| å helle | versare | ver-SA-re |  |
+| å blåse | soffiare | sof-FIA-re |  |
+| å låse | serrare | ser-RA-re |  |
+| å svette | sudare | su-DA-re |  |
+| å skryte | vantarsi | van-TAR-si |  |
+| å lene seg | appoggiarsi | ap-pog-GIAR-si |  |
+| å gruble | rimuginare | ri-mu-gi-NA-re |  |
+| å smøre | spalmare | spal-MA-re |  |
+| å krype | strisciare | stri-SCIA-re |  |

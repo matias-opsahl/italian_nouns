@@ -348,3 +348,16 @@
 | nøyaktig | preciso | precisa | precisi | precise | pre-CI-so |  |
 | diskret | discreto | discreta | discreti | discrete | di-SCRE-to |  |
 | skrekkelig | orribile | orribile | orribili | orribili | or-RI-bi-le |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| svimmel | stordito | stordita | storditi | stordite | stor-DI-to |  |
+| bratt | ripido | ripida | ripidi | ripide | RI-pi-do |  |
+| slitsom | faticoso | faticosa | faticosi | faticose | fa-ti-CO-so |  |
+| midlertidig | temporaneo | temporanea | temporanei | temporanee | tem-po-RA-neo |  |
+| permanent | permanente | permanente | permanenti | permanenti | per-ma-NEN-te |  |
+| nostalgisk | nostalgico | nostalgica | nostalgici | nostalgiche | no-STAL-gi-co |  |
+| vennlig | amichevole | amichevole | amichevoli | amichevoli | a-mi-CHE-vo-le |  |
+| løs | sciolto | sciolta | sciolti | sciolte | SCIOL-to |  |
+| solid | solido | solida | solidi | solide | SO-li-do |  |
+| arrogant | arrogante | arrogante | arroganti | arroganti | ar-ro-GAN-te |  |
