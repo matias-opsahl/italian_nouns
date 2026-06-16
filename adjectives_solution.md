@@ -361,3 +361,16 @@
 | løs | sciolto | sciolta | sciolti | sciolte | SCIOL-to |  |
 | solid | solido | solida | solidi | solide | SO-li-do |  |
 | arrogant | arrogante | arrogante | arroganti | arroganti | ar-ro-GAN-te |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| uærlig | disonesto | disonesta | disonesti | disoneste | di-so-NE-sto |  |
+| uvennlig | scortese | scortese | scortesi | scortesi | scor-TE-se |  |
+| skuffet | deluso | delusa | delusi | deluse | de-LU-so |  |
+| fortvilet | disperato | disperata | disperati | disperate | di-spe-RA-to |  |
+| håpefull | speranzoso | speranzosa | speranzosi | speranzose | spe-ran-ZO-so |  |
+| skadet | ferito | ferita | feriti | ferite | fe-RI-to |  |
+| ufarlig | innocuo | innocua | innocui | innocue | in-NO-cuo |  |
+| avhengig | dipendente | dipendente | dipendenti | dipendenti | di-pen-DEN-te |  |
+| uavhengig | indipendente | indipendente | indipendenti | indipendenti | in-di-pen-DEN-te |  |
+| lojal | leale | leale | leali | leali | le-A-le |  |

@@ -362,3 +362,16 @@
 | å gruble | rimuginare | ri-mu-gi-NA-re |  |
 | å smøre | spalmare | spal-MA-re |  |
 | å krype | strisciare | stri-SCIA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å plante | piantare | pian-TA-re |  |
+| å brette | piegare | pie-GA-re | å folde |
+| å skru | avvitare | av-vi-TA-re |  |
+| å riste | scuotere | SCUO-te-re |  |
+| å måle | misurare | mi-su-RA-re |  |
+| å smelte | sciogliere | SCIO-glie-re |  |
+| å steke | friggere | FRIG-ge-re |  |
+| å spikre | inchiodare | in-chio-DA-re |  |
+| å sage | segare | se-GA-re |  |
+| å banke | bussare | bus-SA-re |  |

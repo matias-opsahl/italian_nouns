@@ -157,6 +157,19 @@
 
 | ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
 |---|---|---|---|---|---|---|---|---|---|---|
+| hest | hester | hesten | hestene | il cavallo | i cavalli | un cavallo | dei cavalli | m | ca-VAL-lo |  |
+| ku | kyr | kua | kyrne | la mucca | le mucche | una mucca | delle mucche | f | MUC-ca |  |
+| gris | griser | grisen | grisene | il maiale | i maiali | un maiale | dei maiali | m | ma-IA-le |  |
+| sau | sauer | sauen | sauene | la pecora | le pecore | una pecora | delle pecore | f | PE-co-ra |  |
+| bjørn | bjørner | bjørnen | bjørnene | l'orso | gli orsi | un orso | degli orsi | m | OR-so |  |
+| løve | løver | løven | løvene | il leone | i leoni | un leone | dei leoni | m | le-O-ne |  |
+| ulv | ulver | ulven | ulvene | il lupo | i lupi | un lupo | dei lupi | m | LU-po |  |
+| mus | mus | musen | musene | il topo | i topi | un topo | dei topi | m | TO-po |  |
+| sand | sand | sanden | sandene | la sabbia | le sabbie | una sabbia | delle sabbie | f | SAB-bia |  |
+| stein | steiner | steinen | steinene | la pietra | le pietre | una pietra | delle pietre | f | PIE-tra |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
 | vår | vårer | våren | vårene | la primavera | le primavere | una primavera | delle primavere | f | pri-ma-VE-ra |  |
 | sommer | somre | sommeren | somrene | l'estate | le estati | un'estate | delle estati | f | e-STA-te |  |
 | høst | høster | høsten | høstene | l'autunno | gli autunni | un autunno | degli autunni | m | au-TUN-no |  |
