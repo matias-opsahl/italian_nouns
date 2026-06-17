@@ -2831,6 +2831,65 @@ const DAILY_QUIZZES = [
     { no: "lojal",        ms: "leale",         fs: "leale",         mp: "leali",         fp: "leali",         stress: "le-A-le" }
   ]
 },
+{
+  date: "2026-06-17",
+  nouns: [
+    { no: "drue",        noPl: "druer",        noDef: "druen",        noPlDef: "druene",
+      sg: "l'uva",        pl: "le uve",          sgI: "un'uva",         plI: "delle uve",
+      stress: "U-va" },
+    { no: "sitron",      noPl: "sitroner",     noDef: "sitronen",     noPlDef: "sitronene",
+      sg: "il limone",    pl: "i limoni",        sgI: "un limone",      plI: "dei limoni",
+      stress: "li-MO-ne" },
+    { no: "pære",        noPl: "pærer",        noDef: "pæren",        noPlDef: "pærene",
+      sg: "la pera",      pl: "le pere",         sgI: "una pera",       plI: "delle pere",
+      stress: "PE-ra" },
+    { no: "kylling",     noPl: "kyllinger",    noDef: "kyllingen",    noPlDef: "kyllingene",
+      sg: "il pollo",     pl: "i polli",         sgI: "un pollo",       plI: "dei polli",
+      stress: "POL-lo" },
+    { no: "bryllup",     noPl: "bryllup",      noDef: "bryllupet",    noPlDef: "bryllupene",
+      sg: "il matrimonio", pl: "i matrimoni",   sgI: "un matrimonio",  plI: "dei matrimoni",
+      stress: "ma-tri-MO-nio", alt: ["ekteskap"] },
+    { no: "fødselsdag",  noPl: "fødselsdager", noDef: "fødselsdagen", noPlDef: "fødselsdagene",
+      sg: "il compleanno", pl: "i compleanni",  sgI: "un compleanno",  plI: "dei compleanni",
+      stress: "com-ple-AN-no" },
+    { no: "heis",        noPl: "heiser",       noDef: "heisen",       noPlDef: "heisene",
+      sg: "l'ascensore",  pl: "gli ascensori",   sgI: "un ascensore",   plI: "degli ascensori",
+      stress: "a-scen-SO-re" },
+    { no: "teater",      noPl: "teatre",       noDef: "teateret",     noPlDef: "teatrene",
+      sg: "il teatro",    pl: "i teatri",        sgI: "un teatro",      plI: "dei teatri",
+      stress: "te-A-tro" },
+    { no: "nabo",        noPl: "naboer",       noDef: "naboen",       noPlDef: "naboene",
+      sg: "il vicino",    pl: "i vicini",        sgI: "un vicino",      plI: "dei vicini",
+      stress: "vi-CI-no", alt: ["nær"] },
+    { no: "kjeller",     noPl: "kjellere",     noDef: "kjelleren",    noPlDef: "kjellerne",
+      sg: "la cantina",   pl: "le cantine",      sgI: "una cantina",    plI: "delle cantine",
+      stress: "can-TI-na", alt: ["vinkjeller"] }
+  ],
+  verbs: [
+    { no: "å dø",        it: "morire",         stress: "mo-RI-re" },
+    { no: "å forlate",   it: "lasciare",       stress: "la-SCIA-re",    alt: ["å la"] },
+    { no: "å tillate",   it: "permettere",     stress: "per-MET-te-re", alt: ["å la"] },
+    { no: "å gå ned",    it: "scendere",       stress: "SCEN-de-re" },
+    { no: "å gå opp",    it: "salire",         stress: "sa-LI-re",      alt: ["å stige"] },
+    { no: "å bety",      it: "significare",    stress: "si-gni-fi-CA-re", alt: ["å ville si"] },
+    { no: "å angre",     it: "pentirsi",       stress: "pen-TIR-si" },
+    { no: "å gi bort",   it: "regalare",       stress: "re-ga-LA-re",   alt: ["å donere"] },
+    { no: "å forby",     it: "vietare",        stress: "vie-TA-re" },
+    { no: "å bli frisk", it: "guarire",        stress: "gua-RI-re" }
+  ],
+  adjectives: [
+    { no: "obligatorisk", ms: "obbligatorio", fs: "obbligatoria", mp: "obbligatori",  fp: "obbligatorie", stress: "ob-bli-ga-TO-rio" },
+    { no: "utmerket",     ms: "ottimo",        fs: "ottima",        mp: "ottimi",       fp: "ottime",       stress: "OT-ti-mo" },
+    { no: "avslappet",    ms: "rilassato",     fs: "rilassata",     mp: "rilassati",    fp: "rilassate",    stress: "ri-las-SA-to" },
+    { no: "uvanlig",      ms: "insolito",      fs: "insolita",      mp: "insoliti",     fp: "insolite",     stress: "in-SO-li-to" },
+    { no: "trofast",      ms: "fedele",        fs: "fedele",        mp: "fedeli",       fp: "fedeli",       stress: "fe-DE-le",          alt: ["tro"] },
+    { no: "streng",       ms: "severo",        fs: "severa",        mp: "severi",       fp: "severe",       stress: "se-VE-ro" },
+    { no: "mild",         ms: "mite",          fs: "mite",          mp: "miti",         fp: "miti",         stress: "MI-te" },
+    { no: "grundig",      ms: "accurato",      fs: "accurata",      mp: "accurati",     fp: "accurate",     stress: "ac-cu-RA-to" },
+    { no: "rettferdig",   ms: "equo",          fs: "equa",          mp: "equi",         fp: "eque",         stress: "E-quo",             alt: ["rettvis"] },
+    { no: "skallet",      ms: "calvo",         fs: "calva",         mp: "calvi",        fp: "calve",        stress: "CAL-vo" }
+  ]
+},
 /* === DAILY_QUIZZES_END === */
 ];
 
@@ -2882,7 +2941,7 @@ const IRREG_CONJ = {
   "mantenere":["mantengo","mantieni","mantiene","manteniamo","mantenete","mantengono"],
   "contenere":["contengo","contieni","contiene","conteniamo","contenete","contengono"]
 };
-const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire","sparire","impedire"]);
+const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire","sparire","impedire","guarire"]);
 
 function conjugate(it) {
   if (IRREG_CONJ[it]) return IRREG_CONJ[it].slice();

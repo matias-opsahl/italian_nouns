@@ -375,3 +375,16 @@
 | fjord | fjorder | fjorden | fjordene | il fiordo | i fiordi | un fiordo | dei fiordi | m | FIOR-do |  |
 | lomme | lommer | lommen | lommene | la tasca | le tasche | una tasca | delle tasche | f | TA-sca |  |
 | skuff | skuffer | skuffen | skuffene | il cassetto | i cassetti | un cassetto | dei cassetti | m | cas-SET-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| drue | druer | druen | druene | l'uva | le uve | un'uva | delle uve | f | U-va |  |
+| sitron | sitroner | sitronen | sitronene | il limone | i limoni | un limone | dei limoni | m | li-MO-ne |  |
+| pære | pærer | pæren | pærene | la pera | le pere | una pera | delle pere | f | PE-ra |  |
+| kylling | kyllinger | kyllingen | kyllingene | il pollo | i polli | un pollo | dei polli | m | POL-lo |  |
+| bryllup | bryllup | bryllupet | bryllupene | il matrimonio | i matrimoni | un matrimonio | dei matrimoni | m | ma-tri-MO-nio | ekteskap |
+| fødselsdag | fødselsdager | fødselsdagen | fødselsdagene | il compleanno | i compleanni | un compleanno | dei compleanni | m | com-ple-AN-no |  |
+| heis | heiser | heisen | heisene | l'ascensore | gli ascensori | un ascensore | degli ascensori | m | a-scen-SO-re |  |
+| teater | teatre | teateret | teatrene | il teatro | i teatri | un teatro | dei teatri | m | te-A-tro |  |
+| nabo | naboer | naboen | naboene | il vicino | i vicini | un vicino | dei vicini | m | vi-CI-no | nær |
+| kjeller | kjellere | kjelleren | kjellerne | la cantina | le cantine | una cantina | delle cantine | f | can-TI-na | vinkjeller |

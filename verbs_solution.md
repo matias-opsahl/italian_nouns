@@ -375,3 +375,16 @@
 | å spikre | inchiodare | in-chio-DA-re |  |
 | å sage | segare | se-GA-re |  |
 | å banke | bussare | bus-SA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å dø | morire | mo-RI-re |  |
+| å forlate | lasciare | la-SCIA-re | å la |
+| å tillate | permettere | per-MET-te-re | å la |
+| å gå ned | scendere | SCEN-de-re |  |
+| å gå opp | salire | sa-LI-re | å stige |
+| å bety | significare | si-gni-fi-CA-re | å ville si |
+| å angre | pentirsi | pen-TIR-si |  |
+| å gi bort | regalare | re-ga-LA-re | å donere |
+| å forby | vietare | vie-TA-re |  |
+| å bli frisk | guarire | gua-RI-re |  |

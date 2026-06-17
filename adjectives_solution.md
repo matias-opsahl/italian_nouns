@@ -364,6 +364,19 @@
 
 | ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
 |---|---|---|---|---|---|---|
+| obligatorisk | obbligatorio | obbligatoria | obbligatori | obbligatorie | ob-bli-ga-TO-rio |  |
+| utmerket | ottimo | ottima | ottimi | ottime | OT-ti-mo |  |
+| avslappet | rilassato | rilassata | rilassati | rilassate | ri-las-SA-to |  |
+| uvanlig | insolito | insolita | insoliti | insolite | in-SO-li-to |  |
+| trofast | fedele | fedele | fedeli | fedeli | fe-DE-le | tro |
+| streng | severo | severa | severi | severe | se-VE-ro |  |
+| mild | mite | mite | miti | miti | MI-te |  |
+| grundig | accurato | accurata | accurati | accurate | ac-cu-RA-to |  |
+| rettferdig | equo | equa | equi | eque | E-quo | rettvis |
+| skallet | calvo | calva | calvi | calve | CAL-vo |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
 | uærlig | disonesto | disonesta | disonesti | disoneste | di-so-NE-sto |  |
 | uvennlig | scortese | scortese | scortesi | scortesi | scor-TE-se |  |
 | skuffet | deluso | delusa | delusi | deluse | de-LU-so |  |
