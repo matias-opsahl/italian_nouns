@@ -388,3 +388,16 @@
 | å gi bort | regalare | re-ga-LA-re | å donere |
 | å forby | vietare | vie-TA-re |  |
 | å bli frisk | guarire | gua-RI-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å bjeffe | abbaiare | ab-ba-IA-re |  |
+| å plystre | fischiare | fi-SCHIA-re |  |
+| å snorke | russare | rus-SA-re |  |
+| å rulle | rotolare | ro-to-LA-re |  |
+| å hoste | tossire | tos-SI-re |  |
+| å nyse | starnutire | star-nu-TI-re |  |
+| å flyte | galleggiare | gal-leg-GIA-re |  |
+| å takke | ringraziare | rin-gra-ZIA-re |  |
+| å knurre/mase | brontolare | bron-to-LA-re |  |
+| å lyne | lampeggiare | lam-peg-GIA-re |  |

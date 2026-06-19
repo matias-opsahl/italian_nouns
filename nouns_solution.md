@@ -388,3 +388,16 @@
 | teater | teatre | teateret | teatrene | il teatro | i teatri | un teatro | dei teatri | m | te-A-tro |  |
 | nabo | naboer | naboen | naboene | il vicino | i vicini | un vicino | dei vicini | m | vi-CI-no | nær |
 | kjeller | kjellere | kjelleren | kjellerne | la cantina | le cantine | una cantina | delle cantine | f | can-TI-na | vinkjeller |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| hylle | hyller | hyllen | hyllene | lo scaffale | gli scaffali | uno scaffale | degli scaffali | m | scaf-FA-le |  |
+| gulv | gulv | gulvet | gulvene | il pavimento | i pavimenti | un pavimento | dei pavimenti | m | pa-vi-MEN-to |  |
+| innertak | innertak | innertaket | innertak | il soffitto | i soffitti | un soffitto | dei soffitti | m | sof-FIT-to |  |
+| serviett | servietter | servietten | serviettene | il tovagliolo | i tovaglioli | un tovagliolo | dei tovaglioli | m | to-va-GLIO-lo |  |
+| duk | duker | duken | dukene | la tovaglia | le tovaglie | una tovaglia | delle tovaglie | f | to-VA-glia | bordduk |
+| vase | vaser | vasen | vasene | il vaso | i vasi | un vaso | dei vasi | m | VA-so |  |
+| laken | laken | lakenet | lakenene | il lenzuolo | le lenzuola | un lenzuolo | delle lenzuola | m | len-ZUO-lo |  |
+| pysjamas | pysjamaser | pysjamasen | pysjamasene | il pigiama | i pigiami | un pigiama | dei pigiami | m | pi-GIA-ma |  |
+| ovn | ovner | ovnen | ovnene | il forno | i forni | un forno | dei forni | m | FOR-no |  |
+| skap | skap | skapet | skapene | l'armadio | gli armadi | un armadio | degli armadi | m | ar-MA-dio | garderobe |

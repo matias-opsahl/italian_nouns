@@ -387,3 +387,16 @@
 | avhengig | dipendente | dipendente | dipendenti | dipendenti | di-pen-DEN-te |  |
 | uavhengig | indipendente | indipendente | indipendenti | indipendenti | in-di-pen-DEN-te |  |
 | lojal | leale | leale | leali | leali | le-A-le |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| smertefull | doloroso | dolorosa | dolorosi | dolorose | do-lo-RO-so |  |
+| forskjellig | diverso | diversa | diversi | diverse | di-VER-so |  |
+| ren/ubesmittet | puro | pura | puri | pure | PU-ro | ublandet |
+| lik/lignende | simile | simile | simili | simili | SI-mi-le |  |
+| behagelig | piacevole | piacevole | piacevoli | piacevoli | pia-CE-vo-le |  |
+| rikelig | abbondante | abbondante | abbondanti | abbondanti | ab-bon-DAN-te |  |
+| unik | unico | unica | unici | uniche | U-ni-co |  |
+| rasende | furioso | furiosa | furiosi | furiose | fu-RIO-so |  |
+| passende | adatto | adatta | adatti | adatte | a-DAT-to |  |
+| hektisk | frenetico | frenetica | frenetici | frenetiche | fre-NE-ti-co | vill |
