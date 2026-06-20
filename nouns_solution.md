@@ -401,3 +401,16 @@
 | pysjamas | pysjamaser | pysjamasen | pysjamasene | il pigiama | i pigiami | un pigiama | dei pigiami | m | pi-GIA-ma |  |
 | ovn | ovner | ovnen | ovnene | il forno | i forni | un forno | dei forni | m | FOR-no |  |
 | skap | skap | skapet | skapene | l'armadio | gli armadi | un armadio | degli armadi | m | ar-MA-dio | garderobe |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| balkong | balkonger | balkongen | balkongene | il balcone | i balconi | un balcone | dei balconi | m | bal-CO-ne |  |
+| pass | pass | passet | passene | il passaporto | i passaporti | un passaporto | dei passaporti | m | pas-sa-POR-to |  |
+| gitar | gitarer | gitaren | gitarene | la chitarra | le chitarre | una chitarra | delle chitarre | f | chi-TAR-ra |  |
+| piano | pianoer | pianoen | pianoene | il pianoforte | i pianoforti | un pianoforte | dei pianoforti | m | pia-no-FOR-te |  |
+| student | studenter | studenten | studentene | lo studente | gli studenti | uno studente | degli studenti | m | stu-DEN-te |  |
+| kokk | kokker | kokken | kokkene | il cuoco | i cuochi | un cuoco | dei cuochi | m | CUO-co |  |
+| terrasse | terrasser | terrassen | terrassene | la terrazza | le terrazze | una terrazza | delle terrazze | f | ter-RAZ-za |  |
+| smug | smug | smuget | smugene | il vicolo | i vicoli | un vicolo | dei vicoli | m | VI-co-lo |  |
+| gårdsplass | gårdsplasser | gårdsplassen | gårdsplassene | il cortile | i cortili | un cortile | dei cortili | m | cor-TI-le |  |
+| gatelykt | gatelykter | gatelykten | gatelyktene | il lampione | i lampioni | un lampione | dei lampioni | m | lam-PIO-ne |  |

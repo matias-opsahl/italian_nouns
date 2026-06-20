@@ -400,3 +400,16 @@
 | rasende | furioso | furiosa | furiosi | furiose | fu-RIO-so |  |
 | passende | adatto | adatta | adatti | adatte | a-DAT-to |  |
 | hektisk | frenetico | frenetica | frenetici | frenetiche | fre-NE-ti-co | vill |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| solrik | soleggiato | soleggiata | soleggiati | soleggiate | so-leg-GIA-to | solfylt |
+| overskyet | nuvoloso | nuvolosa | nuvolosi | nuvolose | nu-vo-LO-so |  |
+| blåsende | ventoso | ventosa | ventosi | ventose | ven-TO-so |  |
+| regnfull | piovoso | piovosa | piovosi | piovose | pio-VO-so |  |
+| glatt/sleip | scivoloso | scivolosa | scivolosi | scivolose | sci-vo-LO-so |  |
+| klissete | appiccicoso | appiccicosa | appiccicosi | appiccicose | ap-pic-ci-CO-so |  |
+| rynket | rugoso | rugosa | rugosi | rugose | ru-GO-so |  |
+| duftende | profumato | profumata | profumati | profumate | pro-fu-MA-to | velluktende |
+| hovent | gonfio | gonfia | gonfi | gonfie | GON-fio | oppblåst |
+| tydelig/skarp | nitido | nitida | nitidi | nitide | NI-ti-do | klar |

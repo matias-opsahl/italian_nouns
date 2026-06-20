@@ -401,3 +401,16 @@
 | å takke | ringraziare | rin-gra-ZIA-re |  |
 | å knurre/mase | brontolare | bron-to-LA-re |  |
 | å lyne | lampeggiare | lam-peg-GIA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å stå på ski | sciare | SCIA-re |  |
+| å fiske | pescare | pe-SCA-re |  |
+| å late som | fingere | FIN-ge-re |  |
+| å sukke | sospirare | so-spi-RA-re |  |
+| å observere | osservare | os-ser-VA-re |  |
+| å forestille seg | immaginare | im-ma-gi-NA-re |  |
+| å lide | soffrire | sof-FRI-re |  |
+| å skuffe | deludere | de-LU-de-re |  |
+| å ønske velkommen | accogliere | ac-CO-glie-re |  |
+| å gi opp | rinunciare | ri-nun-CIA-re |  |
