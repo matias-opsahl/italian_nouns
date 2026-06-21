@@ -414,3 +414,16 @@
 | smug | smug | smuget | smugene | il vicolo | i vicoli | un vicolo | dei vicoli | m | VI-co-lo |  |
 | gårdsplass | gårdsplasser | gårdsplassen | gårdsplassene | il cortile | i cortili | un cortile | dei cortili | m | cor-TI-le |  |
 | gatelykt | gatelykter | gatelykten | gatelyktene | il lampione | i lampioni | un lampione | dei lampioni | m | lam-PIO-ne |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| bank | banker | banken | bankene | la banca | le banche | una banca | delle banche | f | BAN-ca |  |
+| universitet | universiteter | universitetet | universitetene | l'università | le università | un'università | delle università | f | u-ni-ver-si-TÀ |  |
+| bibliotek | biblioteker | biblioteket | biblioteketene | la biblioteca | le biblioteche | una biblioteca | delle biblioteche | f | bi-blio-TE-ca |  |
+| belte | belter | beltet | beltene | la cintura | le cinture | una cintura | delle cinture | f | cin-TU-ra |  |
+| sokk | sokker | sokken | sokkene | il calzino | i calzini | un calzino | dei calzini | m | cal-ZI-no |  |
+| skjørt | skjørt | skjørtet | skjørtene | la gonna | le gonne | una gonna | delle gonne | f | GON-na |  |
+| parkeringsplass | parkeringsplasser | parkeringsplassen | parkeringsplassene | il parcheggio | i parcheggi | un parcheggio | dei parcheggi | m | par-CHEG-gio |  |
+| timeplan | timeplaner | timeplanen | timeplanene | l'orario | gli orari | un orario | degli orari | m | o-RA-rio | rute, kjøreplan |
+| kvittering | kvitteringer | kvitteringen | kvitteringene | la ricevuta | le ricevute | una ricevuta | delle ricevute | f | ri-ce-VU-ta |  |
+| daggry | daggry | daggryet | daggrylene | l'alba | le albe | un'alba | delle albe | f | AL-ba |  |

@@ -413,3 +413,16 @@
 | duftende | profumato | profumata | profumati | profumate | pro-fu-MA-to | velluktende |
 | hovent | gonfio | gonfia | gonfi | gonfie | GON-fio | oppblåst |
 | tydelig/skarp | nitido | nitida | nitidi | nitide | NI-ti-do | klar |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| gjerrig | avaro | avara | avari | avare | a-VA-ro | gnipen |
+| matglad | goloso | golosa | golosi | golose | go-LO-so | grisk |
+| sta | testardo | testarda | testardi | testarde | te-STAR-do | egensindig |
+| robust | robusto | robusta | robusti | robuste | ro-BU-sto |  |
+| skjør | fragile | fragile | fragili | fragili | FRA-gi-le | sårbar |
+| tilbakeholden | riservato | riservata | riservati | riservate | ri-ser-VA-to | reservert |
+| smidig | agile | agile | agili | agili | A-gi-le | kvikk |
+| klumsete | maldestro | maldestra | maldestri | maldestre | mal-DE-stro | ubehendig |
+| upåklagelig | impeccabile | impeccabile | impeccabili | impeccabili | im-pec-CA-bi-le | feilfri |
+| sårbar | vulnerabile | vulnerabile | vulnerabili | vulnerabili | vul-ne-RA-bi-le |  |

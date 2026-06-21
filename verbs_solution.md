@@ -414,3 +414,16 @@
 | å skuffe | deludere | de-LU-de-re |  |
 | å ønske velkommen | accogliere | ac-CO-glie-re |  |
 | å gi opp | rinunciare | ri-nun-CIA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å overbevise | convincere | con-VIN-ce-re |  |
+| å risikere | rischiare | ri-SCHIA-re |  |
+| å ligne | assomigliare | as-so-mi-GLIA-re | å likne |
+| å leie (bil/båt) | noleggiare | no-leg-GIA-re |  |
+| å sende (pakke) | spedire | spe-DI-re | å frakte |
+| å lande | atterrare | at-ter-RA-re |  |
+| å ta av | decollare | de-col-LA-re |  |
+| å behandle | trattare | trat-TA-re | å håndtere |
+| å utfordre | sfidare | sfi-DA-re |  |
+| å kreve | pretendere | pre-TEN-de-re | å påstå |
