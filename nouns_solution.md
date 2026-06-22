@@ -427,3 +427,16 @@
 | timeplan | timeplaner | timeplanen | timeplanene | l'orario | gli orari | un orario | degli orari | m | o-RA-rio | rute, kjøreplan |
 | kvittering | kvitteringer | kvitteringen | kvitteringene | la ricevuta | le ricevute | una ricevuta | delle ricevute | f | ri-ce-VU-ta |  |
 | daggry | daggry | daggryet | daggrylene | l'alba | le albe | un'alba | delle albe | f | AL-ba |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| kyst | kyster | kysten | kystene | la costa | le coste | una costa | delle coste | f | CO-sta |  |
+| bølge | bølger | bølgen | bølgene | l'onda | le onde | un'onda | delle onde | f | ON-da |  |
+| lykke | lykker | lykken | lykkene | la felicità | le felicità | una felicità | delle felicità | f | fe-li-ci-TÀ |  |
+| frihet | friheter | friheten | frihetene | la libertà | le libertà | una libertà | delle libertà | f | li-ber-TÀ |  |
+| regjering | regjeringer | regjeringen | regjeringene | il governo | i governi | un governo | dei governi | m | go-VER-no |  |
+| lov | lover | loven | lovene | la legge | le leggi | una legge | delle leggi | f | LEG-ge |  |
+| kraft | krefter | kraften | kreftene | la forza | le forze | una forza | delle forze | f | FOR-za |  |
+| liv | liv | livet | livene | la vita | le vite | una vita | delle vite | f | VI-ta | midje |
+| valg | valg | valget | valgene | la scelta | le scelte | una scelta | delle scelte | f | SCEL-ta |  |
+| virkelighet | virkeligheter | virkeligheten | virkelighetene | la realtà | le realtà | una realtà | delle realtà | f | re-al-TÀ |  |

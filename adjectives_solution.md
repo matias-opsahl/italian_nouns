@@ -426,3 +426,16 @@
 | klumsete | maldestro | maldestra | maldestri | maldestre | mal-DE-stro | ubehendig |
 | upåklagelig | impeccabile | impeccabile | impeccabili | impeccabili | im-pec-CA-bi-le | feilfri |
 | sårbar | vulnerabile | vulnerabile | vulnerabili | vulnerabili | vul-ne-RA-bi-le |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| normal | normale | normale | normali | normali | nor-MA-le |  |
+| komplett | completo | completa | completi | complete | com-PLE-to |  |
+| intens | intenso | intensa | intensi | intense | in-TEN-so |  |
+| riktig | giusto | giusta | giusti | giuste | GIU-sto | rettferdig |
+| nylig | recente | recente | recenti | recenti | re-CEN-te |  |
+| nåværende | attuale | attuale | attuali | attuali | at-TUA-le |  |
+| genial | geniale | geniale | geniali | geniali | ge-NIA-le | briljant |
+| usynlig | invisibile | invisibile | invisibili | invisibili | in-vi-SI-bi-le |  |
+| konstant | costante | costante | costanti | costanti | co-STAN-te | jevn |
+| uunngåelig | inevitabile | inevitabile | inevitabili | inevitabili | i-ne-vi-TA-bi-le |  |

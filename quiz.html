@@ -3067,6 +3067,65 @@ const DAILY_QUIZZES = [
     { no: "sårbar",            ms: "vulnerabile",    fs: "vulnerabile",    mp: "vulnerabili",    fp: "vulnerabili",    stress: "vul-ne-RA-bi-le" }
   ]
 },
+{
+  date: "2026-06-22",
+  nouns: [
+    { no: "kyst",          noPl: "kyster",          noDef: "kysten",          noPlDef: "kystene",
+      sg: "la costa",           pl: "le coste",           sgI: "una costa",           plI: "delle coste",
+      stress: "CO-sta" },
+    { no: "bølge",         noPl: "bølger",          noDef: "bølgen",          noPlDef: "bølgene",
+      sg: "l'onda",             pl: "le onde",            sgI: "un'onda",             plI: "delle onde",
+      stress: "ON-da" },
+    { no: "lykke",         noPl: "lykker",          noDef: "lykken",          noPlDef: "lykkene",
+      sg: "la felicità",        pl: "le felicità",        sgI: "una felicità",        plI: "delle felicità",
+      stress: "fe-li-ci-TÀ" },
+    { no: "frihet",        noPl: "friheter",        noDef: "friheten",        noPlDef: "frihetene",
+      sg: "la libertà",         pl: "le libertà",         sgI: "una libertà",         plI: "delle libertà",
+      stress: "li-ber-TÀ" },
+    { no: "regjering",     noPl: "regjeringer",     noDef: "regjeringen",     noPlDef: "regjeringene",
+      sg: "il governo",         pl: "i governi",          sgI: "un governo",          plI: "dei governi",
+      stress: "go-VER-no" },
+    { no: "lov",           noPl: "lover",           noDef: "loven",           noPlDef: "lovene",
+      sg: "la legge",           pl: "le leggi",           sgI: "una legge",           plI: "delle leggi",
+      stress: "LEG-ge" },
+    { no: "kraft",         noPl: "krefter",         noDef: "kraften",         noPlDef: "kreftene",
+      sg: "la forza",           pl: "le forze",           sgI: "una forza",           plI: "delle forze",
+      stress: "FOR-za" },
+    { no: "liv",           noPl: "liv",             noDef: "livet",           noPlDef: "livene",
+      sg: "la vita",            pl: "le vite",            sgI: "una vita",            plI: "delle vite",
+      stress: "VI-ta",          alt: ["midje"] },
+    { no: "valg",          noPl: "valg",            noDef: "valget",          noPlDef: "valgene",
+      sg: "la scelta",          pl: "le scelte",          sgI: "una scelta",          plI: "delle scelte",
+      stress: "SCEL-ta" },
+    { no: "virkelighet",   noPl: "virkeligheter",   noDef: "virkeligheten",   noPlDef: "virkelighetene",
+      sg: "la realtà",          pl: "le realtà",          sgI: "una realtà",          plI: "delle realtà",
+      stress: "re-al-TÀ" }
+  ],
+  verbs: [
+    { no: "å kunne",       it: "potere",       stress: "po-TE-re",       alt: ["å få lov"] },
+    { no: "å ville",       it: "volere",       stress: "vo-LE-re" },
+    { no: "å måtte",       it: "dovere",       stress: "do-VE-re" },
+    { no: "å vite",        it: "sapere",       stress: "sa-PE-re",       alt: ["å kunne"] },
+    { no: "å holde",       it: "tenere",       stress: "te-NE-re",       alt: ["å beholde"] },
+    { no: "å ha på seg",   it: "indossare",    stress: "in-dos-SA-re" },
+    { no: "å gjenta",      it: "ripetere",     stress: "ri-PE-te-re" },
+    { no: "å frykte",      it: "temere",       stress: "te-ME-re" },
+    { no: "å be",          it: "pregare",      stress: "pre-GA-re" },
+    { no: "å legge til",   it: "aggiungere",   stress: "ag-GIUN-ge-re",  alt: ["å tilsette"] }
+  ],
+  adjectives: [
+    { no: "normal",        ms: "normale",      fs: "normale",      mp: "normali",      fp: "normali",      stress: "nor-MA-le" },
+    { no: "komplett",      ms: "completo",     fs: "completa",     mp: "completi",     fp: "complete",     stress: "com-PLE-to" },
+    { no: "intens",        ms: "intenso",      fs: "intensa",      mp: "intensi",      fp: "intense",      stress: "in-TEN-so" },
+    { no: "riktig",        ms: "giusto",       fs: "giusta",       mp: "giusti",       fp: "giuste",       stress: "GIU-sto",          alt: ["rettferdig"] },
+    { no: "nylig",         ms: "recente",      fs: "recente",      mp: "recenti",      fp: "recenti",      stress: "re-CEN-te" },
+    { no: "nåværende",     ms: "attuale",      fs: "attuale",      mp: "attuali",      fp: "attuali",      stress: "at-TUA-le" },
+    { no: "genial",        ms: "geniale",      fs: "geniale",      mp: "geniali",      fp: "geniali",      stress: "ge-NIA-le",         alt: ["briljant"] },
+    { no: "usynlig",       ms: "invisibile",   fs: "invisibile",   mp: "invisibili",   fp: "invisibili",   stress: "in-vi-SI-bi-le" },
+    { no: "konstant",      ms: "costante",     fs: "costante",     mp: "costanti",     fp: "costanti",     stress: "co-STAN-te",        alt: ["jevn"] },
+    { no: "uunngåelig",    ms: "inevitabile",  fs: "inevitabile",  mp: "inevitabili",  fp: "inevitabili",  stress: "i-ne-vi-TA-bi-le" }
+  ]
+},
 /* === DAILY_QUIZZES_END === */
 ];
 
@@ -3156,7 +3215,8 @@ function conjugate(it) {
 const NO_PRESENT_IRREG = {
   "å være": "er", "å ha": "har", "å gjøre": "gjør",
   "å si": "sier", "å spørre": "spør",
-  "å lage mat": "lager mat"
+  "å lage mat": "lager mat",
+  "å kunne": "kan", "å ville": "vil", "å måtte": "må", "å vite": "vet"
 };
 function noPresent(noInf) {
   if (NO_PRESENT_IRREG[noInf]) return NO_PRESENT_IRREG[noInf];

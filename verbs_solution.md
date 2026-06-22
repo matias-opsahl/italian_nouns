@@ -427,3 +427,16 @@
 | å behandle | trattare | trat-TA-re | å håndtere |
 | å utfordre | sfidare | sfi-DA-re |  |
 | å kreve | pretendere | pre-TEN-de-re | å påstå |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å kunne | potere | po-TE-re | å få lov |
+| å ville | volere | vo-LE-re |  |
+| å måtte | dovere | do-VE-re |  |
+| å vite | sapere | sa-PE-re | å kunne |
+| å holde | tenere | te-NE-re | å beholde |
+| å ha på seg | indossare | in-dos-SA-re |  |
+| å gjenta | ripetere | ri-PE-te-re |  |
+| å frykte | temere | te-ME-re |  |
+| å be | pregare | pre-GA-re |  |
+| å legge til | aggiungere | ag-GIUN-ge-re | å tilsette |
