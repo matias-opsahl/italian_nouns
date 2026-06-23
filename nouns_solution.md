@@ -440,3 +440,16 @@
 | liv | liv | livet | livene | la vita | le vite | una vita | delle vite | f | VI-ta | midje |
 | valg | valg | valget | valgene | la scelta | le scelte | una scelta | delle scelte | f | SCEL-ta |  |
 | virkelighet | virkeligheter | virkeligheten | virkelighetene | la realtà | le realtà | una realtà | delle realtà | f | re-al-TÀ |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ansikt | ansikter | ansiktet | ansiktene | il viso | i visi | un viso | dei visi | m | VI-so |  |
+| notatbok | notatbøker | notatboken | notatbøkene | il quaderno | i quaderni | un quaderno | dei quaderni | m | qua-DER-no |  |
+| hjørne | hjørner | hjørnet | hjørnene | l'angolo | gli angoli | un angolo | degli angoli | m | AN-go-lo | vinkel |
+| vekkerklokke | vekkerklokker | vekkerklokken | vekkerklokene | la sveglia | le sveglie | una sveglia | delle sveglie | f | SVE-glia |  |
+| mål | mål | målet | målene | l'obiettivo | gli obiettivi | un obiettivo | degli obiettivi | m | o-biet-TI-vo |  |
+| foto | foto | fotoet | fotoene | la foto | le foto | una foto | delle foto | f | FO-to |  |
+| maskin | maskiner | maskinen | maskinene | la macchina | le macchine | una macchina | delle macchine | f | MAC-chi-na | bil |
+| strøm | strømmer | strømmen | strømmene | la corrente | le correnti | una corrente | delle correnti | f | cor-REN-te | havstrøm |
+| intervju | intervjuer | intervjuet | intervjuene | l'intervista | le interviste | un'intervista | delle interviste | f | in-ter-VI-sta |  |
+| bedrift | bedrifter | bedriften | bedriftene | l'azienda | le aziende | un'azienda | delle aziende | f | a-ZIEN-da |  |

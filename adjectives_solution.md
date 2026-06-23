@@ -439,3 +439,16 @@
 | usynlig | invisibile | invisibile | invisibili | invisibili | in-vi-SI-bi-le |  |
 | konstant | costante | costante | costanti | costanti | co-STAN-te | jevn |
 | uunngåelig | inevitabile | inevitabile | inevitabili | inevitabili | i-ne-vi-TA-bi-le |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| giftig | velenoso | velenosa | velenosi | velenose | ve-le-NO-so |  |
+| ødelagt | rotto | rotta | rotti | rotte | ROT-to | knust |
+| åpenbar | evidente | evidente | evidenti | evidenti | e-vi-DEN-te | tydelig |
+| innfødt | nativo | nativa | nativi | native | na-TI-vo |  |
+| digital | digitale | digitale | digitali | digitali | di-gi-TA-le |  |
+| sosial | sociale | sociale | sociali | sociali | so-CIA-le | omgjengelig |
+| nøytral | neutro | neutra | neutri | neutre | NEU-tro |  |
+| nasjonal | nazionale | nazionale | nazionali | nazionali | na-zio-NA-le |  |
+| kritisk | critico | critica | critici | critiche | CRI-ti-co | avgjørende |
+| tilfredsstillende | soddisfacente | soddisfacente | soddisfacenti | soddisfacenti | sod-dis-fa-CEN-te |  |

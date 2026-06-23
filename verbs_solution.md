@@ -440,3 +440,16 @@
 | å frykte | temere | te-ME-re |  |
 | å be | pregare | pre-GA-re |  |
 | å legge til | aggiungere | ag-GIUN-ge-re | å tilsette |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å eksistere | esistere | e-SIS-te-re |  |
+| å produsere | produrre | pro-DUR-re |  |
+| å kommunisere | comunicare | co-mu-ni-CA-re |  |
+| å sette pris på | apprezzare | ap-prez-ZA-re | å verdsette |
+| å kose seg | divertirsi | di-ver-TIR-si | å ha det gøy |
+| å foreslå | proporre | pro-POR-re | å fremme |
+| å ta imot | ospitare | o-spi-TA-re | å huse |
+| å begrense | limitare | li-mi-TA-re | å avgrense |
+| å beskrive | descrivere | de-SCRI-ve-re |  |
+| å fastsette | stabilire | sta-bi-LI-re | å bestemme |
