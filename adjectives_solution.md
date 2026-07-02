@@ -452,3 +452,16 @@
 | nasjonal | nazionale | nazionale | nazionali | nazionali | na-zio-NA-le |  |
 | kritisk | critico | critica | critici | critiche | CRI-ti-co | avgjørende |
 | tilfredsstillende | soddisfacente | soddisfacente | soddisfacenti | soddisfacenti | sod-dis-fa-CEN-te |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| hemmelig | segreto | segreta | segreti | segrete | se-GRE-to |  |
+| kongelig | reale | reale | reali | reali | re-A-le |  |
+| religiøs | religioso | religiosa | religiosi | religiose | re-li-GIO-so |  |
+| vitenskapelig | scientifico | scientifica | scientifici | scientifiche | scien-TI-fi-co |  |
+| teknisk | tecnico | tecnica | tecnici | tecniche | TEC-ni-co |  |
+| juridisk | legale | legale | legali | legali | le-GA-le |  |
+| kunstnerisk | artistico | artistica | artistici | artistiche | ar-TI-sti-co |  |
+| musikalsk | musicale | musicale | musicali | musicali | mu-si-CA-le |  |
+| teoretisk | teorico | teorica | teorici | teoriche | te-O-ri-co |  |
+| fysisk | fisico | fisica | fisici | fisiche | FI-si-co |  |

@@ -453,3 +453,16 @@
 | strøm | strømmer | strømmen | strømmene | la corrente | le correnti | una corrente | delle correnti | f | cor-REN-te | havstrøm |
 | intervju | intervjuer | intervjuet | intervjuene | l'intervista | le interviste | un'intervista | delle interviste | f | in-ter-VI-sta |  |
 | bedrift | bedrifter | bedriften | bedriftene | l'azienda | le aziende | un'azienda | delle aziende | f | a-ZIEN-da |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| onkel | onkler | onkelen | onklene | lo zio | gli zii | uno zio | degli zii | m | ZI-o |  |
+| tante | tanter | tanten | tantene | la zia | le zie | una zia | delle zie | f | ZI-a |  |
+| kone | koner | konen | konene | la moglie | le mogli | una moglie | delle mogli | f | MO-glie |  |
+| ektemann | ektemenn | ektemannen | ektemennene | il marito | i mariti | un marito | dei mariti | m | ma-RI-to |  |
+| skjegg | skjegg | skjegget | skjeggene | la barba | le barbe | una barba | delle barbe | f | BAR-ba |  |
+| albue | albuer | albuen | albuene | il gomito | i gomiti | un gomito | dei gomiti | m | GO-mi-to |  |
+| øyenbryn | øyenbryn | øyenbrynet | øyenbrynene | il sopracciglio | le sopracciglia | un sopracciglio | delle sopracciglia | m | so-prac-CI-glio |  |
+| edderkopp | edderkopper | edderkoppen | edderkoppene | il ragno | i ragni | un ragno | dei ragni | m | RA-gno |  |
+| bie | bier | bien | biene | l'ape | le api | un'ape | delle api | f | A-pe |  |
+| regnbue | regnbuer | regnbuen | regnbuene | l'arcobaleno | gli arcobaleni | un arcobaleno | degli arcobaleni | m | ar-co-ba-LE-no |  |

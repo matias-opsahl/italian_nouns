@@ -3185,6 +3185,65 @@ const DAILY_QUIZZES = [
     { no: "tilfredsstillende",  ms: "soddisfacente",fs: "soddisfacente",mp: "soddisfacenti",fp: "soddisfacenti",stress: "sod-dis-fa-CEN-te" }
   ]
 },
+{
+  date: "2026-07-02",
+  nouns: [
+    { no: "onkel",        noPl: "onkler",       noDef: "onkelen",       noPlDef: "onklene",
+      sg: "lo zio",         pl: "gli zii",        sgI: "uno zio",         plI: "degli zii",
+      stress: "ZI-o" },
+    { no: "tante",        noPl: "tanter",       noDef: "tanten",        noPlDef: "tantene",
+      sg: "la zia",         pl: "le zie",         sgI: "una zia",         plI: "delle zie",
+      stress: "ZI-a" },
+    { no: "kone",         noPl: "koner",        noDef: "konen",         noPlDef: "konene",
+      sg: "la moglie",      pl: "le mogli",       sgI: "una moglie",      plI: "delle mogli",
+      stress: "MO-glie" },
+    { no: "ektemann",     noPl: "ektemenn",     noDef: "ektemannen",    noPlDef: "ektemennene",
+      sg: "il marito",      pl: "i mariti",       sgI: "un marito",       plI: "dei mariti",
+      stress: "ma-RI-to" },
+    { no: "skjegg",       noPl: "skjegg",       noDef: "skjegget",      noPlDef: "skjeggene",
+      sg: "la barba",       pl: "le barbe",       sgI: "una barba",       plI: "delle barbe",
+      stress: "BAR-ba" },
+    { no: "albue",        noPl: "albuer",       noDef: "albuen",        noPlDef: "albuene",
+      sg: "il gomito",      pl: "i gomiti",       sgI: "un gomito",       plI: "dei gomiti",
+      stress: "GO-mi-to" },
+    { no: "øyenbryn",     noPl: "øyenbryn",     noDef: "øyenbrynet",    noPlDef: "øyenbrynene",
+      sg: "il sopracciglio",pl: "le sopracciglia",sgI: "un sopracciglio", plI: "delle sopracciglia",
+      stress: "so-prac-CI-glio" },
+    { no: "edderkopp",    noPl: "edderkopper",  noDef: "edderkoppen",   noPlDef: "edderkoppene",
+      sg: "il ragno",       pl: "i ragni",        sgI: "un ragno",        plI: "dei ragni",
+      stress: "RA-gno" },
+    { no: "bie",          noPl: "bier",         noDef: "bien",          noPlDef: "biene",
+      sg: "l'ape",          pl: "le api",         sgI: "un'ape",          plI: "delle api",
+      stress: "A-pe" },
+    { no: "regnbue",      noPl: "regnbuer",     noDef: "regnbuen",      noPlDef: "regnbuene",
+      sg: "l'arcobaleno",   pl: "gli arcobaleni", sgI: "un arcobaleno",   plI: "degli arcobaleni",
+      stress: "ar-co-ba-LE-no" }
+  ],
+  verbs: [
+    { no: "å våkne",            it: "svegliarsi", stress: "sve-GLIAR-si" },
+    { no: "å tro",              it: "credere",    stress: "CRE-de-re" },
+    { no: "å nikke",            it: "annuire",    stress: "an-nu-I-re" },
+    { no: "å hakke",            it: "tritare",    stress: "tri-TA-re" },
+    { no: "å stryke (klær)",    it: "stirare",    stress: "sti-RA-re" },
+    { no: "å eie",              it: "possedere",  stress: "pos-se-DE-re" },
+    { no: "å ignorere",         it: "ignorare",   stress: "i-gno-RA-re" },
+    { no: "å legge (ned)",      it: "posare",     stress: "po-SA-re",     alt: ["å plassere"] },
+    { no: "å anta",             it: "supporre",   stress: "sup-POR-re" },
+    { no: "å gni",              it: "strofinare", stress: "stro-fi-NA-re" }
+  ],
+  adjectives: [
+    { no: "hemmelig",      ms: "segreto",     fs: "segreta",     mp: "segreti",     fp: "segrete",     stress: "se-GRE-to" },
+    { no: "kongelig",      ms: "reale",       fs: "reale",       mp: "reali",       fp: "reali",       stress: "re-A-le" },
+    { no: "religiøs",      ms: "religioso",   fs: "religiosa",   mp: "religiosi",   fp: "religiose",   stress: "re-li-GIO-so" },
+    { no: "vitenskapelig", ms: "scientifico", fs: "scientifica", mp: "scientifici", fp: "scientifiche",stress: "scien-TI-fi-co" },
+    { no: "teknisk",       ms: "tecnico",     fs: "tecnica",     mp: "tecnici",     fp: "tecniche",    stress: "TEC-ni-co" },
+    { no: "juridisk",      ms: "legale",      fs: "legale",      mp: "legali",      fp: "legali",      stress: "le-GA-le" },
+    { no: "kunstnerisk",   ms: "artistico",   fs: "artistica",   mp: "artistici",   fp: "artistiche",  stress: "ar-TI-sti-co" },
+    { no: "musikalsk",     ms: "musicale",    fs: "musicale",    mp: "musicali",    fp: "musicali",    stress: "mu-si-CA-le" },
+    { no: "teoretisk",     ms: "teorico",     fs: "teorica",     mp: "teorici",     fp: "teoriche",    stress: "te-O-ri-co" },
+    { no: "fysisk",        ms: "fisico",      fs: "fisica",      mp: "fisici",      fp: "fisiche",     stress: "FI-si-co" }
+  ]
+},
 /* === DAILY_QUIZZES_END === */
 ];
 
@@ -3235,9 +3294,11 @@ const IRREG_CONJ = {
   "parere":   ["paio","pari","pare","paiamo","parete","paiono"],
   "ottenere": ["ottengo","ottieni","ottiene","otteniamo","ottenete","ottengono"],
   "mantenere":["mantengo","mantieni","mantiene","manteniamo","mantenete","mantengono"],
-  "contenere":["contengo","contieni","contiene","conteniamo","contenete","contengono"]
+  "contenere":["contengo","contieni","contiene","conteniamo","contenete","contengono"],
+  "possedere":["possiedo","possiedi","possiede","possediamo","possedete","possiedono"],
+  "supporre": ["suppongo","supponi","suppone","supponiamo","supponete","suppongono"]
 };
-const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire","sparire","impedire","guarire","stabilire"]);
+const ISC_VERBS = new Set(["finire","capire","preferire","pulire","spedire","tradire","unire","costruire","restituire","sparire","impedire","guarire","stabilire","annuire"]);
 
 function conjugate(it) {
   if (IRREG_CONJ[it]) return IRREG_CONJ[it].slice();

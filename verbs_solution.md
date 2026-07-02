@@ -453,3 +453,16 @@
 | å begrense | limitare | li-mi-TA-re | å avgrense |
 | å beskrive | descrivere | de-SCRI-ve-re |  |
 | å fastsette | stabilire | sta-bi-LI-re | å bestemme |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å våkne | svegliarsi | sve-GLIAR-si |  |
+| å tro | credere | CRE-de-re |  |
+| å nikke | annuire | an-nu-I-re |  |
+| å hakke | tritare | tri-TA-re |  |
+| å stryke (klær) | stirare | sti-RA-re |  |
+| å eie | possedere | pos-se-DE-re |  |
+| å ignorere | ignorare | i-gno-RA-re |  |
+| å legge (ned) | posare | po-SA-re | å plassere |
+| å anta | supporre | sup-POR-re |  |
+| å gni | strofinare | stro-fi-NA-re |  |
