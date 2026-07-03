@@ -465,3 +465,16 @@
 | musikalsk | musicale | musicale | musicali | musicali | mu-si-CA-le |  |
 | teoretisk | teorico | teorica | teorici | teoriche | te-O-ri-co |  |
 | fysisk | fisico | fisica | fisici | fisiche | FI-si-co |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| omgjengelig | socievole | socievole | socievoli | socievoli | so-CIE-vo-le |  |
+| fryktsom | timoroso | timorosa | timorosi | timorose | ti-mo-RO-so |  |
+| klosset | goffo | goffa | goffi | goffe | GOF-fo |  |
+| vittig | spiritoso | spiritosa | spiritosi | spiritose | spi-ri-TO-so |  |
+| underholdt | divertito | divertita | divertiti | divertite | di-ver-TI-to |  |
+| lubben | paffuto | paffuta | paffuti | paffute | paf-FU-to |  |
+| slank | snello | snella | snelli | snelle | SNEL-lo |  |
+| spenstig | scattante | scattante | scattanti | scattanti | scat-TAN-te |  |
+| kvikk | svelto | svelta | svelti | svelte | SVEL-to |  |
+| engstelig | ansioso | ansiosa | ansiosi | ansiose | an-SIO-so |  |

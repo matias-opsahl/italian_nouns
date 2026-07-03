@@ -466,3 +466,16 @@
 | edderkopp | edderkopper | edderkoppen | edderkoppene | il ragno | i ragni | un ragno | dei ragni | m | RA-gno |  |
 | bie | bier | bien | biene | l'ape | le api | un'ape | delle api | f | A-pe |  |
 | regnbue | regnbuer | regnbuen | regnbuene | l'arcobaleno | gli arcobaleni | un arcobaleno | degli arcobaleni | m | ar-co-ba-LE-no |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| kanin | kaniner | kaninen | kaninene | il coniglio | i conigli | un coniglio | dei conigli | m | co-NI-glio |  |
+| ape | aper | apen | apene | la scimmia | le scimmie | una scimmia | delle scimmie | f | SCIM-mia |  |
+| elefant | elefanter | elefanten | elefantene | l'elefante | gli elefanti | un elefante | degli elefanti | m | e-le-FAN-te |  |
+| maur | maur | mauren | maurene | la formica | le formiche | una formica | delle formiche | f | for-MI-ca |  |
+| tårn | tårn | tårnet | tårnene | la torre | le torri | una torre | delle torri | f | TOR-re |  |
+| dal | daler | dalen | dalene | la valle | le valli | una valle | delle valli | f | VAL-le |  |
+| kam | kammer | kammen | kammene | il pettine | i pettini | un pettine | dei pettini | m | PET-ti-ne |  |
+| barberhøvel | barberhøvler | barberhøvelen | barberhøvlene | il rasoio | i rasoi | un rasoio | dei rasoi | m | ra-SO-io |  |
+| parfyme | parfymer | parfymen | parfymene | il profumo | i profumi | un profumo | dei profumi | m | pro-FU-mo | duft |
+| krem | kremer | kremen | kremene | la crema | le creme | una crema | delle creme | f | CRE-ma |  |

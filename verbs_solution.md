@@ -466,3 +466,16 @@
 | å legge (ned) | posare | po-SA-re | å plassere |
 | å anta | supporre | sup-POR-re |  |
 | å gni | strofinare | stro-fi-NA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å lukte | annusare | an-nu-SA-re |  |
+| å faste | digiunare | di-giu-NA-re |  |
+| å spøke | scherzare | scher-ZA-re | å tulle |
+| å overvåke | sorvegliare | sor-ve-GLIA-re | å passe på |
+| å fargelegge | colorare | co-lo-RA-re |  |
+| å bla gjennom | sfogliare | sfo-GLIA-re |  |
+| å drukne | annegare | an-ne-GA-re |  |
+| å skamme seg | vergognarsi | ver-go-GNAR-si |  |
+| å kjede seg | annoiarsi | an-no-IAR-si |  |
+| å senke | abbassare | ab-bas-SA-re | å redusere |
