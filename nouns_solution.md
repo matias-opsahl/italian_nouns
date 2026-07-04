@@ -479,3 +479,16 @@
 | barberhøvel | barberhøvler | barberhøvelen | barberhøvlene | il rasoio | i rasoi | un rasoio | dei rasoi | m | ra-SO-io |  |
 | parfyme | parfymer | parfymen | parfymene | il profumo | i profumi | un profumo | dei profumi | m | pro-FU-mo | duft |
 | krem | kremer | kremen | kremene | la crema | le creme | una crema | delle creme | f | CRE-ma |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| årstid | årstider | årstiden | årstidene | la stagione | le stagioni | una stagione | delle stagioni | f | sta-GIO-ne |  |
+| århundre | århundrer | århundret | århundrene | il secolo | i secoli | un secolo | dei secoli | m | SE-co-lo |  |
+| planet | planeter | planeten | planetene | il pianeta | i pianeti | un pianeta | dei pianeti | m | pia-NE-ta |  |
+| univers | univers | universet | universene | l'universo | gli universi | un universo | degli universi | m | u-ni-VER-so |  |
+| lyn | lyn | lynet | lynene | il fulmine | i fulmini | un fulmine | dei fulmini | m | FUL-mi-ne |  |
+| torden | tordener | tordenen | tordenene | il tuono | i tuoni | un tuono | dei tuoni | m | TUO-no |  |
+| is | is | isen | isene | il ghiaccio | i ghiacci | un ghiaccio | dei ghiacci | m | GHIAC-cio |  |
+| røyk | røyk | røyken | røykene | il fumo | i fumi | un fumo | dei fumi | m | FU-mo |  |
+| aske | aske | asken | askene | la cenere | le ceneri | una cenere | delle ceneri | f | CE-ne-re |  |
+| ull | ull | ullen | ullene | la lana | le lane | una lana | delle lane | f | LA-na |  |

@@ -479,3 +479,16 @@
 | å skamme seg | vergognarsi | ver-go-GNAR-si |  |
 | å kjede seg | annoiarsi | an-no-IAR-si |  |
 | å senke | abbassare | ab-bas-SA-re | å redusere |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å bli født | nascere | NA-sce-re |  |
+| å gifte seg | sposarsi | spo-SAR-si |  |
+| å skille seg | divorziare | di-vor-ZIA-re |  |
+| å bli gammel | invecchiare | in-vec-CHIA-re |  |
+| å bli syk | ammalarsi | am-ma-LAR-si |  |
+| å blø | sanguinare | san-gui-NA-re |  |
+| å klore | graffiare | graf-FIA-re |  |
+| å mjaue | miagolare | mia-go-LA-re |  |
+| å gå om bord | imbarcarsi | im-bar-CAR-si |  |
+| å utsette | posticipare | po-sti-ci-PA-re |  |

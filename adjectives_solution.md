@@ -478,3 +478,16 @@
 | spenstig | scattante | scattante | scattanti | scattanti | scat-TAN-te |  |
 | kvikk | svelto | svelta | svelti | svelte | SVEL-to |  |
 | engstelig | ansioso | ansiosa | ansiosi | ansiose | an-SIO-so |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| muskuløs | muscoloso | muscolosa | muscolosi | muscolose | mu-sco-LO-so |  |
+| atletisk | atletico | atletica | atletici | atletiche | a-TLE-ti-co |  |
+| raffinert | raffinato | raffinata | raffinati | raffinate | raf-fi-NA-to | sofistikert |
+| oppriktig | sincero | sincera | sinceri | sincere | sin-CE-ro |  |
+| hyklerisk | ipocrita | ipocrita | ipocriti | ipocrite | i-po-CRI-ta |  |
+| umoden | immaturo | immatura | immaturi | immature | im-ma-TU-ro |  |
+| lydig | ubbidiente | ubbidiente | ubbidienti | ubbidienti | ub-bi-DIEN-te |  |
+| ulydig | disubbidiente | disubbidiente | disubbidienti | disubbidienti | di-sub-bi-DIEN-te |  |
+| ettergivende | permissivo | permissiva | permissivi | permissive | per-mis-SI-vo |  |
+| slurvete | trascurato | trascurata | trascurati | trascurate | tra-scu-RA-to | forsømt |
