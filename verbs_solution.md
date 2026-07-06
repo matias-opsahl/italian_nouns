@@ -492,3 +492,29 @@
 | å mjaue | miagolare | mia-go-LA-re |  |
 | å gå om bord | imbarcarsi | im-bar-CAR-si |  |
 | å utsette | posticipare | po-sti-ci-PA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å befri | liberare | li-be-RA-re |  |
+| å samarbeide | collaborare | col-la-bo-RA-re |  |
+| å ansette | assumere | as-SU-me-re | å ta (medisin) |
+| å si opp | licenziare | li-cen-ZIA-re |  |
+| å undersøke | esaminare | e-sa-mi-NA-re | å eksaminere |
+| å garantere | garantire | ga-ran-TI-re |  |
+| å forsikre | assicurare | as-si-cu-RA-re |  |
+| å oppdatere | aggiornare | ag-gior-NA-re |  |
+| å installere | installare | in-stal-LA-re |  |
+| å blokkere | bloccare | bloc-CA-re | å stoppe |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å presentere | presentare | pre-sen-TA-re |  |
+| å møtes | incontrarsi | in-con-TRAR-si |  |
+| å forhandle | negoziare | ne-go-ZIA-re |  |
+| å analysere | analizzare | a-na-liz-ZA-re |  |
+| å implementere | implementare | im-ple-men-TA-re |  |
+| å slette | cancellare | can-cel-LA-re | å viske ut |
+| å kopiere | copiare | co-PIA-re | å jukse |
+| å klikke | cliccare | clic-CA-re |  |
+| å avlyse | annullare | an-nul-LA-re | å oppheve |
+| å forsinke | ritardare | ri-tar-DA-re |  |

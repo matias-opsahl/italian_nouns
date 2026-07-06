@@ -492,3 +492,29 @@
 | røyk | røyk | røyken | røykene | il fumo | i fumi | un fumo | dei fumi | m | FU-mo |  |
 | aske | aske | asken | askene | la cenere | le ceneri | una cenere | delle ceneri | f | CE-ne-re |  |
 | ull | ull | ullen | ullene | la lana | le lane | una lana | delle lane | f | LA-na |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| mandag | mandager | mandagen | mandagene | il lunedì | i lunedì | un lunedì | dei lunedì | m | lu-ne-DÌ |  |
+| tirsdag | tirsdager | tirsdagen | tirsdagene | il martedì | i martedì | un martedì | dei martedì | m | mar-te-DÌ |  |
+| onsdag | onsdager | onsdagen | onsdagene | il mercoledì | i mercoledì | un mercoledì | dei mercoledì | m | mer-co-le-DÌ |  |
+| torsdag | torsdager | torsdagen | torsdagene | il giovedì | i giovedì | un giovedì | dei giovedì | m | gio-ve-DÌ |  |
+| fredag | fredager | fredagen | fredagene | il venerdì | i venerdì | un venerdì | dei venerdì | m | ve-ner-DÌ |  |
+| lørdag | lørdager | lørdagen | lørdagene | il sabato | i sabati | un sabato | dei sabati | m | SA-ba-to |  |
+| søndag | søndager | søndagen | søndagene | la domenica | le domeniche | una domenica | delle domeniche | f | do-ME-ni-ca |  |
+| ferie | ferier | ferien | feriene | la vacanza | le vacanze | una vacanza | delle vacanze | f | va-CAN-za |  |
+| konsert | konserter | konserten | konsertene | il concerto | i concerti | un concerto | dei concerti | m | con-CER-to |  |
+| frisør | frisører | frisøren | frisørene | il parrucchiere | i parrucchieri | un parrucchiere | dei parrucchieri | m | par-ruc-CHIE-re |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| kollega | kolleger | kollegaen | kollegene | il collega | i colleghi | un collega | dei colleghi | m | col-LE-ga |  |
+| sjef | sjefer | sjefen | sjefene | il capo | i capi | un capo | dei capi | m | CA-po |  |
+| møte | møter | møtet | møtene | la riunione | le riunioni | una riunione | delle riunioni | f | ri-u-NIO-ne |  |
+| prosjekt | prosjekter | prosjektet | prosjektene | il progetto | i progetti | un progetto | dei progetti | m | pro-GET-to | plan |
+| frist | frister | fristen | fristene | la scadenza | le scadenze | una scadenza | delle scadenze | f | sca-DEN-za |  |
+| dokument | dokumenter | dokumentet | dokumentene | il documento | i documenti | un documento | dei documenti | m | do-cu-MEN-to | legitimasjon |
+| e-post | e-poster | e-posten | e-postene | l'email | le email | un'email | delle email | f | e-MAIL |  |
+| passord | passord | passordet | passordene | la password | le password | una password | delle password | f | PASS-word |  |
+| tastatur | tastaturer | tastaturet | tastaturene | la tastiera | le tastiere | una tastiera | delle tastiere | f | ta-STIE-ra |  |
+| kontrakt | kontrakter | kontrakten | kontraktene | il contratto | i contratti | un contratto | dei contratti | m | con-TRAT-to |  |

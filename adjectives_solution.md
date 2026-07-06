@@ -491,3 +491,29 @@
 | ulydig | disubbidiente | disubbidiente | disubbidienti | disubbidienti | di-sub-bi-DIEN-te |  |
 | ettergivende | permissivo | permissiva | permissivi | permissive | per-mis-SI-vo |  |
 | slurvete | trascurato | trascurata | trascurati | trascurate | tra-scu-RA-to | forsømt |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| grådig | avido | avida | avidi | avide | A-vi-do |  |
+| kynisk | cinico | cinica | cinici | ciniche | CI-ni-co |  |
+| medfølende | compassionevole | compassionevole | compassionevoli | compassionevoli | com-pas-sio-NE-vo-le |  |
+| uhøflig | maleducato | maleducata | maleducati | maleducate | ma-le-du-CA-to |  |
+| irriterende | fastidioso | fastidiosa | fastidiosi | fastidiose | fa-sti-DIO-so |  |
+| ekkel | disgustoso | disgustosa | disgustosi | disgustose | di-sgu-STO-so |  |
+| opprørt | sconvolto | sconvolta | sconvolti | sconvolte | scon-VOL-to |  |
+| lettet | sollevato | sollevata | sollevati | sollevate | sol-le-VA-to |  |
+| stresset | stressato | stressata | stressati | stressate | stres-SA-to |  |
+| rå | crudo | cruda | crudi | crude | CRU-do |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| profesjonell | professionale | professionale | professionali | professionali | pro-fes-sio-NA-le |  |
+| effektiv | efficiente | efficiente | efficienti | efficienti | ef-fi-CIEN-te |  |
+| produktiv | produttivo | produttiva | produttivi | produttive | pro-dut-TI-vo |  |
+| konkurransedyktig | competitivo | competitiva | competitivi | competitive | com-pe-ti-TI-vo |  |
+| innovativ | innovativo | innovativa | innovativi | innovative | in-no-va-TI-vo |  |
+| strategisk | strategico | strategica | strategici | strategiche | stra-TE-gi-co |  |
+| kompetent | competente | competente | competenti | competenti | com-pe-TEN-te |  |
+| kvalifisert | qualificato | qualificata | qualificati | qualificate | qua-li-fi-CA-to |  |
+| objektiv | oggettivo | oggettiva | oggettivi | oggettive | og-get-TI-vo |  |
+| subjektiv | soggettivo | soggettiva | soggettivi | soggettive | sog-get-TI-vo |  |
