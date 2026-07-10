@@ -518,3 +518,29 @@
 | å klikke | cliccare | clic-CA-re |  |
 | å avlyse | annullare | an-nul-LA-re | å oppheve |
 | å forsinke | ritardare | ri-tar-DA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å regne | piovere | PIO-ve-re |  |
+| å snø | nevicare | ne-vi-CA-re |  |
+| å tordne | tuonare | tuo-NA-re |  |
+| å utforske | esplorare | e-splo-RA-re |  |
+| å oppfinne | inventare | in-ven-TA-re |  |
+| å administrere | gestire | ge-STI-re |  |
+| å rapportere | riportare | ri-por-TA-re |  |
+| å pakke | imballare | im-bal-LA-re |  |
+| å seile | navigare | na-vi-GA-re |  |
+| å bremse | frenare | fre-NA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å stemme | votare | vo-TA-re |  |
+| å sette seg | sedersi | se-DER-si |  |
+| å sminke seg | truccarsi | truc-CAR-si |  |
+| å gre håret | pettinarsi | pet-ti-NAR-si |  |
+| å barbere seg | radersi | RA-der-si |  |
+| å insistere | insistere | in-SI-ste-re |  |
+| å tvile | dubitare | du-bi-TA-re |  |
+| å avslå | rifiutare | ri-fiu-TA-re |  |
+| å være verdt | valere | va-LE-re |  |
+| å plukke | cogliere | CO-glie-re | å forstå |

@@ -517,3 +517,29 @@
 | kvalifisert | qualificato | qualificata | qualificati | qualificate | qua-li-fi-CA-to |  |
 | objektiv | oggettivo | oggettiva | oggettivi | oggettive | og-get-TI-vo |  |
 | subjektiv | soggettivo | soggettiva | soggettivi | soggettive | sog-get-TI-vo |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| rosa | rosa | rosa | rosa | rosa | RO-sa |  |
+| gyllen | dorato | dorata | dorati | dorate | do-RA-to |  |
+| mett | sazio | sazia | sazi | sazie | SA-zio |  |
+| misfornøyd | insoddisfatto | insoddisfatta | insoddisfatti | insoddisfatte | in-sod-dis-FAT-to |  |
+| energisk | energico | energica | energici | energiche | e-NER-gi-co |  |
+| edruelig | sobrio | sobria | sobri | sobrie | SO-brio |  |
+| beruset | ubriaco | ubriaca | ubriachi | ubriache | u-BRIA-co |  |
+| våken | sveglio | sveglia | svegli | sveglie | SVE-glio |  |
+| kvalm | nauseato | nauseata | nauseati | nauseate | nau-se-A-to |  |
+| spydig | sarcastico | sarcastica | sarcastici | sarcastiche | sar-CA-sti-co |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| mørkeblå | blu | blu | blu | blu | BLU |  |
+| negativ | negativo | negativa | negativi | negative | ne-ga-TI-vo |  |
+| direkte | diretto | diretta | diretti | dirette | di-RET-to |  |
+| magisk | magico | magica | magici | magiche | MA-gi-co |  |
+| døv | sordo | sorda | sordi | sorde | SOR-do |  |
+| slitesterk | resistente | resistente | resistenti | resistenti | re-si-STEN-te | holdbar |
+| tåkete | nebbioso | nebbiosa | nebbiosi | nebbiose | neb-BIO-so |  |
+| illeluktende | puzzolente | puzzolente | puzzolenti | puzzolenti | puz-zo-LEN-te |  |
+| ugjennomsiktig | opaco | opaca | opachi | opache | o-PA-co |  |
+| sovende | addormentato | addormentata | addormentati | addormentate | ad-dor-men-TA-to |  |

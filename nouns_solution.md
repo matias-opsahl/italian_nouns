@@ -518,3 +518,29 @@
 | passord | passord | passordet | passordene | la password | le password | una password | delle password | f | PASS-word |  |
 | tastatur | tastaturer | tastaturet | tastaturene | la tastiera | le tastiere | una tastiera | delle tastiere | f | ta-STIE-ra |  |
 | kontrakt | kontrakter | kontrakten | kontraktene | il contratto | i contratti | un contratto | dei contratti | m | con-TRAT-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| film | filmer | filmen | filmene | il film | i film | un film | dei film | m | FILM |  |
+| spill | spill | spillet | spillene | il gioco | i giochi | un gioco | dei giochi | m | GIO-co |  |
+| datamaskin | datamaskiner | datamaskinen | datamaskinene | il computer | i computer | un computer | dei computer | m | COM-pu-ter |  |
+| vekt | vekter | vekten | vektene | il peso | i pesi | un peso | dei pesi | m | PE-so |  |
+| avstand | avstander | avstanden | avstandene | la distanza | le distanze | una distanza | delle distanze | f | di-STAN-za |  |
+| sjåfør | sjåfører | sjåføren | sjåførene | l'autista | gli autisti | un autista | degli autisti | m | au-TI-sta |  |
+| konvolutt | konvolutter | konvolutten | konvoluttene | la busta | le buste | una busta | delle buste | f | BU-sta |  |
+| frimerke | frimerker | frimerket | frimerkene | il francobollo | i francobolli | un francobollo | dei francobolli | m | fran-co-BOL-lo |  |
+| lommelykt | lommelykter | lommelykten | lommelyktene | la torcia | le torce | una torcia | delle torce | f | TOR-cia |  |
+| batteri | batterier | batteriet | batteriene | la batteria | le batterie | una batteria | delle batterie | f | bat-te-RI-a |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ball | baller | ballen | ballene | la palla | le palle | una palla | delle palle | f | PAL-la |  |
+| pizza | pizzaer | pizzaen | pizzaene | la pizza | le pizze | una pizza | delle pizze | f | PIZ-za |  |
+| rundstykke | rundstykker | rundstykket | rundstykkene | il panino | i panini | un panino | dei panini | m | pa-NI-no |  |
+| øl | øl | ølet | ølene | la birra | le birre | una birra | delle birre | f | BIR-ra |  |
+| salat | salater | salaten | salatene | l'insalata | le insalate | un'insalata | delle insalate | f | in-sa-LA-ta |  |
+| fest | fester | festen | festene | la festa | le feste | una festa | delle feste | f | FE-sta |  |
+| frykt | frykter | frykten | fryktene | la paura | le paure | una paura | delle paure | f | pa-U-ra |  |
+| mot | mot | motet | motene | il coraggio | i coraggi | un coraggio | dei coraggi | m | co-RAG-gio |  |
+| helse | helser | helsen | helsene | la salute | le saluti | una salute | delle saluti | f | sa-LU-te |  |
+| nettsted | nettsteder | nettstedet | nettstedene | il sito | i siti | un sito | dei siti | m | SI-to |  |
