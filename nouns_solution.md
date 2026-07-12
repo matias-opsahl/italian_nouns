@@ -544,3 +544,16 @@
 | mot | mot | motet | motene | il coraggio | i coraggi | un coraggio | dei coraggi | m | co-RAG-gio |  |
 | helse | helser | helsen | helsene | la salute | le saluti | una salute | delle saluti | f | sa-LU-te |  |
 | nettsted | nettsteder | nettstedet | nettstedene | il sito | i siti | un sito | dei siti | m | SI-to |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| magasin | magasiner | magasinet | magasinene | la rivista | le riviste | una rivista | delle riviste | f | ri-VI-sta |  |
+| mynt | mynter | mynten | myntene | la moneta | le monete | una moneta | delle monete | f | mo-NE-ta |  |
+| kalender | kalendere | kalenderen | kalenderne | il calendario | i calendari | un calendario | dei calendari | m | ca-len-DA-rio |  |
+| viskelær | viskelær | viskelæret | viskelærene | la gomma | le gomme | una gomma | delle gomme | f | GOM-ma | dekk (bil) |
+| linjal | linjaler | linjalen | linjalene | il righello | i righelli | un righello | dei righelli | m | ri-GHEL-lo |  |
+| stearinlys | stearinlys | stearinlyset | stearinlysene | la candela | le candele | una candela | delle candele | f | can-DE-la |  |
+| fyrstikk | fyrstikker | fyrstikken | fyrstikkene | il fiammifero | i fiammiferi | un fiammifero | dei fiammiferi | m | fiam-MI-fe-ro |  |
+| termometer | termometre | termometeret | termometrene | il termometro | i termometri | un termometro | dei termometri | m | ter-MO-me-tro |  |
+| medisin | medisiner | medisinen | medisinene | la medicina | le medicine | una medicina | delle medicine | f | me-di-CI-na |  |
+| feber | febre | feberen | febrene | la febbre | le febbri | una febbre | delle febbri | f | FEB-bre |  |

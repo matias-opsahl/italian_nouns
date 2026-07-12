@@ -543,3 +543,16 @@
 | illeluktende | puzzolente | puzzolente | puzzolenti | puzzolenti | puz-zo-LEN-te |  |
 | ugjennomsiktig | opaco | opaca | opachi | opache | o-PA-co |  |
 | sovende | addormentato | addormentata | addormentati | addormentate | ad-dor-men-TA-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| rørt | commosso | commossa | commossi | commosse | com-MOS-so |  |
+| fryst | congelato | congelata | congelati | congelate | con-ge-LA-to |  |
+| brun (hår) | castano | castana | castani | castane | ca-STA-no | kastanjebrun |
+| krøllete | riccio | riccia | ricci | ricce | RIC-cio |  |
+| kravstor | esigente | esigente | esigenti | esigenti | e-si-GEN-te |  |
+| daglig | quotidiano | quotidiana | quotidiani | quotidiane | quo-ti-DIA-no |  |
+| unyttig | inutile | inutile | inutili | inutili | i-NU-ti-le |  |
+| halt | zoppo | zoppa | zoppi | zoppe | ZOP-po |  |
+| rett/rak | dritto | dritta | dritti | dritte | DRIT-to | rett frem |
+| engasjert | impegnato | impegnata | impegnati | impegnate | im-pe-GNA-to | opptatt (med noe) |

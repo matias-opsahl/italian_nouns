@@ -544,3 +544,16 @@
 | å avslå | rifiutare | ri-fiu-TA-re |  |
 | å være verdt | valere | va-LE-re |  |
 | å plukke | cogliere | CO-glie-re | å forstå |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å levere | consegnare | con-se-GNA-re |  |
+| å taste | digitare | di-gi-TA-re |  |
+| å kommentere | commentare | com-men-TA-re |  |
+| å vanne | innaffiare | in-naf-FIA-re |  |
+| å skrelle | sbucciare | sbuc-CIA-re |  |
+| å varme | riscaldare | ri-scal-DA-re | å varme opp |
+| å avkjøle | raffreddare | raf-fred-DA-re |  |
+| å tine | scongelare | scon-ge-LA-re |  |
+| å ta ut | prelevare | pre-le-VA-re | å heve |
+| å børste | spazzolare | spaz-zo-LA-re |  |
