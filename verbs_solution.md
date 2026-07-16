@@ -557,3 +557,16 @@
 | å tine | scongelare | scon-ge-LA-re |  |
 | å ta ut | prelevare | pre-le-VA-re | å heve |
 | å børste | spazzolare | spaz-zo-LA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å øke | aumentare | au-men-TA-re |  |
+| å redusere | ridurre | ri-DUR-re |  |
+| å inkludere | includere | in-CLU-de-re |  |
+| å ekskludere | escludere | e-SCLU-de-re |  |
+| å endre | modificare | mo-di-fi-CA-re | å modifisere |
+| å generere | generare | ge-ne-RA-re |  |
+| å fjerne | eliminare | e-li-mi-NA-re | å eliminere |
+| å doble | raddoppiare | rad-dop-PIA-re |  |
+| å halvere | dimezzare | di-mez-ZA-re |  |
+| å vedde | scommettere | scom-MET-te-re |  |

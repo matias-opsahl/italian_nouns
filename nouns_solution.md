@@ -557,3 +557,16 @@
 | termometer | termometre | termometeret | termometrene | il termometro | i termometri | un termometro | dei termometri | m | ter-MO-me-tro |  |
 | medisin | medisiner | medisinen | medisinene | la medicina | le medicine | una medicina | delle medicine | f | me-di-CI-na |  |
 | feber | febre | feberen | febrene | la febbre | le febbri | una febbre | delle febbri | f | FEB-bre |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| vulkan | vulkaner | vulkanen | vulkanene | il vulcano | i vulcani | un vulcano | dei vulcani | m | vul-CA-no |  |
+| jungel | jungler | jungelen | junglene | la giungla | le giungle | una giungla | delle giungle | f | GIUN-gla |  |
+| bekk | bekker | bekken | bekkene | il ruscello | i ruscelli | un ruscello | dei ruscelli | m | ru-SCEL-lo |  |
+| fontene | fontener | fontenen | fontenene | la fontana | le fontane | una fontana | delle fontane | f | fon-TA-na |  |
+| statue | statuer | statuen | statuene | la statua | le statue | una statua | delle statue | f | STA-tua |  |
+| tempel | templer | tempelet | templene | il tempio | i templi | un tempio | dei templi | m | TEM-pio |  |
+| fyrtårn | fyrtårn | fyrtårnet | fyrtårnene | il faro | i fari | un faro | dei fari | m | FA-ro | frontlys (bil) |
+| pyramide | pyramider | pyramiden | pyramidene | la piramide | le piramidi | una piramide | delle piramidi | f | pi-RA-mi-de |  |
+| isbre | isbreer | isbreen | isbreene | il ghiacciaio | i ghiacciai | un ghiacciaio | dei ghiacciai | m | ghiac-CIA-io |  |
+| klippe | klipper | klippen | klippene | la scogliera | le scogliere | una scogliera | delle scogliere | f | sco-GLIE-ra |  |

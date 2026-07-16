@@ -556,3 +556,16 @@
 | halt | zoppo | zoppa | zoppi | zoppe | ZOP-po |  |
 | rett/rak | dritto | dritta | dritti | dritte | DRIT-to | rett frem |
 | engasjert | impegnato | impegnata | impegnati | impegnate | im-pe-GNA-to | opptatt (med noe) |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| spiselig | commestibile | commestibile | commestibili | commestibili | com-me-STI-bi-le |  |
+| feig | codardo | codarda | codardi | codarde | co-DAR-do |  |
+| tiltrekkende | attraente | attraente | attraenti | attraenti | at-tra-EN-te |  |
+| aggressiv | aggressivo | aggressiva | aggressivi | aggressive | ag-gres-SI-vo |  |
+| passiv | passivo | passiva | passivi | passive | pas-SI-vo |  |
+| logisk | logico | logica | logici | logiche | LO-gi-co |  |
+| emosjonell | emotivo | emotiva | emotivi | emotive | e-mo-TI-vo |  |
+| mental | mentale | mentale | mentali | mentali | men-TA-le |  |
+| gigantisk | gigantesco | gigantesca | giganteschi | gigantesche | gi-gan-TE-sco |  |
+| bitteliten | minuscolo | minuscola | minuscoli | minuscole | mi-NU-sco-lo |  |
