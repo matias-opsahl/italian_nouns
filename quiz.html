@@ -690,17 +690,16 @@
   .rules-grid { display:flex; flex-direction:column; gap:18px; margin-top:18px; }
   .rule-block { border:1px solid var(--soft-border); border-radius:14px; padding:16px 18px; background:#fff; }
   .rule-block h3 { margin:0 0 6px; font-size:18px; color:var(--green-d); }
-  .rule-lead { margin:0 0 12px; color:var(--muted); font-size:14px; }
-  .rule-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:10px; }
-  .rule-table th, .rule-table td { padding:6px 8px; text-align:left; border-bottom:1px solid var(--soft-border); }
+  .rule-block h4 { margin:18px 0 8px; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  .rule-lead { margin:0 0 4px; color:var(--muted); font-size:14px; }
+  .rule-scroll { overflow-x:auto; }
+  .rule-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .rule-table th, .rule-table td { padding:6px 8px; text-align:left; border-bottom:1px solid var(--soft-border); vertical-align:top; }
   .rule-table thead th { background:var(--soft-green); color:var(--green-d); font-weight:600; }
-  .rule-table tbody th { font-weight:600; color:var(--muted); width:90px; }
+  .rule-table tbody th { font-weight:600; color:var(--muted); white-space:nowrap; }
   .rule-table td b { color:var(--green-d); }
   .rule-table td i { color:var(--muted); font-style:italic; font-size:12px; }
-  .rule-list { margin:8px 0 0; padding-left:18px; font-size:13px; line-height:1.55; }
-  .rule-list li { margin-bottom:4px; }
-  .rule-list code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:12px; }
-  .rule-list b { color:var(--green-d); }
+  .rule-table code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:12px; }
   
   .form-chip.t-person   { background: var(--soft-green); border-color: rgba(0,140,69,0.3); color: var(--green-d); }
 
@@ -1228,7 +1227,7 @@
     <div class="stats-head">
       <div>
         <h2 class="end-title" style="margin:0 0 6px">Regler</h2>
-        <p class="end-sub" style="margin:0">Superkomprimert oversikt over reglene quizen tester.</p>
+        <p class="end-sub" style="margin:0">Alt quizen tester — pluss presens perfektum og futurum.</p>
       </div>
       <button class="btn btn-ghost" id="rulesBackBtn">Tilbake</button>
     </div>
@@ -1237,27 +1236,69 @@
       <div class="rule-block">
         <h3>Substantiv</h3>
         <p class="rule-lead">4 former testes: <b>bestemt/ubestemt × entall/flertall</b>.</p>
+
+        <h4>Artikler</h4>
         <table class="rule-table">
-          <thead><tr><th></th><th>m</th><th>f</th></tr></thead>
+          <thead><tr><th></th><th>hankjønn (m)</th><th>hunkjønn (f)</th></tr></thead>
           <tbody>
-            <tr><th>bestemt sg</th><td>il / lo / l'</td><td>la / l'</td></tr>
-            <tr><th>bestemt pl</th><td>i / gli</td><td>le</td></tr>
-            <tr><th>ubestemt sg</th><td>un / uno</td><td>una / un'</td></tr>
-            <tr><th>ubestemt pl</th><td>dei / degli</td><td>delle</td></tr>
+            <tr><th>bestemt entall</th><td>il / lo / l'</td><td>la / l'</td></tr>
+            <tr><th>bestemt flertall</th><td>i / gli</td><td>le</td></tr>
+            <tr><th>ubestemt entall</th><td>un / uno</td><td>una / un'</td></tr>
+            <tr><th>ubestemt flertall</th><td>dei / degli</td><td>delle</td></tr>
           </tbody>
         </table>
-        <ul class="rule-list">
-          <li><b>lo / uno / gli</b> foran <i>s+kons, z, ps, gn, x, y, i+vokal</i> — <code>lo specchio · uno zaino · gli studenti</code></li>
-          <li><b>l' / un'</b> foran vokal (un' kun feminin) — <code>l'amico · un amico · l'auto · un'auto</code></li>
-          <li>Ubestemt flertall = <b>partitiv</b> (<code>dei/degli/delle</code> = "noen X")</li>
-          <li>Plural-bøying: -o→-i, -a→-e, -e→-i. Spesial: -co/-go beholder hard k (<code>parchi, laghi</code>), -io mister i (<code>vecchi</code>).</li>
-          <li>Uregelrette: <code>uovo→uova · braccio→braccia · dito→dita · orecchio→orecchie · ginocchio→ginocchia</code> (m sg → f pl).</li>
-        </ul>
+
+        <h4>Når brukes spesialformene?</h4>
+        <table class="rule-table">
+          <thead><tr><th>form</th><th>brukes foran</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>lo · uno · gli</th><td>s+konsonant, z, ps, gn, x, y, i+vokal</td><td><code>lo specchio · uno zaino · gli studenti</code></td></tr>
+            <tr><th>l' · un'</th><td>vokal (<b>un'</b> kun hunkjønn)</td><td><code>l'amico · un amico · l'auto · un'auto</code></td></tr>
+            <tr><th>dei · degli · delle</th><td>ubestemt flertall = partitiv («noen …»)</td><td><code>dei libri · degli zaini · delle case</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Flertallsbøying</h4>
+        <table class="rule-table">
+          <thead><tr><th>entall</th><th>flertall</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>-o</th><td>-i</td><td><code>libro → libri</code></td></tr>
+            <tr><th>-a</th><td>-e</td><td><code>casa → case</code></td></tr>
+            <tr><th>-e</th><td>-i</td><td><code>fiume → fiumi</code></td></tr>
+            <tr><th>-co / -go</th><td>-chi / -ghi <i>(beholder hard lyd)</i></td><td><code>parco → parchi · lago → laghi</code></td></tr>
+            <tr><th>-io</th><td>-i <i>(mister én i)</i></td><td><code>vecchio → vecchi</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Uregelrette flertall (m entall → f flertall)</h4>
+        <table class="rule-table">
+          <thead><tr><th>entall</th><th>flertall</th><th>betydning</th></tr></thead>
+          <tbody>
+            <tr><th>l'uovo</th><td>le uova</td><td>egg</td></tr>
+            <tr><th>il braccio</th><td>le braccia</td><td>arm</td></tr>
+            <tr><th>il dito</th><td>le dita</td><td>finger</td></tr>
+            <tr><th>l'orecchio</th><td>le orecchie</td><td>øre</td></tr>
+            <tr><th>il ginocchio</th><td>le ginocchia</td><td>kne</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="rule-block">
-        <h3>Verb (presens)</h3>
-        <p class="rule-lead">Tre bøyningsklasser etter infinitiv-endelse. Drop endelsen, legg på presens-ending.</p>
+        <h3>Verb – presens</h3>
+        <p class="rule-lead">Tre bøyningsklasser etter infinitiv-endelsen (-are / -ere / -ire). Dropp endelsen, legg på presens-endingen.</p>
+
+        <h4>Personlige pronomen</h4>
+        <div class="rule-scroll">
+        <table class="rule-table">
+          <thead><tr><th>norsk</th><th>jeg</th><th>du</th><th>han/hun</th><th>vi</th><th>dere</th><th>de</th></tr></thead>
+          <tbody>
+            <tr><th>italiensk</th><td>io</td><td>tu</td><td>lui/lei</td><td>noi</td><td>voi</td><td>loro</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h4>Presens-endelser</h4>
+        <div class="rule-scroll">
         <table class="rule-table">
           <thead><tr><th></th><th>-are <i>(parlare)</i></th><th>-ere <i>(prendere)</i></th><th>-ire <i>(dormire)</i></th><th>-ire (isc) <i>(finire)</i></th></tr></thead>
           <tbody>
@@ -1269,30 +1310,210 @@
             <tr><th>loro</th><td>parl<b>ano</b></td><td>prend<b>ono</b></td><td>dorm<b>ono</b></td><td>fin<b>iscono</b></td></tr>
           </tbody>
         </table>
-        <ul class="rule-list">
-          <li><b>-isc-</b>: settes inn i io/tu/lui/loro for mange -ire (capire, preferire, pulire, costruire …). Ikke i noi/voi.</li>
-          <li><b>Uregelrette</b> må læres: <code>essere · avere · andare · fare · stare · dare · venire · dire · uscire · potere · volere · dovere · sapere</code> …</li>
-          <li>Avsluttende <b>-care/-gare</b> får ekstra h foran -i/-e (<code>cerchi, paghi</code>).</li>
-        </ul>
+        </div>
+
+        <h4>Spesialregler</h4>
+        <table class="rule-table">
+          <thead><tr><th>regel</th><th>gjelder</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>-isc- skytes inn</th><td>io, tu, lui/lei og loro — mange -ire-verb (capire, preferire, pulire, costruire …). Ikke i noi/voi.</td><td><code>capisco · capisci · capiamo · capiscono</code></td></tr>
+            <tr><th>ekstra h</th><td>-care / -gare foran -i og -iamo</td><td><code>cerchi · cerchiamo · paghi · paghiamo</code></td></tr>
+            <tr><th>i-en faller bort</th><td>-ciare / -giare (og ofte -iare) foran -i og -iamo</td><td><code>mangi · mangiamo · studi · studiamo</code></td></tr>
+            <tr><th>sammensatte verb</th><td>bøyes som grunnverbet</td><td><code>riuscire → riesco · ottenere → ottengo</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Uregelrette verb i presens</h4>
+        <div class="rule-scroll">
+        <table class="rule-table">
+          <thead><tr><th></th><th>io</th><th>tu</th><th>lui/lei</th><th>noi</th><th>voi</th><th>loro</th></tr></thead>
+          <tbody>
+            <tr><th>essere</th><td>sono</td><td>sei</td><td>è</td><td>siamo</td><td>siete</td><td>sono</td></tr>
+            <tr><th>avere</th><td>ho</td><td>hai</td><td>ha</td><td>abbiamo</td><td>avete</td><td>hanno</td></tr>
+            <tr><th>andare</th><td>vado</td><td>vai</td><td>va</td><td>andiamo</td><td>andate</td><td>vanno</td></tr>
+            <tr><th>fare</th><td>faccio</td><td>fai</td><td>fa</td><td>facciamo</td><td>fate</td><td>fanno</td></tr>
+            <tr><th>stare</th><td>sto</td><td>stai</td><td>sta</td><td>stiamo</td><td>state</td><td>stanno</td></tr>
+            <tr><th>dare</th><td>do</td><td>dai</td><td>dà</td><td>diamo</td><td>date</td><td>danno</td></tr>
+            <tr><th>bere</th><td>bevo</td><td>bevi</td><td>beve</td><td>beviamo</td><td>bevete</td><td>bevono</td></tr>
+            <tr><th>venire</th><td>vengo</td><td>vieni</td><td>viene</td><td>veniamo</td><td>venite</td><td>vengono</td></tr>
+            <tr><th>dire</th><td>dico</td><td>dici</td><td>dice</td><td>diciamo</td><td>dite</td><td>dicono</td></tr>
+            <tr><th>uscire</th><td>esco</td><td>esci</td><td>esce</td><td>usciamo</td><td>uscite</td><td>escono</td></tr>
+            <tr><th>tenere</th><td>tengo</td><td>tieni</td><td>tiene</td><td>teniamo</td><td>tenete</td><td>tengono</td></tr>
+            <tr><th>salire</th><td>salgo</td><td>sali</td><td>sale</td><td>saliamo</td><td>salite</td><td>salgono</td></tr>
+            <tr><th>rimanere</th><td>rimango</td><td>rimani</td><td>rimane</td><td>rimaniamo</td><td>rimanete</td><td>rimangono</td></tr>
+            <tr><th>scegliere</th><td>scelgo</td><td>scegli</td><td>sceglie</td><td>scegliamo</td><td>scegliete</td><td>scelgono</td></tr>
+            <tr><th>potere</th><td>posso</td><td>puoi</td><td>può</td><td>possiamo</td><td>potete</td><td>possono</td></tr>
+            <tr><th>volere</th><td>voglio</td><td>vuoi</td><td>vuole</td><td>vogliamo</td><td>volete</td><td>vogliono</td></tr>
+            <tr><th>dovere</th><td>devo</td><td>devi</td><td>deve</td><td>dobbiamo</td><td>dovete</td><td>devono</td></tr>
+            <tr><th>sapere</th><td>so</td><td>sai</td><td>sa</td><td>sappiamo</td><td>sapete</td><td>sanno</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="rule-block">
+        <h3>Verb – presens perfektum («har spist»)</h3>
+        <p class="rule-lead">Italiensk: <b>passato prossimo</b>. Bygges av hjelpeverb (<b>avere</b> eller <b>essere</b>) i presens + perfektum partisipp.</p>
+
+        <h4>Partisipp – regelrett</h4>
+        <table class="rule-table">
+          <thead><tr><th>infinitiv</th><th>partisipp</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>-are</th><td>-ato</td><td><code>parlare → parlato</code></td></tr>
+            <tr><th>-ere</th><td>-uto</td><td><code>vendere → venduto</code></td></tr>
+            <tr><th>-ire</th><td>-ito</td><td><code>dormire → dormito · finire → finito</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Bøying</h4>
+        <div class="rule-scroll">
+        <table class="rule-table">
+          <thead><tr><th></th><th>med avere <i>(parlare)</i></th><th>med essere <i>(andare — partisippet samsvarer)</i></th></tr></thead>
+          <tbody>
+            <tr><th>io</th><td>ho parlato</td><td>sono andat<b>o</b> / andat<b>a</b></td></tr>
+            <tr><th>tu</th><td>hai parlato</td><td>sei andat<b>o</b> / andat<b>a</b></td></tr>
+            <tr><th>lui/lei</th><td>ha parlato</td><td>è andat<b>o</b> / andat<b>a</b></td></tr>
+            <tr><th>noi</th><td>abbiamo parlato</td><td>siamo andat<b>i</b> / andat<b>e</b></td></tr>
+            <tr><th>voi</th><td>avete parlato</td><td>siete andat<b>i</b> / andat<b>e</b></td></tr>
+            <tr><th>loro</th><td>hanno parlato</td><td>sono andat<b>i</b> / andat<b>e</b></td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h4>Avere eller essere?</h4>
+        <table class="rule-table">
+          <thead><tr><th>hjelpeverb</th><th>brukes med</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>avere</th><td>de fleste verb — alle som kan ta objekt</td><td><code>ho mangiato una pizza · abbiamo visto il film</code></td></tr>
+            <tr><th>essere</th><td>bevegelse/endring: andare, venire, arrivare, partire, uscire, entrare, tornare, stare, rimanere, nascere, morire, diventare — og alle refleksive verb</td><td><code>sono andato · è arrivata · ci siamo alzati</code></td></tr>
+            <tr><th>samsvar</th><td>med essere bøyes partisippet i kjønn og tall (-o / -a / -i / -e)</td><td><code>è andato · è andata · sono andati · sono andate</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Uregelrette partisipp</h4>
+        <table class="rule-table">
+          <thead><tr><th>infinitiv</th><th>partisipp</th><th>infinitiv</th><th>partisipp</th></tr></thead>
+          <tbody>
+            <tr><th>essere / stare</th><td>stato</td><th>vedere</th><td>visto</td></tr>
+            <tr><th>fare</th><td>fatto</td><th>bere</th><td>bevuto</td></tr>
+            <tr><th>dire</th><td>detto</td><th>venire</th><td>venuto</td></tr>
+            <tr><th>leggere</th><td>letto</td><th>rimanere</th><td>rimasto</td></tr>
+            <tr><th>scrivere</th><td>scritto</td><th>scegliere</th><td>scelto</td></tr>
+            <tr><th>aprire</th><td>aperto</td><th>chiedere</th><td>chiesto</td></tr>
+            <tr><th>prendere</th><td>preso</td><th>chiudere</th><td>chiuso</td></tr>
+            <tr><th>mettere</th><td>messo</td><th>perdere</th><td>perso</td></tr>
+            <tr><th>morire</th><td>morto</td><th>nascere</th><td>nato</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rule-block">
+        <h3>Verb – futurum («skal spise»)</h3>
+        <p class="rule-lead">Italiensk: <b>futuro semplice</b>. Én verbform uten hjelpeverb: dropp -e i infinitiven og legg på futurum-endingen. NB: -are-verb endrer a → e (parlare → parler-).</p>
+
+        <h4>Futurum-endelser</h4>
+        <div class="rule-scroll">
+        <table class="rule-table">
+          <thead><tr><th></th><th>-are <i>(parlare → parler-)</i></th><th>-ere <i>(prendere → prender-)</i></th><th>-ire <i>(dormire → dormir-)</i></th></tr></thead>
+          <tbody>
+            <tr><th>io</th><td>parler<b>ò</b></td><td>prender<b>ò</b></td><td>dormir<b>ò</b></td></tr>
+            <tr><th>tu</th><td>parler<b>ai</b></td><td>prender<b>ai</b></td><td>dormir<b>ai</b></td></tr>
+            <tr><th>lui/lei</th><td>parler<b>à</b></td><td>prender<b>à</b></td><td>dormir<b>à</b></td></tr>
+            <tr><th>noi</th><td>parler<b>emo</b></td><td>prender<b>emo</b></td><td>dormir<b>emo</b></td></tr>
+            <tr><th>voi</th><td>parler<b>ete</b></td><td>prender<b>ete</b></td><td>dormir<b>ete</b></td></tr>
+            <tr><th>loro</th><td>parler<b>anno</b></td><td>prender<b>anno</b></td><td>dormir<b>anno</b></td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <h4>Spesialregler</h4>
+        <table class="rule-table">
+          <thead><tr><th>regel</th><th>gjelder</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>a → e</th><td>alle regelrette -are-verb</td><td><code>parlare → parlerò · comprare → comprerò</code></td></tr>
+            <tr><th>ekstra h</th><td>-care / -gare (beholder hard lyd)</td><td><code>cercare → cercherò · pagare → pagherò</code></td></tr>
+            <tr><th>i-en faller bort</th><td>-ciare / -giare</td><td><code>cominciare → comincerò · mangiare → mangerò</code></td></tr>
+            <tr><th>-isc-verb</th><td>helt regelrette i futurum</td><td><code>finire → finirò · capire → capirò</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Uregelrette stammer</h4>
+        <table class="rule-table">
+          <thead><tr><th>infinitiv</th><th>futurum (io)</th><th>infinitiv</th><th>futurum (io)</th></tr></thead>
+          <tbody>
+            <tr><th>essere</th><td>sarò</td><th>dovere</th><td>dovrò</td></tr>
+            <tr><th>avere</th><td>avrò</td><th>sapere</th><td>saprò</td></tr>
+            <tr><th>andare</th><td>andrò</td><th>vivere</th><td>vivrò</td></tr>
+            <tr><th>fare</th><td>farò</td><th>volere</th><td>vorrò</td></tr>
+            <tr><th>stare</th><td>starò</td><th>venire</th><td>verrò</td></tr>
+            <tr><th>dare</th><td>darò</td><th>rimanere</th><td>rimarrò</td></tr>
+            <tr><th>vedere</th><td>vedrò</td><th>tenere</th><td>terrò</td></tr>
+            <tr><th>potere</th><td>potrò</td><th>bere</th><td>berrò</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="rule-block">
         <h3>Adjektiv</h3>
         <p class="rule-lead">Bøyes etter substantivets kjønn og tall. Står oftest <i>etter</i> substantivet.</p>
+
+        <h4>Bøyningsmønstre</h4>
+        <div class="rule-scroll">
         <table class="rule-table">
           <thead><tr><th>type</th><th>m sg</th><th>f sg</th><th>m pl</th><th>f pl</th></tr></thead>
           <tbody>
             <tr><th>-o (bello)</th><td>bell<b>o</b></td><td>bell<b>a</b></td><td>bell<b>i</b></td><td>bell<b>e</b></td></tr>
             <tr><th>-e (grande)</th><td>grand<b>e</b></td><td>grand<b>e</b></td><td>grand<b>i</b></td><td>grand<b>i</b></td></tr>
+            <tr><th>-ista (ottimista)</th><td>ottimist<b>a</b></td><td>ottimist<b>a</b></td><td>ottimist<b>i</b></td><td>ottimist<b>e</b></td></tr>
             <tr><th>invariabel</th><td colspan="4">rosa, blu, viola — uendret i alle former</td></tr>
           </tbody>
         </table>
-        <ul class="rule-list">
-          <li><b>-co/-go</b>: m.pl beholder hard lyd (<code>stanco→stanchi · lungo→lunghi</code>). -ico mister h (<code>simpatici</code>).</li>
-          <li><b>-io</b>: m.pl mister i (<code>vecchio→vecchi</code>).</li>
-          <li>Vanlige -ista-adj: lik m/f sg (<code>ottimista</code>), m.pl -isti, f.pl -iste.</li>
-          <li>Plassering: oftest etter substantiv. Få adj (buono, bello, grande, piccolo, vecchio, giovane) kan stå før — da bøyes <i>buono/bello</i> som artikler (<code>un buon amico · bei ragazzi</code>).</li>
-        </ul>
+        </div>
+
+        <h4>Spesialtilfeller i flertall</h4>
+        <table class="rule-table">
+          <thead><tr><th>endelse</th><th>m flertall</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>-co / -go</th><td>-chi / -ghi <i>(beholder hard lyd)</i></td><td><code>stanco → stanchi · lungo → lunghi</code></td></tr>
+            <tr><th>-ico</th><td>-ici <i>(myk lyd)</i></td><td><code>simpatico → simpatici</code></td></tr>
+            <tr><th>-io</th><td>-i <i>(mister én i)</i></td><td><code>vecchio → vecchi</code></td></tr>
+          </tbody>
+        </table>
+
+        <h4>Plassering</h4>
+        <table class="rule-table">
+          <thead><tr><th>regel</th><th>detalj</th><th>eksempel</th></tr></thead>
+          <tbody>
+            <tr><th>etter substantivet</th><td>hovedregelen for de fleste adjektiv</td><td><code>una macchina rossa</code></td></tr>
+            <tr><th>foran substantivet</th><td>buono, bello, grande, piccolo, vecchio, giovane kan stå foran</td><td><code>un piccolo problema</code></td></tr>
+            <tr><th>buono / bello foran</th><td>bøyes da som artiklene un/uno og il/lo/l'</td><td><code>un buon amico · bel ragazzo · bei ragazzi · begli studenti</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rule-block">
+        <h3>Setninger</h3>
+        <p class="rule-lead">Setningsmodusen tester bøying, samsvar og ordstilling i små setninger.</p>
+
+        <h4>Mønstre som testes</h4>
+        <table class="rule-table">
+          <thead><tr><th>norsk</th><th>italiensk</th><th>tester</th></tr></thead>
+          <tbody>
+            <tr><th>Jeg er trett.</th><td><code>Sono stanco.</code></td><td>essere + adjektivsamsvar med subjektet</td></tr>
+            <tr><th>Senger er store.</th><td><code>I letti sono grandi.</code></td><td>substantivets kjønn og tall styrer adjektivet</td></tr>
+            <tr><th>Vi kjøper store senger.</th><td><code>Compriamo i letti grandi.</code></td><td>verbbøying + artikkel + ordstilling</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Nøkkelregler</h4>
+        <table class="rule-table">
+          <thead><tr><th>regel</th><th>norsk</th><th>italiensk</th></tr></thead>
+          <tbody>
+            <tr><th>subjektspronomenet sløyfes</th><td>jeg er trett</td><td><code>sono stanco</code> — verbformen viser personen</td></tr>
+            <tr><th>adjektivet etter substantivet</th><td>store senger</td><td><code>letti grandi</code></td></tr>
+            <tr><th>bestemt artikkel i setning</th><td>vi kjøper (noen) senger</td><td><code>compriamo i letti</code> — italiensk bruker artikkel der norsk dropper den</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
