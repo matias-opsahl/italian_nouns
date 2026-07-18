@@ -569,3 +569,16 @@
 | mental | mentale | mentale | mentali | mentali | men-TA-le |  |
 | gigantisk | gigantesco | gigantesca | giganteschi | gigantesche | gi-gan-TE-sco |  |
 | bitteliten | minuscolo | minuscola | minuscoli | minuscole | mi-NU-sco-lo |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| forlovet | fidanzato | fidanzata | fidanzati | fidanzate | fi-dan-ZA-to |  |
+| gift | sposato | sposata | sposati | sposate | spo-SA-to |  |
+| vegetarisk | vegetariano | vegetariana | vegetariani | vegetariane | ve-ge-ta-RIA-no |  |
+| vegansk | vegano | vegana | vegani | vegane | VE-ga-no |  |
+| allergisk | allergico | allergica | allergici | allergiche | al-LER-gi-co |  |
+| lokal | locale | locale | locali | locali | lo-CA-le |  |
+| virtuell | virtuale | virtuale | virtuali | virtuali | vir-tu-A-le |  |
+| internasjonal | internazionale | internazionale | internazionali | internazionali | in-ter-na-zio-NA-le |  |
+| historisk | storico | storica | storici | storiche | STO-ri-co |  |
+| økologisk | biologico | biologica | biologici | biologiche | bio-LO-gi-co |  |

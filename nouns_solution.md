@@ -570,3 +570,16 @@
 | pyramide | pyramider | pyramiden | pyramidene | la piramide | le piramidi | una piramide | delle piramidi | f | pi-RA-mi-de |  |
 | isbre | isbreer | isbreen | isbreene | il ghiacciaio | i ghiacciai | un ghiacciaio | dei ghiacciai | m | ghiac-CIA-io |  |
 | klippe | klipper | klippen | klippene | la scogliera | le scogliere | una scogliera | delle scogliere | f | sco-GLIE-ra |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| vask | vasker | vasken | vaskene | il lavandino | i lavandini | un lavandino | dei lavandini | m | la-van-DI-no |  |
+| vaskemaskin | vaskemaskiner | vaskemaskinen | vaskemaskinene | la lavatrice | le lavatrici | una lavatrice | delle lavatrici | f | la-va-TRI-ce |  |
+| oppvaskmaskin | oppvaskmaskiner | oppvaskmaskinen | oppvaskmaskinene | la lavastoviglie | le lavastoviglie | una lavastoviglie | delle lavastoviglie | f | la-va-sto-VI-glie |  |
+| brødrister | brødristere | brødristeren | brødristerne | il tostapane | i tostapane | un tostapane | dei tostapane | m | to-sta-PA-ne |  |
+| fryser | frysere | fryseren | fryserne | il congelatore | i congelatori | un congelatore | dei congelatori | m | con-ge-la-TO-re |  |
+| dørklokke | dørklokker | dørklokken | dørklokkene | il campanello | i campanelli | un campanello | dei campanelli | m | cam-pa-NEL-lo |  |
+| port | porter | porten | portene | il cancello | i cancelli | un cancello | dei cancelli | m | can-CEL-lo |  |
+| gjerde | gjerder | gjerdet | gjerdene | la recinzione | le recinzioni | una recinzione | delle recinzioni | f | re-cin-ZIO-ne |  |
+| advokat | advokater | advokaten | advokatene | l'avvocato | gli avvocati | un avvocato | degli avvocati | m | av-vo-CA-to |  |
+| sykepleier | sykepleiere | sykepleieren | sykepleierne | l'infermiere | gli infermieri | un infermiere | degli infermieri | m | in-fer-MIE-re |  |

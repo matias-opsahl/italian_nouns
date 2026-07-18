@@ -570,3 +570,16 @@
 | å doble | raddoppiare | rad-dop-PIA-re |  |
 | å halvere | dimezzare | di-mez-ZA-re |  |
 | å vedde | scommettere | scom-MET-te-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å forelske seg | innamorarsi | in-na-mo-RAR-si |  |
+| å forlove seg | fidanzarsi | fi-dan-ZAR-si |  |
+| å skli | scivolare | sci-vo-LA-re |  |
+| å forbikjøre | sorpassare | sor-pas-SA-re |  |
+| å akselerere | accelerare | ac-ce-le-RA-re |  |
+| å sette inn | depositare | de-po-si-TA-re |  |
+| å kunngjøre | annunciare | an-nun-CIA-re |  |
+| å støvsuge | aspirare | a-spi-RA-re |  |
+| å støve av | spolverare | spol-ve-RA-re |  |
+| å stupe | tuffarsi | tuf-FAR-si |  |
