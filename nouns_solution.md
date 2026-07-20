@@ -583,3 +583,16 @@
 | gjerde | gjerder | gjerdet | gjerdene | la recinzione | le recinzioni | una recinzione | delle recinzioni | f | re-cin-ZIO-ne |  |
 | advokat | advokater | advokaten | advokatene | l'avvocato | gli avvocati | un avvocato | degli avvocati | m | av-vo-CA-to |  |
 | sykepleier | sykepleiere | sykepleieren | sykepleierne | l'infermiere | gli infermieri | un infermiere | degli infermieri | m | in-fer-MIE-re |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ankel | ankler | ankelen | anklene | la caviglia | le caviglie | una caviglia | delle caviglie | f | ca-VI-glia |  |
+| hake | haker | haken | hakene | il mento | i menti | un mento | dei menti | m | MEN-to |  |
+| negl | negler | neglen | neglene | l'unghia | le unghie | un'unghia | delle unghie | f | UN-ghia |  |
+| tommel | tommeler | tommelen | tommelene | il pollice | i pollici | un pollice | dei pollici | m | POL-li-ce |  |
+| lår | lår | låret | lårene | la coscia | le cosce | una coscia | delle cosce | f | CO-scia |  |
+| hæl | heler | hælen | helene | il tallone | i talloni | un tallone | dei talloni | m | tal-LO-ne |  |
+| neve | never | neven | nevene | il pugno | i pugni | un pugno | dei pugni | m | PU-gno |  |
+| svette | svetter | svetten | svettene | il sudore | i sudori | un sudore | dei sudori | m | su-DO-re |  |
+| tåre | tårer | tåren | tårene | la lacrima | le lacrime | una lacrima | delle lacrime | f | LA-cri-ma |  |
+| arr | arr | arret | arrene | la cicatrice | le cicatrici | una cicatrice | delle cicatrici | f | ci-ca-TRI-ce |  |

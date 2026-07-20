@@ -583,3 +583,16 @@
 | å støvsuge | aspirare | a-spi-RA-re |  |
 | å støve av | spolverare | spol-ve-RA-re |  |
 | å stupe | tuffarsi | tuf-FAR-si |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å klø | prudere | pru-DE-re |  |
+| å hikke | singhiozzare | sin-ghioz-ZA-re |  |
+| å bli blek | impallidire | im-pal-li-DI-re |  |
+| å knele | inginocchiarsi | in-gi-noc-CHIAR-si |  |
+| å sitte på huk | accovacciarsi | ac-co-vac-CIAR-si |  |
+| å bøye seg | piegarsi | pie-GAR-si |  |
+| å sprette | rimbalzare | rim-bal-ZA-re |  |
+| å snuble | inciampare | in-ciam-PA-re |  |
+| å grøsse | rabbrividire | rab-bri-vi-DI-re |  |
+| å kjæle med | accarezzare | ac-ca-rez-ZA-re |  |

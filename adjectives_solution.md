@@ -582,3 +582,16 @@
 | internasjonal | internazionale | internazionale | internazionali | internazionali | in-ter-na-zio-NA-le |  |
 | historisk | storico | storica | storici | storiche | STO-ri-co |  |
 | økologisk | biologico | biologica | biologici | biologiche | bio-LO-gi-co |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| aktsom | prudente | prudente | prudenti | prudenti | pru-DEN-te |  |
+| hjelpsom | servizievole | servizievole | servizievoli | servizievoli | ser-vi-ZIE-vo-le |  |
+| ru | ruvido | ruvida | ruvidi | ruvide | RU-vi-do |  |
+| luftig | soffice | soffice | soffici | soffici | SOF-fi-ce |  |
+| mør | tenero | tenera | teneri | tenere | TE-ne-ro |  |
+| fruktbar | fertile | fertile | fertili | fertili | FER-ti-le |  |
+| steril | sterile | sterile | sterili | sterili | STE-ri-le |  |
+| fordelaktig | vantaggioso | vantaggiosa | vantaggiosi | vantaggiose | van-tag-GIO-so |  |
+| beleilig | opportuno | opportuna | opportuni | opportune | op-por-TU-no |  |
+| slapp | flaccido | flaccida | flaccidi | flaccide | FLAC-ci-do |  |
