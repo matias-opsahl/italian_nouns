@@ -596,3 +596,16 @@
 | å snuble | inciampare | in-ciam-PA-re |  |
 | å grøsse | rabbrividire | rab-bri-vi-DI-re |  |
 | å kjæle med | accarezzare | ac-ca-rez-ZA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å svelge | inghiottire | in-ghiot-TI-re |  |
+| å suge | succhiare | suc-CHIA-re |  |
+| å slikke | leccare | lec-CA-re |  |
+| å svime av | svenire | sve-NI-re |  |
+| å stotre | balbettare | bal-bet-TA-re |  |
+| å true | minacciare | mi-nac-CIA-re |  |
+| å beklage | rammaricarsi | ram-ma-ri-CAR-si |  |
+| å sladre | spettegolare | spet-te-go-LA-re |  |
+| å fnise | ridacchiare | ri-dac-CHIA-re |  |
+| å blunke | ammiccare | am-mic-CA-re |  |

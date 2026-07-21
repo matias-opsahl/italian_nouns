@@ -595,3 +595,16 @@
 | fordelaktig | vantaggioso | vantaggiosa | vantaggiosi | vantaggiose | van-tag-GIO-so |  |
 | beleilig | opportuno | opportuna | opportuni | opportune | op-por-TU-no |  |
 | slapp | flaccido | flaccida | flaccidi | flaccide | FLAC-ci-do |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| tolerant | tollerante | tollerante | tolleranti | tolleranti | tol-le-RAN-te |  |
+| realistisk | realistico | realistica | realistici | realistiche | re-a-LI-sti-co |  |
+| lam | paralizzato | paralizzata | paralizzati | paralizzate | pa-ra-liz-ZA-to |  |
+| sjokkert | scioccato | scioccata | scioccati | scioccate | scioc-CA-to |  |
+| butt | spuntato | spuntata | spuntati | spuntate | spun-TA-to |  |
+| fast | fisso | fissa | fissi | fisse | FIS-so |  |
+| smittsom | contagioso | contagiosa | contagiosi | contagiose | con-ta-GIO-so |  |
+| kronisk | cronico | cronica | cronici | croniche | CRO-ni-co |  |
+| elastisk | elastico | elastica | elastici | elastiche | e-LA-sti-co |  |
+| porøs | poroso | porosa | porosi | porose | po-RO-so |  |

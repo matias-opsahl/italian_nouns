@@ -596,3 +596,16 @@
 | svette | svetter | svetten | svettene | il sudore | i sudori | un sudore | dei sudori | m | su-DO-re |  |
 | tåre | tårer | tåren | tårene | la lacrima | le lacrime | una lacrima | delle lacrime | f | LA-cri-ma |  |
 | arr | arr | arret | arrene | la cicatrice | le cicatrici | una cicatrice | delle cicatrici | f | ci-ca-TRI-ce |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| dyne | dyner | dynen | dynene | il piumone | i piumoni | un piumone | dei piumoni | m | piu-MO-ne |  |
+| vifte | vifter | viften | viftene | il ventilatore | i ventilatori | un ventilatore | dei ventilatori | m | ven-ti-la-TO-re |  |
+| radiator | radiatorer | radiatoren | radiatorene | il termosifone | i termosifoni | un termosifone | dei termosifoni | m | ter-mo-si-FO-ne |  |
+| stikkontakt | stikkontakter | stikkontakten | stikkontaktene | la presa | le prese | una presa | delle prese | f | PRE-sa |  |
+| fjernkontroll | fjernkontroller | fjernkontrollen | fjernkontrollene | il telecomando | i telecomandi | un telecomando | dei telecomandi | m | te-le-co-MAN-do |  |
+| krukke | krukker | krukken | krukkene | il barattolo | i barattoli | un barattolo | dei barattoli | m | ba-RAT-to-lo |  |
+| skjærebrett | skjærebrett | skjærebrettet | skjærebrettene | il tagliere | i taglieri | un tagliere | dei taglieri | m | ta-GLIE-re |  |
+| sil | siler | silen | silene | il colino | i colini | un colino | dei colini | m | co-LI-no |  |
+| visp | visper | vispen | vispene | la frusta | le fruste | una frusta | delle fruste | f | FRU-sta |  |
+| korketrekker | korketrekkere | korketrekkeren | korketrekkerne | il cavatappi | i cavatappi | un cavatappi | dei cavatappi | m | ca-va-TAP-pi |  |
