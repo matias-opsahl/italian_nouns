@@ -609,3 +609,16 @@
 | å sladre | spettegolare | spet-te-go-LA-re |  |
 | å fnise | ridacchiare | ri-dac-CHIA-re |  |
 | å blunke | ammiccare | am-mic-CA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å beskjære | potare | po-TA-re |  |
+| å lakkere | verniciare | ver-ni-CIA-re |  |
+| å lime | incollare | in-col-LA-re |  |
+| å lappe | rammendare | ram-men-DA-re |  |
+| å skjære i skiver | affettare | af-fet-TA-re |  |
+| å marinere | marinare | ma-ri-NA-re |  |
+| å sette i ovnen | infornare | in-for-NA-re |  |
+| å polere | lucidare | lu-ci-DA-re |  |
+| å desinfisere | disinfettare | di-sin-fet-TA-re |  |
+| å sentrifugere | centrifugare | cen-tri-fu-GA-re |  |

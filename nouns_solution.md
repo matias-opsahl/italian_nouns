@@ -609,3 +609,16 @@
 | sil | siler | silen | silene | il colino | i colini | un colino | dei colini | m | co-LI-no |  |
 | visp | visper | vispen | vispene | la frusta | le fruste | una frusta | delle fruste | f | FRU-sta |  |
 | korketrekker | korketrekkere | korketrekkeren | korketrekkerne | il cavatappi | i cavatappi | un cavatappi | dei cavatappi | m | ca-va-TAP-pi |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| t-bane | t-baner | t-banen | t-banene | la metropolitana | le metropolitane | una metropolitana | delle metropolitane | f | me-tro-po-li-TA-na |  |
+| gård | gårder | gården | gårdene | la fattoria | le fattorie | una fattoria | delle fattorie | f | fat-to-RI-a |  |
+| brygge | brygger | bryggen | bryggene | il molo | i moli | un molo | dei moli | m | MO-lo |  |
+| bukt | bukter | bukten | buktene | la baia | le baie | una baia | delle baie | f | BA-ia |  |
+| forstad | forsteder | forstaden | forstedene | la periferia | le periferie | una periferia | delle periferie | f | pe-ri-fe-RI-a |  |
+| skyskraper | skyskrapere | skyskraperen | skyskraperne | il grattacielo | i grattacieli | un grattacielo | dei grattacieli | m | grat-ta-CIE-lo |  |
+| fortau | fortau | fortauet | fortauene | il marciapiede | i marciapiedi | un marciapiede | dei marciapiedi | m | mar-cia-PIE-de |  |
+| rundkjøring | rundkjøringer | rundkjøringen | rundkjøringene | la rotonda | le rotonde | una rotonda | delle rotonde | f | ro-TON-da |  |
+| veikryss | veikryss | veikrysset | veikryssene | l'incrocio | gli incroci | un incrocio | degli incroci | m | in-CRO-cio |  |
+| lager | lagre | lageret | lagrene | il magazzino | i magazzini | un magazzino | dei magazzini | m | ma-gaz-ZI-no |  |

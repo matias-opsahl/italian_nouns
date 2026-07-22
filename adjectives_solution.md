@@ -608,3 +608,16 @@
 | kronisk | cronico | cronica | cronici | croniche | CRO-ni-co |  |
 | elastisk | elastico | elastica | elastici | elastiche | e-LA-sti-co |  |
 | porøs | poroso | porosa | porosi | porose | po-RO-so |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| hårsår | permaloso | permalosa | permalosi | permalose | per-ma-LO-so |  |
+| altruistisk | altruista | altruista | altruisti | altruiste | al-tru-I-sta |  |
+| usympatisk | antipatico | antipatica | antipatici | antipatiche | an-ti-PA-ti-co |  |
+| bortskjemt | viziato | viziata | viziati | viziate | vi-ZIA-to |  |
+| forståelsesfull | comprensivo | comprensiva | comprensivi | comprensive | com-pren-SI-vo |  |
+| omtenksom | premuroso | premurosa | premurosi | premurose | pre-mu-RO-so |  |
+| utro | infedele | infedele | infedeli | infedeli | in-fe-DE-le |  |
+| løgnaktig | bugiardo | bugiarda | bugiardi | bugiarde | bu-GIAR-do | løgner |
+| uansvarlig | irresponsabile | irresponsabile | irresponsabili | irresponsabili | ir-re-spon-SA-bi-le |  |
+| hovmodig | superbo | superba | superbi | superbe | su-PER-bo | praktfull |
