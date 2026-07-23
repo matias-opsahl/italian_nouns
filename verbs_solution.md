@@ -622,3 +622,16 @@
 | å polere | lucidare | lu-ci-DA-re |  |
 | å desinfisere | disinfettare | di-sin-fet-TA-re |  |
 | å sentrifugere | centrifugare | cen-tri-fu-GA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å reflektere | riflettere | ri-FLET-te-re |  |
+| å legge merke til | notare | no-TA-re | å notere |
+| å utveksle | scambiare | scam-BIA-re | å bytte |
+| å konkurrere | gareggiare | ga-reg-GIA-re |  |
+| å avsløre | rivelare | ri-ve-LA-re |  |
+| å bevare | conservare | con-ser-VA-re |  |
+| å forsvare | difendere | di-FEN-de-re |  |
+| å angripe | attaccare | at-TAC-ca-re |  |
+| å styre | governare | go-ver-NA-re | å lede |
+| å begrunne | giustificare | giu-sti-fi-CA-re |  |

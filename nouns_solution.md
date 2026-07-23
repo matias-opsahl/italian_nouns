@@ -438,6 +438,19 @@
 | lov | lover | loven | lovene | la legge | le leggi | una legge | delle leggi | f | LEG-ge |  |
 | kraft | krefter | kraften | kreftene | la forza | le forze | una forza | delle forze | f | FOR-za |  |
 | liv | liv | livet | livene | la vita | le vite | una vita | delle vite | f | VI-ta | midje |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| dusj | dusjer | dusjen | dusjene | la doccia | le docce | una doccia | delle docce | f | DOC-cia |  |
+| badekar | badekar | badekaret | badekarene | la vasca | le vasche | una vasca | delle vasche | f | VA-sca |  |
+| førerkort | førerkort | førerkortet | førerkortene | la patente | le patenti | una patente | delle patenti | f | pa-TEN-te |  |
+| smør | smør | smøret | smørene | il burro | i burri | un burro | dei burri | m | BUR-ro |  |
+| yoghurt | yoghurter | yoghurten | yoghurtene | lo yogurt | gli yogurt | uno yogurt | degli yogurt | m | YO-gurt |  |
+| honning | honninger | honningen | honningene | il miele | i mieli | un miele | dei mieli | m | MIE-le |  |
+| te | teer | teen | teene | il tè | i tè | un tè | dei tè | m | TÈ |  |
+| agurk | agurker | agurken | agurkene | il cetriolo | i cetrioli | un cetriolo | dei cetrioli | m | ce-TRIO-lo |  |
+| paprika | paprikaer | paprikaen | paprikaene | il peperone | i peperoni | un peperone | dei peperoni | m | pe-pe-RO-ne |  |
+| flagg | flagg | flagget | flaggene | la bandiera | le bandiere | una bandiera | delle bandiere | f | ban-DIE-ra |  |
 | valg | valg | valget | valgene | la scelta | le scelte | una scelta | delle scelte | f | SCEL-ta |  |
 | virkelighet | virkeligheter | virkeligheten | virkelighetene | la realtà | le realtà | una realtà | delle realtà | f | re-al-TÀ |  |
 

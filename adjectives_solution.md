@@ -621,3 +621,16 @@
 | løgnaktig | bugiardo | bugiarda | bugiardi | bugiarde | bu-GIAR-do | løgner |
 | uansvarlig | irresponsabile | irresponsabile | irresponsabili | irresponsabili | ir-re-spon-SA-bi-le |  |
 | hovmodig | superbo | superba | superbi | superbe | su-PER-bo | praktfull |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| uforutsigbar | imprevedibile | imprevedibile | imprevedibili | imprevedibili | im-pre-ve-DI-bi-le |  |
+| forutsigbar | prevedibile | prevedibile | prevedibili | prevedibili | pre-ve-DI-bi-le |  |
+| spesifikk | specifico | specifica | specifici | specifiche | spe-CI-fi-co |  |
+| generell | generale | generale | generali | generali | ge-ne-RA-le |  |
+| ekstrem | estremo | estrema | estremi | estreme | e-STRE-mo |  |
+| detaljert | dettagliato | dettagliata | dettagliati | dettagliate | det-ta-GLIA-to |  |
+| systematisk | sistematico | sistematica | sistematici | sistematiche | si-ste-MA-ti-co |  |
+| kaotisk | caotico | caotica | caotici | caotiche | ca-O-ti-co |  |
+| avslappende | rilassante | rilassante | rilassanti | rilassanti | ri-las-SAN-te |  |
+| skuffende | deludente | deludente | deludenti | deludenti | de-lu-DEN-te |  |
