@@ -634,3 +634,16 @@
 | kaotisk | caotico | caotica | caotici | caotiche | ca-O-ti-co |  |
 | avslappende | rilassante | rilassante | rilassanti | rilassanti | ri-las-SAN-te |  |
 | skuffende | deludente | deludente | deludenti | deludenti | de-lu-DEN-te |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| snøfull | nevoso | nevosa | nevosi | nevose | ne-VO-so |  |
+| frossen | ghiacciato | ghiacciata | ghiacciati | ghiacciate | ghiac-CIA-to | iskald |
+| ukomfortabel | scomodo | scomoda | scomodi | scomode | SCO-mo-do | ubehagelig |
+| leselig | leggibile | leggibile | leggibili | leggibili | leg-GI-bi-le |  |
+| drikkbar | potabile | potabile | potabili | potabili | po-TA-bi-le |  |
+| resirkulerbar | riciclabile | riciclabile | riciclabili | riciclabili | ri-ci-CLA-bi-le |  |
+| bærekraftig | sostenibile | sostenibile | sostenibili | sostenibili | so-ste-NI-bi-le |  |
+| krevende | impegnativo | impegnativa | impegnativi | impegnative | im-pe-gna-TI-vo | utfordrende |
+| ustabil | instabile | instabile | instabili | instabili | in-STA-bi-le |  |
+| stabil | stabile | stabile | stabili | stabili | STA-bi-le |  |

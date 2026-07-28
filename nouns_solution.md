@@ -635,3 +635,16 @@
 | rundkjøring | rundkjøringer | rundkjøringen | rundkjøringene | la rotonda | le rotonde | una rotonda | delle rotonde | f | ro-TON-da |  |
 | veikryss | veikryss | veikrysset | veikryssene | l'incrocio | gli incroci | un incrocio | degli incroci | m | in-CRO-cio |  |
 | lager | lagre | lageret | lagrene | il magazzino | i magazzini | un magazzino | dei magazzini | m | ma-gaz-ZI-no |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| lærer | lærere | læreren | lærerne | l'insegnante | gli insegnanti | un insegnante | degli insegnanti | m | in-se-GNAN-te |  |
+| lekse | lekser | leksen | leksene | il compito | i compiti | un compito | dei compiti | m | COM-pi-to |  |
+| skoletime | skoletimer | skoletimen | skoletimene | la lezione | le lezioni | una lezione | delle lezioni | f | le-ZIO-ne |  |
+| karakter | karakterer | karakteren | karakterene | il voto | i voti | un voto | dei voti | m | VO-to |  |
+| klasserom | klasserom | klasserommet | klasserommene | l'aula | le aule | un'aula | delle aule | f | AU-la |  |
+| eksamen | eksamener | eksamenen | eksamenene | l'esame | gli esami | un esame | degli esami | m | e-SA-me |  |
+| helg | helger | helgen | helgene | il fine settimana | i fine settimana | un fine settimana | dei fine settimana | m | FI-ne set-ti-MA-na |  |
+| overraskelse | overraskelser | overraskelsen | overraskelsene | la sorpresa | le sorprese | una sorpresa | delle sorprese | f | sor-PRE-sa |  |
+| minne | minner | minnet | minnene | il ricordo | i ricordi | un ricordo | dei ricordi | m | ri-COR-do | suvenir |
+| risiko | risikoer | risikoen | risikoene | il rischio | i rischi | un rischio | dei rischi | m | RI-schio |  |

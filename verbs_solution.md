@@ -635,3 +635,16 @@
 | å angripe | attaccare | at-TAC-ca-re |  |
 | å styre | governare | go-ver-NA-re | å lede |
 | å begrunne | giustificare | giu-sti-fi-CA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å kombinere | combinare | com-bi-NA-re |  |
+| å konsultere | consultare | con-sul-TA-re |  |
+| å plage | infastidire | in-fa-sti-DI-re | å irritere |
+| å legge seg | coricarsi | co-ri-CAR-si | å gå til sengs |
+| å øve | esercitarsi | e-ser-ci-TAR-si |  |
+| å blande seg inn | intromettersi | in-tro-MET-ter-si |  |
+| å trekke seg | ritirarsi | ri-ti-RAR-si |  |
+| å evaluere | valutare | va-lu-TA-re | å vurdere |
+| å styrke | rafforzare | raf-for-ZA-re |  |
+| å svekke | indebolire | in-de-bo-LI-re |  |
