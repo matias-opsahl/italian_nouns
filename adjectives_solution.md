@@ -647,3 +647,16 @@
 | krevende | impegnativo | impegnativa | impegnativi | impegnative | im-pe-gna-TI-vo | utfordrende |
 | ustabil | instabile | instabile | instabili | instabili | in-STA-bi-le |  |
 | stabil | stabile | stabile | stabili | stabili | STA-bi-le |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| grov | grossolano | grossolana | grossolani | grossolane | gros-so-LA-no |  |
+| skarp (kniv) | affilato | affilata | affilati | affilate | af-fi-LA-to | hvass |
+| spiss | appuntito | appuntita | appuntiti | appuntite | ap-pun-TI-to |  |
+| buet | curvo | curva | curvi | curve | CUR-vo | kroket |
+| vanntett | impermeabile | impermeabile | impermeabili | impermeabili | im-per-me-A-bi-le |  |
+| lunken | tiepido | tiepida | tiepidi | tiepide | TIE-pi-do |  |
+| hyppig | frequente | frequente | frequenti | frequenti | fre-QUEN-te |  |
+| regelmessig | regolare | regolare | regolari | regolari | re-go-LA-re | jevnlig |
+| forsinket | ritardato | ritardata | ritardati | ritardate | ri-tar-DA-to |  |
+| solbrent | abbronzato | abbronzata | abbronzati | abbronzate | ab-bron-ZA-to |  |

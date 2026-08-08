@@ -648,3 +648,16 @@
 | å evaluere | valutare | va-lu-TA-re | å vurdere |
 | å styrke | rafforzare | raf-for-ZA-re |  |
 | å svekke | indebolire | in-de-bo-LI-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å logge inn | accedere | ac-CE-de-re |  |
+| å overføre | trasferire | tra-sfe-RI-re |  |
+| å fylle ut | compilare | com-pi-LA-re |  |
+| å knipse | scattare | scat-TA-re | å ta et bilde |
+| å ro | remare | re-MA-re |  |
+| å jakte | cacciare | cac-CIA-re |  |
+| å legge sammen | sommare | som-MA-re | å summere |
+| å trekke fra | sottrarre | sot-TRAR-re | å subtrahere |
+| å multiplisere | moltiplicare | mol-ti-pli-CA-re | å gange |
+| å søke (om jobb) | candidarsi | can-di-DAR-si | å melde seg |

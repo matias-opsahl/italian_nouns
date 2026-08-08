@@ -648,3 +648,16 @@
 | overraskelse | overraskelser | overraskelsen | overraskelsene | la sorpresa | le sorprese | una sorpresa | delle sorprese | f | sor-PRE-sa |  |
 | minne | minner | minnet | minnene | il ricordo | i ricordi | un ricordo | dei ricordi | m | ri-COR-do | suvenir |
 | risiko | risikoer | risikoen | risikoene | il rischio | i rischi | un rischio | dei rischi | m | RI-schio |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| bensin | bensin | bensinen | bensinene | la benzina | le benzine | una benzina | delle benzine | f | ben-ZI-na |  |
+| motorvei | motorveier | motorveien | motorveiene | l'autostrada | le autostrade | un'autostrada | delle autostrade | f | au-to-STRA-da |  |
+| holdeplass | holdeplasser | holdeplassen | holdeplassene | la fermata | le fermate | una fermata | delle fermate | f | fer-MA-ta |  |
+| handlevogn | handlevogner | handlevognen | handlevognene | il carrello | i carrelli | un carrello | dei carrelli | m | car-REL-lo |  |
+| kasse | kasser | kassen | kassene | la cassa | le casse | una cassa | delle casse | f | CAS-sa |  |
+| meny | menyer | menyen | menyene | il menù | i menù | un menù | dei menù | m | me-NÙ |  |
+| eske | esker | esken | eskene | la scatola | le scatole | una scatola | delle scatole | f | SCA-to-la |  |
+| knapp | knapper | knappen | knappene | il bottone | i bottoni | un bottone | dei bottoni | m | bot-TO-ne |  |
+| tannkrem | tannkrem | tannkremen | tannkremene | il dentifricio | i dentifrici | un dentifricio | dei dentifrici | m | den-ti-FRI-cio |  |
+| sjampo | sjampoer | sjampoen | sjampoene | lo shampoo | gli shampoo | uno shampoo | degli shampoo | m | SHAM-poo |  |
