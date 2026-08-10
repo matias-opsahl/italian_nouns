@@ -661,3 +661,16 @@
 | knapp | knapper | knappen | knappene | il bottone | i bottoni | un bottone | dei bottoni | m | bot-TO-ne |  |
 | tannkrem | tannkrem | tannkremen | tannkremene | il dentifricio | i dentifrici | un dentifricio | dei dentifrici | m | den-ti-FRI-cio |  |
 | sjampo | sjampoer | sjampoen | sjampoene | lo shampoo | gli shampoo | uno shampoo | degli shampoo | m | SHAM-poo |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| post | post | posten | postene | la posta | le poste | una posta | delle poste | f | POS-ta |  |
+| postbud | postbud | postbudet | postbudene | il postino | i postini | un postino | dei postini | m | po-STI-no |  |
+| lommetørkle | lommetørklær | lommetørkleet | lommetørklærne | il fazzoletto | i fazzoletti | un fazzoletto | dei fazzoletti | m | faz-zo-LET-to |  |
+| brann | branner | brannen | brannene | l'incendio | gli incendi | un incendio | degli incendi | m | in-CEN-dio |  |
+| politimann | politimenn | politimannen | politimennene | il poliziotto | i poliziotti | un poliziotto | dei poliziotti | m | po-li-ZIOT-to |  |
+| brannmann | brannmenn | brannmannen | brannmennene | il pompiere | i pompieri | un pompiere | dei pompieri | m | pom-PIE-re |  |
+| ekorn | ekorn | ekornet | ekornene | lo scoiattolo | gli scoiattoli | uno scoiattolo | degli scoiattoli | m | sco-IAT-to-lo |  |
+| rev | rever | reven | revene | la volpe | le volpi | una volpe | delle volpi | f | VOL-pe |  |
+| flaggermus | flaggermus | flaggermusen | flaggermusene | il pipistrello | i pipistrelli | un pipistrello | dei pipistrelli | m | pi-pi-STREL-lo |  |
+| dessert | desserter | desserten | dessertene | il dolce | i dolci | un dolce | dei dolci | m | DOL-ce | søtsak |

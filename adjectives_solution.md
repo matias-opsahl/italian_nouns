@@ -660,3 +660,16 @@
 | regelmessig | regolare | regolare | regolari | regolari | re-go-LA-re | jevnlig |
 | forsinket | ritardato | ritardata | ritardati | ritardate | ri-tar-DA-to |  |
 | solbrent | abbronzato | abbronzata | abbronzati | abbronzate | ab-bron-ZA-to |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| irritabel | irritabile | irritabile | irritabili | irritabili | ir-ri-TA-bi-le |  |
+| rasjonell | razionale | razionale | razionali | razionali | ra-zio-NA-le |  |
+| anonym | anonimo | anonima | anonimi | anonime | a-NO-ni-mo |  |
+| ulovlig | illegale | illegale | illegali | illegali | il-le-GA-le |  |
+| urettferdig | ingiusto | ingiusta | ingiusti | ingiuste | in-GIU-sto |  |
+| vag | vago | vaga | vaghi | vaghe | VA-go |  |
+| flytende (væske) | liquido | liquida | liquidi | liquide | LI-qui-do | smeltet |
+| uthvilt | riposato | riposata | riposati | riposate | ri-po-SA-to |  |
+| tam | addomesticato | addomesticata | addomesticati | addomesticate | ad-do-me-sti-CA-to |  |
+| variabel | variabile | variabile | variabili | variabili | va-RIA-bi-le | skiftende |

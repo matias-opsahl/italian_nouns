@@ -661,3 +661,16 @@
 | å trekke fra | sottrarre | sot-TRAR-re | å subtrahere |
 | å multiplisere | moltiplicare | mol-ti-pli-CA-re | å gange |
 | å søke (om jobb) | candidarsi | can-di-DAR-si | å melde seg |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å snu | voltare | vol-TA-re | å vende |
+| å så | seminare | se-mi-NA-re |  |
+| å motivere | motivare | mo-ti-VA-re |  |
+| å inspirere | ispirare | i-spi-RA-re |  |
+| å belønne | premiare | pre-MIA-re |  |
+| å straffe | punire | pu-NI-re |  |
+| å riste (brød) | tostare | to-STA-re |  |
+| å oppdra | educare | e-du-CA-re |  |
+| å informere | informare | in-for-MA-re |  |
+| å skremme | spaventare | spa-ven-TA-re |  |
