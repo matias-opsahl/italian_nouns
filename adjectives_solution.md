@@ -673,3 +673,16 @@
 | uthvilt | riposato | riposata | riposati | riposate | ri-po-SA-to |  |
 | tam | addomesticato | addomesticata | addomesticati | addomesticate | ad-do-me-sti-CA-to |  |
 | variabel | variabile | variabile | variabili | variabili | va-RIA-bi-le | skiftende |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| lik/samme | uguale | uguale | uguali | uguali | u-GUA-le |  |
+| elektrisk | elettrico | elettrica | elettrici | elettriche | e-LET-tri-co |  |
+| automatisk | automatico | automatica | automatici | automatiche | au-to-MA-ti-co |  |
+| manuell | manuale | manuale | manuali | manuali | ma-NUA-le |  |
+| utadvendt | estroverso | estroversa | estroversi | estroverse | e-stro-VER-so |  |
+| innadvendt | introverso | introversa | introversi | introverse | in-tro-VER-so |  |
+| dumdristig | spericolato | spericolata | spericolati | spericolate | spe-ri-co-LA-to |  |
+| eldre (søsken) | maggiore | maggiore | maggiori | maggiori | mag-GIO-re |  |
+| yngre (søsken) | minore | minore | minori | minori | mi-NO-re |  |
+| sølvfarget | argenteo | argentea | argentei | argentee | ar-GEN-teo |  |

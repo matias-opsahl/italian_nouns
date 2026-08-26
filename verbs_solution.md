@@ -674,3 +674,16 @@
 | å oppdra | educare | e-du-CA-re |  |
 | å informere | informare | in-for-MA-re |  |
 | å skremme | spaventare | spa-ven-TA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å pleie | curare | cu-RA-re | å kurere |
+| å programmere | programmare | pro-gram-MA-re |  |
+| å fryse (vær) | gelare | ge-LA-re |  |
+| å gå ned (sol) | tramontare | tra-mon-TA-re |  |
+| å stå opp (sol) | sorgere | SOR-ge-re |  |
+| å forlate (permanent) | abbandonare | ab-ban-do-NA-re |  |
+| å tåle | sopportare | sop-por-TA-re |  |
+| å sakke farten | rallentare | ral-len-TA-re |  |
+| å eksplodere | esplodere | e-SPLO-de-re |  |
+| å skinne | brillare | bril-LA-re |  |

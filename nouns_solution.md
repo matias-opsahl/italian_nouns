@@ -674,3 +674,16 @@
 | rev | rever | reven | revene | la volpe | le volpi | una volpe | delle volpi | f | VOL-pe |  |
 | flaggermus | flaggermus | flaggermusen | flaggermusene | il pipistrello | i pipistrelli | un pipistrello | dei pipistrelli | m | pi-pi-STREL-lo |  |
 | dessert | desserter | desserten | dessertene | il dolce | i dolci | un dolce | dei dolci | m | DOL-ce | søtsak |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| nevø | nevøer | nevøen | nevøene | il nipote | i nipoti | un nipote | dei nipoti | m | ni-PO-te |  |
+| fetter | fettere | fetteren | fetterne | il cugino | i cugini | un cugino | dei cugini | m | cu-GI-no |  |
+| motorsykkel | motorsykler | motorsykkelen | motorsyklene | la moto | le moto | una moto | delle moto | f | MO-to |  |
+| minutt | minutter | minuttet | minuttene | il minuto | i minuti | un minuto | dei minuti | m | mi-NU-to |  |
+| time | timer | timen | timene | l'ora | le ore | un'ora | delle ore | f | O-ra |  |
+| pepper | pepper | pepperen | pepperne | il pepe | i pepi | un pepe | dei pepi | m | PE-pe |  |
+| mellommåltid | mellommåltider | mellommåltidet | mellommåltidene | lo spuntino | gli spuntini | uno spuntino | degli spuntini | m | spun-TI-no |  |
+| tavle | tavler | tavlen | tavlene | la lavagna | le lavagne | una lavagna | delle lavagne | f | la-VA-gna |  |
+| uvær | uvær | uværet | uværene | il temporale | i temporali | un temporale | dei temporali | m | tem-po-RA-le |  |
+| hjerne | hjerner | hjernen | hjernene | il cervello | i cervelli | un cervello | dei cervelli | m | cer-VEL-lo |  |
