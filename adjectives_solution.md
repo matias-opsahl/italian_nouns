@@ -686,3 +686,16 @@
 | eldre (søsken) | maggiore | maggiore | maggiori | maggiori | mag-GIO-re |  |
 | yngre (søsken) | minore | minore | minori | minori | mi-NO-re |  |
 | sølvfarget | argenteo | argentea | argentei | argentee | ar-GEN-teo |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| lummer | afoso | afosa | afosi | afose | a-FO-so |  |
+| årvåken | vigile | vigile | vigili | vigili | VI-gi-le |  |
+| utløpt | scaduto | scaduta | scaduti | scadute | sca-DU-to |  |
+| oppdatert | aggiornato | aggiornata | aggiornati | aggiornate | ag-gior-NA-to |  |
+| brukt | usato | usata | usati | usate | u-SA-to |  |
+| glovarm | torrido | torrida | torridi | torride | TOR-ri-do |  |
+| sorgløs | spensierato | spensierata | spensierati | spensierate | spen-sie-RA-to |  |
+| lunefull | capriccioso | capricciosa | capricciosi | capricciose | ca-pric-CIO-so |  |
+| pittoresk | pittoresco | pittoresca | pittoreschi | pittoresche | pit-to-RE-sco |  |
+| mistenksom | sospettoso | sospettosa | sospettosi | sospettose | so-spet-TO-so |  |

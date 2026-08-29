@@ -687,3 +687,16 @@
 | å sakke farten | rallentare | ral-len-TA-re |  |
 | å eksplodere | esplodere | e-SPLO-de-re |  |
 | å skinne | brillare | bril-LA-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å tilsøle | sporcare | spor-CA-re |  |
+| å fordøye | digerire | di-ge-RI-re |  |
+| å operere | operare | o-pe-RA-re |  |
+| å rette | correggere | cor-REG-ge-re |  |
+| å adlyde | obbedire | ob-be-DI-re |  |
+| å sverge | giurare | giu-RA-re |  |
+| å fornærme | insultare | in-sul-TA-re |  |
+| å kritisere | criticare | cri-ti-CA-re |  |
+| å rose | lodare | lo-DA-re |  |
+| å motstå | resistere | re-SI-ste-re |  |

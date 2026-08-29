@@ -687,3 +687,16 @@
 | tavle | tavler | tavlen | tavlene | la lavagna | le lavagne | una lavagna | delle lavagne | f | la-VA-gna |  |
 | uvær | uvær | uværet | uværene | il temporale | i temporali | un temporale | dei temporali | m | tem-po-RA-le |  |
 | hjerne | hjerner | hjernen | hjernene | il cervello | i cervelli | un cervello | dei cervelli | m | cer-VEL-lo |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| mel | mel | melet | melene | la farina | le farine | una farina | delle farine | f | fa-RI-na |  |
+| eddik | eddik | eddiken | eddikene | l'aceto | gli aceti | un aceto | degli aceti | m | a-CE-to |  |
+| kirsebær | kirsebær | kirsebæret | kirsebærene | la ciliegia | le ciliegie | una ciliegia | delle ciliegie | f | ci-LIE-gia |  |
+| ananas | ananaser | ananasen | ananasene | l'ananas | gli ananas | un ananas | degli ananas | m | A-na-nas |  |
+| hårføner | hårfønere | hårføneren | hårfønerne | l'asciugacapelli | gli asciugacapelli | un asciugacapelli | degli asciugacapelli | m | a-sciu-ga-ca-PEL-li |  |
+| støvsuger | støvsugere | støvsugeren | støvsugerne | l'aspirapolvere | gli aspirapolvere | un aspirapolvere | degli aspirapolvere | m | a-spi-ra-POL-ve-re |  |
+| strykejern | strykejern | strykejernet | strykejernene | il ferro da stiro | i ferri da stiro | un ferro da stiro | dei ferri da stiro | m | FER-ro da STI-ro |  |
+| kost | koster | kosten | kostene | la scopa | le scope | una scopa | delle scope | f | SCO-pa |  |
+| bøtte | bøtter | bøtten | bøttene | il secchio | i secchi | un secchio | dei secchi | m | SEC-chio |  |
+| svamp | svamper | svampen | svampene | la spugna | le spugne | una spugna | delle spugne | f | SPU-gna |  |
