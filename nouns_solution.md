@@ -700,3 +700,16 @@
 | kost | koster | kosten | kostene | la scopa | le scope | una scopa | delle scope | f | SCO-pa |  |
 | bøtte | bøtter | bøtten | bøttene | il secchio | i secchi | un secchio | dei secchi | m | SEC-chio |  |
 | svamp | svamper | svampen | svampene | la spugna | le spugne | una spugna | delle spugne | f | SPU-gna |  |
+
+| ord (norsk) | norsk flertall | norsk bestemt | norsk bestemt flertall | ord (s.g) | ord (p.l) | ubestemt s.g | ubestemt p.l | gender | uttale | også |
+|---|---|---|---|---|---|---|---|---|---|---|
+| reir | reir | reiret | reirene | il nido | i nidi | un nido | dei nidi | m | NI-do |  |
+| benk | benker | benken | benkene | la panchina | le panchine | una panchina | delle panchine | f | pan-CHI-na |  |
+| hekk | hekker | hekken | hekkene | la siepe | le siepi | una siepe | delle siepi | f | SIE-pe |  |
+| gjerde | gjerder | gjerdet | gjerdene | il recinto | i recinti | un recinto | dei recinti | m | re-CIN-to |  |
+| kompass | kompass | kompasset | kompassene | la bussola | le bussole | una bussola | delle bussole | f | BUS-so-la |  |
+| seil | seil | seilet | seilene | la vela | le vele | una vela | delle vele | f | VE-la |  |
+| åre | årer | åren | årene | il remo | i remi | un remo | dei remi | m | RE-mo |  |
+| lerret | lerret | lerretet | lerretene | la tela | le tele | una tela | delle tele | f | TE-la | stoff |
+| skjær | skjær | skjæret | skjærene | lo scoglio | gli scogli | uno scoglio | degli scogli | m | SCO-glio |  |
+| tunnel | tunneler | tunnelen | tunnelene | il tunnel | i tunnel | un tunnel | dei tunnel | m | TUN-nel |  |

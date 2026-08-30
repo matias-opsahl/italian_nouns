@@ -700,3 +700,16 @@
 | å kritisere | criticare | cri-ti-CA-re |  |
 | å rose | lodare | lo-DA-re |  |
 | å motstå | resistere | re-SI-ste-re |  |
+
+| ord (norsk) | ord (italiensk) | uttale | også |
+|---|---|---|---|
+| å koble fra | staccare | stac-CA-re |  |
+| å vikle inn | avvolgere | av-VOL-ge-re |  |
+| å rulle ut | srotolare | sro-to-LA-re |  |
+| å knytte | annodare | an-no-DA-re |  |
+| å binde | legare | le-GA-re |  |
+| å løsne (knute) | slegare | sle-GA-re |  |
+| å rive (mat) | grattugiare | grat-tu-GIA-re |  |
+| å legge til kai | attraccare | at-trac-CA-re |  |
+| å legge fra land | salpare | sal-PA-re |  |
+| å forlise | naufragare | nau-fra-GA-re |  |

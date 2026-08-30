@@ -699,3 +699,16 @@
 | lunefull | capriccioso | capricciosa | capricciosi | capricciose | ca-pric-CIO-so |  |
 | pittoresk | pittoresco | pittoresca | pittoreschi | pittoresche | pit-to-RE-sco |  |
 | mistenksom | sospettoso | sospettosa | sospettosi | sospettose | so-spet-TO-so |  |
+
+| ord (norsk) | hankjønn entall | hunkjønn entall | hankjønn flertall | hunkjønn flertall | uttale | også |
+|---|---|---|---|---|---|---|
+| skarp (kniv) | tagliente | tagliente | taglienti | taglienti | ta-GLIEN-te |  |
+| rusten | arrugginito | arrugginita | arrugginiti | arrugginite | ar-rug-gi-NI-to |  |
+| stillestående | fermo | ferma | fermi | ferme | FER-mo | fast |
+| vaklevoren | traballante | traballante | traballanti | traballanti | tra-bal-LAN-te |  |
+| knirkende | scricchiolante | scricchiolante | scricchiolanti | scricchiolanti | scric-chio-LAN-te |  |
+| støvete | polveroso | polverosa | polverosi | polverose | pol-ve-RO-so |  |
+| gjørmete | fangoso | fangosa | fangosi | fangose | fan-GO-so |  |
+| sumpete | paludoso | paludosa | paludosi | paludose | pa-lu-DO-so |  |
+| steinete | roccioso | rocciosa | rocciosi | rocciose | roc-CIO-so |  |
+| sandete | sabbioso | sabbiosa | sabbiosi | sabbiose | sab-BIO-so |  |
